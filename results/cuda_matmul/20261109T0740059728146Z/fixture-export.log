@@ -1,0 +1,10 @@
+NPU_FIXTURE_PASS deterministic_2x3x2
+NPU_FIXTURE_PASS zero_33x35x31
+NPU_FIXTURE_PASS identity_32x32x32
+NPU_FIXTURE_PASS signed_random_31x33x35
+NPU_FIXTURE_PASS fractional_33x257x65
+NPU_FIXTURE_PASS signed_random_65x257x97
+NPU_FIXTURE_PASS signed_random_128x128x128
+NPU_FIXTURE_PASS signed_random_320x320x320
+NPU_FIXTURE_PASS signed_random_640x320x640
+FIXTURES_ALL_PASS /home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z

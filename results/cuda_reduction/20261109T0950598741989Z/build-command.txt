@@ -1,0 +1,6 @@
+@echo off
+call "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\Tools\VsDevCmd.bat" -arch=x64 -host_arch=x64
+if errorlevel 1 exit /b 1
+cd /d "C:\Users\ysjun5656\AppData\Local\AccelFlow\cuda-reduction"
+"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin\nvcc.exe" -std=c++17 -O3 -arch=sm_61 -lineinfo -Xcompiler=/W4,/utf-8 "C:\Users\ysjun5656\AppData\Local\AccelFlow\cuda-reduction\reduction.cu" -o "C:\Users\ysjun5656\AppData\Local\AccelFlow\cuda-reduction\reduction.exe"
+if errorlevel 1 exit /b 1

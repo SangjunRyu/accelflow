@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "timestamp_utc": "2026-11-09T09:55:54.058769+00:00",
+  "processes": 18,
+  "npu_input_cases": 0,
+  "cuda_only_performance_cases": 2,
+  "trials": 3,
+  "validated_outputs": 558,
+  "max_abs_error": 0,
+  "rows": [
+    {
+      "key": "perf_integer_320x4097",
+      "variants": {
+        "naive": {
+          "kernel_ms": 1.574199962616,
+          "pipeline_ms": 4.2286,
+          "process_medians_ms": [
+            2.5042959213257,
+            1.574199962616,
+            1.4137807846069
+          ]
+        },
+        "tree": {
+          "kernel_ms": 0.18981920480728,
+          "pipeline_ms": 2.5175,
+          "process_medians_ms": [
+            1.0045328140259,
+            0.18981920480728,
+            0.12963360548019
+          ]
+        },
+        "shuffle": {
+          "kernel_ms": 0.28268799781799,
+          "pipeline_ms": 3.8112,
+          "process_medians_ms": [
+            0.1312432050705,
+            0.28268799781799,
+            1.1395088195801
+          ]
+        }
+      }
+    },
+    {
+      "key": "perf_integer_1024x8193",
+      "variants": {
+        "naive": {
+          "kernel_ms": 7.0638511657715,
+          "pipeline_ms": 23.9956,
+          "process_medians_ms": [
+            7.2444541931152,
+            7.0638511657715,
+            6.6999198913574
+          ]
+        },
+        "tree": {
+          "kernel_ms": 1.1375007629395,
+          "pipeline_ms": 16.2923,
+          "process_medians_ms": [
+            1.0714063644409,
+            1.1721520423889,
+            1.1375007629395
+          ]
+        },
+        "shuffle": {
+          "kernel_ms": 1.10756483078,
+          "pipeline_ms": 15.727,
+          "process_medians_ms": [
+            1.10756483078,
+            1.0348527908325,
+            1.4018959999084
+          ]
+        }
+      }
+    }
+  ],
+  "executable_sha256": "bdb47b4ec0dd358d6b93c816a7caf6a508db325bf2149af9389434c1d2272ad6",
+  "timing": "median of process medians; CUDA Event batch average; pipeline includes padded FP32 transfers",
+  "limitations": [
+    "No bank-conflict hardware counters",
+    "No real NPU performance comparison",
+    "Fixed 256 threads; not auto-tuned",
+    "Different summation orders; finite BF16 input tests only"
+  ]
+}

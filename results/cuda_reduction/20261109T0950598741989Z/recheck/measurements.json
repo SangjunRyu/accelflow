@@ -1,0 +1,380 @@
+[
+  {
+    "key": "perf_integer_320x4097",
+    "variant": "tree",
+    "trial": 3,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_320x4097.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_320x4097_tree_trial3.json",
+      "tree",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_320x4097_tree_trial3.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 1.0045328140259,
+    "pipeline_ms": 2.5175
+  },
+  {
+    "key": "perf_integer_320x4097",
+    "variant": "naive",
+    "trial": 3,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_320x4097.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_320x4097_naive_trial3.json",
+      "naive",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_320x4097_naive_trial3.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 2.5042959213257,
+    "pipeline_ms": 10.6607
+  },
+  {
+    "key": "perf_integer_320x4097",
+    "variant": "naive",
+    "trial": 1,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_320x4097.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_320x4097_naive_trial1.json",
+      "naive",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_320x4097_naive_trial1.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 1.574199962616,
+    "pipeline_ms": 4.2286
+  },
+  {
+    "key": "perf_integer_320x4097",
+    "variant": "naive",
+    "trial": 2,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_320x4097.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_320x4097_naive_trial2.json",
+      "naive",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_320x4097_naive_trial2.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 1.4137807846069,
+    "pipeline_ms": 3.1346
+  },
+  {
+    "key": "perf_integer_1024x8193",
+    "variant": "tree",
+    "trial": 2,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_1024x8193.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_1024x8193_tree_trial2.json",
+      "tree",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_1024x8193_tree_trial2.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 1.0714063644409,
+    "pipeline_ms": 13.1802
+  },
+  {
+    "key": "perf_integer_320x4097",
+    "variant": "tree",
+    "trial": 2,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_320x4097.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_320x4097_tree_trial2.json",
+      "tree",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_320x4097_tree_trial2.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 0.18981920480728,
+    "pipeline_ms": 2.7958
+  },
+  {
+    "key": "perf_integer_1024x8193",
+    "variant": "naive",
+    "trial": 3,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_1024x8193.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_1024x8193_naive_trial3.json",
+      "naive",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_1024x8193_naive_trial3.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 7.2444541931152,
+    "pipeline_ms": 24.47
+  },
+  {
+    "key": "perf_integer_320x4097",
+    "variant": "shuffle",
+    "trial": 2,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_320x4097.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_320x4097_shuffle_trial2.json",
+      "shuffle",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_320x4097_shuffle_trial2.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 0.1312432050705,
+    "pipeline_ms": 2.9225
+  },
+  {
+    "key": "perf_integer_1024x8193",
+    "variant": "shuffle",
+    "trial": 2,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_1024x8193.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_1024x8193_shuffle_trial2.json",
+      "shuffle",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_1024x8193_shuffle_trial2.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 1.10756483078,
+    "pipeline_ms": 15.727
+  },
+  {
+    "key": "perf_integer_320x4097",
+    "variant": "shuffle",
+    "trial": 1,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_320x4097.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_320x4097_shuffle_trial1.json",
+      "shuffle",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_320x4097_shuffle_trial1.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 0.28268799781799,
+    "pipeline_ms": 3.8112
+  },
+  {
+    "key": "perf_integer_320x4097",
+    "variant": "shuffle",
+    "trial": 3,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_320x4097.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_320x4097_shuffle_trial3.json",
+      "shuffle",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_320x4097_shuffle_trial3.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 1.1395088195801,
+    "pipeline_ms": 4.4797
+  },
+  {
+    "key": "perf_integer_1024x8193",
+    "variant": "tree",
+    "trial": 1,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_1024x8193.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_1024x8193_tree_trial1.json",
+      "tree",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_1024x8193_tree_trial1.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 1.1721520423889,
+    "pipeline_ms": 17.071
+  },
+  {
+    "key": "perf_integer_1024x8193",
+    "variant": "naive",
+    "trial": 1,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_1024x8193.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_1024x8193_naive_trial1.json",
+      "naive",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_1024x8193_naive_trial1.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 7.0638511657715,
+    "pipeline_ms": 23.9956
+  },
+  {
+    "key": "perf_integer_1024x8193",
+    "variant": "shuffle",
+    "trial": 1,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_1024x8193.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_1024x8193_shuffle_trial1.json",
+      "shuffle",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_1024x8193_shuffle_trial1.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 1.0348527908325,
+    "pipeline_ms": 13.5013
+  },
+  {
+    "key": "perf_integer_1024x8193",
+    "variant": "tree",
+    "trial": 3,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_1024x8193.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_1024x8193_tree_trial3.json",
+      "tree",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_1024x8193_tree_trial3.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 1.1375007629395,
+    "pipeline_ms": 16.2923
+  },
+  {
+    "key": "perf_integer_1024x8193",
+    "variant": "shuffle",
+    "trial": 3,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_1024x8193.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_1024x8193_shuffle_trial3.json",
+      "shuffle",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_1024x8193_shuffle_trial3.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 1.4018959999084,
+    "pipeline_ms": 16.7635
+  },
+  {
+    "key": "perf_integer_1024x8193",
+    "variant": "naive",
+    "trial": 2,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_1024x8193.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_1024x8193_naive_trial2.json",
+      "naive",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_1024x8193_naive_trial2.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 6.6999198913574,
+    "pipeline_ms": 19.1802
+  },
+  {
+    "key": "perf_integer_320x4097",
+    "variant": "tree",
+    "trial": 1,
+    "performance": true,
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\reduction.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-reduction\\fixtures\\perf_integer_320x4097.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_reduction\\20261109T0950598741989Z\\recheck\\perf_integer_320x4097_tree_trial1.json",
+      "tree",
+      "15",
+      "20"
+    ],
+    "report": "perf_integer_320x4097_tree_trial1.json",
+    "exit_code": 0,
+    "npu_compared": false,
+    "max_abs_error": 0,
+    "validated_outputs": 31,
+    "kernel_ms": 0.12963360548019,
+    "pipeline_ms": 2.2277
+  }
+]

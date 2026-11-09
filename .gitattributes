@@ -4,3 +4,13 @@
 
 # Preserve whitespace in archived tool output.
 results/** -whitespace
+
+# Preserve byte-exact new validation records and captured source SHA-256 evidence.
+results/cuda_matmul/** -text
+results/cuda_reduction/** -text
+results/reduction/** -text
+results/rmsnorm/** -text
+results/profiling/** -text
+results/matmul/20261109T075137507595Z/** -text
+*.nsys-rep binary
+*.sqlite binary

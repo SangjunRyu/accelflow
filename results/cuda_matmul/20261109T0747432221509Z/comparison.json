@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "result": "results/cuda_matmul/20261109T0747432221509Z",
+  "scope": "CUDA hardware measurements and TTSim host costs; no hardware speed ratio",
+  "matched_input_and_integer_output_fingerprints": true,
+  "rows": [
+    {
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "cuda_tiled_medians_ms": {
+        "kernel_event_batch_average_ms": 0.0888959988952,
+        "host_resident_launch_finish_ms": 0.1339,
+        "h2d_pinned_event_ms": 0.219264000654,
+        "d2h_pinned_event_ms": 0.103327997029,
+        "host_pipeline_h2d_kernel_d2h_ms": 0.6705
+      },
+      "npu_input_producer_host_median_ms": 193.441923,
+      "same_bf16_inputs": true,
+      "hardware_speed_ratio": null
+    },
+    {
+      "shape": [
+        320,
+        320,
+        320
+      ],
+      "cuda_tiled_medians_ms": {
+        "kernel_event_batch_average_ms": 0.741119980812,
+        "host_resident_launch_finish_ms": 1.096,
+        "h2d_pinned_event_ms": 0.35628798604,
+        "d2h_pinned_event_ms": 0.194079995155,
+        "host_pipeline_h2d_kernel_d2h_ms": 1.7421
+      },
+      "npu_input_producer_host_median_ms": 4782.940883,
+      "same_bf16_inputs": true,
+      "hardware_speed_ratio": null
+    },
+    {
+      "shape": [
+        640,
+        320,
+        640
+      ],
+      "cuda_tiled_medians_ms": {
+        "kernel_event_batch_average_ms": 2.31802892685,
+        "host_resident_launch_finish_ms": 2.5935,
+        "h2d_pinned_event_ms": 0.653248012066,
+        "d2h_pinned_event_ms": 0.61273598671,
+        "host_pipeline_h2d_kernel_d2h_ms": 3.887
+      },
+      "npu_input_producer_host_median_ms": 12954.124678,
+      "same_bf16_inputs": true,
+      "hardware_speed_ratio": null
+    }
+  ],
+  "archived_npu_result": "results/matmul_batched_perf/20261019T113209749850Z",
+  "cuda_runs": 30,
+  "validated_cuda_sample_outputs": 1380,
+  "fractional_bf16_fingerprints_equal": [
+    false,
+    false
+  ],
+  "npu_regression_passed": true,
+  "npu_regression_cases": 188,
+  "npu_regression_result": "results/matmul/20261109T075137507595Z"
+}

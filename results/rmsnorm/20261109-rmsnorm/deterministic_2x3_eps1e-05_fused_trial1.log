@@ -1,0 +1,1 @@
+PASS RMSNorm fused 2x3 max_abs=4.31143e-08

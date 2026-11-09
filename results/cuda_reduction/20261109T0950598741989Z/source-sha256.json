@@ -1,0 +1,7 @@
+{
+  "npu\\reduction\\reduction.cpp": "f692a108e6aef49b4cbfdb06d7584052afc41dc743f46a63aea3cd47b6481c0b",
+  "tools\\report\\export_reduction_fixtures.py": "258a8471b652d3d358d33b1deaffe7eb2ce776cabbca337ae0e335de1452a075",
+  "tools\\report\\benchmark_cuda_reduction.py": "2bc4d610172f1440eb717dd141e100a0c4402d7ae35bf37383f55dd9fd8087a2",
+  "cuda\\reduction\\reduction.cu": "865d199c3ea2c78051aa8f6ecf25e96d7017673a3bc3c6bb2de95daa543d4aca",
+  "scripts\\run_cuda_reduction.ps1": "935e64ea1effc61ea6e3a984049b2b59fdedafdc7d7447b82796739cab7ea5f1"
+}

@@ -1,0 +1,1 @@
+PASS RMSNorm unfused 2x33 max_abs=6.64324e-08

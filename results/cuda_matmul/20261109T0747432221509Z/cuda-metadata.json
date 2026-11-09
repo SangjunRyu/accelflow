@@ -1,0 +1,407 @@
+{
+  "passed": true,
+  "host": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.8",
+  "backend": "Windows native CUDA",
+  "timestamp_utc": "2026-11-09T07:48:35.334313+00:00",
+  "trials": 3,
+  "runs": [
+    {
+      "name": "cuda_signed_random_640x320x640_naive_trial3",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_640x320x640.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_640x320x640_naive_trial3.json",
+        "naive",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_320x320x320_naive_trial3",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_320x320x320.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_320x320x320_naive_trial3.json",
+        "naive",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_fractional_33x257x65_naive_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\fractional_33x257x65.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_fractional_33x257x65_naive_trial1.json",
+        "naive",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_31x33x35_tiled_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_31x33x35.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_31x33x35_tiled_trial1.json",
+        "tiled",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_640x320x640_tiled_trial2",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_640x320x640.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_640x320x640_tiled_trial2.json",
+        "tiled",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_128x128x128_tiled_trial2",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_128x128x128.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_128x128x128_tiled_trial2.json",
+        "tiled",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_320x320x320_naive_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_320x320x320.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_320x320x320_naive_trial1.json",
+        "naive",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_320x320x320_tiled_trial2",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_320x320x320.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_320x320x320_tiled_trial2.json",
+        "tiled",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_128x128x128_naive_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_128x128x128.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_128x128x128_naive_trial1.json",
+        "naive",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_640x320x640_naive_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_640x320x640.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_640x320x640_naive_trial1.json",
+        "naive",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_65x257x97_naive_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_65x257x97.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_65x257x97_naive_trial1.json",
+        "naive",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_640x320x640_naive_trial2",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_640x320x640.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_640x320x640_naive_trial2.json",
+        "naive",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_zero_33x35x31_naive_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\zero_33x35x31.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_zero_33x35x31_naive_trial1.json",
+        "naive",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_320x320x320_tiled_trial3",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_320x320x320.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_320x320x320_tiled_trial3.json",
+        "tiled",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_320x320x320_tiled_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_320x320x320.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_320x320x320_tiled_trial1.json",
+        "tiled",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_128x128x128_tiled_trial3",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_128x128x128.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_128x128x128_tiled_trial3.json",
+        "tiled",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_640x320x640_tiled_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_640x320x640.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_640x320x640_tiled_trial1.json",
+        "tiled",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_31x33x35_naive_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_31x33x35.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_31x33x35_naive_trial1.json",
+        "naive",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_zero_33x35x31_tiled_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\zero_33x35x31.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_zero_33x35x31_tiled_trial1.json",
+        "tiled",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_128x128x128_naive_trial3",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_128x128x128.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_128x128x128_naive_trial3.json",
+        "naive",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_deterministic_2x3x2_naive_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\deterministic_2x3x2.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_deterministic_2x3x2_naive_trial1.json",
+        "naive",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_640x320x640_tiled_trial3",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_640x320x640.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_640x320x640_tiled_trial3.json",
+        "tiled",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_65x257x97_tiled_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_65x257x97.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_65x257x97_tiled_trial1.json",
+        "tiled",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_128x128x128_naive_trial2",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_128x128x128.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_128x128x128_naive_trial2.json",
+        "naive",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_identity_32x32x32_naive_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\identity_32x32x32.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_identity_32x32x32_naive_trial1.json",
+        "naive",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_320x320x320_naive_trial2",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_320x320x320.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_320x320x320_naive_trial2.json",
+        "naive",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_fractional_33x257x65_tiled_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\fractional_33x257x65.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_fractional_33x257x65_tiled_trial1.json",
+        "tiled",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_signed_random_128x128x128_tiled_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_128x128x128.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_signed_random_128x128x128_tiled_trial1.json",
+        "tiled",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_deterministic_2x3x2_tiled_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\deterministic_2x3x2.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_deterministic_2x3x2_tiled_trial1.json",
+        "tiled",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "cuda_identity_32x32x32_tiled_trial1",
+      "command": [
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe",
+        "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\identity_32x32x32.bin",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\cuda_matmul\\20261109T0747432221509Z\\cuda_identity_32x32x32_tiled_trial1.json",
+        "tiled",
+        "20",
+        "15",
+        "20"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "executable_sha256": "2ea732fe5ff4588144a3938a2516ee3fcb257fe995890c42c5daa610d7b048c7",
+  "source_sha256": {
+    "cuda\\matmul\\matmul.cu": "75a1512cd7feb75e94bde9f15c2246656127b0a687801c85173635aaefec03da",
+    "tools\\report\\benchmark_cuda_matmul.py": "9a116bad2e2f48e36fb50f39ee48f2f577c410e7c539470200519e6f3dd13d62",
+    "scripts\\run_cuda_matmul.ps1": "96a5e1a816ecd858855fcc2bc9a6d6570b01ec9b050850d008f39ff6e499f2b9"
+  },
+  "validated_outputs": 1380
+}

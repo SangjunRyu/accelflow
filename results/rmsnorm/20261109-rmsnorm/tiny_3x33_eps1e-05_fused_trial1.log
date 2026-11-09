@@ -1,0 +1,1 @@
+PASS RMSNorm fused 3x33 max_abs=2.76658e-11

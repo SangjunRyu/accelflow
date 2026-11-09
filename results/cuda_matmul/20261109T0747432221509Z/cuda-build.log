@@ -1,0 +1,8 @@
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.7.4
+** Copyright (c) 2022 Microsoft Corporation
+**********************************************************************
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+matmul.cu
+tmpxft_00006b0c_00000000-7_matmul.cudafe1.cpp
+   C:\Users\ysjun5656\AppData\Local\AccelFlow\cuda-matmul\matmul.lib 라이브러리 및 C:\Users\ysjun5656\AppData\Local\AccelFlow\cuda-matmul\matmul.exp 개체를 생성하고 있습니다.

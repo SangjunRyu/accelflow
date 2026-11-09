@@ -1,0 +1,5 @@
+-- Configuring done (0.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/ysjun5656/dev/accelflow/build/matmul
+[1/2] Building CXX object CMakeFiles/matmul.dir/matmul.cpp.o
+[2/2] Linking CXX executable matmul

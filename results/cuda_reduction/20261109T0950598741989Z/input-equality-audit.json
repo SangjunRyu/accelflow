@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "cases": 25,
+  "keys": [
+    "deterministic_2x3",
+    "zero_33x35",
+    "ones_2x1",
+    "ones_2x31",
+    "ones_2x32",
+    "ones_2x33",
+    "ones_2x257",
+    "ones_2x1025",
+    "ones_2x4097",
+    "signed_random_1x65",
+    "signed_random_31x65",
+    "signed_random_32x65",
+    "signed_random_33x65",
+    "signed_random_65x65",
+    "signed_random_65x129",
+    "signed_random_17x1025",
+    "large_exact_2x1025",
+    "cancellation_3x3",
+    "cancellation_3x32",
+    "cancellation_3x1025",
+    "fractional_1x33",
+    "fractional_33x65",
+    "fractional_17x257",
+    "fractional_3x1025",
+    "fractional_2x4097"
+  ],
+  "method": "BF16 export reconstructed into TT tile/face order; FNV-1a equals actual NPU input fingerprint"
+}

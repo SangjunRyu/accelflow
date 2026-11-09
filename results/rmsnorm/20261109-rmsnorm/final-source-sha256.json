@@ -1,0 +1,21 @@
+{
+  "npu/rmsnorm/rmsnorm.cpp": "27510b9d8c463cce542048155f4e9733f7aea98df19964c801218a01b1b90dce",
+  "npu/rmsnorm/kernels/writer.cpp": "88dfe29fe4b8fdf6a0ea3ff44dbd7f757b0f5aea9a4e8cd1821cb6ea09972ec8",
+  "npu/rmsnorm/kernels/square.cpp": "c5fb23be76fa3af601326d8a28cf9507e8e2e466696617cf9cc828b1b7ff0e59",
+  "npu/rmsnorm/kernels/sum.cpp": "fa6a0d862118c1d949a79b63a48fec7428d0cfc5ef89617f851d7dd1537244a3",
+  "npu/rmsnorm/kernels/normalize.cpp": "aa1abb7b58581e9ef1f2312acb91b873887502194c9546bef9431cadf4729f4b",
+  "npu/rmsnorm/kernels/reader_normalize.cpp": "b990dc69297b35a869f7e835d115ac604033491264d711bc4347134acd1f7a40",
+  "npu/rmsnorm/kernels/reader_sum.cpp": "6c3bc354ef810fc26fc9b239783b64a16bfa5aab8583694bf776a7c08c40821a",
+  "npu/rmsnorm/kernels/reader.cpp": "bdc9258fe8afd4ed1d49f03dcc867195533a0fd185cd9049edc0e5a8d2b6e72b",
+  "cuda/rmsnorm/rmsnorm.cu": "1dfea124b2bd85713edb1fc05b7e4cf12773c7bd88765b40ec2c19cb5cc543e8",
+  "npu/rmsnorm/CMakeLists.txt": "77fb1d1c19fb7f16551b4167a240505cbbbeaa50db8b4d535dacc448ee0abe2b",
+  "npu/vector_add/common.hpp": "695681e02c9fa7dd8441067460df4e4c566da3f11392402bb4ecf984fe9c2df2",
+  "scripts/run_rmsnorm.sh": "f9529cd8c162bc1e60b41191c86cf8afd9c93bb1d16250441307bc052f263818",
+  "scripts/run_cuda_rmsnorm.ps1": "549b83afbd5d6110c2ff2a84cfca69d4937ac7949937a5d25120c3244c541ad9",
+  "tools/report/rmsnorm_fixtures.py": "a245fad8502aef7d10d2ae786f380e24fa9bf583359def6a28b2f32d4baf9266",
+  "tools/report/run_rmsnorm.py": "cb7ec1045e27427b48f6a98c801c93106cddd0386154b3f088ba3c32387b2376",
+  "tools/report/build_rmsnorm.py": "55f6bb2d7a3601421255ecbbdb65c318a50b9c892e7a372006bca8051403f060",
+  "tools/report/benchmark_cuda_rmsnorm.py": "2dbc26aa66780211aa6ae685a37c71575ab5cd4abc2db924312008d32fada893",
+  "tools/report/audit_rmsnorm.py": "e9f24fd29473997bd86f1814ed14c3439b863bba267ccc56c721f634ef8367e2",
+  "tools/report/check_rmsnorm_precision.py": "c54b7029d581cac0a9c7214cf3ec9d6d5b04ef25fe48137b2e0ef21d227f1eaf"
+}

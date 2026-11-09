@@ -1,0 +1,5 @@
+{
+  "scripts\\run_cuda_rmsnorm.ps1": "549b83afbd5d6110c2ff2a84cfca69d4937ac7949937a5d25120c3244c541ad9",
+  "tools\\report\\benchmark_cuda_rmsnorm.py": "2dbc26aa66780211aa6ae685a37c71575ab5cd4abc2db924312008d32fada893",
+  "cuda\\rmsnorm\\rmsnorm.cu": "1dfea124b2bd85713edb1fc05b7e4cf12773c7bd88765b40ec2c19cb5cc543e8"
+}

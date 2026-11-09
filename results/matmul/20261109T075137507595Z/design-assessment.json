@@ -1,0 +1,724 @@
+{
+  "passed": true,
+  "total_cases": 188,
+  "evidence_directory": "results/matmul/20261109T075137507595Z",
+  "comparisons": [
+    {
+      "name": "deterministic",
+      "shape_mkn": [
+        2,
+        3,
+        2
+      ],
+      "tile_grid_mkn": [
+        1,
+        1,
+        1
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 10,
+      "old_blocked_skipped": false,
+      "baseline_read_bytes_model": 4096,
+      "streamed_read_bytes_model": 4096,
+      "read_reduction_vs_baseline_model": 0.0,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 6144,
+        "reuse_a_depth2": 10240,
+        "blocked_depth1": 10240,
+        "blocked_depth2": 20480,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 1,
+      "partial_K_chunk2": true,
+      "partial_output_block": true,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "zero",
+      "shape_mkn": [
+        33,
+        35,
+        31
+      ],
+      "tile_grid_mkn": [
+        2,
+        2,
+        1
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 10,
+      "old_blocked_skipped": false,
+      "baseline_read_bytes_model": 16384,
+      "streamed_read_bytes_model": 12288,
+      "read_reduction_vs_baseline_model": 0.25,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 8192,
+        "reuse_a_depth2": 12288,
+        "blocked_depth1": 18432,
+        "blocked_depth2": 36864,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 1,
+      "partial_K_chunk2": false,
+      "partial_output_block": true,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "identity",
+      "shape_mkn": [
+        32,
+        32,
+        32
+      ],
+      "tile_grid_mkn": [
+        1,
+        1,
+        1
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 10,
+      "old_blocked_skipped": false,
+      "baseline_read_bytes_model": 4096,
+      "streamed_read_bytes_model": 4096,
+      "read_reduction_vs_baseline_model": 0.0,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 6144,
+        "reuse_a_depth2": 10240,
+        "blocked_depth1": 10240,
+        "blocked_depth2": 20480,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 1,
+      "partial_K_chunk2": true,
+      "partial_output_block": true,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        32,
+        32,
+        32
+      ],
+      "tile_grid_mkn": [
+        1,
+        1,
+        1
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 10,
+      "old_blocked_skipped": false,
+      "baseline_read_bytes_model": 4096,
+      "streamed_read_bytes_model": 4096,
+      "read_reduction_vs_baseline_model": 0.0,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 6144,
+        "reuse_a_depth2": 10240,
+        "blocked_depth1": 10240,
+        "blocked_depth2": 20480,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 1,
+      "partial_K_chunk2": true,
+      "partial_output_block": true,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        31,
+        33,
+        35
+      ],
+      "tile_grid_mkn": [
+        1,
+        2,
+        2
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 10,
+      "old_blocked_skipped": false,
+      "baseline_read_bytes_model": 16384,
+      "streamed_read_bytes_model": 12288,
+      "read_reduction_vs_baseline_model": 0.25,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 8192,
+        "reuse_a_depth2": 12288,
+        "blocked_depth1": 18432,
+        "blocked_depth2": 36864,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 1,
+      "partial_K_chunk2": false,
+      "partial_output_block": true,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        33,
+        31,
+        65
+      ],
+      "tile_grid_mkn": [
+        2,
+        1,
+        3
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 10,
+      "old_blocked_skipped": false,
+      "baseline_read_bytes_model": 24576,
+      "streamed_read_bytes_model": 14336,
+      "read_reduction_vs_baseline_model": 0.41666666666666663,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 6144,
+        "reuse_a_depth2": 10240,
+        "blocked_depth1": 10240,
+        "blocked_depth2": 20480,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 1,
+      "partial_K_chunk2": true,
+      "partial_output_block": true,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        64,
+        64,
+        96
+      ],
+      "tile_grid_mkn": [
+        2,
+        2,
+        3
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 10,
+      "old_blocked_skipped": false,
+      "baseline_read_bytes_model": 49152,
+      "streamed_read_bytes_model": 28672,
+      "read_reduction_vs_baseline_model": 0.41666666666666663,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 8192,
+        "reuse_a_depth2": 12288,
+        "blocked_depth1": 18432,
+        "blocked_depth2": 36864,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 1,
+      "partial_K_chunk2": false,
+      "partial_output_block": true,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        32,
+        128,
+        96
+      ],
+      "tile_grid_mkn": [
+        1,
+        4,
+        3
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 10,
+      "old_blocked_skipped": false,
+      "baseline_read_bytes_model": 49152,
+      "streamed_read_bytes_model": 40960,
+      "read_reduction_vs_baseline_model": 0.16666666666666663,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 12288,
+        "reuse_a_depth2": 16384,
+        "blocked_depth1": 34816,
+        "blocked_depth2": 69632,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 2,
+      "partial_K_chunk2": false,
+      "partial_output_block": true,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        65,
+        97,
+        33
+      ],
+      "tile_grid_mkn": [
+        3,
+        4,
+        2
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 10,
+      "old_blocked_skipped": false,
+      "baseline_read_bytes_model": 98304,
+      "streamed_read_bytes_model": 57344,
+      "read_reduction_vs_baseline_model": 0.41666666666666663,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 12288,
+        "reuse_a_depth2": 16384,
+        "blocked_depth1": 34816,
+        "blocked_depth2": 69632,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 2,
+      "partial_K_chunk2": false,
+      "partial_output_block": true,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "fractional",
+      "shape_mkn": [
+        32,
+        64,
+        64
+      ],
+      "tile_grid_mkn": [
+        1,
+        2,
+        2
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 10,
+      "old_blocked_skipped": false,
+      "baseline_read_bytes_model": 16384,
+      "streamed_read_bytes_model": 12288,
+      "read_reduction_vs_baseline_model": 0.25,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 8192,
+        "reuse_a_depth2": 12288,
+        "blocked_depth1": 18432,
+        "blocked_depth2": 36864,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 1,
+      "partial_K_chunk2": false,
+      "partial_output_block": true,
+      "max_abs_error": 0.0073905885219573975,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "fractional",
+      "shape_mkn": [
+        33,
+        35,
+        65
+      ],
+      "tile_grid_mkn": [
+        2,
+        2,
+        3
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 10,
+      "old_blocked_skipped": false,
+      "baseline_read_bytes_model": 49152,
+      "streamed_read_bytes_model": 28672,
+      "read_reduction_vs_baseline_model": 0.41666666666666663,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 8192,
+        "reuse_a_depth2": 12288,
+        "blocked_depth1": 18432,
+        "blocked_depth2": 36864,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 1,
+      "partial_K_chunk2": false,
+      "partial_output_block": true,
+      "max_abs_error": 0.0038948655128479004,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "large_exact",
+      "shape_mkn": [
+        8,
+        16,
+        8
+      ],
+      "tile_grid_mkn": [
+        1,
+        1,
+        1
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 10,
+      "old_blocked_skipped": false,
+      "baseline_read_bytes_model": 4096,
+      "streamed_read_bytes_model": 4096,
+      "read_reduction_vs_baseline_model": 0.0,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 6144,
+        "reuse_a_depth2": 10240,
+        "blocked_depth1": 10240,
+        "blocked_depth2": 20480,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 1,
+      "partial_K_chunk2": true,
+      "partial_output_block": true,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "tile_grid_mkn": [
+        3,
+        2,
+        5
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 10,
+      "old_blocked_skipped": false,
+      "baseline_read_bytes_model": 122880,
+      "streamed_read_bytes_model": 77824,
+      "read_reduction_vs_baseline_model": 0.3666666666666667,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 8192,
+        "reuse_a_depth2": 12288,
+        "blocked_depth1": 18432,
+        "blocked_depth2": 36864,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 1,
+      "partial_K_chunk2": false,
+      "partial_output_block": true,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "tile_grid_mkn": [
+        4,
+        4,
+        4
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 10,
+      "old_blocked_skipped": false,
+      "baseline_read_bytes_model": 262144,
+      "streamed_read_bytes_model": 131072,
+      "read_reduction_vs_baseline_model": 0.5,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 12288,
+        "reuse_a_depth2": 16384,
+        "blocked_depth1": 34816,
+        "blocked_depth2": 69632,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 2,
+      "partial_K_chunk2": false,
+      "partial_output_block": false,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        65,
+        129,
+        97
+      ],
+      "tile_grid_mkn": [
+        3,
+        5,
+        4
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 8,
+      "old_blocked_skipped": true,
+      "baseline_read_bytes_model": 245760,
+      "streamed_read_bytes_model": 143360,
+      "read_reduction_vs_baseline_model": 0.41666666666666663,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 14336,
+        "reuse_a_depth2": 18432,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 3,
+      "partial_K_chunk2": true,
+      "partial_output_block": true,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "tile_grid_mkn": [
+        3,
+        9,
+        4
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 8,
+      "old_blocked_skipped": true,
+      "baseline_read_bytes_model": 442368,
+      "streamed_read_bytes_model": 258048,
+      "read_reduction_vs_baseline_model": 0.41666666666666663,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 22528,
+        "reuse_a_depth2": 26624,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 5,
+      "partial_K_chunk2": true,
+      "partial_output_block": true,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        64,
+        512,
+        64
+      ],
+      "tile_grid_mkn": [
+        2,
+        16,
+        2
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 8,
+      "old_blocked_skipped": true,
+      "baseline_read_bytes_model": 262144,
+      "streamed_read_bytes_model": 131072,
+      "read_reduction_vs_baseline_model": 0.5,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 36864,
+        "reuse_a_depth2": 40960,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 8,
+      "partial_K_chunk2": false,
+      "partial_output_block": false,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "fractional",
+      "shape_mkn": [
+        33,
+        161,
+        65
+      ],
+      "tile_grid_mkn": [
+        2,
+        6,
+        3
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 8,
+      "old_blocked_skipped": true,
+      "baseline_read_bytes_model": 147456,
+      "streamed_read_bytes_model": 86016,
+      "read_reduction_vs_baseline_model": 0.41666666666666663,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 16384,
+        "reuse_a_depth2": 20480,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 3,
+      "partial_K_chunk2": false,
+      "partial_output_block": true,
+      "max_abs_error": 0.008238278329372406,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "fractional",
+      "shape_mkn": [
+        33,
+        257,
+        65
+      ],
+      "tile_grid_mkn": [
+        2,
+        9,
+        3
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 8,
+      "old_blocked_skipped": true,
+      "baseline_read_bytes_model": 221184,
+      "streamed_read_bytes_model": 129024,
+      "read_reduction_vs_baseline_model": 0.41666666666666663,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 22528,
+        "reuse_a_depth2": 26624,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 5,
+      "partial_K_chunk2": true,
+      "partial_output_block": true,
+      "max_abs_error": 0.015813819132745266,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    },
+    {
+      "name": "zero",
+      "shape_mkn": [
+        33,
+        257,
+        65
+      ],
+      "tile_grid_mkn": [
+        2,
+        9,
+        3
+      ],
+      "same_input_output_fingerprints": true,
+      "configs_compared": 8,
+      "old_blocked_skipped": true,
+      "baseline_read_bytes_model": 221184,
+      "streamed_read_bytes_model": 129024,
+      "read_reduction_vs_baseline_model": 0.41666666666666663,
+      "cb_bytes_by_configuration": {
+        "baseline_depth1": 6144,
+        "baseline_depth2": 12288,
+        "reuse_a_depth1": 22528,
+        "reuse_a_depth2": 26624,
+        "streamed_depth1_chunk1": 10240,
+        "streamed_depth2_chunk1": 20480,
+        "streamed_depth1_chunk2": 18432,
+        "streamed_depth2_chunk2": 36864
+      },
+      "streamed_chunks_per_output_block_chunk2": 5,
+      "partial_K_chunk2": true,
+      "partial_output_block": true,
+      "max_abs_error": 0.0,
+      "metric_kind": "source-derived model; no hardware counters or latency"
+    }
+  ],
+  "verdict": {
+    "cpu_reference_layout_padding_sentinel": "all cases pass",
+    "controlled_comparison": "same input/output FNV fingerprints for every supported configuration",
+    "K_streaming": "K=129/257/512 tested; chunk1/2 and depth1/2 pass",
+    "partial_K_and_input_CB_wrap": "functional fixtures pass",
+    "constant_CB_capacity": "configuration model independent of total K",
+    "partial_result_spill": "none in source; destination tiles retained across chunks",
+    "hardware_latency_bandwidth_overlap": "not measured"
+  }
+}

@@ -22,6 +22,8 @@ CMakeCache.txt
 # Compiled host, device and CUDA artifacts (retain text inspection reports)
 *.o
 *.obj
+*.lib
+*.exp
 *.a
 *.so
 *.so.*

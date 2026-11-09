@@ -1,0 +1,1 @@
+CUDA_MATMUL_PASS naive 2,3,2 max_abs=0

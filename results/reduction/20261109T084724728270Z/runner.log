@@ -1,0 +1,6 @@
+/home/ysjun5656/dev/accelflow/results/reduction/20261109T084724728270Z
+PASS pilot_small cases=1
+PASS pilot_fp32_257 cases=1
+PASS depth1 cases=25
+PASS depth2 cases=25
+REDUCTION_VALIDATION_PASS 50 cases / 150 submissions; /home/ysjun5656/dev/accelflow/results/reduction/20261109T084724728270Z

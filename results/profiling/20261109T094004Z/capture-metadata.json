@@ -1,0 +1,111 @@
+{
+  "captured_at_utc": "20261109T094004Z",
+  "tool": "Nsight Systems 2025.1.3.140-251335620677v0",
+  "gpu": "NVIDIA GeForce MX150",
+  "shape_mkn": [
+    640,
+    320,
+    640
+  ],
+  "measurement_kind": "instrumented CUDA timeline; not statistical benchmark",
+  "hardware_bank_conflict_counters": false,
+  "cpu_sampling": false,
+  "cpu_context_switch_trace": false,
+  "nvtx_annotations": false,
+  "validation": "Both passed, 16 validated outputs each, max_abs_error=0; CSV confirms 16 GPU kernel instances each",
+  "warning": "Device-side CUDA Event completion trace enabled; profiler overhead applies",
+  "executable_sha256": "c2c2433866e26acc10b36e57916c74432af86a090934c9d7696a373d37e05bee",
+  "fixture_sha256": "9e58f6280a57daed9bd74de569281d40b324813eaba93161b15e2a6003e1ea48",
+  "captures": [
+    {
+      "variant": "tiled",
+      "command": "nsys.exe profile --trace=cuda --sample=none --cpuctxsw=none --output=\"C:\\Users\\ysjun5656\\AccelFlow\\profile_stage\\tiled\" \"C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe\" \"C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_640x320x640.bin\" \"C:\\Users\\ysjun5656\\AccelFlow\\profile_stage\\tiled-validation.json\" tiled 1 5 1"
+    },
+    {
+      "variant": "texture_tiled",
+      "command": "nsys.exe profile --trace=cuda --sample=none --cpuctxsw=none --output=\"C:\\Users\\ysjun5656\\AccelFlow\\profile_stage\\texture_tiled\" \"C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\matmul.exe\" \"C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-matmul\\fixtures\\signed_random_640x320x640.bin\" \"C:\\Users\\ysjun5656\\AccelFlow\\profile_stage\\texture_tiled-validation.json\" texture_tiled 1 5 1"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "texture_tiled-capture.log",
+      "bytes": 827,
+      "sha256": "24e3a4c868f2be24a530025cecf1685aca8558f32304f0857a929d5067be06e9"
+    },
+    {
+      "name": "texture_tiled-stats_cuda_api_sum.csv",
+      "bytes": 1705,
+      "sha256": "86d24b72a389be5b87feeeb6179d5d9aa249fc28d2ebb18889387152bbac5a05"
+    },
+    {
+      "name": "texture_tiled-stats_cuda_gpu_kern_sum.csv",
+      "bytes": 276,
+      "sha256": "dedc9556718821857e609b3ff65bd9db5a8c1650ec187762cac1287ca23a1dee"
+    },
+    {
+      "name": "texture_tiled-stats_cuda_gpu_mem_time_sum.csv",
+      "bytes": 325,
+      "sha256": "2fc064c48c0c390ecaa9edbeee41f1a28dc494e345bf0250532b89621ee22971"
+    },
+    {
+      "name": "texture_tiled-stats.log",
+      "bytes": 1045,
+      "sha256": "6821bf9f259b994351af8b4a182af7afe3cf3e94930b8b71e15c86c080827966"
+    },
+    {
+      "name": "texture_tiled-validation.json",
+      "bytes": 1325,
+      "sha256": "48b8ab006c7214a11eed407bd9345ea9e32b1c6a10b251ab39ebb207ffa690f3"
+    },
+    {
+      "name": "texture_tiled.nsys-rep",
+      "bytes": 56461,
+      "sha256": "e25323a7344f2fb43ae1602c1d307bf9504f160cac0b47a28551cbfa49dd7220"
+    },
+    {
+      "name": "texture_tiled.sqlite",
+      "bytes": 458752,
+      "sha256": "bd228924fac8f2fd9d3be8944b275266bcccde8175e2fc2c34885ad5597e6145"
+    },
+    {
+      "name": "tiled-capture.log",
+      "bytes": 771,
+      "sha256": "4c619f23dab65a131f54562ee2d366f2c7180757f85e9ab73f9cf5d46f897024"
+    },
+    {
+      "name": "tiled-stats_cuda_api_sum.csv",
+      "bytes": 1369,
+      "sha256": "38931b65f5f5193b6e8123040304cbd095547c12fccfe9ac0df887f65769dd13"
+    },
+    {
+      "name": "tiled-stats_cuda_gpu_kern_sum.csv",
+      "bytes": 276,
+      "sha256": "83cd16a8815459e42f233b1565b0503024574351bce3938f56651717af220d24"
+    },
+    {
+      "name": "tiled-stats_cuda_gpu_mem_time_sum.csv",
+      "bytes": 326,
+      "sha256": "030fea1ed538352a8d0b594aea2ba5bfa55ad6a40bc9d9f3d0ab59be75dcd5b3"
+    },
+    {
+      "name": "tiled-stats.log",
+      "bytes": 981,
+      "sha256": "b94f442d6050fa7beb53ef146d388aaf6f91c6e656613d36b79e920db098da46"
+    },
+    {
+      "name": "tiled-validation.json",
+      "bytes": 1313,
+      "sha256": "e1e8b1dd4728f3365d15d8dbc2398e9bad1a879a45d9302f917346e7079e50e7"
+    },
+    {
+      "name": "tiled.nsys-rep",
+      "bytes": 56224,
+      "sha256": "2d3b4801e137726f3d7734c69f0e85f240f02d0f0dc858b94b263fdf3d58634f"
+    },
+    {
+      "name": "tiled.sqlite",
+      "bytes": 458752,
+      "sha256": "5c39589ff41eb86f41558d45b8cfedba420b7784336d22e887f2e3abfb2dfe0c"
+    }
+  ]
+}

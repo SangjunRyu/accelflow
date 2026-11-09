@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "source_and_snapshot_hashes_match": true,
+  "executable_hash_matches": true,
+  "source_unchanged_after_validation": true,
+  "integer_cases_exact": true,
+  "korean_gate_exit_code": 1,
+  "korean_manual_finalize_accepted": true,
+  "korean_warning": "code-formula footnote false positive",
+  "full_cases": 50,
+  "submissions": 152,
+  "numerical_failed_attempts_preserved": 3,
+  "relative_doc_links_verified": true
+}

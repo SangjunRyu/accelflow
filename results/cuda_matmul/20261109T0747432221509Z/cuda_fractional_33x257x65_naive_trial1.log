@@ -1,0 +1,1 @@
+CUDA_MATMUL_PASS naive 33,257,65 max_abs=7.7486e-07

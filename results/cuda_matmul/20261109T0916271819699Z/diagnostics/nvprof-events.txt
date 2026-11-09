@@ -1,0 +1,4 @@
+Available Events:
+                            Name   Description
+Device 0 (NVIDIA GeForce MX150):
+======== Error: CUDA profiling error.

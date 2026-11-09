@@ -1,0 +1,69 @@
+{
+  "cupti_dll": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.9\\extras\\CUPTI\\lib64\\cupti64_2025.2.0.dll",
+  "cupti_api_version": 27,
+  "is_administrator": false,
+  "event_domain_count": 0,
+  "steps": [
+    {
+      "api": "cuptiGetVersion",
+      "status": 0,
+      "message": "CUPTI_SUCCESS"
+    },
+    {
+      "api": "cuInit",
+      "status": 0,
+      "message": "no error"
+    },
+    {
+      "api": "cuDeviceGet",
+      "status": 0,
+      "message": "no error"
+    },
+    {
+      "api": "cuDevicePrimaryCtxRetain",
+      "status": 0,
+      "message": "no error"
+    },
+    {
+      "api": "cuCtxSetCurrent",
+      "status": 0,
+      "message": "no error"
+    },
+    {
+      "api": "cuptiDeviceGetNumEventDomains",
+      "status": 27,
+      "message": "CUPTI_ERROR_NOT_SUPPORTED"
+    },
+    {
+      "api": "cuptiEventGroupCreate",
+      "status": 27,
+      "message": "CUPTI_ERROR_NOT_SUPPORTED"
+    },
+    {
+      "api": "cuptiSubscribe",
+      "status": 0,
+      "message": "CUPTI_SUCCESS"
+    },
+    {
+      "api": "cuptiUnsubscribe",
+      "status": 0,
+      "message": "CUPTI_SUCCESS"
+    },
+    {
+      "api": "cuptiActivityEnable",
+      "status": 0,
+      "message": "CUPTI_SUCCESS"
+    },
+    {
+      "api": "cuptiActivityDisable",
+      "status": 0,
+      "message": "CUPTI_SUCCESS"
+    },
+    {
+      "api": "cuDevicePrimaryCtxRelease_v2",
+      "status": 0,
+      "message": "no error"
+    }
+  ],
+  "system_settings_changed": false
+}

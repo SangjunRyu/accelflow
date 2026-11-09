@@ -1,0 +1,60 @@
+{
+  "passed": false,
+  "operator": "row_sum",
+  "scope": "single core, last dimension only; no hardware performance claim",
+  "tt_metal_revision": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "host": "Linux-5.15.90.1sangjunryu20195834+-x86_64-with-glibc2.39",
+  "compiler": "Ubuntu clang version 20.1.2 (0ubuntu1~24.04.3)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm-20/bin\n",
+  "meminfo_before": "MemTotal:        3962484 kB\nMemFree:         3122920 kB\nMemAvailable:    3396996 kB\nBuffers:           18068 kB\nCached:           445804 kB\nSwapCached:            0 kB\nActive:           232192 kB\nInactive:         326524 kB\nActive(anon):       3352 kB\nInactive(anon):    95732 kB\nActive(file):     228840 kB\nInactive(file):   230792 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1048576 kB\nDirty:                 0 kB\nWriteback:             0 kB\nAnonPages:         94920 kB\nMapped:           131012 kB\nShmem:              4240 kB\nKReclaimable:      28508 kB\nSlab:              65924 kB\nSReclaimable:      28508 kB\nSUnreclaim:        37416 kB\nKernelStack:        3508 kB\nPageTables:         2832 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:     649924 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        6712 kB\nVmallocChunk:          0 kB\nPercpu:             3424 kB\nAnonHugePages:     40960 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      113664 kB\nDirectMap2M:     4022272 kB\nDirectMap1G:     8388608 kB\n",
+  "source_sha256": {
+    "npu/reduction/reduction.cpp": "4214df3e465a52772646d62170ad27ba43e5003dab77989ca0234b1eb72a245e",
+    "npu/reduction/kernels/writer.cpp": "ffdea571f41eb77a09cc71795f9134b5e382c1ff601f9aa9734d882bded7dc7c",
+    "npu/reduction/kernels/compute.cpp": "98abafd542572e9b56d61c38f5c4e48b921a30fd4e594daa6e82366239371cdc",
+    "npu/reduction/kernels/reader.cpp": "e0e5b95d44b02adc1dd13392522f52713dd129f5e27fd259a99e6eab149bca7d",
+    "npu/reduction/CMakeLists.txt": "2f990b6c8cb87f43eadc824367dca78d65c32e00b4db4bd723cd60ae80314fb6",
+    "npu/vector_add/common.hpp": "695681e02c9fa7dd8441067460df4e4c566da3f11392402bb4ecf984fe9c2df2",
+    "tools/report/build_reduction.py": "0d6d58aa83f4d1283ee44e7c460d742435ad724002e1eafe9480db1cfab225ef",
+    "tools/report/run_reduction.py": "ac00ecdddd4b1ee4f392861ba16eddc6a5458c40e179e40472ec93a60dbae881",
+    "scripts/run_reduction.sh": "550c6cc2497fe9b124a79d8b51448454120e7bdd18d9bc0b2b63ad901b73faf8"
+  },
+  "runs": [
+    {
+      "label": "pilot_small",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/reduction/reduction",
+        "/home/ysjun5656/dev/accelflow/results/reduction/20261109T084316865240Z/pilot_small.json",
+        "1",
+        "1",
+        "deterministic:2,3"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 1.3682387009994272
+    },
+    {
+      "label": "pilot_fp32_257",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/reduction/reduction",
+        "/home/ysjun5656/dev/accelflow/results/reduction/20261109T084316865240Z/pilot_fp32_257.json",
+        "1",
+        "1",
+        "ones:2,257"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 0.166534361000231
+    },
+    {
+      "label": "depth1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/reduction/reduction",
+        "/home/ysjun5656/dev/accelflow/results/reduction/20261109T084316865240Z/depth1.json",
+        "1",
+        "3"
+      ],
+      "exit_code": 1,
+      "process_wall_seconds": 0.7663836570000058
+    }
+  ],
+  "build_exit_code": 0,
+  "executable_sha256": "ed513e9b0ed00b54c3c698b52082455d4589ea162093e0586f204de7bd31e93f"
+}

@@ -1,0 +1,10 @@
+{
+  "gate_exit_code": 0,
+  "finalize": "not required: light route, gate passed",
+  "route": "light",
+  "warnings": [],
+  "change_rate_percent": 0.04,
+  "findings": "C-11: four commas removed; facts, numbers, commands and hedges retained",
+  "self_checks_passed": 6,
+  "grade": "B"
+}

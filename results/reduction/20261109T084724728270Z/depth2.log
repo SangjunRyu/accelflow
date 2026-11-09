@@ -1,0 +1,51 @@
+Command: ['/home/ysjun5656/dev/accelflow/build/reduction/reduction', '/home/ysjun5656/dev/accelflow/results/reduction/20261109T084724728270Z/depth2.json', '2', '3']
+2026-11-09 17:47:39.985 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-11-09 17:47:39.986 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-11-09 17:47:39.987 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-11-09 17:47:39.987 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-11-09 17:47:39.988 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-11-09 17:47:39.998 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-11-09 17:47:39.998 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-11-09 17:47:39.999 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-11-09 17:47:39.999 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-11-09 17:47:40.001 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-11-09 17:47:40.001 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-11-09 17:47:40.001 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-11-09 17:47:40.001 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+PASS row_sum deterministic 2,3 max_abs=0 repeats=3
+PASS row_sum zero 33,35 max_abs=0 repeats=3
+PASS row_sum ones 2,1 max_abs=0 repeats=3
+PASS row_sum ones 2,31 max_abs=0 repeats=3
+PASS row_sum ones 2,32 max_abs=0 repeats=3
+PASS row_sum ones 2,33 max_abs=0 repeats=3
+PASS row_sum ones 2,257 max_abs=0 repeats=3
+PASS row_sum ones 2,1025 max_abs=0 repeats=3
+PASS row_sum ones 2,4097 max_abs=0 repeats=3
+PASS row_sum signed_random 1,65 max_abs=0 repeats=3
+PASS row_sum signed_random 31,65 max_abs=0 repeats=3
+PASS row_sum signed_random 32,65 max_abs=0 repeats=3
+PASS row_sum signed_random 33,65 max_abs=0 repeats=3
+PASS row_sum signed_random 65,65 max_abs=0 repeats=3
+PASS row_sum signed_random 65,129 max_abs=0 repeats=3
+PASS row_sum signed_random 17,1025 max_abs=0 repeats=3
+PASS row_sum large_exact 2,1025 max_abs=0 repeats=3
+PASS row_sum cancellation 3,3 max_abs=0 repeats=3
+PASS row_sum cancellation 3,32 max_abs=0 repeats=3
+PASS row_sum cancellation 3,1025 max_abs=0 repeats=3
+PASS row_sum fractional 1,33 max_abs=0 repeats=3
+PASS row_sum fractional 33,65 max_abs=0 repeats=3
+PASS row_sum fractional 17,257 max_abs=0 repeats=3
+PASS row_sum fractional 3,1025 max_abs=4.76837e-07 repeats=3
+PASS row_sum fractional 2,4097 max_abs=4.76837e-07 repeats=3
+REDUCTION_ALL_PASS cases=25
+2026-11-09 17:47:40.459 | info     |    BuildKernels | JIT cache stats: 13/13 hits (100.0%) [13 cached, 72 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-11-09 17:47:40.459 | info     |    BuildKernels | JIT telemetry: 26 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-11-09 17:47:40.462 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-11-09 17:47:40.462 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-11-09 17:47:40.462 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-11-09 17:47:40.462 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-11-09 17:47:40.462 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-11-09 17:47:40.462 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[44033] 0.5 seconds (83.3 KHz)
+
+example_exit_code=0

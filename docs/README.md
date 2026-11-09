@@ -1,6 +1,6 @@
 # 00. 진행 순서와 문서 안내
 
-마지막 갱신: 2026-10-19. **Phase 2 K 배치 2D multicast 구현·320/640 크기 비교 완료**입니다.
+마지막 갱신: 2026-11-09. **Phase 4 RMSNorm 기준 구현·CUDA fusion 검증 완료**입니다.
 가상 Wormhole에서 결과 21 / exit code 0을 확인했습니다.
 
 ## 읽는 순서
@@ -30,6 +30,11 @@
 | 18 | [2D A/B multicast](18-2d-multicast-matmul.md) | 행/열 공유·240개 검증·98회 반복/fallback 완료 |
 | 19 | [Multicast 시간 비교](19-multicast-simulator-performance.md) | **32개 구성·96개 trials·느린 결과/변동 포함 완료** |
 | 20 | [K 배치 2D multicast](20-batched-2d-multicast-matmul.md) | 배치1/4/8·200개 검증·320/640 반복 시간 비교 완료 |
+| 21 | [CUDA MatMul 실측 비교](21-cuda-matmul-comparison.md) | naive/tiled·입력 대조·30 process·기존 회귀 188개 완료 |
+| 22 | [Row-wise Reduction](22-row-wise-reduction.md) | 단일 코어 sum·SFPU carry·50개 구성/152회 제출 검증 완료 |
+| 23 | [cudaArray·nvprof 진단](23-texture-matmul-and-profiler.md) | 입력 경로 3종·45 process·trace/legacy counter 구분 완료 |
+| 24 | [CUDA Reduction 비교](24-cuda-reduction.md) | naive/tree/shuffle·129 process·2499회 출력 검증·변동 포함 측정 완료 |
+| 25 | [RMSNorm·Fusion 비교](25-rmsnorm.md) | NPU 40개 구성·CUDA 64 process/1184회 출력 검증·PyTorch 공통 입력 20종 대조 완료 |
 
 ## 실제 진행 현황
 
@@ -59,7 +64,12 @@
 | 22 | A multicast sender/receiver·tail 동기화·기존 회귀 검사 | 완료 |
 | 23 | 2D A/B multicast·행/열/모서리 경계·기존 회귀 검사 | 완료 |
 | 24 | 독립/A-only/2D의 동일 4코어 TTSim 실행 비용 비교 | 완료 |
-| 25 | K 배치 2D multicast·320/640 크기·회귀 및 시간 비교 | **완료** |
+| 25 | K 배치 2D multicast·320/640 크기·회귀 및 시간 비교 | 완료 |
+| 26 | MatMul 결과 정리·CUDA 구현·MX150 실측·NPU 입력/정답 대조 | 완료 |
+| 27 | NPU row-wise sum·수치 경로 점검·반복/경계 검증 | 완료 |
+| 28 | cudaArray 입력 경로 비교·nvprof/CUPTI 진단 | **완료** |
+| 29 | CUDA Reduction naive/tree/shuffle·입력 대조·반복 측정 | 완료 |
+| 30 | RMSNorm CPU 기준값·CUDA 기본/fused·NPU 단일 코어·정밀도 전달 검증 | 완료 |
 
 ## TTSim 자체 설치 완료 결과
 
@@ -92,7 +102,11 @@ TT_Metal_kernel_smoke_test: PASS
 [18번](18-2d-multicast-matmul.md)에서 A/B 2차원 multicast를 구현했습니다.
 [19번](19-multicast-simulator-performance.md)에서 동일 4코어의 시간/변동/전송 모델을 비교했습니다.
 [20번](20-batched-2d-multicast-matmul.md)에서 K 배치와 320/640 크기 비교를 완료했습니다.
-다음 후보는 동일 매핑/NoC 대조, 출력 block 재사용과 multicast 결합, CUDA 실측 비교입니다.
+[21번](21-cuda-matmul-comparison.md)에서 CUDA 구현과 MX150 실측을 추가했습니다.
+[22번](22-row-wise-reduction.md)에서 NPU row-wise sum을 검증했습니다.
+[24번](24-cuda-reduction.md)에서 CUDA Reduction 3개 구현과 큰 입력 재측정을 완료했습니다.
+[25번](25-rmsnorm.md)에서 NPU RMSNorm 기준 구현과 CUDA 기본/fused 비교를 완료했습니다.
+PyTorch CPU 기준 대조까지 완료했습니다. 다음 후보는 NPU fusion·multicore RMSNorm 또는 TT-NN 기준 구현과의 대조입니다. MatMul의 추가 최적화 후보는 출력 block 재사용과 multicast 결합입니다.
 현재 재사용 효과는 소스 기반 payload 모델이며 실물 성능 측정은 아닙니다.
 
 준비·빌드·실행의 정확한 최종 설정과 로그는 [06번](06-tt-metal-build-validation.md)을 참고하세요.

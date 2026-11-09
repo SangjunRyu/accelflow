@@ -1,0 +1,1 @@
+PASS RMSNorm fused 1024x8193 max_abs=1.30572e-07

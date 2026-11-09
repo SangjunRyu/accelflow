@@ -1,0 +1,1282 @@
+[
+  {
+    "key": "perf_1024x8193_eps1e-05",
+    "variant": "unfused",
+    "trial": 2,
+    "performance": true,
+    "report": "perf_1024x8193_eps1e-05_unfused_trial2.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_1024x8193_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_1024x8193_eps1e-05_unfused_trial2.json",
+      "unfused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.3057177605802e-07,
+    "validated_outputs": 31,
+    "operator_ms": 3.9904014587402,
+    "pipeline_ms": 25.2811
+  },
+  {
+    "key": "perf_128x320_eps1e-05",
+    "variant": "fused",
+    "trial": 3,
+    "performance": true,
+    "report": "perf_128x320_eps1e-05_fused_trial3.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_128x320_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_128x320_eps1e-05_fused_trial3.json",
+      "fused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.4655784741358e-07,
+    "validated_outputs": 31,
+    "operator_ms": 0.014233599603176,
+    "pipeline_ms": 0.2187
+  },
+  {
+    "key": "deterministic_2x3_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "deterministic_2x3_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\deterministic_2x3_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\deterministic_2x3_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 4.3114269487887e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.056416001170874,
+    "pipeline_ms": 0.1039
+  },
+  {
+    "key": "mixed_3x65_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "mixed_3x65_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\mixed_3x65_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\mixed_3x65_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 5.80595667099e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.063104003667831,
+    "pipeline_ms": 0.0998
+  },
+  {
+    "key": "perf_1024x8193_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": true,
+    "report": "perf_1024x8193_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_1024x8193_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_1024x8193_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.3057177605802e-07,
+    "validated_outputs": 31,
+    "operator_ms": 3.9897392272949,
+    "pipeline_ms": 25.1908
+  },
+  {
+    "key": "zero_33x35_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "zero_33x35_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\zero_33x35_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\zero_33x35_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 0,
+    "validated_outputs": 11,
+    "operator_ms": 0.03625600039959,
+    "pipeline_ms": 0.0743
+  },
+  {
+    "key": "perf_128x320_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": true,
+    "report": "perf_128x320_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_128x320_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_128x320_eps1e-05_fused_trial1.json",
+      "fused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.4655784741358e-07,
+    "validated_outputs": 31,
+    "operator_ms": 0.016486400365829,
+    "pipeline_ms": 0.2381
+  },
+  {
+    "key": "perf_128x320_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": true,
+    "report": "perf_128x320_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_128x320_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_128x320_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.4655784741358e-07,
+    "validated_outputs": 31,
+    "operator_ms": 0.03720960021019,
+    "pipeline_ms": 0.1985
+  },
+  {
+    "key": "perf_640x320_eps1e-05",
+    "variant": "unfused",
+    "trial": 3,
+    "performance": true,
+    "report": "perf_640x320_eps1e-05_unfused_trial3.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_640x320_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_640x320_eps1e-05_unfused_trial3.json",
+      "unfused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.4655784741358e-07,
+    "validated_outputs": 31,
+    "operator_ms": 0.12698880434036,
+    "pipeline_ms": 0.7961
+  },
+  {
+    "key": "ones_1x1_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "ones_1x1_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\ones_1x1_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\ones_1x1_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 6.6432431999885e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.052607998251915,
+    "pipeline_ms": 0.0808
+  },
+  {
+    "key": "signed_1x4097_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "signed_1x4097_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\signed_1x4097_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\signed_1x4097_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 7.0957503428559e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.070592001080513,
+    "pipeline_ms": 0.4845
+  },
+  {
+    "key": "perf_640x320_eps1e-05",
+    "variant": "fused",
+    "trial": 3,
+    "performance": true,
+    "report": "perf_640x320_eps1e-05_fused_trial3.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_640x320_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_640x320_eps1e-05_fused_trial3.json",
+      "fused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.4655784741358e-07,
+    "validated_outputs": 31,
+    "operator_ms": 0.066099202632904,
+    "pipeline_ms": 0.8233
+  },
+  {
+    "key": "perf_640x320_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": true,
+    "report": "perf_640x320_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_640x320_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_640x320_eps1e-05_fused_trial1.json",
+      "fused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.4655784741358e-07,
+    "validated_outputs": 31,
+    "operator_ms": 0.066303998231888,
+    "pipeline_ms": 0.7631
+  },
+  {
+    "key": "signed_3x257_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "signed_3x257_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\signed_3x257_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\signed_3x257_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 8.92678870823e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.020896000787616,
+    "pipeline_ms": 0.1115
+  },
+  {
+    "key": "fractional_17x257_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "fractional_17x257_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\fractional_17x257_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\fractional_17x257_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.5465029967743e-07,
+    "validated_outputs": 11,
+    "operator_ms": 0.09638399630785,
+    "pipeline_ms": 0.1529
+  },
+  {
+    "key": "perf_320x4097_eps1e-05",
+    "variant": "fused",
+    "trial": 3,
+    "performance": true,
+    "report": "perf_320x4097_eps1e-05_fused_trial3.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_320x4097_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_320x4097_eps1e-05_fused_trial3.json",
+      "fused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 7.0957503428559e-08,
+    "validated_outputs": 31,
+    "operator_ms": 0.26695520877838,
+    "pipeline_ms": 3.7801
+  },
+  {
+    "key": "perf_320x4097_eps1e-05",
+    "variant": "unfused",
+    "trial": 3,
+    "performance": true,
+    "report": "perf_320x4097_eps1e-05_unfused_trial3.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_320x4097_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_320x4097_eps1e-05_unfused_trial3.json",
+      "unfused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 7.0957503428559e-08,
+    "validated_outputs": 31,
+    "operator_ms": 0.63910880088806,
+    "pipeline_ms": 4.1077
+  },
+  {
+    "key": "ones_2x32_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "ones_2x32_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\ones_2x32_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\ones_2x32_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 6.6432431999885e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.021856000646949,
+    "pipeline_ms": 0.0684
+  },
+  {
+    "key": "signed_65x129_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "signed_65x129_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\signed_65x129_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\signed_65x129_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.1146239708992e-07,
+    "validated_outputs": 11,
+    "operator_ms": 0.019680000841618,
+    "pipeline_ms": 0.11
+  },
+  {
+    "key": "signed_33x65_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "signed_33x65_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\signed_33x65_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\signed_33x65_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.1835814861527e-07,
+    "validated_outputs": 11,
+    "operator_ms": 0.080127999186516,
+    "pipeline_ms": 0.1619
+  },
+  {
+    "key": "signed_2x1025_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "signed_2x1025_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\signed_2x1025_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\signed_2x1025_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.0948908579778e-07,
+    "validated_outputs": 11,
+    "operator_ms": 0.037151999771595,
+    "pipeline_ms": 0.1965
+  },
+  {
+    "key": "ones_2x33_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "ones_2x33_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\ones_2x33_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\ones_2x33_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 6.6432431999885e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.082208000123501,
+    "pipeline_ms": 0.0938
+  },
+  {
+    "key": "zero_33x35_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "zero_33x35_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\zero_33x35_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\zero_33x35_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 0,
+    "validated_outputs": 11,
+    "operator_ms": 0.053984001278877,
+    "pipeline_ms": 0.0965
+  },
+  {
+    "key": "gamma_zero_3x35_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "gamma_zero_3x35_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\gamma_zero_3x35_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\gamma_zero_3x35_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 0,
+    "validated_outputs": 11,
+    "operator_ms": 0.046656001359224,
+    "pipeline_ms": 0.1003
+  },
+  {
+    "key": "signed_33x65_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "signed_33x65_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\signed_33x65_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\signed_33x65_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.1835814861527e-07,
+    "validated_outputs": 11,
+    "operator_ms": 0.061696000397205,
+    "pipeline_ms": 0.075
+  },
+  {
+    "key": "signed_2x1025_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "signed_2x1025_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\signed_2x1025_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\signed_2x1025_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.0948908579778e-07,
+    "validated_outputs": 11,
+    "operator_ms": 0.043007999658585,
+    "pipeline_ms": 0.1886
+  },
+  {
+    "key": "signed_31x65_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "signed_31x65_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\signed_31x65_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\signed_31x65_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.1835814861527e-07,
+    "validated_outputs": 11,
+    "operator_ms": 0.036991998553276,
+    "pipeline_ms": 0.0823
+  },
+  {
+    "key": "gamma_signed_33x65_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "gamma_signed_33x65_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\gamma_signed_33x65_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\gamma_signed_33x65_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.1835814861527e-07,
+    "validated_outputs": 11,
+    "operator_ms": 0.082464002072811,
+    "pipeline_ms": 0.1263
+  },
+  {
+    "key": "tiny_3x33_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "tiny_3x33_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\tiny_3x33_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\tiny_3x33_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 2.7665807145194e-11,
+    "validated_outputs": 11,
+    "operator_ms": 0.017888000234962,
+    "pipeline_ms": 0.0483
+  },
+  {
+    "key": "ones_2x33_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "ones_2x33_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\ones_2x33_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\ones_2x33_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 6.6432431999885e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.033023998141289,
+    "pipeline_ms": 0.0723
+  },
+  {
+    "key": "ones_2x32_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "ones_2x32_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\ones_2x32_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\ones_2x32_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 6.6432431999885e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.063648000359535,
+    "pipeline_ms": 0.1042
+  },
+  {
+    "key": "signed_1x4097_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "signed_1x4097_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\signed_1x4097_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\signed_1x4097_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 7.0957503428559e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.023552000522614,
+    "pipeline_ms": 0.4923
+  },
+  {
+    "key": "signed_31x65_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "signed_31x65_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\signed_31x65_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\signed_31x65_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.1835814861527e-07,
+    "validated_outputs": 11,
+    "operator_ms": 0.025343999266624,
+    "pipeline_ms": 0.087
+  },
+  {
+    "key": "perf_1024x8193_eps1e-05",
+    "variant": "fused",
+    "trial": 2,
+    "performance": true,
+    "report": "perf_1024x8193_eps1e-05_fused_trial2.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_1024x8193_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_1024x8193_eps1e-05_fused_trial2.json",
+      "fused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.3057177605802e-07,
+    "validated_outputs": 31,
+    "operator_ms": 1.8480640411377,
+    "pipeline_ms": 23.2558
+  },
+  {
+    "key": "perf_640x320_eps1e-05",
+    "variant": "unfused",
+    "trial": 2,
+    "performance": true,
+    "report": "perf_640x320_eps1e-05_unfused_trial2.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_640x320_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_640x320_eps1e-05_unfused_trial2.json",
+      "unfused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.4655784741358e-07,
+    "validated_outputs": 31,
+    "operator_ms": 0.12708319425583,
+    "pipeline_ms": 0.7793
+  },
+  {
+    "key": "perf_128x320_eps1e-05",
+    "variant": "unfused",
+    "trial": 3,
+    "performance": true,
+    "report": "perf_128x320_eps1e-05_unfused_trial3.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_128x320_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_128x320_eps1e-05_unfused_trial3.json",
+      "unfused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.4655784741358e-07,
+    "validated_outputs": 31,
+    "operator_ms": 0.039528000354767,
+    "pipeline_ms": 0.2197
+  },
+  {
+    "key": "perf_128x320_eps1e-05",
+    "variant": "fused",
+    "trial": 2,
+    "performance": true,
+    "report": "perf_128x320_eps1e-05_fused_trial2.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_128x320_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_128x320_eps1e-05_fused_trial2.json",
+      "fused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.4655784741358e-07,
+    "validated_outputs": 31,
+    "operator_ms": 0.075774401426315,
+    "pipeline_ms": 0.3234
+  },
+  {
+    "key": "perf_320x4097_eps1e-05",
+    "variant": "fused",
+    "trial": 2,
+    "performance": true,
+    "report": "perf_320x4097_eps1e-05_fused_trial2.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_320x4097_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_320x4097_eps1e-05_fused_trial2.json",
+      "fused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 7.0957503428559e-08,
+    "validated_outputs": 31,
+    "operator_ms": 0.26762080192566,
+    "pipeline_ms": 3.8411
+  },
+  {
+    "key": "signed_65x129_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "signed_65x129_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\signed_65x129_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\signed_65x129_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.1146239708992e-07,
+    "validated_outputs": 11,
+    "operator_ms": 0.25718399882317,
+    "pipeline_ms": 0.4
+  },
+  {
+    "key": "ones_2x31_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "ones_2x31_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\ones_2x31_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\ones_2x31_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 6.6432431999885e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.10911999642849,
+    "pipeline_ms": 0.2284
+  },
+  {
+    "key": "ones_1x1_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "ones_1x1_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\ones_1x1_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\ones_1x1_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 6.6432431999885e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.046847999095917,
+    "pipeline_ms": 0.1036
+  },
+  {
+    "key": "perf_320x4097_eps1e-05",
+    "variant": "unfused",
+    "trial": 2,
+    "performance": true,
+    "report": "perf_320x4097_eps1e-05_unfused_trial2.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_320x4097_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_320x4097_eps1e-05_unfused_trial2.json",
+      "unfused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 7.0957503428559e-08,
+    "validated_outputs": 31,
+    "operator_ms": 0.63924798965454,
+    "pipeline_ms": 4.1077
+  },
+  {
+    "key": "deterministic_2x3_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "deterministic_2x3_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\deterministic_2x3_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\deterministic_2x3_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 4.3114269487887e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.057472001761198,
+    "pipeline_ms": 0.0706
+  },
+  {
+    "key": "perf_1024x8193_eps1e-05",
+    "variant": "fused",
+    "trial": 3,
+    "performance": true,
+    "report": "perf_1024x8193_eps1e-05_fused_trial3.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_1024x8193_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_1024x8193_eps1e-05_fused_trial3.json",
+      "fused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.3057177605802e-07,
+    "validated_outputs": 31,
+    "operator_ms": 1.9983360290527,
+    "pipeline_ms": 23.5033
+  },
+  {
+    "key": "tiny_3x33_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "tiny_3x33_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\tiny_3x33_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\tiny_3x33_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 2.7665807145194e-11,
+    "validated_outputs": 11,
+    "operator_ms": 0.044224001467228,
+    "pipeline_ms": 0.0905
+  },
+  {
+    "key": "epsilon_3x33_eps0.001",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "epsilon_3x33_eps0.001_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\epsilon_3x33_eps0.001.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\epsilon_3x33_eps0.001_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.0220190709356e-10,
+    "validated_outputs": 11,
+    "operator_ms": 0.022975999861956,
+    "pipeline_ms": 0.0763
+  },
+  {
+    "key": "mixed_3x65_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "mixed_3x65_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\mixed_3x65_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\mixed_3x65_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 5.80595667099e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.036671999841928,
+    "pipeline_ms": 0.0825
+  },
+  {
+    "key": "perf_640x320_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": true,
+    "report": "perf_640x320_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_640x320_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_640x320_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.4655784741358e-07,
+    "validated_outputs": 31,
+    "operator_ms": 0.13191039562225,
+    "pipeline_ms": 0.8116
+  },
+  {
+    "key": "perf_320x4097_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": true,
+    "report": "perf_320x4097_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_320x4097_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_320x4097_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 7.0957503428559e-08,
+    "validated_outputs": 31,
+    "operator_ms": 0.64163360595703,
+    "pipeline_ms": 4.1191
+  },
+  {
+    "key": "epsilon_3x33_eps0.001",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "epsilon_3x33_eps0.001_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\epsilon_3x33_eps0.001.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\epsilon_3x33_eps0.001_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.0220190709356e-10,
+    "validated_outputs": 11,
+    "operator_ms": 0.055263999849558,
+    "pipeline_ms": 0.1001
+  },
+  {
+    "key": "perf_640x320_eps1e-05",
+    "variant": "fused",
+    "trial": 2,
+    "performance": true,
+    "report": "perf_640x320_eps1e-05_fused_trial2.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_640x320_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_640x320_eps1e-05_fused_trial2.json",
+      "fused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.4655784741358e-07,
+    "validated_outputs": 31,
+    "operator_ms": 0.072084802389145,
+    "pipeline_ms": 0.7968
+  },
+  {
+    "key": "fractional_17x257_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "fractional_17x257_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\fractional_17x257_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\fractional_17x257_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.5465029967743e-07,
+    "validated_outputs": 11,
+    "operator_ms": 0.067167997360229,
+    "pipeline_ms": 0.1292
+  },
+  {
+    "key": "gamma_signed_33x65_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "gamma_signed_33x65_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\gamma_signed_33x65_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\gamma_signed_33x65_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.1835814861527e-07,
+    "validated_outputs": 11,
+    "operator_ms": 0.021215999498963,
+    "pipeline_ms": 0.0856
+  },
+  {
+    "key": "epsilon_3x33_eps1e-06",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "epsilon_3x33_eps1e-06_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\epsilon_3x33_eps1e-06.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\epsilon_3x33_eps1e-06_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 6.0271797275302e-10,
+    "validated_outputs": 11,
+    "operator_ms": 0.041919998824596,
+    "pipeline_ms": 0.0777
+  },
+  {
+    "key": "epsilon_3x33_eps1e-06",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "epsilon_3x33_eps1e-06_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\epsilon_3x33_eps1e-06.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\epsilon_3x33_eps1e-06_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 6.0271797275302e-10,
+    "validated_outputs": 11,
+    "operator_ms": 0.040192000567913,
+    "pipeline_ms": 0.0913
+  },
+  {
+    "key": "signed_32x65_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "signed_32x65_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\signed_32x65_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\signed_32x65_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.1835814861527e-07,
+    "validated_outputs": 11,
+    "operator_ms": 0.066047996282578,
+    "pipeline_ms": 0.0764
+  },
+  {
+    "key": "ones_2x31_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "ones_2x31_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\ones_2x31_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\ones_2x31_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 6.6432431999885e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.063167996704578,
+    "pipeline_ms": 0.0754
+  },
+  {
+    "key": "perf_320x4097_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": true,
+    "report": "perf_320x4097_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_320x4097_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_320x4097_eps1e-05_fused_trial1.json",
+      "fused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 7.0957503428559e-08,
+    "validated_outputs": 31,
+    "operator_ms": 0.2779648065567,
+    "pipeline_ms": 3.8202
+  },
+  {
+    "key": "perf_128x320_eps1e-05",
+    "variant": "unfused",
+    "trial": 2,
+    "performance": true,
+    "report": "perf_128x320_eps1e-05_unfused_trial2.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_128x320_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_128x320_eps1e-05_unfused_trial2.json",
+      "unfused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.4655784741358e-07,
+    "validated_outputs": 31,
+    "operator_ms": 0.036776000261307,
+    "pipeline_ms": 0.2155
+  },
+  {
+    "key": "perf_1024x8193_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": true,
+    "report": "perf_1024x8193_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_1024x8193_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_1024x8193_eps1e-05_fused_trial1.json",
+      "fused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.3057177605802e-07,
+    "validated_outputs": 31,
+    "operator_ms": 1.97447681427,
+    "pipeline_ms": 23.6349
+  },
+  {
+    "key": "perf_1024x8193_eps1e-05",
+    "variant": "unfused",
+    "trial": 3,
+    "performance": true,
+    "report": "perf_1024x8193_eps1e-05_unfused_trial3.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\perf_1024x8193_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\perf_1024x8193_eps1e-05_unfused_trial3.json",
+      "unfused",
+      "15",
+      "20"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.3057177605802e-07,
+    "validated_outputs": 31,
+    "operator_ms": 3.9901695251465,
+    "pipeline_ms": 25.4678
+  },
+  {
+    "key": "gamma_zero_3x35_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "gamma_zero_3x35_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\gamma_zero_3x35_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\gamma_zero_3x35_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 0,
+    "validated_outputs": 11,
+    "operator_ms": 0.04143999889493,
+    "pipeline_ms": 0.0796
+  },
+  {
+    "key": "signed_3x257_eps1e-05",
+    "variant": "unfused",
+    "trial": 1,
+    "performance": false,
+    "report": "signed_3x257_eps1e-05_unfused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\signed_3x257_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\signed_3x257_eps1e-05_unfused_trial1.json",
+      "unfused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 8.92678870823e-08,
+    "validated_outputs": 11,
+    "operator_ms": 0.040991999208927,
+    "pipeline_ms": 0.1031
+  },
+  {
+    "key": "signed_32x65_eps1e-05",
+    "variant": "fused",
+    "trial": 1,
+    "performance": false,
+    "report": "signed_32x65_eps1e-05_fused_trial1.json",
+    "command": [
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\rmsnorm.exe",
+      "C:\\Users\\ysjun5656\\AppData\\Local\\AccelFlow\\cuda-rmsnorm\\fixtures\\signed_32x65_eps1e-05.bin",
+      "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow\\results\\rmsnorm\\20261109-rmsnorm\\signed_32x65_eps1e-05_fused_trial1.json",
+      "fused",
+      "5",
+      "1"
+    ],
+    "exit_code": 0,
+    "max_abs_error": 1.1835814861527e-07,
+    "validated_outputs": 11,
+    "operator_ms": 0.020959999412298,
+    "pipeline_ms": 0.0536
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "grade": "B",
+  "automatic_gate_exit_code": 1,
+  "manual_review": "accepted: two footnote_anchor warnings are unchanged mathematical 32) expressions; numbers and citations preserved",
+  "change_rate_percent": 0.06,
+  "edits": "nine commas removed",
+  "self_checks_passed": 6,
+  "route": "light",
+  "warnings": [
+    "automatic footnote-anchor false positives remain"
+  ]
+}

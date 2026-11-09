@@ -1,0 +1,23 @@
+{
+  "passed": false,
+  "operator": "row_sum",
+  "scope": "single core, last dimension only; no hardware performance claim",
+  "tt_metal_revision": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "host": "Linux-5.15.90.1sangjunryu20195834+-x86_64-with-glibc2.39",
+  "compiler": "Ubuntu clang version 20.1.2 (0ubuntu1~24.04.3)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm-20/bin\n",
+  "meminfo_before": "MemTotal:        3962484 kB\nMemFree:         1868656 kB\nMemAvailable:    2897840 kB\nBuffers:          118700 kB\nCached:           969520 kB\nSwapCached:            0 kB\nActive:           183084 kB\nInactive:        1383304 kB\nActive(anon):       3424 kB\nInactive(anon):   478832 kB\nActive(file):     179660 kB\nInactive(file):   904472 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1048576 kB\nDirty:                88 kB\nWriteback:             0 kB\nAnonPages:        476964 kB\nMapped:           179056 kB\nShmem:              4244 kB\nKReclaimable:     229336 kB\nSlab:             277700 kB\nSReclaimable:     229336 kB\nSUnreclaim:        48364 kB\nKernelStack:        4272 kB\nPageTables:         8712 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:    1341980 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        7208 kB\nVmallocChunk:          0 kB\nPercpu:             3424 kB\nAnonHugePages:    120832 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      117760 kB\nDirectMap2M:     4018176 kB\nDirectMap1G:     8388608 kB\n",
+  "source_sha256": {
+    "npu/reduction/reduction.cpp": "56b67a104a2f19ecd8632564effee68a907ac5af39c7d14de5ce460c81911871",
+    "npu/reduction/kernels/writer.cpp": "88dfe29fe4b8fdf6a0ea3ff44dbd7f757b0f5aea9a4e8cd1821cb6ea09972ec8",
+    "npu/reduction/kernels/compute.cpp": "fbeb1edceba430a77c5a78e04147136b70c5230cd336cfc34d02e3c7cf8183a7",
+    "npu/reduction/kernels/reader.cpp": "bdc9258fe8afd4ed1d49f03dcc867195533a0fd185cd9049edc0e5a8d2b6e72b",
+    "npu/reduction/CMakeLists.txt": "2f990b6c8cb87f43eadc824367dca78d65c32e00b4db4bd723cd60ae80314fb6",
+    "npu/vector_add/common.hpp": "695681e02c9fa7dd8441067460df4e4c566da3f11392402bb4ecf984fe9c2df2",
+    "tools/report/build_reduction.py": "0d6d58aa83f4d1283ee44e7c460d742435ad724002e1eafe9480db1cfab225ef",
+    "tools/report/run_reduction.py": "d0c899c22e11898a4c6bc70f58a78f07cb0fd37d5e220d4f3459e8b77911586d",
+    "scripts/run_reduction.sh": "550c6cc2497fe9b124a79d8b51448454120e7bdd18d9bc0b2b63ad901b73faf8"
+  },
+  "runs": [],
+  "build_exit_code": 1
+}

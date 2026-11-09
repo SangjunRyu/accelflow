@@ -1,0 +1,299 @@
+2026-11-09 19:10:56.385 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-11-09 19:10:56.388 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-11-09 19:10:56.389 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-11-09 19:10:56.391 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-11-09 19:10:56.394 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-11-09 19:10:56.462 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-11-09 19:10:56.463 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-11-09 19:10:56.464 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-11-09 19:10:56.465 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-11-09 19:10:56.468 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-11-09 19:10:56.468 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-11-09 19:10:56.474 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-11-09 19:10:56.475 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+2026-11-09 19:10:57.326 | error    |    BuildKernels | trisc2 compile failure -- cmd: /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/runtime/sfpi/compiler/bin/riscv-tt-elf-g++ -O3 -std=c++17 -ftt-nttp -ftt-constinit -ftt-consteval -ftt-no-dyninit -flto=1 -flto-partition=one -ffast-math -fno-finite-math-only -fsigned-zeros -fno-associative-math -fno-exceptions -fno-rtti -fno-use-cxa-atexit -g -MMD -Wall -Werror -Wno-error=deprecated-declarations -Wno-error=multistatement-macros -Wno-error=parentheses -Wno-error=unused-but-set-variable -Wno-unused-variable -Wno-unused-function --param=min-pagesize=0 -mcpu=tt-wh-tensix -Winvalid-pch -Wno-error=invalid-pch -I. -I.. -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/ -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/ttnn -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/ttnn/cpp -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/inc -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/tt-llk/common -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/tt-llk/tools/include -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hostdevcommon/api -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/api/ -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/runtime/sfpi/include -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/common -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/llk_io -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/inc/internal/tt-1xx -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/inc/internal/tt-1xx/wormhole -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/inc/internal/tt-1xx/wormhole/wormhole_b0_defines -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/inc/internal/tt-1xx/wormhole/noc -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/tt-llk/tt_llk_wormhole_b0/common/inc -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/tt-llk/tt_llk_wormhole_b0/llk_lib -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/llk_api -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/llk_api/llk_sfpu -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/firmware/src/tt-1xx -I/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels -include /home/ysjun5656/.cache/tt-metal-cache/9059419178545743253/pch/51e0ee39bd8ae68a/pch.h -DIS_NOT_POW2_NUM_DRAM_BANKS=1 -DIS_NOT_POW2_NUM_L1_BANKS=1 -DNUM_DRAM_BANKS=12 -DNUM_L1_BANKS=72 -DPCIE_NOC_X=0 -DPCIE_NOC_Y=3 -DTENSIX_FIRMWARE -DLOCAL_MEM_EN=0 -DROUTING_FW_ENABLED -DPROCESSOR_INDEX=4 -DUCK_CHLKC_PACK -DCOMPILE_FOR_TRISC=2 -DPROGRAMMABLE_CORE_TYPE=0 -DARCH_WORMHOLE -DDISPATCH_MESSAGE_ADDR=4290183304 -DKERNEL_BUILD -DFULL_KERNEL_NAME="square/15733084601320980598/" -c -o /home/ysjun5656/.cache/tt-metal-cache/9059419178545743253/kernels/square/15733084601320980598/trisc2/trisck.4989329695860923178_57608.o /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/firmware/src/tt-1xx/trisck.cc -MF /home/ysjun5656/.cache/tt-metal-cache/9059419178545743253/kernels/square/15733084601320980598/trisc2/trisck.4989329695860923178_57608.d (build.cpp:142)
+2026-11-09 19:10:57.326 | critical |          Always | TT_THROW: trisc2 build failed. Log: In file included from ../chlkc_pack.cpp:4,
+                 from /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/common/chlkc_list.h:21,
+                 from /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/firmware/src/tt-1xx/trisck.cc:13:
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp: In function 'void kernel_main()':
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:9:28: error: 'get_arg_val' was not declared in this scope
+    9 |     const uint32_t tiles = get_arg_val<uint32_t>(0);
+      |                            ^~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:9:48: error: expected primary-expression before '>' token
+    9 |     const uint32_t tiles = get_arg_val<uint32_t>(0);
+      |                                                ^
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:11:9: error: 'cb_wait_front' was not declared in this scope
+   11 |         cb_wait_front(0, 1);
+      |         ^~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:12:9: error: 'tile_regs_acquire' was not declared in this scope
+   12 |         tile_regs_acquire();
+      |         ^~~~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:17:9: error: 'tile_regs_commit' was not declared in this scope
+   17 |         tile_regs_commit();
+      |         ^~~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:18:9: error: 'tile_regs_wait' was not declared in this scope
+   18 |         tile_regs_wait();
+      |         ^~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:19:9: error: 'cb_reserve_back' was not declared in this scope
+   19 |         cb_reserve_back(16, 1);
+      |         ^~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:20:9: error: 'pack_tile' was not declared in this scope; did you mean 'pack_field'?
+   20 |         pack_tile(0, 16);
+      |         ^~~~~~~~~
+      |         pack_field
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:21:9: error: 'cb_push_back' was not declared in this scope
+   21 |         cb_push_back(16, 1);
+      |         ^~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:22:9: error: 'tile_regs_release' was not declared in this scope
+   22 |         tile_regs_release();
+      |         ^~~~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:23:9: error: 'cb_pop_front' was not declared in this scope
+   23 |         cb_pop_front(0, 1);
+      |         ^~~~~~~~~~~~
+ (assert.hpp:104)
+2026-11-09 19:10:57.436 | error    |    BuildKernels | trisc0 compile failure -- cmd: /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/runtime/sfpi/compiler/bin/riscv-tt-elf-g++ -O3 -std=c++17 -ftt-nttp -ftt-constinit -ftt-consteval -ftt-no-dyninit -flto=1 -flto-partition=one -ffast-math -fno-finite-math-only -fsigned-zeros -fno-associative-math -fno-exceptions -fno-rtti -fno-use-cxa-atexit -g -MMD -Wall -Werror -Wno-error=deprecated-declarations -Wno-error=multistatement-macros -Wno-error=parentheses -Wno-error=unused-but-set-variable -Wno-unused-variable -Wno-unused-function --param=min-pagesize=0 -mcpu=tt-wh-tensix -Winvalid-pch -Wno-error=invalid-pch -I. -I.. -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/ -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/ttnn -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/ttnn/cpp -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/inc -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/tt-llk/common -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/tt-llk/tools/include -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hostdevcommon/api -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/api/ -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/runtime/sfpi/include -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/common -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/llk_io -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/inc/internal/tt-1xx -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/inc/internal/tt-1xx/wormhole -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/inc/internal/tt-1xx/wormhole/wormhole_b0_defines -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/inc/internal/tt-1xx/wormhole/noc -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/tt-llk/tt_llk_wormhole_b0/common/inc -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/tt-llk/tt_llk_wormhole_b0/llk_lib -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/llk_api -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/llk_api/llk_sfpu -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/firmware/src/tt-1xx -I/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels -include /home/ysjun5656/.cache/tt-metal-cache/9059419178545743253/pch/51e0ee39bd8ae68a/pch.h -DIS_NOT_POW2_NUM_DRAM_BANKS=1 -DIS_NOT_POW2_NUM_L1_BANKS=1 -DNUM_DRAM_BANKS=12 -DNUM_L1_BANKS=72 -DPCIE_NOC_X=0 -DPCIE_NOC_Y=3 -DTENSIX_FIRMWARE -DLOCAL_MEM_EN=0 -DROUTING_FW_ENABLED -DPROCESSOR_INDEX=2 -DUCK_CHLKC_UNPACK -DCOMPILE_FOR_TRISC=0 -DPROGRAMMABLE_CORE_TYPE=0 -DARCH_WORMHOLE -DDISPATCH_MESSAGE_ADDR=4290183304 -DKERNEL_BUILD -DFULL_KERNEL_NAME="square/15733084601320980598/" -c -o /home/ysjun5656/.cache/tt-metal-cache/9059419178545743253/kernels/square/15733084601320980598/trisc0/trisck.4989329695860923178_57608.o /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/firmware/src/tt-1xx/trisck.cc -MF /home/ysjun5656/.cache/tt-metal-cache/9059419178545743253/kernels/square/15733084601320980598/trisc0/trisck.4989329695860923178_57608.d (build.cpp:142)
+2026-11-09 19:10:57.436 | critical |          Always | TT_THROW: trisc0 build failed. Log: In file included from ../chlkc_unpack.cpp:4,
+                 from /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/common/chlkc_list.h:26,
+                 from /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/firmware/src/tt-1xx/trisck.cc:13:
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp: In function 'void kernel_main()':
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:9:28: error: 'get_arg_val' was not declared in this scope
+    9 |     const uint32_t tiles = get_arg_val<uint32_t>(0);
+      |                            ^~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:9:48: error: expected primary-expression before '>' token
+    9 |     const uint32_t tiles = get_arg_val<uint32_t>(0);
+      |                                                ^
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:11:9: error: 'cb_wait_front' was not declared in this scope
+   11 |         cb_wait_front(0, 1);
+      |         ^~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:12:9: error: 'tile_regs_acquire' was not declared in this scope
+   12 |         tile_regs_acquire();
+      |         ^~~~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:17:9: error: 'tile_regs_commit' was not declared in this scope
+   17 |         tile_regs_commit();
+      |         ^~~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:18:9: error: 'tile_regs_wait' was not declared in this scope
+   18 |         tile_regs_wait();
+      |         ^~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:19:9: error: 'cb_reserve_back' was not declared in this scope
+   19 |         cb_reserve_back(16, 1);
+      |         ^~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:20:9: error: 'pack_tile' was not declared in this scope; did you mean 'pack_field'?
+   20 |         pack_tile(0, 16);
+      |         ^~~~~~~~~
+      |         pack_field
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:21:9: error: 'cb_push_back' was not declared in this scope
+   21 |         cb_push_back(16, 1);
+      |         ^~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:22:9: error: 'tile_regs_release' was not declared in this scope
+   22 |         tile_regs_release();
+      |         ^~~~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:23:9: error: 'cb_pop_front' was not declared in this scope
+   23 |         cb_pop_front(0, 1);
+      |         ^~~~~~~~~~~~
+ (assert.hpp:104)
+2026-11-09 19:10:57.514 | error    |    BuildKernels | trisc1 compile failure -- cmd: /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/runtime/sfpi/compiler/bin/riscv-tt-elf-g++ -O3 -std=c++17 -ftt-nttp -ftt-constinit -ftt-consteval -ftt-no-dyninit -flto=1 -flto-partition=one -ffast-math -fno-finite-math-only -fsigned-zeros -fno-associative-math -fno-exceptions -fno-rtti -fno-use-cxa-atexit -g -MMD -Wall -Werror -Wno-error=deprecated-declarations -Wno-error=multistatement-macros -Wno-error=parentheses -Wno-error=unused-but-set-variable -Wno-unused-variable -Wno-unused-function --param=min-pagesize=0 -mcpu=tt-wh-tensix -Winvalid-pch -Wno-error=invalid-pch -I. -I.. -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/ -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/ttnn -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/ttnn/cpp -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/inc -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/tt-llk/common -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/tt-llk/tools/include -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hostdevcommon/api -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/api/ -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/runtime/sfpi/include -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/common -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/llk_io -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/inc/internal/tt-1xx -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/inc/internal/tt-1xx/wormhole -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/inc/internal/tt-1xx/wormhole/wormhole_b0_defines -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/inc/internal/tt-1xx/wormhole/noc -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/tt-llk/tt_llk_wormhole_b0/common/inc -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/tt-llk/tt_llk_wormhole_b0/llk_lib -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/llk_api -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/llk_api/llk_sfpu -I/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/firmware/src/tt-1xx -I/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels -include /home/ysjun5656/.cache/tt-metal-cache/9059419178545743253/pch/51e0ee39bd8ae68a/pch.h -DIS_NOT_POW2_NUM_DRAM_BANKS=1 -DIS_NOT_POW2_NUM_L1_BANKS=1 -DNUM_DRAM_BANKS=12 -DNUM_L1_BANKS=72 -DPCIE_NOC_X=0 -DPCIE_NOC_Y=3 -DTENSIX_FIRMWARE -DLOCAL_MEM_EN=0 -DROUTING_FW_ENABLED -DPROCESSOR_INDEX=3 -DUCK_CHLKC_MATH -DCOMPILE_FOR_TRISC=1 -DPROGRAMMABLE_CORE_TYPE=0 -DARCH_WORMHOLE -DDISPATCH_MESSAGE_ADDR=4290183304 -DKERNEL_BUILD -DFULL_KERNEL_NAME="square/15733084601320980598/" -c -o /home/ysjun5656/.cache/tt-metal-cache/9059419178545743253/kernels/square/15733084601320980598/trisc1/trisck.4989329695860923178_57608.o /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/firmware/src/tt-1xx/trisck.cc -MF /home/ysjun5656/.cache/tt-metal-cache/9059419178545743253/kernels/square/15733084601320980598/trisc1/trisck.4989329695860923178_57608.d (build.cpp:142)
+2026-11-09 19:10:57.514 | critical |          Always | TT_THROW: trisc1 build failed. Log: In file included from ../chlkc_math.cpp:4,
+                 from /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/common/chlkc_list.h:16,
+                 from /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/firmware/src/tt-1xx/trisck.cc:13:
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp: In function 'void kernel_main()':
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:9:28: error: 'get_arg_val' was not declared in this scope
+    9 |     const uint32_t tiles = get_arg_val<uint32_t>(0);
+      |                            ^~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:9:48: error: expected primary-expression before '>' token
+    9 |     const uint32_t tiles = get_arg_val<uint32_t>(0);
+      |                                                ^
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:11:9: error: 'cb_wait_front' was not declared in this scope
+   11 |         cb_wait_front(0, 1);
+      |         ^~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:12:9: error: 'tile_regs_acquire' was not declared in this scope
+   12 |         tile_regs_acquire();
+      |         ^~~~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:17:9: error: 'tile_regs_commit' was not declared in this scope
+   17 |         tile_regs_commit();
+      |         ^~~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:18:9: error: 'tile_regs_wait' was not declared in this scope
+   18 |         tile_regs_wait();
+      |         ^~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:19:9: error: 'cb_reserve_back' was not declared in this scope
+   19 |         cb_reserve_back(16, 1);
+      |         ^~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:20:9: error: 'pack_tile' was not declared in this scope; did you mean 'pack_field'?
+   20 |         pack_tile(0, 16);
+      |         ^~~~~~~~~
+      |         pack_field
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:21:9: error: 'cb_push_back' was not declared in this scope
+   21 |         cb_push_back(16, 1);
+      |         ^~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:22:9: error: 'tile_regs_release' was not declared in this scope
+   22 |         tile_regs_release();
+      |         ^~~~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:23:9: error: 'cb_pop_front' was not declared in this scope
+   23 |         cb_pop_front(0, 1);
+      |         ^~~~~~~~~~~~
+ (assert.hpp:104)
+2026-11-09 19:10:57.521 | critical |          Always | TT_THROW: Failed to generate binaries for square TT_THROW @ /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/jit_build/build.cpp:149: tt::exception
+info:
+trisc0 build failed. Log: In file included from ../chlkc_unpack.cpp:4,
+                 from /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/common/chlkc_list.h:26,
+                 from /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/firmware/src/tt-1xx/trisck.cc:13:
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp: In function 'void kernel_main()':
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:9:28: error: 'get_arg_val' was not declared in this scope
+    9 |     const uint32_t tiles = get_arg_val<uint32_t>(0);
+      |                            ^~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:9:48: error: expected primary-expression before '>' token
+    9 |     const uint32_t tiles = get_arg_val<uint32_t>(0);
+      |                                                ^
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:11:9: error: 'cb_wait_front' was not declared in this scope
+   11 |         cb_wait_front(0, 1);
+      |         ^~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:12:9: error: 'tile_regs_acquire' was not declared in this scope
+   12 |         tile_regs_acquire();
+      |         ^~~~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:17:9: error: 'tile_regs_commit' was not declared in this scope
+   17 |         tile_regs_commit();
+      |         ^~~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:18:9: error: 'tile_regs_wait' was not declared in this scope
+   18 |         tile_regs_wait();
+      |         ^~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:19:9: error: 'cb_reserve_back' was not declared in this scope
+   19 |         cb_reserve_back(16, 1);
+      |         ^~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:20:9: error: 'pack_tile' was not declared in this scope; did you mean 'pack_field'?
+   20 |         pack_tile(0, 16);
+      |         ^~~~~~~~~
+      |         pack_field
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:21:9: error: 'cb_push_back' was not declared in this scope
+   21 |         cb_push_back(16, 1);
+      |         ^~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:22:9: error: 'tile_regs_release' was not declared in this scope
+   22 |         tile_regs_release();
+      |         ^~~~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:23:9: error: 'cb_pop_front' was not declared in this scope
+   23 |         cb_pop_front(0, 1);
+      |         ^~~~~~~~~~~~
+
+backtrace:
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x4f3889) [0x7f591401f889]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x9259f0) [0x7f59144519f0]
+ --- tt::tt_metal::JitBuildState::compile_one(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, tt::tt_metal::JitBuildSettings const*, unsigned long) const
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x94cb44) [0x7f5914478b44]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x94cae9) [0x7f5914478ae9]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x4fc207) [0x7f5914028207]
+ --- /lib/x86_64-linux-gnu/libc.so.6(+0xa1fb3) [0x7f591321bfb3]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x4fc072) [0x7f5914028072]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x94c921) [0x7f5914478921]
+ --- auto tt::tt_metal::detail::async<std::function<void ()> const&>(std::function<void ()> const&)
+ --- tt::tt_metal::launch_build_step(std::function<void ()> const&, std::vector<std::shared_future<void>, std::allocator<std::shared_future<void> > >&)
+ --- tt::tt_metal::JitBuildState::compile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, tt::tt_metal::JitBuildSettings const*, bool) const
+ --- tt::tt_metal::JitBuildState::build(tt::tt_metal::JitBuildSettings const*, std::span<tt::tt_metal::JitBuildState const* const, 18446744073709551615ul>) const
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x94cb44) [0x7f5914478b44]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x94cae9) [0x7f5914478ae9]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x4fc207) [0x7f5914028207]
+ --- /lib/x86_64-linux-gnu/libc.so.6(+0xa1fb3) [0x7f591321bfb3]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x4fc072) [0x7f5914028072]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x94c921) [0x7f5914478921]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x616205) [0x7f5914142205]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x614d21) [0x7f5914140d21]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x614219) [0x7f5914140219]
+ --- /lib/x86_64-linux-gnu/libstdc++.so.6(+0xecdb4) [0x7f5913590db4]
+ --- /lib/x86_64-linux-gnu/libc.so.6(+0x9cb84) [0x7f5913216b84]
+ --- /lib/x86_64-linux-gnu/libc.so.6(+0x129ecc) [0x7f59132a3ecc]
+ (assert.hpp:104)
+TT_THROW @ /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/impl/program/program.cpp:340: tt::exception
+info:
+Failed to generate binaries for square TT_THROW @ /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/jit_build/build.cpp:149: tt::exception
+info:
+trisc0 build failed. Log: In file included from ../chlkc_unpack.cpp:4,
+                 from /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/ckernels/wormhole_b0/metal/common/chlkc_list.h:26,
+                 from /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hw/firmware/src/tt-1xx/trisck.cc:13:
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp: In function 'void kernel_main()':
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:9:28: error: 'get_arg_val' was not declared in this scope
+    9 |     const uint32_t tiles = get_arg_val<uint32_t>(0);
+      |                            ^~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:9:48: error: expected primary-expression before '>' token
+    9 |     const uint32_t tiles = get_arg_val<uint32_t>(0);
+      |                                                ^
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:11:9: error: 'cb_wait_front' was not declared in this scope
+   11 |         cb_wait_front(0, 1);
+      |         ^~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:12:9: error: 'tile_regs_acquire' was not declared in this scope
+   12 |         tile_regs_acquire();
+      |         ^~~~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:17:9: error: 'tile_regs_commit' was not declared in this scope
+   17 |         tile_regs_commit();
+      |         ^~~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:18:9: error: 'tile_regs_wait' was not declared in this scope
+   18 |         tile_regs_wait();
+      |         ^~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:19:9: error: 'cb_reserve_back' was not declared in this scope
+   19 |         cb_reserve_back(16, 1);
+      |         ^~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:20:9: error: 'pack_tile' was not declared in this scope; did you mean 'pack_field'?
+   20 |         pack_tile(0, 16);
+      |         ^~~~~~~~~
+      |         pack_field
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:21:9: error: 'cb_push_back' was not declared in this scope
+   21 |         cb_push_back(16, 1);
+      |         ^~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:22:9: error: 'tile_regs_release' was not declared in this scope
+   22 |         tile_regs_release();
+      |         ^~~~~~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/rmsnorm/kernels/square.cpp:23:9: error: 'cb_pop_front' was not declared in this scope
+   23 |         cb_pop_front(0, 1);
+      |         ^~~~~~~~~~~~
+
+backtrace:
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x4f3889) [0x7f591401f889]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x9259f0) [0x7f59144519f0]
+ --- tt::tt_metal::JitBuildState::compile_one(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, tt::tt_metal::JitBuildSettings const*, unsigned long) const
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x94cb44) [0x7f5914478b44]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x94cae9) [0x7f5914478ae9]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x4fc207) [0x7f5914028207]
+ --- /lib/x86_64-linux-gnu/libc.so.6(+0xa1fb3) [0x7f591321bfb3]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x4fc072) [0x7f5914028072]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x94c921) [0x7f5914478921]
+ --- auto tt::tt_metal::detail::async<std::function<void ()> const&>(std::function<void ()> const&)
+ --- tt::tt_metal::launch_build_step(std::function<void ()> const&, std::vector<std::shared_future<void>, std::allocator<std::shared_future<void> > >&)
+ --- tt::tt_metal::JitBuildState::compile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, tt::tt_metal::JitBuildSettings const*, bool) const
+ --- tt::tt_metal::JitBuildState::build(tt::tt_metal::JitBuildSettings const*, std::span<tt::tt_metal::JitBuildState const* const, 18446744073709551615ul>) const
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x94cb44) [0x7f5914478b44]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x94cae9) [0x7f5914478ae9]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x4fc207) [0x7f5914028207]
+ --- /lib/x86_64-linux-gnu/libc.so.6(+0xa1fb3) [0x7f591321bfb3]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x4fc072) [0x7f5914028072]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x94c921) [0x7f5914478921]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x616205) [0x7f5914142205]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x614d21) [0x7f5914140d21]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x614219) [0x7f5914140219]
+ --- /lib/x86_64-linux-gnu/libstdc++.so.6(+0xecdb4) [0x7f5913590db4]
+ --- /lib/x86_64-linux-gnu/libc.so.6(+0x9cb84) [0x7f5913216b84]
+ --- /lib/x86_64-linux-gnu/libc.so.6(+0x129ecc) [0x7f59132a3ecc]
+
+backtrace:
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x6cc5e9) [0x7f59141f85e9]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x6a6939) [0x7f59141d2939]
+ --- tt::tt_metal::JitBuildCache::build_once(unsigned long, std::function<void ()> const&)
+ --- tt::tt_metal::jit_build_once(unsigned long, std::function<void ()> const&)
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x6a6469) [0x7f59141d2469]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x94cb44) [0x7f5914478b44]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x94cae9) [0x7f5914478ae9]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x4fc207) [0x7f5914028207]
+ --- /lib/x86_64-linux-gnu/libc.so.6(+0xa1fb3) [0x7f591321bfb3]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x4fc072) [0x7f5914028072]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x94c921) [0x7f5914478921]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x616205) [0x7f5914142205]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x614d21) [0x7f5914140d21]
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x614219) [0x7f5914140219]
+ --- /lib/x86_64-linux-gnu/libstdc++.so.6(+0xecdb4) [0x7f5913590db4]
+ --- /lib/x86_64-linux-gnu/libc.so.6(+0x9cb84) [0x7f5913216b84]
+ --- /lib/x86_64-linux-gnu/libc.so.6(+0x129ecc) [0x7f59132a3ecc]
+
+2026-11-09 19:10:57.963 | info     |    BuildKernels | JIT cache stats: 8/10 hits (80.0%) [8 cached, 0 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-11-09 19:10:57.963 | info     |    BuildKernels | JIT telemetry: 9 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-11-09 19:10:57.966 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-11-09 19:10:57.966 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-11-09 19:10:57.966 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-11-09 19:10:57.966 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-11-09 19:10:57.966 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-11-09 19:10:57.966 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[3856] 0.3 seconds (11.2 KHz)

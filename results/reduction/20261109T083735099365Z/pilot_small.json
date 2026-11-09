@@ -1,0 +1,80 @@
+{
+  "accumulation_dtype": "FP32",
+  "backend": "TTSim Wormhole",
+  "cases": [
+    {
+      "all_submission_outputs_equal": true,
+      "atol": 0.0,
+      "cb_capacity_bytes_model": 8192,
+      "core_count": 1,
+      "destination_tile_slots_max": 1,
+      "device_output_shape": [
+        32,
+        32
+      ],
+      "dram_read_payload_bytes_model": 4096,
+      "dram_write_payload_bytes_model": 4096,
+      "input_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 2048,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 2048,
+        "page_bytes": 2048,
+        "pages": 1
+      },
+      "input_fingerprint": 13477532300641617856,
+      "input_tile_reads_model": 1,
+      "intermediate_pack_calls_model": 0,
+      "layout_matches_official_tilizer": true,
+      "logical_output_shape": [
+        2,
+        1
+      ],
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "source-derived, not hardware counters",
+      "name": "deterministic",
+      "output_buffer": {
+        "aligned_page_bytes": 4096,
+        "aligned_size_bytes": 4096,
+        "aligned_size_per_bank_bytes": 4096,
+        "logical_bytes": 4096,
+        "page_bytes": 4096,
+        "pages": 1
+      },
+      "output_fingerprint": 1140954159836347922,
+      "output_padding_and_sparse_columns_zero": true,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 1,
+      "padded_hw": [
+        32,
+        32
+      ],
+      "passed": true,
+      "reduce_tile_calls_model": 1,
+      "repetitions": 1,
+      "row_sums": [
+        6.0,
+        15.0
+      ],
+      "rtol": 0.0,
+      "scaler_tile_reads_model": 1,
+      "shape_hw": [
+        2,
+        3
+      ],
+      "tile_grid_hw": [
+        1,
+        1
+      ]
+    }
+  ],
+  "cb_depth": 1,
+  "input_dtype": "BF16",
+  "operator": "row_sum",
+  "output_dtype": "FP32",
+  "passed": true,
+  "reference": "FP64 sum of quantized BF16 input",
+  "repeats": 1,
+  "seed": 2026
+}

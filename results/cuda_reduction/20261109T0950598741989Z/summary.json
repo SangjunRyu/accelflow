@@ -1,0 +1,148 @@
+{
+  "passed": true,
+  "timestamp_utc": "2026-11-09T09:54:42.914471+00:00",
+  "processes": 111,
+  "npu_input_cases": 25,
+  "cuda_only_performance_cases": 4,
+  "trials": 3,
+  "validated_outputs": 1941,
+  "max_abs_error": 1.9073486328125e-06,
+  "rows": [
+    {
+      "key": "perf_integer_128x320",
+      "variants": {
+        "naive": {
+          "kernel_ms": 0.94733123779297,
+          "pipeline_ms": 3.5627,
+          "process_medians_ms": [
+            1.8951648712158,
+            0.94733123779297,
+            0.65590081214905
+          ]
+        },
+        "tree": {
+          "kernel_ms": 0.60510878562927,
+          "pipeline_ms": 3.4462,
+          "process_medians_ms": [
+            0.60510878562927,
+            0.5642303943634,
+            0.60564160346985
+          ]
+        },
+        "shuffle": {
+          "kernel_ms": 0.71306080818176,
+          "pipeline_ms": 3.6559,
+          "process_medians_ms": [
+            0.71306080818176,
+            0.70387997627258,
+            0.82115364074707
+          ]
+        }
+      }
+    },
+    {
+      "key": "perf_integer_640x320",
+      "variants": {
+        "naive": {
+          "kernel_ms": 0.8312352180481,
+          "pipeline_ms": 2.9095,
+          "process_medians_ms": [
+            3.4029918670654,
+            0.19510560035706,
+            0.8312352180481
+          ]
+        },
+        "tree": {
+          "kernel_ms": 3.6710655212402,
+          "pipeline_ms": 6.6004,
+          "process_medians_ms": [
+            3.6710655212402,
+            6.8993873596191,
+            3.3101440429688
+          ]
+        },
+        "shuffle": {
+          "kernel_ms": 0.21875200271606,
+          "pipeline_ms": 0.7048,
+          "process_medians_ms": [
+            0.71767201423645,
+            0.042966398596764,
+            0.21875200271606
+          ]
+        }
+      }
+    },
+    {
+      "key": "perf_integer_320x4097",
+      "variants": {
+        "naive": {
+          "kernel_ms": 2.6534864425659,
+          "pipeline_ms": 9.4785,
+          "process_medians_ms": [
+            1.4859583854675,
+            2.6534864425659,
+            19.639315795898
+          ]
+        },
+        "tree": {
+          "kernel_ms": 1.4943759918213,
+          "pipeline_ms": 3.3807,
+          "process_medians_ms": [
+            1.1375184059143,
+            1.4943759918213,
+            1.6817535400391
+          ]
+        },
+        "shuffle": {
+          "kernel_ms": 1.7816415786743,
+          "pipeline_ms": 3.996,
+          "process_medians_ms": [
+            0.67491521835327,
+            1.7816415786743,
+            2.8106672286987
+          ]
+        }
+      }
+    },
+    {
+      "key": "perf_integer_1024x8193",
+      "variants": {
+        "naive": {
+          "kernel_ms": 9.8136848449707,
+          "pipeline_ms": 24.4589,
+          "process_medians_ms": [
+            9.8136848449707,
+            9.108243560791,
+            20.609194946289
+          ]
+        },
+        "tree": {
+          "kernel_ms": 1.4596048355103,
+          "pipeline_ms": 16.8677,
+          "process_medians_ms": [
+            0.77102880477905,
+            1.4596048355103,
+            18.030151367188
+          ]
+        },
+        "shuffle": {
+          "kernel_ms": 9.9388305664062,
+          "pipeline_ms": 27.3479,
+          "process_medians_ms": [
+            9.9388305664062,
+            14.902165222168,
+            3.4453792572021
+          ]
+        }
+      }
+    }
+  ],
+  "executable_sha256": "bdb47b4ec0dd358d6b93c816a7caf6a508db325bf2149af9389434c1d2272ad6",
+  "timing": "median of process medians; CUDA Event batch average; pipeline includes padded FP32 transfers",
+  "limitations": [
+    "No bank-conflict hardware counters",
+    "No real NPU performance comparison",
+    "Fixed 256 threads; not auto-tuned",
+    "Different summation orders; finite BF16 input tests only"
+  ]
+}

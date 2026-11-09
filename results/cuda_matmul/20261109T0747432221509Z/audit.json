@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "source_and_executable_hashes_verified": true,
+  "fixture_hashes_verified": true,
+  "cuda_processes": 30,
+  "cuda_validated_sample_outputs": 1380,
+  "npu_regression_cases": 188,
+  "integer_reference_exact": true,
+  "korean_gate_passed": true,
+  "hardware_speed_ratio_computed": false
+}

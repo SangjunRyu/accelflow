@@ -1,0 +1,1 @@
+PASS RMSNorm fused 1x4097 max_abs=7.09575e-08

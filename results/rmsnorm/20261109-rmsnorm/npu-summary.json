@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "configurations": 40,
+  "operator_submissions": 80,
+  "pilot_operator_submissions": 2,
+  "stages_per_operator": 3,
+  "core_count": 1,
+  "max_abs_error": 2.3306871588246736e-07,
+  "depth_fingerprints_equal": true,
+  "real_npu_performance_measured": false
+}

@@ -94,3 +94,53 @@ All primary comparisons use four active cores. Defaults: 32 configurations /
 96 process trials / 672 timed samples / 864 submissions. Logs, raw timing,
 source hashes and DRAM/receiver/control models: `results/matmul_multicast_perf/<UTC>/`.
 See [19](../docs/19-multicast-simulator-performance.md). Different mappings/reader NoCs remain part of the implementation comparison.
+
+
+## Windows CUDA MatMul
+
+`run_cuda_matmul.ps1` exports validated WSL NPU inputs, builds sm_61 with the installed Windows
+CUDA/MSVC tools, and runs naive/tiled correctness and timing trials on the GPU.
+For a WSL UNC workspace under RemoteSigned, copy this runner to a local temporary file and pass
+`-ProjectRoot` pointing to the workspace. The tested command is in
+[21](../docs/21-cuda-matmul-comparison.md). `-ReuseFixturesFrom` keeps existing inputs and creates a new run.
+Run `tools/report/summarize_cuda_matmul.py RESULT_DIRECTORY` inside WSL to generate the comparison.
+
+
+## NPU row-wise sum
+
+`bash scripts/run_reduction.sh` builds only the project host and validates the pinned simulator path.
+Two pilot cases precede depth1/2 suites, each with three repeated submissions by default.
+Use `--repeats 1..5` to change the repeat count. See [22](../docs/22-row-wise-reduction.md).
+
+
+## cudaArray and legacy profiler
+
+The CUDA runner accepts `-Variants naive,tiled,texture_tiled`; the default remains naive/tiled.
+`tools/report/probe_cupti.py output.json` is a read-only Windows diagnostic for CUDA initialization,
+CUPTI activity/callback subscription and legacy Event API support. It does not enable counter permissions
+or change drivers. See [23](../docs/23-texture-matmul-and-profiler.md).
+
+## CUDA row-wise reduction
+
+Run `run_cuda_reduction.ps1 -ProjectRoot <WSL UNC project path>` from Windows PowerShell.
+Copy the runner locally if RemoteSigned blocks UNC scripts; retain the project path argument.
+The runner exports and validates 25 exact NPU fixtures, builds for sm_61, and compares
+naive/tree/shuffle plus four larger CUDA-only fixtures. `-Trials` defaults to 3.
+Results, raw samples, commands, and hashes go to `results/cuda_reduction/<UTC>/`.
+See [24](../docs/24-cuda-reduction.md) for the actual results and timing limitations.
+
+## RMSNorm
+
+`bash scripts/run_rmsnorm.sh` validates the pinned virtual Wormhole implementation with
+20 common BF16 fixtures, CB depth 1/2 and two repeated operator submissions per configuration.
+The three device stages preserve intermediate data on device DRAM; host readback is validation only.
+
+From Windows, `run_cuda_rmsnorm.ps1 -ProjectRoot <WSL UNC project path>` first validates NPU,
+then builds and benchmarks CUDA unfused/fused variants and runs the Python FP64 cross-backend audit.
+Copy the script locally if RemoteSigned blocks UNC execution; keep the ProjectRoot argument.
+Use a new ResultsName for a fresh run. See [25](../docs/25-rmsnorm.md).
+
+PyTorch CPU reference: install `requirements-pytorch-reference.txt` in the project `.venv`, then run
+`.venv/bin/python tools/report/compare_rmsnorm_pytorch.py --results results/rmsnorm/<run>`.
+It compares the 20 saved shared correctness fixtures with official FP32/FP64 RMSNorm,
+checks four saved backends, and records `pytorch/comparison.json`. It does not benchmark PyTorch.

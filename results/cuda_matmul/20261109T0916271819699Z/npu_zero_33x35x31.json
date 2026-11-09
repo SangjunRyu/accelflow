@@ -1,0 +1,153 @@
+{
+  "benchmark_enabled": true,
+  "cases": [
+    {
+      "A_multicast_enabled": false,
+      "B_multicast_enabled": false,
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 8192,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 8192,
+        "page_bytes": 2048,
+        "pages": 4
+      },
+      "a_shape": [
+        33,
+        35
+      ],
+      "a_tile_reads_model": 4,
+      "atol": 0.0,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 4096,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 4096,
+        "page_bytes": 2048,
+        "pages": 2
+      },
+      "b_shape": [
+        35,
+        31
+      ],
+      "b_tile_reads_model": 4,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 4096,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 4096,
+        "page_bytes": 2048,
+        "pages": 2
+      },
+      "c_shape": [
+        33,
+        31
+      ],
+      "cb_capacity_bytes_model": 12288,
+      "cb_capacity_bytes_total_model": 24576,
+      "cb_capacity_tiles": [
+        2,
+        2,
+        2
+      ],
+      "core_count": 2,
+      "destination_tile_slots_max": 1,
+      "distribution": {
+        "active_cores": 2,
+        "assignments": [
+          {
+            "logical_core": [
+              0,
+              0
+            ],
+            "start_tile": 0,
+            "tile_count": 1
+          },
+          {
+            "logical_core": [
+              1,
+              0
+            ],
+            "start_tile": 1,
+            "tile_count": 1
+          }
+        ],
+        "grid": [
+          8,
+          9
+        ],
+        "requested_cores": 4
+      },
+      "dram_read_payload_model": 16384,
+      "dram_write_payload_model": 4096,
+      "fp32_destination_accumulation": true,
+      "input_chunks_per_output_block": 1,
+      "input_fingerprint_a": 13389487554061181733,
+      "input_fingerprint_b": 13441586811029529917,
+      "k_chunk_tiles": 0,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 4,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "zero",
+      "output_block_tiles": 1,
+      "output_fingerprint": 13346994205906133797,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 2,
+      "padded_flops_model": 262144,
+      "padded_mkn": [
+        64,
+        64,
+        32
+      ],
+      "padding_verified": true,
+      "partial_result_pack_calls_model": 0,
+      "passed": true,
+      "read_barriers_model": 8,
+      "rtol": 0.0,
+      "shape_mkn": [
+        33,
+        35,
+        31
+      ],
+      "tile_grid_mkn": [
+        2,
+        2,
+        1
+      ],
+      "timing": {
+        "all_repetition_outputs_equal": true,
+        "clock": "host std::chrono::steady_clock",
+        "first_dispatch_is_not_guaranteed_cold_JIT": true,
+        "physical_NPU_latency": false,
+        "sample_count": 5,
+        "samples_ms": [
+          52.098414,
+          70.347934,
+          71.923437,
+          60.107124,
+          55.981808
+        ],
+        "scope": "EnqueueMeshWorkload + Finish; simulator/host dispatch wall time",
+        "warmup_count": 2,
+        "warmup_ms": [
+          110.03577,
+          45.479472
+        ]
+      },
+      "useful_flops_model": 71610
+    }
+  ],
+  "destination_accumulation": "fp32",
+  "dtype": "bf16",
+  "k_chunk_tiles": 0,
+  "multicast_batch_tiles": 1,
+  "passed": true,
+  "reference": "FP64 accumulation of products of quantized BF16 inputs",
+  "requested_cores": 4,
+  "seed": 2026,
+  "stream_cb_depth": 2,
+  "variant": "multicore"
+}

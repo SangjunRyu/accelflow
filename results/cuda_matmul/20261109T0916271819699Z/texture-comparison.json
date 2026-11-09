@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "input_and_bf16_rounded_output_equal_across_variants": true,
+  "rows": [
+    {
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "linear_kernel_ms": 0.0310479998589,
+      "texture_kernel_ms": 0.0320895984769,
+      "texture_kernel_time_reduction_percent": -3.354801026583454,
+      "linear_pipeline_ms": 0.19,
+      "texture_pipeline_ms": 0.213,
+      "linear_resource_creation_host_ms": 0.2717,
+      "texture_resource_creation_host_ms": 0.8225
+    },
+    {
+      "shape": [
+        320,
+        320,
+        320
+      ],
+      "linear_kernel_ms": 0.40186882019,
+      "texture_kernel_ms": 0.405401617289,
+      "texture_kernel_time_reduction_percent": -0.8790921120304107,
+      "linear_pipeline_ms": 0.9686,
+      "texture_pipeline_ms": 0.9969,
+      "linear_resource_creation_host_ms": 0.3635,
+      "texture_resource_creation_host_ms": 2.7745
+    },
+    {
+      "shape": [
+        640,
+        320,
+        640
+      ],
+      "linear_kernel_ms": 1.78268170357,
+      "texture_kernel_ms": 1.70112001896,
+      "texture_kernel_time_reduction_percent": 4.575224194350824,
+      "linear_pipeline_ms": 3.0308,
+      "texture_pipeline_ms": 2.9949,
+      "linear_resource_creation_host_ms": 0.4551,
+      "texture_resource_creation_host_ms": 0.6744
+    }
+  ],
+  "claim": "combined cudaArray/tex2D input-path effect; not isolated array layout or shared bank-conflict improvement",
+  "processes": 45,
+  "validated_sample_outputs": 2070,
+  "hardware_bank_counters_collected": false
+}

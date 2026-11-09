@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "tt_metal_revision": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "runs": [
+    {
+      "label": "pilot",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/pilot-fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/npu-pilot.json",
+        "1",
+        "1"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 3.624146728001506
+    },
+    {
+      "label": "depth1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/npu-fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/npu-depth1.json",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 231.41713307899772
+    },
+    {
+      "label": "depth2",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/npu-fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/npu-depth2.json",
+        "2",
+        "2"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 203.8886407739992
+    }
+  ],
+  "memory_before": "MemTotal:        3962484 kB\nMemFree:         2453396 kB\nMemAvailable:    2900252 kB\nBuffers:           25296 kB\nCached:           557872 kB\nSwapCached:            0 kB\nActive:           320656 kB\nInactive:         767872 kB\nActive(anon):       3420 kB\nInactive(anon):   506184 kB\nActive(file):     317236 kB\nInactive(file):   261688 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1048576 kB\nDirty:               144 kB\nWriteback:             0 kB\nAnonPages:        501332 kB\nMapped:           178908 kB\nShmem:              4244 kB\nKReclaimable:     135484 kB\nSlab:             181216 kB\nSReclaimable:     135484 kB\nSUnreclaim:        45732 kB\nKernelStack:        4336 kB\nPageTables:         9020 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:    1366208 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        7208 kB\nVmallocChunk:          0 kB\nPercpu:             3424 kB\nAnonHugePages:    249856 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      175104 kB\nDirectMap2M:     3960832 kB\nDirectMap1G:     8388608 kB\n",
+  "source_sha256": {
+    "npu/rmsnorm/rmsnorm.cpp": "27510b9d8c463cce542048155f4e9733f7aea98df19964c801218a01b1b90dce",
+    "npu/rmsnorm/kernels/writer.cpp": "88dfe29fe4b8fdf6a0ea3ff44dbd7f757b0f5aea9a4e8cd1821cb6ea09972ec8",
+    "npu/rmsnorm/kernels/square.cpp": "c5fb23be76fa3af601326d8a28cf9507e8e2e466696617cf9cc828b1b7ff0e59",
+    "npu/rmsnorm/kernels/sum.cpp": "fa6a0d862118c1d949a79b63a48fec7428d0cfc5ef89617f851d7dd1537244a3",
+    "npu/rmsnorm/kernels/normalize.cpp": "aa1abb7b58581e9ef1f2312acb91b873887502194c9546bef9431cadf4729f4b",
+    "npu/rmsnorm/kernels/reader_normalize.cpp": "b990dc69297b35a869f7e835d115ac604033491264d711bc4347134acd1f7a40",
+    "npu/rmsnorm/kernels/reader_sum.cpp": "6c3bc354ef810fc26fc9b239783b64a16bfa5aab8583694bf776a7c08c40821a",
+    "npu/rmsnorm/kernels/reader.cpp": "bdc9258fe8afd4ed1d49f03dcc867195533a0fd185cd9049edc0e5a8d2b6e72b",
+    "npu/rmsnorm/CMakeLists.txt": "77fb1d1c19fb7f16551b4167a240505cbbbeaa50db8b4d535dacc448ee0abe2b",
+    "tools/report/build_rmsnorm.py": "55f6bb2d7a3601421255ecbbdb65c318a50b9c892e7a372006bca8051403f060",
+    "tools/report/rmsnorm_fixtures.py": "a245fad8502aef7d10d2ae786f380e24fa9bf583359def6a28b2f32d4baf9266",
+    "tools/report/run_rmsnorm.py": "cb7ec1045e27427b48f6a98c801c93106cddd0386154b3f088ba3c32387b2376"
+  },
+  "executable_sha256": "d0b15470c24c94c674bf38afafc02f88bf347488611e6102e9a4119d4ed1c5b3"
+}

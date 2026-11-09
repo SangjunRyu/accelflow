@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "processes": 129,
+  "validated_outputs": 2499,
+  "npu_cases": 25,
+  "input_fingerprint_audit": "input-equality-audit.json",
+  "npu_regression": "/results/reduction/20261109T094925103459Z/summary.json",
+  "initial_setup_notes": [
+    "NPU export accessor corrected after compiler error; failed build logs retained",
+    "CUDA compiled successfully; nvidia-smi PATH lookup failed, replaced with WSL read-only query and resumed benchmark"
+  ],
+  "kernel_changed_between_main_and_recheck": false,
+  "performance_conclusion": "Initial run unstable; largest recheck separates naive from parallel variants, not tree versus shuffle"
+}

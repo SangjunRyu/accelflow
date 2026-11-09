@@ -1,0 +1,13 @@
+{
+  "model": "32 banks, scalar FP32, bank=word_index%32; distinct words per bank",
+  "all_8_warps_and_16_inner_positions_checked": true,
+  "maximum_distinct_words_in_one_bank_per_request": {
+    "current_store_A_or_B": 1,
+    "current_read_A": 1,
+    "current_read_B": 1,
+    "blind_padding17_store": 2,
+    "xor16_store": 1,
+    "xor16_read_A": 1,
+    "xor16_read_B": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "shared_npu_cuda_cases": 20,
+  "input_fingerprints_equal": true,
+  "independent_reference": "Python math.fsum and math.sqrt over actual BF16 input/gamma and serialized FP32 epsilon",
+  "atol": 0.0001,
+  "rtol": 0.0001,
+  "max_cross_backend_abs_difference": 2.3841860774531654e-07,
+  "max_python_reference_abs_error": 2.3306871588246736e-07,
+  "keys": [
+    "deterministic_2x3_eps1e-05",
+    "zero_33x35_eps1e-05",
+    "ones_1x1_eps1e-05",
+    "ones_2x31_eps1e-05",
+    "ones_2x32_eps1e-05",
+    "ones_2x33_eps1e-05",
+    "signed_31x65_eps1e-05",
+    "signed_32x65_eps1e-05",
+    "signed_33x65_eps1e-05",
+    "signed_65x129_eps1e-05",
+    "signed_3x257_eps1e-05",
+    "signed_2x1025_eps1e-05",
+    "signed_1x4097_eps1e-05",
+    "fractional_17x257_eps1e-05",
+    "tiny_3x33_eps1e-05",
+    "mixed_3x65_eps1e-05",
+    "gamma_zero_3x35_eps1e-05",
+    "gamma_signed_33x65_eps1e-05",
+    "epsilon_3x33_eps0.001",
+    "epsilon_3x33_eps1e-06"
+  ],
+  "limitations": [
+    "Finite BF16 test inputs only",
+    "No real NPU performance measurement",
+    "No bank-conflict hardware counters"
+  ]
+}

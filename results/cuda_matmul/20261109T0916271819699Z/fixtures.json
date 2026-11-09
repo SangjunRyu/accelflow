@@ -1,0 +1,246 @@
+{
+  "passed": true,
+  "tt_metal_revision": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "fixtures": [
+    {
+      "key": "deterministic_2x3x2",
+      "name": "deterministic",
+      "shape": [
+        2,
+        3,
+        2
+      ],
+      "performance": false,
+      "binary": "scratch/deterministic_2x3x2.bin",
+      "sha256": "75a4907bb0f55f51ffd067fb793893730ddda8757e8f4c6aed3832ed30e66ae5",
+      "npu_report": "npu_deterministic_2x3x2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/npu_deterministic_2x3x2.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "deterministic:2,3,2",
+        "--export-inputs",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/scratch/deterministic_2x3x2.bin"
+      ],
+      "exit_code": 0
+    },
+    {
+      "key": "zero_33x35x31",
+      "name": "zero",
+      "shape": [
+        33,
+        35,
+        31
+      ],
+      "performance": false,
+      "binary": "scratch/zero_33x35x31.bin",
+      "sha256": "5b2f24082bcf0f73a84b8be869e0fd34f68f48c8b166cb0f5d8205557ff44785",
+      "npu_report": "npu_zero_33x35x31.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/npu_zero_33x35x31.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "zero:33,35,31",
+        "--export-inputs",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/scratch/zero_33x35x31.bin"
+      ],
+      "exit_code": 0
+    },
+    {
+      "key": "identity_32x32x32",
+      "name": "identity",
+      "shape": [
+        32,
+        32,
+        32
+      ],
+      "performance": false,
+      "binary": "scratch/identity_32x32x32.bin",
+      "sha256": "ab1d972847e5fd41ef52d5d90b1082cec8372b41765fd49feb63c78fce103353",
+      "npu_report": "npu_identity_32x32x32.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/npu_identity_32x32x32.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "identity:32,32,32",
+        "--export-inputs",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/scratch/identity_32x32x32.bin"
+      ],
+      "exit_code": 0
+    },
+    {
+      "key": "signed_random_31x33x35",
+      "name": "signed_random",
+      "shape": [
+        31,
+        33,
+        35
+      ],
+      "performance": false,
+      "binary": "scratch/signed_random_31x33x35.bin",
+      "sha256": "d70d49d9a8783bf722fa9ecf4c769a48d8cd04d2d9c7b2ef2aed94c9b76fbeac",
+      "npu_report": "npu_signed_random_31x33x35.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/npu_signed_random_31x33x35.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:31,33,35",
+        "--export-inputs",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/scratch/signed_random_31x33x35.bin"
+      ],
+      "exit_code": 0
+    },
+    {
+      "key": "fractional_33x257x65",
+      "name": "fractional",
+      "shape": [
+        33,
+        257,
+        65
+      ],
+      "performance": false,
+      "binary": "scratch/fractional_33x257x65.bin",
+      "sha256": "54df5f8a6ba8b0058d87403cb6f8b56c02b56b0250d2c1e9fe110b44c4599b53",
+      "npu_report": "npu_fractional_33x257x65.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/npu_fractional_33x257x65.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "fractional:33,257,65",
+        "--export-inputs",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/scratch/fractional_33x257x65.bin"
+      ],
+      "exit_code": 0
+    },
+    {
+      "key": "signed_random_65x257x97",
+      "name": "signed_random",
+      "shape": [
+        65,
+        257,
+        97
+      ],
+      "performance": false,
+      "binary": "scratch/signed_random_65x257x97.bin",
+      "sha256": "1ba4e2171ae3e06083cb7731bd800677e0e730980d88034fe42fc20068447a1b",
+      "npu_report": "npu_signed_random_65x257x97.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/npu_signed_random_65x257x97.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:65,257,97",
+        "--export-inputs",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/scratch/signed_random_65x257x97.bin"
+      ],
+      "exit_code": 0
+    },
+    {
+      "key": "signed_random_128x128x128",
+      "name": "signed_random",
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "performance": true,
+      "binary": "scratch/signed_random_128x128x128.bin",
+      "sha256": "7a257fef3ab64f525f3f1d5ff8bfb65e26f78bbf6933c5430670e46802e4424b",
+      "npu_report": "npu_signed_random_128x128x128.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/npu_signed_random_128x128x128.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:128,128,128",
+        "--export-inputs",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/scratch/signed_random_128x128x128.bin"
+      ],
+      "exit_code": 0
+    },
+    {
+      "key": "signed_random_320x320x320",
+      "name": "signed_random",
+      "shape": [
+        320,
+        320,
+        320
+      ],
+      "performance": true,
+      "binary": "scratch/signed_random_320x320x320.bin",
+      "sha256": "db96e0c71031adda1d9e3d2e2df8b67cfc2cd9e15010d54b0f3b4878ab4cfbb5",
+      "npu_report": "npu_signed_random_320x320x320.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/npu_signed_random_320x320x320.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320",
+        "--export-inputs",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/scratch/signed_random_320x320x320.bin"
+      ],
+      "exit_code": 0
+    },
+    {
+      "key": "signed_random_640x320x640",
+      "name": "signed_random",
+      "shape": [
+        640,
+        320,
+        640
+      ],
+      "performance": true,
+      "binary": "scratch/signed_random_640x320x640.bin",
+      "sha256": "9e58f6280a57daed9bd74de569281d40b324813eaba93161b15e2a6003e1ea48",
+      "npu_report": "npu_signed_random_640x320x640.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/npu_signed_random_640x320x640.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640",
+        "--export-inputs",
+        "/home/ysjun5656/dev/accelflow/results/cuda_matmul/20261109T0740059728146Z/scratch/signed_random_640x320x640.bin"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "tools/report/export_matmul_fixtures.py": "0ddf77db4cf4e26fc7f4180d504090e5d38950b7a9bbd93b3d4009d3a5485982",
+    "npu/matmul/matmul.cpp": "7d688fdcd85ee808790f5d7fbcd157bc62d6c2778ada6fb1ce7e1d38c4722040",
+    "npu/matmul/benchmark.hpp": "2258dc8de4bbd30275e89a9a3dc93cc92ce51a19942022589ee93c469aa0fd12"
+  }
+}

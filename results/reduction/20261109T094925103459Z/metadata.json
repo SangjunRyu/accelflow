@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "operator": "row_sum",
+  "scope": "single core, last dimension only; no hardware performance claim",
+  "tt_metal_revision": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "host": "Linux-5.15.90.1sangjunryu20195834+-x86_64-with-glibc2.39",
+  "compiler": "Ubuntu clang version 20.1.2 (0ubuntu1~24.04.3)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm-20/bin\n",
+  "meminfo_before": "MemTotal:        3962484 kB\nMemFree:         1806368 kB\nMemAvailable:    2896412 kB\nBuffers:          120656 kB\nCached:          1026568 kB\nSwapCached:            0 kB\nActive:           302212 kB\nInactive:        1326804 kB\nActive(anon):       3416 kB\nInactive(anon):   482620 kB\nActive(file):     298796 kB\nInactive(file):   844184 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1048576 kB\nDirty:               116 kB\nWriteback:             0 kB\nAnonPages:        480816 kB\nMapped:           178712 kB\nShmem:              4244 kB\nKReclaimable:     231348 kB\nSlab:             279864 kB\nSReclaimable:     231348 kB\nSUnreclaim:        48516 kB\nKernelStack:        4368 kB\nPageTables:         8884 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:    1351532 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        7288 kB\nVmallocChunk:          0 kB\nPercpu:             3424 kB\nAnonHugePages:    141312 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      117760 kB\nDirectMap2M:     4018176 kB\nDirectMap1G:     8388608 kB\n",
+  "source_sha256": {
+    "npu/reduction/reduction.cpp": "f692a108e6aef49b4cbfdb06d7584052afc41dc743f46a63aea3cd47b6481c0b",
+    "npu/reduction/kernels/writer.cpp": "88dfe29fe4b8fdf6a0ea3ff44dbd7f757b0f5aea9a4e8cd1821cb6ea09972ec8",
+    "npu/reduction/kernels/compute.cpp": "fbeb1edceba430a77c5a78e04147136b70c5230cd336cfc34d02e3c7cf8183a7",
+    "npu/reduction/kernels/reader.cpp": "bdc9258fe8afd4ed1d49f03dcc867195533a0fd185cd9049edc0e5a8d2b6e72b",
+    "npu/reduction/CMakeLists.txt": "2f990b6c8cb87f43eadc824367dca78d65c32e00b4db4bd723cd60ae80314fb6",
+    "npu/vector_add/common.hpp": "695681e02c9fa7dd8441067460df4e4c566da3f11392402bb4ecf984fe9c2df2",
+    "tools/report/build_reduction.py": "0d6d58aa83f4d1283ee44e7c460d742435ad724002e1eafe9480db1cfab225ef",
+    "tools/report/run_reduction.py": "d0c899c22e11898a4c6bc70f58a78f07cb0fd37d5e220d4f3459e8b77911586d",
+    "scripts/run_reduction.sh": "550c6cc2497fe9b124a79d8b51448454120e7bdd18d9bc0b2b63ad901b73faf8"
+  },
+  "runs": [
+    {
+      "label": "pilot_small",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/reduction/reduction",
+        "/home/ysjun5656/dev/accelflow/results/reduction/20261109T094925103459Z/pilot_small.json",
+        "1",
+        "1",
+        "deterministic:2,3"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 2.5510532110001805
+    },
+    {
+      "label": "pilot_fp32_257",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/reduction/reduction",
+        "/home/ysjun5656/dev/accelflow/results/reduction/20261109T094925103459Z/pilot_fp32_257.json",
+        "1",
+        "1",
+        "ones:2,257"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 0.9767504410010588
+    },
+    {
+      "label": "depth1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/reduction/reduction",
+        "/home/ysjun5656/dev/accelflow/results/reduction/20261109T094925103459Z/depth1.json",
+        "1",
+        "1"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 1.7416444280006544
+    },
+    {
+      "label": "depth2",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/reduction/reduction",
+        "/home/ysjun5656/dev/accelflow/results/reduction/20261109T094925103459Z/depth2.json",
+        "2",
+        "1"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 1.878439943999183
+    }
+  ],
+  "build_exit_code": 0,
+  "executable_sha256": "9f44703651a0a2aec929851294a36d5443c7b27e90dc97b3d20a24d9443ea61c",
+  "meminfo_after": "MemTotal:        3962484 kB\nMemFree:         1771208 kB\nMemAvailable:    2912508 kB\nBuffers:          121016 kB\nCached:          1076792 kB\nSwapCached:            0 kB\nActive:           333144 kB\nInactive:        1347776 kB\nActive(anon):       3444 kB\nInactive(anon):   483920 kB\nActive(file):     329700 kB\nInactive(file):   863856 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1048576 kB\nDirty:              2028 kB\nWriteback:             0 kB\nAnonPages:        482104 kB\nMapped:           178900 kB\nShmem:              4244 kB\nKReclaimable:     232028 kB\nSlab:             280584 kB\nSReclaimable:     232028 kB\nSUnreclaim:        48556 kB\nKernelStack:        4400 kB\nPageTables:         8952 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:    1345304 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        7272 kB\nVmallocChunk:          0 kB\nPercpu:             3424 kB\nAnonHugePages:    141312 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      117760 kB\nDirectMap2M:     4018176 kB\nDirectMap1G:     8388608 kB\n"
+}

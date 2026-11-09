@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "cuda_processes": 45,
+  "validated_sample_outputs": 2070,
+  "source_and_executable_verified": true,
+  "source_snapshots_verified": true,
+  "integer_cases_exact": true,
+  "numeric_and_code_fences_preserved_after_edit": true,
+  "korean_gate_passed": true,
+  "trace_succeeded": true,
+  "legacy_event_api_status": 27,
+  "hardware_bank_counters_collected": false,
+  "user_terminal_query_events_failure_confirmed": true,
+  "driver_settings_changed": false
+}

@@ -16,6 +16,7 @@ TTSim으로 탐구하는 가속기 시스템 포트폴리오 프로젝트입니�
 [구조도](docs/90-architecture.md), [측정 정책](docs/92-measurement-policy.md).
 Vector Add의 자체 host/장치 커널 구현은 `npu/vector_add/`에 있습니다.
 MatMul의 자체 host/장치 커널 구현은 `npu/matmul/`에 있습니다.
+CUDA MatMul의 naive/shared-memory tiled 구현은 `cuda/matmul/`에 있습니다.
 나머지 연산자와 모델 디렉터리는 후속 단계용 골격입니다.
 
 ## 시작하기
@@ -41,7 +42,7 @@ Windows에서는 `\\wsl.localhost\Ubuntu-24.04\home\ysjun5656\dev\accelflow`로 
 [07. WSL 작업 공간 이동](docs/07-wsl-workspace-migration.md).
 
 **문서 읽는 순서와 실제 작업 현황은 [00. 진행 순서 안내](docs/README.md)에서 확인하세요.**
-`01 → 02 → 03 → 04 → 05(계획) → 06 → 07 → 08 → 09 → 10 → 11 → 12 → 13 → 14 → 15 → 16 → 17 → 18 → 19(multicast 시간 비교) → 20(K 배치 2D)` 순서로 정리했습니다.
+`01 → 02 → 03 → 04 → 05(계획) → 06 → 07 → 08 → 09 → 10 → 11 → 12 → 13 → 14 → 15 → 16 → 17 → 18 → 19(multicast 시간 비교) → 20(K 배치 2D) → 21(CUDA 실측 비교) → 22(Reduction) → 23(cudaArray·profiler)` 순서로 정리했습니다.
 
 - [x] 문서 31번 전체 확인 및 저장소 구조 생성
 - [x] WSL2 Ubuntu 환경 점검, Bash 문법 검사, 실제 실행 및 보고서 저장
@@ -52,7 +53,7 @@ Windows에서는 `\\wsl.localhost\Ubuntu-24.04\home\ysjun5656\dev\accelflow`로 
 - [x] TT-Metal 빌드 및 TTSim 공식 정수 덧셈 예제 검증 — 결과 21, exit code 0
 
 [환경 요약](docs/01-environment.md), [문제 해결](docs/93-troubleshooting.md).
-현재 **Phase 2 K 배치 2D multicast MatMul·320/640 크기 비교까지 완료**했습니다.
+현재 **Phase 3 단일 코어 NPU row-wise sum 검증까지 완료**했습니다.
 [06. 실제 빌드·검증 보고서](docs/06-tt-metal-build-validation.md)에 재현 방법과 전체 로그를 기록했습니다.
 [08. 자체 Vector Add 보고서](docs/08-vector-add.md): 최초 uint32 9개 / BF16 pipeline 12개 케이스 통과.
 [09. 설계·성능 구조 평가](docs/09-vector-add-design-assessment.md): CB depth 1/2·65타일·버퍼 정렬을 포함한 총 38개 후속 검증 통과.
@@ -65,7 +66,8 @@ Windows에서는 `\\wsl.localhost\Ubuntu-24.04\home\ysjun5656\dev\accelflow`로 
 [17. A multicast MatMul](docs/17-a-multicast-matmul.md): 200개 검증·42회 재실행·기존 188개 회귀 통과.
 [18. 2D A/B multicast](docs/18-2d-multicast-matmul.md): 240개 검증·98회 반복/fallback·기존 188개 회귀 통과.
 [19. Multicast 시간 비교](docs/19-multicast-simulator-performance.md): 32개 구성·96개 process trials·672개 timing/864회 dispatch 완료.
-후속 단계는 출력 block 재사용과 multicast 결합, CUDA 비교, Reduction·RMSNorm입니다. TT-NN 전체는 아직 검증하지 않았습니다.
+CUDA MatMul 두 구현을 같은 입력으로 실행하고 NPU 결과와 대조했습니다.
+[21. CUDA 실측 비교](docs/21-cuda-matmul-comparison.md). NPU row-wise sum은 [22번](docs/22-row-wise-reduction.md)에서 구현했습니다. CUDA Reduction 3개 구현과 정확성·반복 측정은 [24번](docs/24-cuda-reduction.md)에서 완료했습니다. RMSNorm의 NPU 기준 구현·CUDA 기본/fused 비교는 [25번](docs/25-rmsnorm.md)에서 완료했습니다. TT-NN 전체는 아직 검증하지 않았습니다.
 
 ```bash
 cd /home/ysjun5656/dev/accelflow
@@ -80,9 +82,19 @@ TTSim 실행 시간은 실제 NPU 성능이나 BOS Eagle-N 지연 시간을 나�
 CUDA 실측과 시뮬레이터 기능 검증을 구분합니다.
 
 환경 재현 → vector add → tiled MatMul → reduction → RMSNorm → 소형 모델 분석.
-현재 TT-NN, Reduction·RMSNorm, 모델 실행은 후속 단계이며 이 저장소의 CUDA 디렉터리는 아직 골격입니다.
+PyTorch CPU 기준 대조까지 완료했습니다. TT-NN 기준 대조, NPU fusion·multicore RMSNorm, 모델 실행은 후속 단계입니다. CUDA는 MatMul·row-wise reduction·RMSNorm 구현 및 MX150 실측을 완료했습니다.
 
 컴파일 학습: [14. 관찰 환경과 TT-Explorer](docs/14-compiler-inspection-and-tt-explorer.md).
 `bash scripts/inspect_compilation.sh`로 host IR·장치 ELF/assembly를 확인합니다.
 
 K 배치 2D multicast와 320/640 크기 비교 결과는 [20번 문서](docs/20-batched-2d-multicast-matmul.md)를 참고하세요.
+
+CUDA 실행 방법과 측정 조건은 [21번 문서](docs/21-cuda-matmul-comparison.md)에 정리했습니다.
+
+NPU Reduction은 [22번 문서](docs/22-row-wise-reduction.md)를 참고하고 `bash scripts/run_reduction.sh`로 검증합니다.
+
+CUDA의 선형 입력과 cudaArray/texture 입력 비교, nvprof 카운터 진단은 [23번](docs/23-texture-matmul-and-profiler.md)에 정리했습니다.
+
+CUDA Reduction의 naive/tree/shuffle 구현, NPU 입력 대조와 큰 입력 재측정은 [24번](docs/24-cuda-reduction.md)에 정리했습니다.
+
+RMSNorm 공통 입력 20종 대조, NPU 정밀도 전달과 CUDA fusion 비교는 [25번](docs/25-rmsnorm.md)을 참고하세요.

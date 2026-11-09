@@ -1,0 +1,134 @@
+{
+  "backend": "ttsim",
+  "architecture": "wormhole",
+  "operator": "matmul",
+  "tt_metal_tag": "v0.79.0",
+  "tt_metal_commit": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_tag": "v1.11.1",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "project_git_commit": null,
+  "date_utc": "2026-11-09T07:51:37.527072+00:00",
+  "os_release": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "kernel": "5.15.90.1sangjunryu20195834+",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "compiler": "Ubuntu clang version 20.1.2 (0ubuntu1~24.04.3)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm-20/bin",
+  "source_sha256": {
+    "tools/report/run_matmul.py": "5ba27e176c22fcab227533bc3df05829f7337125f6bb9f9cf584b70641318f5f",
+    "tools/report/assess_matmul.py": "5c618fcf606b57cb175cb7d1c5fe07475a6df20d13e28808a7d3bd5f1a5a757f",
+    "tools/report/build_matmul.py": "9cd2342f2696cbec222ef9176cffd8cfa535f351894386ffa3ca8bbea9911ba7",
+    "scripts/run_matmul.sh": "be6f66ce31118472f61e8577905b75eeb0c020af7c165a3c537906c8d0887ec0",
+    "npu/matmul/mcast2d.hpp": "9734b9e141c504aa14a588298241105ddca26ea147f5e71640cee8845eeb9875",
+    "npu/matmul/README.md": "934af4c2df47636ab50c3de175086b76aa1b6019bfb793b133767e04e319d8ec",
+    "npu/matmul/multicore.hpp": "c39b49db9e193b5fd08c88a4cc3bde6a9e45ef2f185858e3e27d1198dd870e4d",
+    "npu/matmul/matmul.cpp": "7d688fdcd85ee808790f5d7fbcd157bc62d6c2778ada6fb1ce7e1d38c4722040",
+    "npu/matmul/benchmark.hpp": "2258dc8de4bbd30275e89a9a3dc93cc92ce51a19942022589ee93c469aa0fd12",
+    "npu/matmul/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "npu/matmul/CMakeLists.txt": "96bd60c8703f7a6507b41d8f0059417f6aff4c9fd4ed4c876d3c551deb219a87",
+    "npu/matmul/mcast.hpp": "46b56f82f51d2a48569f834f2384268752b9e6c880b7cdf8e5b6367b6eebfc1c",
+    "npu/matmul/kernels/reader_mcast.cpp": "202044db641ea105151f09af7d74426bfabf9d88d1e5277a2eeacae4e08f4c3b",
+    "npu/matmul/kernels/writer_blocked.cpp": "5a0d07dbc9e65fccbf1130c5d8f0f69e365ca0fb2f67063bf5a7aa093f5f7e0c",
+    "npu/matmul/kernels/reader_mcast2d.cpp": "9f675a05c53f34ba5567d2175f3e635e345dddf0063ff8c3ec398f39fc43abaf",
+    "npu/matmul/kernels/writer.cpp": "3ff4232fd0f2e7342549900ec0ed0bb047d228f00a5e545abd0c3517a71776c3",
+    "npu/matmul/kernels/writer_mcast2d.cpp": "7e00b8600d33968489945afebd566e5a0e20889e8b60f74b40c6d9360ded0b54",
+    "npu/matmul/kernels/reader_streamed.cpp": "1ae07ffc56a8953354a4e288d518b898dfbdb86ee13c6b1087d0a9f8971b84b6",
+    "npu/matmul/kernels/reader_multicore.cpp": "444efa4cbc92135992fd7c25d31aa93c4f24ef5fa667ebd8c354fc0e97796588",
+    "npu/matmul/kernels/compute_mcast2d_batched.cpp": "ccc97e97785d8c3a5ee0ee95bbbbad0d903c04517a93c31115540a4b1907be17",
+    "npu/matmul/kernels/compute_multicore.cpp": "3478d3c06ed2ee0800e8dff3b0aab63fc99b95eddec759bee82571a4c4f22158",
+    "npu/matmul/kernels/writer_mcast.cpp": "ddc7c697269d43286a00bd321dd3c193ff1bf38da9363cc0abcae80ad7e8d0ef",
+    "npu/matmul/kernels/compute_blocked.cpp": "80dfa9cba9a361f319b82c6d2d388e7572ea7998246a443d545eb68703e66908",
+    "npu/matmul/kernels/reader_mcast2d_batched.cpp": "c73cf3dddd26c04e8122b96260845d897b5c3e08c760fdfb0f96e9acb8c57f19",
+    "npu/matmul/kernels/compute_mcast.cpp": "5846eab77d7e540c5f6b2cca60b4e45d396ed99d34da67386d72ac01663f7ba4",
+    "npu/matmul/kernels/compute_streamed.cpp": "c9f057a6d67324dccc5da8ae904bfb6fc069a81ab51448c265ec04c5c5bd389f",
+    "npu/matmul/kernels/compute.cpp": "50aeed704fa9f95fce95a76bc3e92d0e6b0003a7c064c853bd7274fd84b73438",
+    "npu/matmul/kernels/reader_blocked.cpp": "1e97e70c12250f54c02d9eb5aa5d5562fa960a1cc11523d3be6246b20cacd252",
+    "npu/matmul/kernels/reader.cpp": "a1309a1ea8c16b4d6ca9f828049fd72edf21622ceee9abbcf008e1802416a66e",
+    "npu/matmul/kernels/compute_mcast2d.cpp": "9017c73e1db56d67e471ea44e7209ee3491b5253c4536fd0b1d250629a7bc55f",
+    "npu/matmul/kernels/writer_multicore.cpp": "197ab7244694adab382e313cd389181448e85bb7b2367fbcbebe5415339fc158",
+    "npu/vector_add/common.hpp": "695681e02c9fa7dd8441067460df4e4c566da3f11392402bb4ecf984fe9c2df2"
+  },
+  "runtime_root": "/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0",
+  "runs": [
+    {
+      "variant": "baseline",
+      "depth": 1,
+      "chunk": 0,
+      "exit_code": 0,
+      "passed": true,
+      "report": "baseline_depth1.json"
+    },
+    {
+      "variant": "baseline",
+      "depth": 2,
+      "chunk": 0,
+      "exit_code": 0,
+      "passed": true,
+      "report": "baseline_depth2.json"
+    },
+    {
+      "variant": "reuse_a",
+      "depth": 1,
+      "chunk": 0,
+      "exit_code": 0,
+      "passed": true,
+      "report": "reuse_a_depth1.json"
+    },
+    {
+      "variant": "reuse_a",
+      "depth": 2,
+      "chunk": 0,
+      "exit_code": 0,
+      "passed": true,
+      "report": "reuse_a_depth2.json"
+    },
+    {
+      "variant": "blocked",
+      "depth": 1,
+      "chunk": 0,
+      "exit_code": 0,
+      "passed": true,
+      "report": "blocked_depth1.json"
+    },
+    {
+      "variant": "blocked",
+      "depth": 2,
+      "chunk": 0,
+      "exit_code": 0,
+      "passed": true,
+      "report": "blocked_depth2.json"
+    },
+    {
+      "variant": "streamed",
+      "depth": 1,
+      "chunk": 1,
+      "exit_code": 0,
+      "passed": true,
+      "report": "streamed_depth1_chunk1.json"
+    },
+    {
+      "variant": "streamed",
+      "depth": 2,
+      "chunk": 1,
+      "exit_code": 0,
+      "passed": true,
+      "report": "streamed_depth2_chunk1.json"
+    },
+    {
+      "variant": "streamed",
+      "depth": 1,
+      "chunk": 2,
+      "exit_code": 0,
+      "passed": true,
+      "report": "streamed_depth1_chunk2.json"
+    },
+    {
+      "variant": "streamed",
+      "depth": 2,
+      "chunk": 2,
+      "exit_code": 0,
+      "passed": true,
+      "report": "streamed_depth2_chunk2.json"
+    }
+  ],
+  "measurement_policy": "No simulator timing used as NPU performance",
+  "passed": true
+}

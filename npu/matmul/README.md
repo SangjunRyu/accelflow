@@ -109,3 +109,11 @@ A/B는 독립 semaphore 쌍을 사용하고 모든 코어가 각 단계에서 A�
 `mcast2d_batch1/4/8`은 K 방향 타일을 연속 L1 배치로 모아 배치마다 한 번 semaphore를 교환합니다.
 `bash scripts/benchmark_batched_matmul.sh`로 정확성 200개와 320/640 크기 반복 비교를 실행합니다.
 [20. 데이터 흐름·마지막 배치·시간·CB 비용](../../docs/20-batched-2d-multicast-matmul.md)을 참고하세요.
+
+
+## CUDA input export
+
+The benchmark CLI accepts `--export-inputs fixture.bin` after the selector.
+It writes the actual padded row-major BF16 A/B inputs before dispatch; it does not change timed kernels.
+`tools/report/export_matmul_fixtures.py` builds the host, validates nine fixture producers, and records
+their hashes and reports. [21](../../docs/21-cuda-matmul-comparison.md) documents the binary format.

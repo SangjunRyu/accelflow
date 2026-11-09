@@ -1,0 +1,1 @@
+PASS RMSNorm unfused 17x257 max_abs=1.5465e-07

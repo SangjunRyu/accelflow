@@ -10,6 +10,8 @@
 #include <cmath>
 #include <limits>
 #include <random>
+#include <filesystem>
+#include <fstream>
 
 // 행렬 차원을 32의 배수로 올려, 가장자리도 완전한 타일로 처리합니다.
 static uint32_t padded(uint32_t size) {
@@ -40,8 +42,8 @@ static std::vector<bfloat16> pack(const std::vector<bfloat16>& row_major,
 // Host 흐름: 입력 준비 → DRAM 전송 → 커널/CB 구성 → 실행 → CPU 비교 → 보고서 저장.
 int main(int argc, char** argv) {
     try {
-        if (argc != 4 && argc != 5 && argc != 8)
-            throw std::runtime_error("Usage: matmul report.json baseline|reuse_a|blocked|streamed|multicore|mcast|mcast2d|mcast2d_batch1|mcast2d_batch4|mcast2d_batch8 1|2 [K-chunk: 1|2, or multicore cores: 1|2|4] [--benchmark samples name:M,K,N]");
+        if (argc != 4 && argc != 5 && argc != 8 && argc != 10)
+            throw std::runtime_error("Usage: matmul report.json baseline|reuse_a|blocked|streamed|multicore|mcast|mcast2d|mcast2d_batch1|mcast2d_batch4|mcast2d_batch8 1|2 [K-chunk: 1|2, or multicore cores: 1|2|4] [--benchmark samples name:M,K,N [--export-inputs fixture.bin]]");
 
         // 실험 설정: baseline / A 행 재사용 / 2×2 blocked, CB 깊이 1/2.
         const std::string variant = argv[2];
@@ -61,7 +63,10 @@ int main(int argc, char** argv) {
         const bool streamed = variant == "streamed";
         const bool blocked = variant == "blocked" || streamed;
         const uint32_t chunk = argc >= 5 && !multicore ? std::stoul(argv[4]) : 2;
-        const bool benchmarking = argc == 8;
+        const bool benchmarking = argc == 8 || argc == 10;
+        const bool export_inputs = argc == 10;
+        if (export_inputs && std::string(argv[8]) != "--export-inputs")
+            throw std::runtime_error("Expected --export-inputs fixture.bin after benchmark selector");
         const uint32_t iterations = benchmarking ? std::stoul(argv[6]) : 0;
         if (benchmarking && (std::string(argv[5]) != "--benchmark" ||
                             iterations < 5 || iterations > 25))
@@ -119,6 +124,25 @@ int main(int argc, char** argv) {
 
             // 1. 입력을 장치 타일 배치로 변환하고 DRAM에 올립니다. 한 BF16 타일은 2048 bytes입니다.
             const auto pa = pack(a, mp, kp), pb = pack(b, kp, np);
+            // 같은 BF16 입력을 CUDA에도 전달합니다. MSVC/libstdc++의 난수 분포 차이를 피합니다.
+            // 파일은 little-endian: magic 8 bytes, M/K/N 각 uint32, padded row-major A/B BF16.
+            if (export_inputs) {
+                static_assert(sizeof(bfloat16) == 2);
+                const std::filesystem::path path(argv[9]);
+                if (!path.parent_path().empty())
+                    std::filesystem::create_directories(path.parent_path());
+                std::ofstream fixture(path, std::ios::binary);
+                fixture.write("AFMM001", 8);
+                fixture.write(reinterpret_cast<const char*>(&m), 4);
+                fixture.write(reinterpret_cast<const char*>(&k), 4);
+                fixture.write(reinterpret_cast<const char*>(&n), 4);
+                fixture.write(reinterpret_cast<const char*>(a.data()), a.size() * 2);
+                fixture.write(reinterpret_cast<const char*>(b.data()), b.size() * 2);
+                fixture.close();
+                if (!fixture)
+                    throw std::runtime_error("Cannot export MatMul input fixture");
+            }
+
             auto ad = af::buffer(session, pa.size() * 2, 2048, af::BufferType::DRAM);
             auto bd = af::buffer(session, pb.size() * 2, 2048, af::BufferType::DRAM);
             auto cd = af::buffer(session, mp * np * 2, 2048, af::BufferType::DRAM);

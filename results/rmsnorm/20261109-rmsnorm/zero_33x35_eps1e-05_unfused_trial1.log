@@ -1,0 +1,1 @@
+PASS RMSNorm unfused 33x35 max_abs=0

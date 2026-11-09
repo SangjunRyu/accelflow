@@ -1,0 +1,697 @@
+{
+  "passed": true,
+  "torch_version": "2.15.0+cpu",
+  "torch_git_version": "d0f2af8b66b20da4baa50644c0cd3f887a2eae2e",
+  "torch_cuda_version": null,
+  "device": "cpu",
+  "threads": 1,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-5.15.90.1sangjunryu20195834+-x86_64-with-glibc2.39",
+  "command": [
+    "/home/ysjun5656/dev/accelflow/.venv/bin/python",
+    "tools/report/compare_rmsnorm_pytorch.py",
+    "--results",
+    "results/rmsnorm/20261109-rmsnorm"
+  ],
+  "operator": "torch.nn.functional.rms_norm",
+  "cases": 20,
+  "saved_backend_outputs_compared": 80,
+  "reference_dtypes": [
+    "float32",
+    "float64"
+  ],
+  "input_policy": "original BF16 bits widened to FP32",
+  "epsilon_policy": "explicit serialized FP32 epsilon; never framework default",
+  "atol": 0.0001,
+  "rtol": 0.0001,
+  "max_abs_error_by_backend": {
+    "npu_depth1": {
+      "vs_pytorch_fp32_max_abs_error": 2.384185791015625e-07,
+      "vs_pytorch_fp64_max_abs_error": 2.3306871588246736e-07
+    },
+    "npu_depth2": {
+      "vs_pytorch_fp32_max_abs_error": 2.384185791015625e-07,
+      "vs_pytorch_fp64_max_abs_error": 2.3306871588246736e-07
+    },
+    "cuda_unfused": {
+      "vs_pytorch_fp32_max_abs_error": 1.1920933906672815e-07,
+      "vs_pytorch_fp64_max_abs_error": 1.5465025549055156e-07
+    },
+    "cuda_fused": {
+      "vs_pytorch_fp32_max_abs_error": 1.1920933906672815e-07,
+      "vs_pytorch_fp64_max_abs_error": 1.5465025549055156e-07
+    }
+  },
+  "pytorch_fp32_vs_fp64_max_abs_error": 2.560698360021263e-07,
+  "pytorch_fp64_vs_python_max_abs_error": 0.0,
+  "source_sha256": "3d3ba4ca264cf57fc28b99d6e7eb13850aa78a2130c5aef3d2c3a74711e36379",
+  "source_report_sha256": {
+    "fixtures.json": "67ffb9fd9933306c3cd2b7ba2adec1f146b92cb98857654a50d86ef74cb44e7e",
+    "cuda-measurements.json": "f61513aca0cf629760dcf439e756cb914e99df86fe792b04a5a0dd27cecda587",
+    "npu-depth1.json": "df3a24d19a6ef8febccd4bfcfaa9bd10eb7eebe3174942d529c046d56cc13874",
+    "npu-depth2.json": "3837fc28bbaf1bafc0087a388edeb1670da234111bcea2915d9683bb1c32f141",
+    "deterministic_2x3_eps1e-05_unfused_trial1.json": "046beaebe715705c75aacf41908d4fae67bef15a3bc8174fd6ca8c119f441b13",
+    "deterministic_2x3_eps1e-05_fused_trial1.json": "0fb4f676bff163ae3bc488a9fd5fa3d715be3e0c3afbdf4aa4b681d123c144cc",
+    "zero_33x35_eps1e-05_unfused_trial1.json": "84914253026cc191938eaac2cef71167e6aa6c6f5d1915f5216cdbb96642bc4b",
+    "zero_33x35_eps1e-05_fused_trial1.json": "995a067da26235b22fcf509d7260cc152f87d8f89e7648ca81bf4168f1f32667",
+    "ones_1x1_eps1e-05_unfused_trial1.json": "847887f2dca69dd5ee66f536e5622c110844866e8b84062376732e665317c27d",
+    "ones_1x1_eps1e-05_fused_trial1.json": "1d9e255d3faf4ca27c10ec1f8c2e7cd799acaf4fc2be8df9980cce94e24e377f",
+    "ones_2x31_eps1e-05_unfused_trial1.json": "3d7a2701f8222d2956577aa5f21058893eba04a40957c8d1498ef2cf63f85f7a",
+    "ones_2x31_eps1e-05_fused_trial1.json": "dfd06d1005309a023a2e6fde7f176a0c42b07db37b1feee60f99b90c8b52af69",
+    "ones_2x32_eps1e-05_unfused_trial1.json": "a20effb2645e573ec09884d9a22c4ac4c74dacd4bd1d3fe5b15d1fd067930827",
+    "ones_2x32_eps1e-05_fused_trial1.json": "cebcf1d5d574494dffe410ffb221cdb5497ba7cf5c3381cbdd44e949cc380f80",
+    "ones_2x33_eps1e-05_unfused_trial1.json": "eb59085f85b1bd7649d6802088d776afb870c81ad7380296e52d2b8e1f037993",
+    "ones_2x33_eps1e-05_fused_trial1.json": "5dfaa44340b2c21cc844ce7a5187ac9d4f3bfa0a89d961a8d49f7d847cb260e9",
+    "signed_31x65_eps1e-05_unfused_trial1.json": "be4a108826fe733ca566e5535dcbd7fdbaf7990e4803829010833bdc3aa74841",
+    "signed_31x65_eps1e-05_fused_trial1.json": "1907e27e3e15cf255517a7ad2da4cf646e2da8e9a923e06fa23c363c7bdbfdd2",
+    "signed_32x65_eps1e-05_unfused_trial1.json": "903e3b0c75cd44108d4de729c33704b76be0c404136dee58f131bcd83f6b97be",
+    "signed_32x65_eps1e-05_fused_trial1.json": "8883eff322503e8dcc2cfbc94d50ca67013c5179b7473e981d90f5b3ad529355",
+    "signed_33x65_eps1e-05_unfused_trial1.json": "6df1888d50d8a4b49c64c2c135cba662e7508e7e794f0263dbc761ab5c4b39d4",
+    "signed_33x65_eps1e-05_fused_trial1.json": "2cedfd1c2d6d77da143bfe8fd66d726a885efcf1a0c2cf8911ffbde948f76871",
+    "signed_65x129_eps1e-05_unfused_trial1.json": "abc6e069fdd21c57b889238fcfbedc9a3e8e053bc08a723431dbf6ee116040a9",
+    "signed_65x129_eps1e-05_fused_trial1.json": "5c686ff58d51ac9073bf80e52cbdafd215cdf7e205c6edc25eb90ae87bdfe286",
+    "signed_3x257_eps1e-05_unfused_trial1.json": "4a86ad3ae4474388127ca43e2f41a71d32ff36e504f636942044dcd3b258c437",
+    "signed_3x257_eps1e-05_fused_trial1.json": "947e6ebd0c433ea045df229743c09fa9993385a51da614ae7d8f5d92f5b99fc7",
+    "signed_2x1025_eps1e-05_unfused_trial1.json": "b2f13ba9e462246203eeed9b73e016535f7e9e89c827ec4ea1b7c54495a63d74",
+    "signed_2x1025_eps1e-05_fused_trial1.json": "868586b29d045bac49d48a36a4a4c3f533cc321d138eb353a6661a6bef19f158",
+    "signed_1x4097_eps1e-05_unfused_trial1.json": "e4eed8e873b160bfd6e063aadd553b5669c859e5f7f92ef7f26397aff57aeb81",
+    "signed_1x4097_eps1e-05_fused_trial1.json": "126a50de278ae64183b14bd3e1b9fe1e98174124326a0dd7ef342e38b403b29a",
+    "fractional_17x257_eps1e-05_unfused_trial1.json": "66ef90c91b21c4fbf8f16bb406e8d65ea01d267018555f2f70bdeccc64d95bf7",
+    "fractional_17x257_eps1e-05_fused_trial1.json": "017c017c99da5fc901f53d61025348d65efe37616e07c87f0361129f17fe8833",
+    "tiny_3x33_eps1e-05_unfused_trial1.json": "eb415ab168531a7bca70c4df556839ffdb4f5783dff3f62bf070fcd9df30dc0f",
+    "tiny_3x33_eps1e-05_fused_trial1.json": "9f6d3eb6b38063e98dfb36df3f70578f2912210e4cfbad4d8f392f76d79ded92",
+    "mixed_3x65_eps1e-05_unfused_trial1.json": "c56b1abb27dde957be46db72d0bb2374d3c0b216ef6fa739d050228d8906a49f",
+    "mixed_3x65_eps1e-05_fused_trial1.json": "4bcab5d5dbab00b05b0a301cbfe1454564ee584a89b9017a3f79f8a71aca5997",
+    "gamma_zero_3x35_eps1e-05_unfused_trial1.json": "041bddf58ea88ae64512d7c19e78dbe0cd8d535a45bb5bd307974df5da58cae6",
+    "gamma_zero_3x35_eps1e-05_fused_trial1.json": "81f0aeba8b51aab3c5c06e24e034a362a34b7866645c68708d8b5840ba4e0446",
+    "gamma_signed_33x65_eps1e-05_unfused_trial1.json": "b10178b2e31891fc62dc20b4ba790a2bbe35d39ed37d7e8e42cb96c79648d49a",
+    "gamma_signed_33x65_eps1e-05_fused_trial1.json": "f19e2d42000fe8e025878a1faba2993f976bf82907cae6f19c0f36a5ccd978a3",
+    "epsilon_3x33_eps0.001_unfused_trial1.json": "c23215172294279a4852104833f7c273f2e6f7020d2ce858d1cabafcaad5b992",
+    "epsilon_3x33_eps0.001_fused_trial1.json": "f7bf80287054c88b88de48baa9af0a8d995606ac2561663103135a3edd498fc5",
+    "epsilon_3x33_eps1e-06_unfused_trial1.json": "3f379d0fc184fcaea5e8441981aa3cf82a195ecd9201c884740da519c2308210",
+    "epsilon_3x33_eps1e-06_fused_trial1.json": "bfec4c261f9407904041fd931e60e9246daeecc674a7bcf907cd3f7a6f727d5d"
+  },
+  "scope": "saved finite shared correctness fixtures; no new kernel runs, GPU timings, backward, or BF16 output test",
+  "rows": [
+    {
+      "key": "deterministic_2x3_eps1e-05",
+      "shape_hw": [
+        2,
+        3
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "6cc2dd962e3c086a19a90ac450d57e9bdb8b0a4196a9219914f7324b95310d5d",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 4.3114269487887213e-08,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 4.3114269487887213e-08
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 4.3114269487887213e-08
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 2.9753977059954195e-14,
+          "vs_pytorch_fp64_max_abs_error": 4.3114295689150595e-08
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 2.9753977059954195e-14,
+          "vs_pytorch_fp64_max_abs_error": 4.3114295689150595e-08
+        }
+      }
+    },
+    {
+      "key": "zero_33x35_eps1e-05",
+      "shape_hw": [
+        33,
+        35
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "7f612349eb221dd3fc670a9b1f7f9b0ce47ca13ce59c3b12661001929d5c78d1",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 0.0,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 0.0
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 0.0
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 0.0
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 0.0
+        }
+      }
+    },
+    {
+      "key": "ones_1x1_eps1e-05",
+      "shape_hw": [
+        1,
+        1
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "5de2772ce9abdd2681bd32f8f5376d9d4c2557de9ef8c042752cf0fd6f52be99",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 6.827787224494841e-09,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 6.827787224494841e-09
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 6.827787224494841e-09
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 5.960464888321582e-08,
+          "vs_pytorch_fp64_max_abs_error": 6.643243610771066e-08
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 5.960464888321582e-08,
+          "vs_pytorch_fp64_max_abs_error": 6.643243610771066e-08
+        }
+      }
+    },
+    {
+      "key": "ones_2x31_eps1e-05",
+      "shape_hw": [
+        2,
+        31
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "1b82eaa1aa4eca483ce34783034c99f9c817db5f6eff9d2949e7bc13c3a1b9ba",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 6.827787224494841e-09,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 6.827787224494841e-09
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 6.827787224494841e-09
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 5.960464888321582e-08,
+          "vs_pytorch_fp64_max_abs_error": 6.643243610771066e-08
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 5.960464888321582e-08,
+          "vs_pytorch_fp64_max_abs_error": 6.643243610771066e-08
+        }
+      }
+    },
+    {
+      "key": "ones_2x32_eps1e-05",
+      "shape_hw": [
+        2,
+        32
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "a8eb76bf5f0e0ec075d257d22bd445549e1d3c82b6b731de912492fb58c092d4",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 6.827787224494841e-09,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 6.827787224494841e-09
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 6.827787224494841e-09
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 5.960464888321582e-08,
+          "vs_pytorch_fp64_max_abs_error": 6.643243610771066e-08
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 5.960464888321582e-08,
+          "vs_pytorch_fp64_max_abs_error": 6.643243610771066e-08
+        }
+      }
+    },
+    {
+      "key": "ones_2x33_eps1e-05",
+      "shape_hw": [
+        2,
+        33
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "37bab54e7cde58a0edc859012ec9564fca15a56bd1e9e041e26d36ccf4d1a8e1",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 6.827787224494841e-09,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 6.827787224494841e-09
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 6.827787224494841e-09
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 5.960464888321582e-08,
+          "vs_pytorch_fp64_max_abs_error": 6.643243610771066e-08
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 5.960464888321582e-08,
+          "vs_pytorch_fp64_max_abs_error": 6.643243610771066e-08
+        }
+      }
+    },
+    {
+      "key": "signed_31x65_eps1e-05",
+      "shape_hw": [
+        31,
+        65
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "fa77bf17f55cfced995c2c8c5f8dab7c2d3a5db56a934fcc24a9f55819e2ba9f",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 1.1859181459072943e-07,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920928955078125e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835814861527183e-07
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920928955078125e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835814861527183e-07
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 1.192093190827137e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835812596672213e-07
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 1.192093190827137e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835812596672213e-07
+        }
+      }
+    },
+    {
+      "key": "signed_32x65_eps1e-05",
+      "shape_hw": [
+        32,
+        65
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "e0144cd306a3e59773be33f8994cc4895b4a5353d64edcdff22aa169e081c382",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 1.1859181459072943e-07,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920928955078125e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835814861527183e-07
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920928955078125e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835814861527183e-07
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 1.192093190827137e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835812596672213e-07
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 1.192093190827137e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835812596672213e-07
+        }
+      }
+    },
+    {
+      "key": "signed_33x65_eps1e-05",
+      "shape_hw": [
+        33,
+        65
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "473ce1e3bd5dd72af3c4f057abb670e81295de42e8689d9b2d3dc7d7233b7aae",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 1.1859181459072943e-07,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920928955078125e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835814861527183e-07
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920928955078125e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835814861527183e-07
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 1.192093190827137e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835812596672213e-07
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 1.192093190827137e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835812596672213e-07
+        }
+      }
+    },
+    {
+      "key": "signed_65x129_eps1e-05",
+      "shape_hw": [
+        65,
+        129
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "00066ce9f7c69caf7b9916aaf5be9b5f43eebe762493c0de3a4976a6fc534cea",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 1.58402701178062e-07,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920928955078125e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.55041684379853e-07
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920928955078125e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.55041684379853e-07
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920933817854973e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1146236267300935e-07
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920933817854973e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1146236267300935e-07
+        }
+      }
+    },
+    {
+      "key": "signed_3x257_eps1e-05",
+      "shape_hw": [
+        3,
+        257
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "04c0b9932564b1f01919e4a247905c186df02c3a0c343d5a5c29c84263ea07f6",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 9.378365328771565e-08,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920928955078125e-07,
+          "vs_pytorch_fp64_max_abs_error": 8.926788708230049e-08
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920928955078125e-07,
+          "vs_pytorch_fp64_max_abs_error": 8.926788708230049e-08
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920933817854973e-07,
+          "vs_pytorch_fp64_max_abs_error": 8.926786554397381e-08
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920933817854973e-07,
+          "vs_pytorch_fp64_max_abs_error": 8.926786554397381e-08
+        }
+      }
+    },
+    {
+      "key": "signed_2x1025_eps1e-05",
+      "shape_hw": [
+        2,
+        1025
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "0962ddc5a1a7ca545aebef3d07203f4598a8db71352895deeb1921726e940d4c",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 6.859208601106559e-08,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920928955078125e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.0722603449586643e-07
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920928955078125e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.0722603449586643e-07
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920933329356842e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.094891108888163e-07
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920933329356842e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.094891108888163e-07
+        }
+      }
+    },
+    {
+      "key": "signed_1x4097_eps1e-05",
+      "shape_hw": [
+        1,
+        4097
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "ae63b3117990db3185c7aee28a1cc1b395b6ee4719c05d6b1c3d925e1f74ba1f",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 8.046669774941506e-08,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 8.046669774941506e-08
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 8.046669774941506e-08
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920932441178422e-07,
+          "vs_pytorch_fp64_max_abs_error": 7.095748832952609e-08
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920932441178422e-07,
+          "vs_pytorch_fp64_max_abs_error": 7.095748832952609e-08
+        }
+      }
+    },
+    {
+      "key": "fractional_17x257_eps1e-05",
+      "shape_hw": [
+        17,
+        257
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "48cc1a05dd09deb6c79413b521b6b82ec364f17f8e4519080a25eb90d09a3f33",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 2.560698360021263e-07,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 2.384185791015625e-07,
+          "vs_pytorch_fp64_max_abs_error": 2.3306871588246736e-07
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 2.384185791015625e-07,
+          "vs_pytorch_fp64_max_abs_error": 2.3306871588246736e-07
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920933906672815e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.5465025549055156e-07
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920933906672815e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.5465025549055156e-07
+        }
+      }
+    },
+    {
+      "key": "tiny_3x33_eps1e-05",
+      "shape_hw": [
+        3,
+        33
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "96ed30d2f21d2289b3015deb60909a96a81b8c5d0da46ef98445be50e35a9859",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 2.7665807145194066e-11,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 2.7665807145194066e-11
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 2.7665807145194066e-11
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 2.914335439641036e-16,
+          "vs_pytorch_fp64_max_abs_error": 2.76655157116501e-11
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 2.914335439641036e-16,
+          "vs_pytorch_fp64_max_abs_error": 2.76655157116501e-11
+        }
+      }
+    },
+    {
+      "key": "mixed_3x65_eps1e-05",
+      "shape_hw": [
+        3,
+        65
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "31ea55bc3c19034b927e5c09d7ee847499b8d6fb8f21d75dfb28eda793bf5cd5",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 5.805956670990042e-08,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 5.805956670990042e-08
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 5.805956670990042e-08
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 4.707345624410664e-14,
+          "vs_pytorch_fp64_max_abs_error": 5.80595340693435e-08
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 4.707345624410664e-14,
+          "vs_pytorch_fp64_max_abs_error": 5.80595340693435e-08
+        }
+      }
+    },
+    {
+      "key": "gamma_zero_3x35_eps1e-05",
+      "shape_hw": [
+        3,
+        35
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "b94054e83e40ed1026830dde0c629ba5ae4aaa2a95b0e06ab26950d742ffdb21",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 0.0,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 0.0
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 0.0
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 0.0
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 0.0
+        }
+      }
+    },
+    {
+      "key": "gamma_signed_33x65_eps1e-05",
+      "shape_hw": [
+        33,
+        65
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "fixture_sha256": "473ce1e3bd5dd72af3c4f057abb670e81295de42e8689d9b2d3dc7d7233b7aae",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 1.1859181459072943e-07,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920928955078125e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835814861527183e-07
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 1.1920928955078125e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835814861527183e-07
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 1.192093190827137e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835812596672213e-07
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 1.192093190827137e-07,
+          "vs_pytorch_fp64_max_abs_error": 1.1835812596672213e-07
+        }
+      }
+    },
+    {
+      "key": "epsilon_3x33_eps0.001",
+      "shape_hw": [
+        3,
+        33
+      ],
+      "epsilon": 0.0010000000474974513,
+      "fixture_sha256": "ced2015f0ccf78c3ac81efe8e73aed2ad95461479e020b97509526f6e8f0e57f",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 1.0220190709356314e-10,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 1.0220190709356314e-10
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 0.0,
+          "vs_pytorch_fp64_max_abs_error": 1.0220190709356314e-10
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 4.119968255444917e-17,
+          "vs_pytorch_fp64_max_abs_error": 1.0220191533349965e-10
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 4.119968255444917e-17,
+          "vs_pytorch_fp64_max_abs_error": 1.0220191533349965e-10
+        }
+      }
+    },
+    {
+      "key": "epsilon_3x33_eps1e-06",
+      "shape_hw": [
+        3,
+        33
+      ],
+      "epsilon": 9.999999974752427e-07,
+      "fixture_sha256": "ef5ef3456d12a9415c3b4282b749a74ea6db6fcd2b2170a8af1afa7a9d6af22e",
+      "passed": true,
+      "pytorch_fp32_vs_fp64_max_abs_error": 6.99854212082851e-09,
+      "pytorch_fp64_vs_python_max_abs_error": 0.0,
+      "backends": {
+        "npu_depth1": {
+          "vs_pytorch_fp32_max_abs_error": 7.450580596923828e-09,
+          "vs_pytorch_fp64_max_abs_error": 6.027179727530196e-10
+        },
+        "npu_depth2": {
+          "vs_pytorch_fp32_max_abs_error": 7.450580596923828e-09,
+          "vs_pytorch_fp64_max_abs_error": 6.027179727530196e-10
+        },
+        "cuda_unfused": {
+          "vs_pytorch_fp32_max_abs_error": 7.450580610801616e-09,
+          "vs_pytorch_fp64_max_abs_error": 6.027179866308074e-10
+        },
+        "cuda_fused": {
+          "vs_pytorch_fp32_max_abs_error": 7.450580610801616e-09,
+          "vs_pytorch_fp64_max_abs_error": 6.027179866308074e-10
+        }
+      }
+    }
+  ]
+}

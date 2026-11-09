@@ -1,0 +1,27 @@
+{
+  "status": "accept",
+  "genre": "report",
+  "route": "light -> finalizer",
+  "correction_count": 0,
+  "fidelity_violations": [],
+  "overediting": false,
+  "residual_findings": [],
+  "false_positive_warnings": [
+    {
+      "code": "footnote_anchor",
+      "count": 2,
+      "reason": "The identical inline ceil(H/32), ceil(W/32) formula is parsed as footnote 32). No actual footnotes or links moved."
+    }
+  ],
+  "original_char_count": 7595,
+  "final_body_char_count": 7586,
+  "gate_change_rate": 0.0006,
+  "grade": "B",
+  "self_checks_passed": 6,
+  "independent_checks": [
+    "Only nine comma deletions distinguish before/after bodies",
+    "Full formula line identical",
+    "All numerical values and source URLs preserved"
+  ],
+  "gate_rerun_required": true
+}

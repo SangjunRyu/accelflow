@@ -1,0 +1,7 @@
+Generating SQLite file C:\Users\ysjun5656\AccelFlow\profile_stage\tiled.sqlite from C:\Users\ysjun5656\AccelFlow\profile_stage\tiled.nsys-rep
+Processing [C:\Users\ysjun5656\AccelFlow\profile_stage\tiled.sqlite] with [C:\Program Files\NVIDIA Corporation\Nsight Systems 2025.1.3\host-windows-x64\reports\cuda_gpu_kern_sum.py] to [C:\Users\ysjun5656\AccelFlow\profile_stage\tiled-stats_cuda_gpu_kern_sum.csv]... PROCESSED
+
+Processing [C:\Users\ysjun5656\AccelFlow\profile_stage\tiled.sqlite] with [C:\Program Files\NVIDIA Corporation\Nsight Systems 2025.1.3\host-windows-x64\reports\cuda_gpu_mem_time_sum.py] to [C:\Users\ysjun5656\AccelFlow\profile_stage\tiled-stats_cuda_gpu_mem_time_sum.csv]... PROCESSED
+
+Processing [C:\Users\ysjun5656\AccelFlow\profile_stage\tiled.sqlite] with [C:\Program Files\NVIDIA Corporation\Nsight Systems 2025.1.3\host-windows-x64\reports\cuda_api_sum.py] to [C:\Users\ysjun5656\AccelFlow\profile_stage\tiled-stats_cuda_api_sum.csv]... PROCESSED
+

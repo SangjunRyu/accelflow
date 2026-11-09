@@ -1,0 +1,1 @@
+CUDA_MATMUL_PASS texture_tiled 2,3,2 max_abs=0

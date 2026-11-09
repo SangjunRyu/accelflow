@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "npu_command": [
+    "/home/ysjun5656/dev/accelflow/build/reduction/reduction",
+    "/home/ysjun5656/dev/accelflow/results/cuda_reduction/20261109T0950598741989Z/npu-fixtures.json",
+    "1",
+    "1"
+  ],
+  "tt_metal_revision": "de546d3b146758714d900f11b218c8f9c805f410",
+  "fixtures": [
+    {
+      "key": "perf_integer_320x4097",
+      "binary": "scratch/perf_integer_320x4097.bin",
+      "performance": true,
+      "sha256": "3198b6054f607c1153af36ef0c2251ca12469f9fd9029bb37b033aef3f24be88"
+    },
+    {
+      "key": "perf_integer_1024x8193",
+      "binary": "scratch/perf_integer_1024x8193.bin",
+      "performance": true,
+      "sha256": "0e49a28472250019341ea1bf73d3d96781ac0724d54d6f37d1258394d8ef6d78"
+    }
+  ]
+}

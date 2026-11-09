@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "npu_operator_submissions": 82,
+  "npu_stage_submissions": 246,
+  "cuda_processes": 64,
+  "cuda_validated_outputs": 1184,
+  "independent_python_and_cross_backend_audit": true,
+  "source_hashes_match_executed_sources": true,
+  "failed_probes_preserved": [
+    "failed-square-scan-precision.log",
+    "failed-wh-unpack-to-dest.log",
+    "failed-rsqrt-before-refinement.log",
+    "failed-include-pilot.log",
+    "failed-numeric-depth1.log",
+    "probe-mean.log",
+    "probe-rsqrt.log"
+  ],
+  "initial_issue": "Wormhole default FP32 input path loses precision; represented values split before transport; no tolerance relaxation",
+  "driver_or_system_configuration_changed": false
+}

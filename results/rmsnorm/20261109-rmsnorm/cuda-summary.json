@@ -1,0 +1,124 @@
+{
+  "passed": true,
+  "timestamp_utc": "2026-11-09T12:43:18.534017+00:00",
+  "processes": 64,
+  "validated_outputs": 1184,
+  "max_abs_error": 1.5465029967743e-07,
+  "rows": [
+    {
+      "key": "perf_128x320_eps1e-05",
+      "shape_hw": [
+        128,
+        320
+      ],
+      "variants": {
+        "unfused": {
+          "operator_ms": 0.03720960021019,
+          "pipeline_ms": 0.2155,
+          "process_medians_ms": [
+            0.03720960021019,
+            0.039528000354767,
+            0.036776000261307
+          ]
+        },
+        "fused": {
+          "operator_ms": 0.016486400365829,
+          "pipeline_ms": 0.2381,
+          "process_medians_ms": [
+            0.014233599603176,
+            0.016486400365829,
+            0.075774401426315
+          ]
+        }
+      },
+      "observed_speedup": 2.2569875403070716
+    },
+    {
+      "key": "perf_640x320_eps1e-05",
+      "shape_hw": [
+        640,
+        320
+      ],
+      "variants": {
+        "unfused": {
+          "operator_ms": 0.12708319425583,
+          "pipeline_ms": 0.7961,
+          "process_medians_ms": [
+            0.12698880434036,
+            0.12708319425583,
+            0.13191039562225
+          ]
+        },
+        "fused": {
+          "operator_ms": 0.066303998231888,
+          "pipeline_ms": 0.7968,
+          "process_medians_ms": [
+            0.066099202632904,
+            0.066303998231888,
+            0.072084802389145
+          ]
+        }
+      },
+      "observed_speedup": 1.9166746749023513
+    },
+    {
+      "key": "perf_320x4097_eps1e-05",
+      "shape_hw": [
+        320,
+        4097
+      ],
+      "variants": {
+        "unfused": {
+          "operator_ms": 0.63924798965454,
+          "pipeline_ms": 4.1077,
+          "process_medians_ms": [
+            0.63910880088806,
+            0.63924798965454,
+            0.64163360595703
+          ]
+        },
+        "fused": {
+          "operator_ms": 0.26762080192566,
+          "pipeline_ms": 3.8202,
+          "process_medians_ms": [
+            0.26695520877838,
+            0.26762080192566,
+            0.2779648065567
+          ]
+        }
+      },
+      "observed_speedup": 2.388633413601798
+    },
+    {
+      "key": "perf_1024x8193_eps1e-05",
+      "shape_hw": [
+        1024,
+        8193
+      ],
+      "variants": {
+        "unfused": {
+          "operator_ms": 3.9901695251465,
+          "pipeline_ms": 25.2811,
+          "process_medians_ms": [
+            3.9904014587402,
+            3.9897392272949,
+            3.9901695251465
+          ]
+        },
+        "fused": {
+          "operator_ms": 1.97447681427,
+          "pipeline_ms": 23.5033,
+          "process_medians_ms": [
+            1.8480640411377,
+            1.9983360290527,
+            1.97447681427
+          ]
+        }
+      },
+      "observed_speedup": 2.0208743381075043
+    }
+  ],
+  "executable_sha256": "1f71340ee7a7bb199af61e830fc3f19d1a259f5a38452e1d509fd778df7204f7",
+  "measurement": "CUDA Event batch-average operator interval; 3 launches versus 1; scheduling and host submission gaps may be included",
+  "bank_conflict_counters": false
+}

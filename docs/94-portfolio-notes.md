@@ -21,7 +21,7 @@ fingerprints and CPU numerical comparison support functional equivalence.
 For M=64,K=64,N=96 the source-derived read payload falls from 49,152 to 32,768
 bytes (33.3%). This is a transfer model, not observed bandwidth or hardware speedup.
 For K=128/depth2, configured CB capacity grows from 12 to 16 KiB: record the local
-memory tradeoff alongside the reuse benefit. CUDA MatMul comparison is pending.
+memory tradeoff alongside the reuse benefit. CUDA MatMul comparison was pending at this stage; see [21](21-cuda-matmul-comparison.md) for the completed MX150 work.
 
 Blocked evidence: [11](11-blocked-matmul.md), 84 passing cases including odd output
 blocks and repeated input CB wrap. At 128×128×128, modeled input payload falls
@@ -87,7 +87,7 @@ Use negative results, sender load models and trial variation to motivate further
 
 공개 저장소는 [SangjunRyu/accelflow](https://github.com/SangjunRyu/accelflow)입니다. 기존 프로젝트명과 문서·스크립트 경로를 유지하면서,
 설명에는 `NPU kernel and runtime optimization with TT-Metal/TTSim`을 사용하면 됩니다.
-CUDA 구현은 현재 이 저장소에 골격만 있으므로 완료된 GPU/NPU 성능 비교라고 소개하지 않습니다.
+CUDA MatMul naive/tiled 구현과 MX150 실측은 [21번](21-cuda-matmul-comparison.md)에서 완료했습니다. 실제 GPU 시간과 NPU simulator 비용을 구분해 소개합니다.
 
 버전 관리 기준:
 
@@ -114,3 +114,34 @@ ELF 등 바이너리는 제외하므로 metadata에 기록된 모든 원본 파�
 > 정확성 200건과 기존 회귀 188건을 검증했으며, 실제 NPU 칩 성능과 시뮬레이터 결과를 구분했습니다.
 
 수치의 조건과 제한은 [20번 결과](20-batched-2d-multicast-matmul.md)를 함께 제시합니다.
+
+
+## CUDA MatMul — 2026-11-09
+
+NPU가 사용한 BF16 입력을 그대로 내보내 CUDA FP32 입력값으로 사용했습니다.
+MX150에서 naive/shared-memory tiled 커널을 실행했고, 30개 process의 출력 1,380건과
+기존 NPU 회귀 188개를 검증했습니다. 640×320×640의 event batch 평균 대표값은
+7.62204→2.31803ms로 약 3.29배 차이가 났습니다. 128³에서는 tiled가 더 짧지 않았습니다.
+실험 조건과 작은 입력의 결과, trial 변동을 [21번](21-cuda-matmul-comparison.md)에 함께 남겼습니다.
+이 비율은 같은 실제 GPU의 두 CUDA 구현 사이 값이며 GPU/NPU 속도 비율이 아닙니다.
+
+
+## NPU Reduction — 2026-11-09
+
+행별 합을 SFPU scan과 타일 간 carry로 구현했습니다.
+최초 native reduce 경로는 4096+1-4096 상쇄에서 실패했고, dtype/fidelity 변경만으로 해결되지 않았습니다.
+실패 로그를 남기고 경로를 바꾼 뒤 같은 상쇄를 포함한 50개 구성과 152회 제출을 통과했습니다.
+정수는 exact, 소수 최대 절대 오차는 4.768371582e-07입니다.
+CB는 depth에 따라 6/12KiB이며 폭과 무관합니다. 출력에는 마지막 prefix 타일 전체를 저장하므로
+compact vector보다 전송량이 큽니다. 이것은 정확성 기준 구현이며 물리 칩 성능 개선을 주장하지 않습니다.
+자세한 조건과 실패·성공 기록은 [22번](22-row-wise-reduction.md)을 참고합니다.
+
+
+## cudaArray와 profiler 진단 — 2026-11-09
+
+같은 16×16 shared-memory/FMA 흐름에서 입력을 선형 pointer와 cudaArray point texture로 바꿔 비교했습니다.
+45개 process·출력 2,070건을 검증했습니다. 큰 입력에서 texture kernel 대표 시간은 약 4.6% 짧았지만,
+작은 입력은 개선되지 않았고 자원 생성·업로드 비용도 있었습니다. 내부 swizzle만의 효과라고 해석하지 않습니다.
+nvprof trace는 성공했으며 legacy Event API는 CUPTI_ERROR_NOT_SUPPORTED(27)로 실패했습니다.
+같은 오류의 580 driver 호환성 보고를 찾았지만 Windows MX150에서 driver 변경 검증은 하지 않았습니다.
+driver 변경 없이 확보한 근거와 한계는 [23번](23-texture-matmul-and-profiler.md)에 정리했습니다.

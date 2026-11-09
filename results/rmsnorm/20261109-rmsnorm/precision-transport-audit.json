@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "square_values_checked": 30008,
+  "row_statistics_checked": 274,
+  "property": "Every transmitted component is TF32-representable; FP32 reconstruction equals original bits for this corpus",
+  "scope": "actual finite BF16 fixtures; not all FP32/subnormal/NaN/Inf values"
+}

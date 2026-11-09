@@ -1,0 +1,1 @@
+PASS RMSNorm unfused 3x257 max_abs=8.92679e-08

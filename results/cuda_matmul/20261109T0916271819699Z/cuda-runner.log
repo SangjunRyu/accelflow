@@ -1,0 +1,55 @@
+PASS cuda_signed_random_640x320x640_naive_trial2
+PASS cuda_signed_random_320x320x320_texture_tiled_trial3
+PASS cuda_signed_random_320x320x320_naive_trial2
+PASS cuda_deterministic_2x3x2_tiled_trial1
+PASS cuda_signed_random_640x320x640_texture_tiled_trial2
+PASS cuda_signed_random_65x257x97_naive_trial1
+PASS cuda_signed_random_640x320x640_tiled_trial2
+PASS cuda_signed_random_128x128x128_texture_tiled_trial2
+PASS cuda_signed_random_65x257x97_texture_tiled_trial1
+PASS cuda_identity_32x32x32_tiled_trial1
+PASS cuda_signed_random_128x128x128_texture_tiled_trial1
+PASS cuda_fractional_33x257x65_texture_tiled_trial1
+PASS cuda_zero_33x35x31_tiled_trial1
+PASS cuda_signed_random_128x128x128_tiled_trial2
+PASS cuda_signed_random_65x257x97_tiled_trial1
+PASS cuda_signed_random_128x128x128_naive_trial2
+PASS cuda_deterministic_2x3x2_texture_tiled_trial1
+PASS cuda_signed_random_128x128x128_tiled_trial1
+PASS cuda_signed_random_640x320x640_tiled_trial3
+PASS cuda_signed_random_320x320x320_tiled_trial1
+PASS cuda_fractional_33x257x65_naive_trial1
+PASS cuda_signed_random_320x320x320_tiled_trial3
+PASS cuda_signed_random_320x320x320_texture_tiled_trial2
+PASS cuda_signed_random_640x320x640_naive_trial3
+PASS cuda_signed_random_31x33x35_naive_trial1
+PASS cuda_signed_random_128x128x128_naive_trial3
+PASS cuda_signed_random_31x33x35_tiled_trial1
+PASS cuda_zero_33x35x31_texture_tiled_trial1
+PASS cuda_signed_random_128x128x128_texture_tiled_trial3
+PASS cuda_signed_random_640x320x640_naive_trial1
+PASS cuda_signed_random_320x320x320_texture_tiled_trial1
+PASS cuda_signed_random_640x320x640_texture_tiled_trial1
+PASS cuda_fractional_33x257x65_tiled_trial1
+PASS cuda_identity_32x32x32_naive_trial1
+PASS cuda_signed_random_320x320x320_naive_trial3
+PASS cuda_deterministic_2x3x2_naive_trial1
+PASS cuda_signed_random_640x320x640_texture_tiled_trial3
+PASS cuda_signed_random_128x128x128_tiled_trial3
+PASS cuda_signed_random_320x320x320_naive_trial1
+PASS cuda_identity_32x32x32_texture_tiled_trial1
+PASS cuda_signed_random_640x320x640_tiled_trial1
+PASS cuda_signed_random_128x128x128_naive_trial1
+PASS cuda_signed_random_320x320x320_tiled_trial2
+PASS cuda_zero_33x35x31_naive_trial1
+PASS cuda_signed_random_31x33x35_texture_tiled_trial1
+[128, 128, 128] naive {'kernel_event_batch_average_ms': 0.0593663975596, 'host_resident_launch_finish_ms': 0.0764, 'h2d_pinned_event_ms': 0.0608000010252, 'd2h_pinned_event_ms': 0.0327039994299, 'host_pipeline_h2d_kernel_d2h_ms': 0.2381}
+[128, 128, 128] tiled {'kernel_event_batch_average_ms': 0.0310479998589, 'host_resident_launch_finish_ms': 0.0404, 'h2d_pinned_event_ms': 0.0577279999852, 'd2h_pinned_event_ms': 0.0307519994676, 'host_pipeline_h2d_kernel_d2h_ms': 0.19}
+[128, 128, 128] texture_tiled {'kernel_event_batch_average_ms': 0.0320895984769, 'host_resident_launch_finish_ms': 0.0533, 'h2d_pinned_event_ms': 0.0674879997969, 'd2h_pinned_event_ms': 0.0347520001233, 'host_pipeline_h2d_kernel_d2h_ms': 0.213}
+[320, 320, 320] naive {'kernel_event_batch_average_ms': 0.87577599287, 'host_resident_launch_finish_ms': 0.9066, 'h2d_pinned_event_ms': 0.285055994987, 'd2h_pinned_event_ms': 0.136480003595, 'host_pipeline_h2d_kernel_d2h_ms': 1.4648}
+[320, 320, 320] tiled {'kernel_event_batch_average_ms': 0.40186882019, 'host_resident_launch_finish_ms': 0.4196, 'h2d_pinned_event_ms': 0.278719991446, 'd2h_pinned_event_ms': 0.134847998619, 'host_pipeline_h2d_kernel_d2h_ms': 0.9686}
+[320, 320, 320] texture_tiled {'kernel_event_batch_average_ms': 0.405401617289, 'host_resident_launch_finish_ms': 0.4409, 'h2d_pinned_event_ms': 0.329759985209, 'd2h_pinned_event_ms': 0.166400000453, 'host_pipeline_h2d_kernel_d2h_ms': 0.9969}
+[640, 320, 640] naive {'kernel_event_batch_average_ms': 4.44733428955, 'host_resident_launch_finish_ms': 4.5666, 'h2d_pinned_event_ms': 0.554015994072, 'd2h_pinned_event_ms': 0.52345597744, 'host_pipeline_h2d_kernel_d2h_ms': 5.7596}
+[640, 320, 640] tiled {'kernel_event_batch_average_ms': 1.78268170357, 'host_resident_launch_finish_ms': 1.8066, 'h2d_pinned_event_ms': 0.549247980118, 'd2h_pinned_event_ms': 0.513920009136, 'host_pipeline_h2d_kernel_d2h_ms': 3.0308}
+[640, 320, 640] texture_tiled {'kernel_event_batch_average_ms': 1.70112001896, 'host_resident_launch_finish_ms': 1.7296, 'h2d_pinned_event_ms': 0.563072025776, 'd2h_pinned_event_ms': 0.53135997057, 'host_pipeline_h2d_kernel_d2h_ms': 2.9949}
+CUDA_ALL_PASS \\wsl.localhost\Ubuntu-24.04\home\ysjun5656\dev\accelflow\results\cuda_matmul\20261109T0916271819699Z

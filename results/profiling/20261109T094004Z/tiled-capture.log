@@ -1,0 +1,15 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+Collecting data...
+Generating 'C:\Users\YSJUN5~1\AppData\Local\Temp\nsys-report-062c.qdstrm'
+
+[1/1] [0%                          ] tiled.nsys-rep
+[1/1] [0%                          ] tiled.nsys-rep
+[1/1] [================70%         ] tiled.nsys-rep
+[1/1] [================71%         ] tiled.nsys-rep
+[1/1] [========================100%] tiled.nsys-rep
+[1/1] [========================100%] tiled.nsys-rep
+Generated:
+	C:\Users\ysjun5656\AccelFlow\profile_stage\tiled.nsys-rep

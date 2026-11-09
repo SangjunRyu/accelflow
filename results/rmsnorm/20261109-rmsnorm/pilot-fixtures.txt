@@ -1,0 +1,2 @@
+/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/scratch/deterministic_2x3_eps1e-05.bin
+/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/scratch/zero_33x35_eps1e-05.bin
