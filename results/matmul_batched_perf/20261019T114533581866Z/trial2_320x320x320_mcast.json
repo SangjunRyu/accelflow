@@ -1,0 +1,294 @@
+{
+  "benchmark_enabled": true,
+  "cases": [
+    {
+      "A_multicast_enabled": true,
+      "B_multicast_enabled": false,
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 204800,
+        "aligned_size_per_bank_bytes": 18432,
+        "logical_bytes": 204800,
+        "page_bytes": 2048,
+        "pages": 100
+      },
+      "a_shape": [
+        320,
+        320
+      ],
+      "a_tile_reads_model": 300,
+      "atol": 0.0,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 204800,
+        "aligned_size_per_bank_bytes": 18432,
+        "logical_bytes": 204800,
+        "page_bytes": 2048,
+        "pages": 100
+      },
+      "b_shape": [
+        320,
+        320
+      ],
+      "b_tile_reads_model": 1000,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 204800,
+        "aligned_size_per_bank_bytes": 18432,
+        "logical_bytes": 204800,
+        "page_bytes": 2048,
+        "pages": 100
+      },
+      "c_shape": [
+        320,
+        320
+      ],
+      "cb_capacity_bytes_model": 12288,
+      "cb_capacity_bytes_total_model": 49152,
+      "cb_capacity_tiles": [
+        2,
+        2,
+        2
+      ],
+      "core_count": 4,
+      "destination_tile_slots_max": 1,
+      "distribution": {
+        "a_dram_reads_model": 300,
+        "a_multicast_calls_model": 300,
+        "a_receiver_deliveries_model": 900,
+        "active_cores": 4,
+        "assignments": [
+          {
+            "logical_core": [
+              0,
+              0
+            ],
+            "output_tile_ids": [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18,
+              20,
+              24,
+              28,
+              30,
+              34,
+              38,
+              40,
+              44,
+              48,
+              50,
+              54,
+              58,
+              60,
+              64,
+              68,
+              70,
+              74,
+              78,
+              80,
+              84,
+              88,
+              90,
+              94,
+              98
+            ],
+            "physical_core": [
+              18,
+              18
+            ],
+            "role": "A sender + compute"
+          },
+          {
+            "logical_core": [
+              1,
+              0
+            ],
+            "output_tile_ids": [
+              1,
+              5,
+              9,
+              11,
+              15,
+              19,
+              21,
+              25,
+              29,
+              31,
+              35,
+              39,
+              41,
+              45,
+              49,
+              51,
+              55,
+              59,
+              61,
+              65,
+              69,
+              71,
+              75,
+              79,
+              81,
+              85,
+              89,
+              91,
+              95,
+              99
+            ],
+            "physical_core": [
+              19,
+              18
+            ],
+            "role": "A receiver + compute"
+          },
+          {
+            "logical_core": [
+              2,
+              0
+            ],
+            "output_tile_ids": [
+              2,
+              6,
+              12,
+              16,
+              22,
+              26,
+              32,
+              36,
+              42,
+              46,
+              52,
+              56,
+              62,
+              66,
+              72,
+              76,
+              82,
+              86,
+              92,
+              96
+            ],
+            "physical_core": [
+              20,
+              18
+            ],
+            "role": "A receiver + compute"
+          },
+          {
+            "logical_core": [
+              3,
+              0
+            ],
+            "output_tile_ids": [
+              3,
+              7,
+              13,
+              17,
+              23,
+              27,
+              33,
+              37,
+              43,
+              47,
+              53,
+              57,
+              63,
+              67,
+              73,
+              77,
+              83,
+              87,
+              93,
+              97
+            ],
+            "physical_core": [
+              21,
+              18
+            ],
+            "role": "A receiver + compute"
+          }
+        ],
+        "grid": [
+          8,
+          9
+        ],
+        "mapping": "strided output columns; A multicast on one core row",
+        "requested_cores": 4,
+        "unused_tail_a_tiles_model": 200
+      },
+      "dram_read_payload_model": 2662400,
+      "dram_write_payload_model": 204800,
+      "fp32_destination_accumulation": true,
+      "input_chunks_per_output_block": 1,
+      "input_fingerprint_a": 2015493312458547864,
+      "input_fingerprint_b": 11301053363522714669,
+      "k_chunk_tiles": 0,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 1000,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "signed_random",
+      "output_block_tiles": 1,
+      "output_fingerprint": 6103701600433838464,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 100,
+      "padded_flops_model": 65536000,
+      "padded_mkn": [
+        320,
+        320,
+        320
+      ],
+      "padding_verified": true,
+      "partial_result_pack_calls_model": 0,
+      "passed": true,
+      "read_barriers_model": 1300,
+      "rtol": 0.0,
+      "shape_mkn": [
+        320,
+        320,
+        320
+      ],
+      "tile_grid_mkn": [
+        10,
+        10,
+        10
+      ],
+      "timing": {
+        "all_repetition_outputs_equal": true,
+        "clock": "host std::chrono::steady_clock",
+        "first_dispatch_is_not_guaranteed_cold_JIT": true,
+        "physical_NPU_latency": false,
+        "sample_count": 5,
+        "samples_ms": [
+          728.087274,
+          687.517685,
+          689.491974,
+          684.148372,
+          734.3825
+        ],
+        "scope": "EnqueueMeshWorkload + Finish; simulator/host dispatch wall time",
+        "warmup_count": 2,
+        "warmup_ms": [
+          704.853075,
+          711.877299
+        ]
+      },
+      "useful_flops_model": 65536000
+    }
+  ],
+  "destination_accumulation": "fp32",
+  "dtype": "bf16",
+  "k_chunk_tiles": 0,
+  "multicast_batch_tiles": 1,
+  "passed": true,
+  "reference": "FP64 accumulation of products of quantized BF16 inputs",
+  "requested_cores": 4,
+  "seed": 2026,
+  "stream_cb_depth": 2,
+  "variant": "mcast"
+}

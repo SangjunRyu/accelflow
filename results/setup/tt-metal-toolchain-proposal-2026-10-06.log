@@ -1,0 +1,39 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libatomic1 is already the newest version (14.2.0-4ubuntu2~24.04.1).
+libatomic1 set to manually installed.
+libstdc++6 is already the newest version (14.2.0-4ubuntu2~24.04.1).
+libstdc++6 set to manually installed.
+xz-utils is already the newest version (5.6.1+really5.4.5-1ubuntu0.3).
+xz-utils set to manually installed.
+python3-pkg-resources is already the newest version (68.1.2-2ubuntu1.2).
+python3-pkg-resources set to manually installed.
+xxd is already the newest version (2:9.1.0016-1ubuntu7.20).
+xxd set to manually installed.
+The following additional packages will be installed:
+  cpp-14 cpp-14-x86-64-linux-gnu g++-14-x86-64-linux-gnu gcc-14
+  gcc-14-x86-64-linux-gnu libc++1-20 libc++abi1-20 libclang-common-20-dev
+  libclang-cpp20 libclang1-20 libgc1 libgcc-14-dev liblua5.4-0 libobjc-13-dev
+  libobjc4 libstdc++-14-dev libunwind-20 libunwind-20-dev llvm-20-linker-tools
+  pandoc-data python3-wheel
+Suggested packages:
+  clang-20-doc wasi-libc gcc-14-locales cpp-14-doc g++-14-multilib gcc-14-doc
+  gcc-14-multilib clang libstdc++-14-doc texlive-latex-recommended
+  texlive-xetex texlive-luatex pandoc-citeproc texlive-latex-extra context
+  wkhtmltopdf librsvg2-bin groff ghc nodejs php python ruby r-base-core
+  libjs-mathjax libjs-katex citation-style-language-styles
+Recommended packages:
+  llvm-20-dev clang-tools-20 libclang-rt-20-dev
+The following NEW packages will be installed:
+  clang-20 cpp-14 cpp-14-x86-64-linux-gnu g++-14 g++-14-x86-64-linux-gnu
+  gcc-14 gcc-14-x86-64-linux-gnu libc++-20-dev libc++1-20 libc++abi-20-dev
+  libc++abi1-20 libclang-common-20-dev libclang-cpp20 libclang1-20 libgc1
+  libgcc-14-dev liblua5.4-0 libobjc-13-dev libobjc4 libstdc++-14-dev
+  libunwind-20 libunwind-20-dev lld-20 llvm-20-linker-tools pandoc pandoc-data
+  python3-pip python3-wheel
+0 upgraded, 28 newly installed, 0 to remove and 39 not upgraded.
+Need to get 112 MB of archives.
+After this operation, 548 MB of additional disk space will be used.
+Do you want to continue? [Y/n] N
+Abort.

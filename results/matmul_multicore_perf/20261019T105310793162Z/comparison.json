@@ -1,0 +1,1165 @@
+{
+  "passed": true,
+  "unique_configurations": 32,
+  "process_trials": 96,
+  "timed_samples": 672,
+  "dispatches": 864,
+  "scope": "host steady_clock: EnqueueMeshWorkload + Finish",
+  "physical_chip_latency": false,
+  "comparisons": [
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "mode": "baseline_cores1_depth1",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 1,
+      "median_of_trial_medians_ms": 68.242649,
+      "trial_medians_ms": [
+        318.435296,
+        68.242649,
+        67.204712
+      ],
+      "pooled_median_ms": 69.251798,
+      "pooled_p95_ms": 401.114645,
+      "min_ms": 62.736481,
+      "max_ms": 494.39038,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.0,
+      "same_depth_multicore1_median_ratio": 1.286985899389691,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 6144,
+      "output_tiles": 16,
+      "max_output_tiles_per_core": 16,
+      "max_matmul_calls_per_core_model": 64,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "128_128_128_baseline_cores1_depth1_trial1.json",
+        "128_128_128_baseline_cores1_depth1_trial2.json",
+        "128_128_128_baseline_cores1_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "mode": "baseline_cores1_depth2",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 2,
+      "median_of_trial_medians_ms": 65.489039,
+      "trial_medians_ms": [
+        65.489039,
+        66.002727,
+        54.53668
+      ],
+      "pooled_median_ms": 63.673862,
+      "pooled_p95_ms": 90.795781,
+      "min_ms": 52.300864,
+      "max_ms": 121.072347,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.0,
+      "same_depth_multicore1_median_ratio": 1.0353106723706849,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 12288,
+      "output_tiles": 16,
+      "max_output_tiles_per_core": 16,
+      "max_matmul_calls_per_core_model": 64,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "128_128_128_baseline_cores1_depth2_trial1.json",
+        "128_128_128_baseline_cores1_depth2_trial2.json",
+        "128_128_128_baseline_cores1_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "mode": "multicore_cores1_depth1",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 1,
+      "median_of_trial_medians_ms": 87.827327,
+      "trial_medians_ms": [
+        94.121913,
+        67.245222,
+        87.827327
+      ],
+      "pooled_median_ms": 81.89187,
+      "pooled_p95_ms": 114.348258,
+      "min_ms": 61.71644,
+      "max_ms": 136.263833,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 0.7770092900584348,
+      "same_depth_multicore1_median_ratio": 1.0,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 6144,
+      "output_tiles": 16,
+      "max_output_tiles_per_core": 16,
+      "max_matmul_calls_per_core_model": 64,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "128_128_128_multicore_cores1_depth1_trial1.json",
+        "128_128_128_multicore_cores1_depth1_trial2.json",
+        "128_128_128_multicore_cores1_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "mode": "multicore_cores1_depth2",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 2,
+      "median_of_trial_medians_ms": 67.801501,
+      "trial_medians_ms": [
+        67.801501,
+        85.64747,
+        62.446732
+      ],
+      "pooled_median_ms": 67.801501,
+      "pooled_p95_ms": 97.454383,
+      "min_ms": 50.915759,
+      "max_ms": 121.969044,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 0.9658936459238565,
+      "same_depth_multicore1_median_ratio": 1.0,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 12288,
+      "output_tiles": 16,
+      "max_output_tiles_per_core": 16,
+      "max_matmul_calls_per_core_model": 64,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "128_128_128_multicore_cores1_depth2_trial1.json",
+        "128_128_128_multicore_cores1_depth2_trial2.json",
+        "128_128_128_multicore_cores1_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "mode": "multicore_cores2_depth1",
+      "requested_cores": 2,
+      "active_cores": 2,
+      "depth": 1,
+      "median_of_trial_medians_ms": 66.09223,
+      "trial_medians_ms": [
+        150.728618,
+        66.09223,
+        53.418629
+      ],
+      "pooled_median_ms": 66.09223,
+      "pooled_p95_ms": 154.708415,
+      "min_ms": 50.571323,
+      "max_ms": 155.141961,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.032536638573097,
+      "same_depth_multicore1_median_ratio": 1.3288600944468056,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 12288,
+      "output_tiles": 16,
+      "max_output_tiles_per_core": 8,
+      "max_matmul_calls_per_core_model": 32,
+      "work_distribution_factor_model": 2.0,
+      "source_reports": [
+        "128_128_128_multicore_cores2_depth1_trial1.json",
+        "128_128_128_multicore_cores2_depth1_trial2.json",
+        "128_128_128_multicore_cores2_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "mode": "multicore_cores2_depth2",
+      "requested_cores": 2,
+      "active_cores": 2,
+      "depth": 2,
+      "median_of_trial_medians_ms": 48.979177,
+      "trial_medians_ms": [
+        54.421269,
+        44.639526,
+        48.979177
+      ],
+      "pooled_median_ms": 48.979177,
+      "pooled_p95_ms": 61.527495,
+      "min_ms": 43.000087,
+      "max_ms": 67.319013,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.3370792040870758,
+      "same_depth_multicore1_median_ratio": 1.3842923697962504,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 24576,
+      "output_tiles": 16,
+      "max_output_tiles_per_core": 8,
+      "max_matmul_calls_per_core_model": 32,
+      "work_distribution_factor_model": 2.0,
+      "source_reports": [
+        "128_128_128_multicore_cores2_depth2_trial1.json",
+        "128_128_128_multicore_cores2_depth2_trial2.json",
+        "128_128_128_multicore_cores2_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "mode": "multicore_cores4_depth1",
+      "requested_cores": 4,
+      "active_cores": 4,
+      "depth": 1,
+      "median_of_trial_medians_ms": 44.400936,
+      "trial_medians_ms": [
+        43.972495,
+        64.585864,
+        44.400936
+      ],
+      "pooled_median_ms": 45.268579,
+      "pooled_p95_ms": 73.917352,
+      "min_ms": 39.892206,
+      "max_ms": 74.781058,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.5369641982322173,
+      "same_depth_multicore1_median_ratio": 1.9780512509916457,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 24576,
+      "output_tiles": 16,
+      "max_output_tiles_per_core": 4,
+      "max_matmul_calls_per_core_model": 16,
+      "work_distribution_factor_model": 4.0,
+      "source_reports": [
+        "128_128_128_multicore_cores4_depth1_trial1.json",
+        "128_128_128_multicore_cores4_depth1_trial2.json",
+        "128_128_128_multicore_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "mode": "multicore_cores4_depth2",
+      "requested_cores": 4,
+      "active_cores": 4,
+      "depth": 2,
+      "median_of_trial_medians_ms": 80.423255,
+      "trial_medians_ms": [
+        90.403407,
+        80.423255,
+        50.607958
+      ],
+      "pooled_median_ms": 77.082589,
+      "pooled_p95_ms": 100.746018,
+      "min_ms": 40.730867,
+      "max_ms": 103.625686,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 0.814304755508839,
+      "same_depth_multicore1_median_ratio": 0.8430584039405021,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 49152,
+      "output_tiles": 16,
+      "max_output_tiles_per_core": 4,
+      "max_matmul_calls_per_core_model": 16,
+      "work_distribution_factor_model": 4.0,
+      "source_reports": [
+        "128_128_128_multicore_cores4_depth2_trial1.json",
+        "128_128_128_multicore_cores4_depth2_trial2.json",
+        "128_128_128_multicore_cores4_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        64,
+        96
+      ],
+      "mode": "baseline_cores1_depth1",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 1,
+      "median_of_trial_medians_ms": 16.522568,
+      "trial_medians_ms": [
+        15.789893,
+        17.348548,
+        16.522568
+      ],
+      "pooled_median_ms": 16.708823,
+      "pooled_p95_ms": 18.255334,
+      "min_ms": 13.971384,
+      "max_ms": 21.475788,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.0,
+      "same_depth_multicore1_median_ratio": 1.1771406236609225,
+      "read_payload_bytes_model": 49152,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 6144,
+      "output_tiles": 6,
+      "max_output_tiles_per_core": 6,
+      "max_matmul_calls_per_core_model": 12,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "64_64_96_baseline_cores1_depth1_trial1.json",
+        "64_64_96_baseline_cores1_depth1_trial2.json",
+        "64_64_96_baseline_cores1_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        64,
+        96
+      ],
+      "mode": "baseline_cores1_depth2",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 2,
+      "median_of_trial_medians_ms": 17.638805,
+      "trial_medians_ms": [
+        17.638805,
+        20.793934,
+        16.978793
+      ],
+      "pooled_median_ms": 18.995312,
+      "pooled_p95_ms": 21.374265,
+      "min_ms": 15.40173,
+      "max_ms": 21.499806,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.0,
+      "same_depth_multicore1_median_ratio": 0.8958786040210773,
+      "read_payload_bytes_model": 49152,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 12288,
+      "output_tiles": 6,
+      "max_output_tiles_per_core": 6,
+      "max_matmul_calls_per_core_model": 12,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "64_64_96_baseline_cores1_depth2_trial1.json",
+        "64_64_96_baseline_cores1_depth2_trial2.json",
+        "64_64_96_baseline_cores1_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        64,
+        96
+      ],
+      "mode": "multicore_cores1_depth1",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 1,
+      "median_of_trial_medians_ms": 19.449386,
+      "trial_medians_ms": [
+        70.788806,
+        18.870374,
+        19.449386
+      ],
+      "pooled_median_ms": 20.023538,
+      "pooled_p95_ms": 74.069717,
+      "min_ms": 16.991133,
+      "max_ms": 80.17887,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 0.8495161749579138,
+      "same_depth_multicore1_median_ratio": 1.0,
+      "read_payload_bytes_model": 49152,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 6144,
+      "output_tiles": 6,
+      "max_output_tiles_per_core": 6,
+      "max_matmul_calls_per_core_model": 12,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "64_64_96_multicore_cores1_depth1_trial1.json",
+        "64_64_96_multicore_cores1_depth1_trial2.json",
+        "64_64_96_multicore_cores1_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        64,
+        96
+      ],
+      "mode": "multicore_cores1_depth2",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 2,
+      "median_of_trial_medians_ms": 15.802228,
+      "trial_medians_ms": [
+        15.871136,
+        15.802228,
+        14.757083
+      ],
+      "pooled_median_ms": 15.40047,
+      "pooled_p95_ms": 16.866943,
+      "min_ms": 12.836076,
+      "max_ms": 19.206747,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.1162226617664295,
+      "same_depth_multicore1_median_ratio": 1.0,
+      "read_payload_bytes_model": 49152,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 12288,
+      "output_tiles": 6,
+      "max_output_tiles_per_core": 6,
+      "max_matmul_calls_per_core_model": 12,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "64_64_96_multicore_cores1_depth2_trial1.json",
+        "64_64_96_multicore_cores1_depth2_trial2.json",
+        "64_64_96_multicore_cores1_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        64,
+        96
+      ],
+      "mode": "multicore_cores2_depth1",
+      "requested_cores": 2,
+      "active_cores": 2,
+      "depth": 1,
+      "median_of_trial_medians_ms": 22.226977,
+      "trial_medians_ms": [
+        22.226977,
+        15.038312,
+        23.702417
+      ],
+      "pooled_median_ms": 21.647171,
+      "pooled_p95_ms": 25.45957,
+      "min_ms": 12.794984,
+      "max_ms": 25.652298,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 0.7433565077248246,
+      "same_depth_multicore1_median_ratio": 0.8750351431056054,
+      "read_payload_bytes_model": 49152,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 12288,
+      "output_tiles": 6,
+      "max_output_tiles_per_core": 3,
+      "max_matmul_calls_per_core_model": 6,
+      "work_distribution_factor_model": 2.0,
+      "source_reports": [
+        "64_64_96_multicore_cores2_depth1_trial1.json",
+        "64_64_96_multicore_cores2_depth1_trial2.json",
+        "64_64_96_multicore_cores2_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        64,
+        96
+      ],
+      "mode": "multicore_cores2_depth2",
+      "requested_cores": 2,
+      "active_cores": 2,
+      "depth": 2,
+      "median_of_trial_medians_ms": 14.557934,
+      "trial_medians_ms": [
+        14.557934,
+        20.882625,
+        12.726118
+      ],
+      "pooled_median_ms": 14.557934,
+      "pooled_p95_ms": 23.773192,
+      "min_ms": 10.98883,
+      "max_ms": 24.861547,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.211628312094285,
+      "same_depth_multicore1_median_ratio": 1.085471880831442,
+      "read_payload_bytes_model": 49152,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 24576,
+      "output_tiles": 6,
+      "max_output_tiles_per_core": 3,
+      "max_matmul_calls_per_core_model": 6,
+      "work_distribution_factor_model": 2.0,
+      "source_reports": [
+        "64_64_96_multicore_cores2_depth2_trial1.json",
+        "64_64_96_multicore_cores2_depth2_trial2.json",
+        "64_64_96_multicore_cores2_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        64,
+        96
+      ],
+      "mode": "multicore_cores4_depth1",
+      "requested_cores": 4,
+      "active_cores": 4,
+      "depth": 1,
+      "median_of_trial_medians_ms": 14.477123,
+      "trial_medians_ms": [
+        44.891336,
+        13.404401,
+        14.477123
+      ],
+      "pooled_median_ms": 19.184899,
+      "pooled_p95_ms": 49.280823,
+      "min_ms": 11.667077,
+      "max_ms": 67.168601,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.1412880860375365,
+      "same_depth_multicore1_median_ratio": 1.3434565693750062,
+      "read_payload_bytes_model": 49152,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 24576,
+      "output_tiles": 6,
+      "max_output_tiles_per_core": 2,
+      "max_matmul_calls_per_core_model": 4,
+      "work_distribution_factor_model": 3.0,
+      "source_reports": [
+        "64_64_96_multicore_cores4_depth1_trial1.json",
+        "64_64_96_multicore_cores4_depth1_trial2.json",
+        "64_64_96_multicore_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        64,
+        96
+      ],
+      "mode": "multicore_cores4_depth2",
+      "requested_cores": 4,
+      "active_cores": 4,
+      "depth": 2,
+      "median_of_trial_medians_ms": 28.858293,
+      "trial_medians_ms": [
+        28.858293,
+        31.40647,
+        26.325711
+      ],
+      "pooled_median_ms": 29.619238,
+      "pooled_p95_ms": 47.857325,
+      "min_ms": 16.525617,
+      "max_ms": 49.461977,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 0.6112213567171143,
+      "same_depth_multicore1_median_ratio": 0.5475801358035972,
+      "read_payload_bytes_model": 49152,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 49152,
+      "output_tiles": 6,
+      "max_output_tiles_per_core": 2,
+      "max_matmul_calls_per_core_model": 4,
+      "work_distribution_factor_model": 3.0,
+      "source_reports": [
+        "64_64_96_multicore_cores4_depth2_trial1.json",
+        "64_64_96_multicore_cores4_depth2_trial2.json",
+        "64_64_96_multicore_cores4_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        512,
+        64
+      ],
+      "mode": "baseline_cores1_depth1",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 1,
+      "median_of_trial_medians_ms": 86.566345,
+      "trial_medians_ms": [
+        163.021272,
+        86.566345,
+        69.420993
+      ],
+      "pooled_median_ms": 86.566345,
+      "pooled_p95_ms": 187.997985,
+      "min_ms": 67.758346,
+      "max_ms": 192.490384,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.0,
+      "same_depth_multicore1_median_ratio": 0.8521991543018248,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 6144,
+      "output_tiles": 4,
+      "max_output_tiles_per_core": 4,
+      "max_matmul_calls_per_core_model": 64,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "64_512_64_baseline_cores1_depth1_trial1.json",
+        "64_512_64_baseline_cores1_depth1_trial2.json",
+        "64_512_64_baseline_cores1_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        512,
+        64
+      ],
+      "mode": "baseline_cores1_depth2",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 2,
+      "median_of_trial_medians_ms": 69.47445,
+      "trial_medians_ms": [
+        69.47445,
+        77.425934,
+        58.495149
+      ],
+      "pooled_median_ms": 67.645617,
+      "pooled_p95_ms": 87.594215,
+      "min_ms": 55.451476,
+      "max_ms": 96.840429,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.0,
+      "same_depth_multicore1_median_ratio": 1.0266641045736957,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 12288,
+      "output_tiles": 4,
+      "max_output_tiles_per_core": 4,
+      "max_matmul_calls_per_core_model": 64,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "64_512_64_baseline_cores1_depth2_trial1.json",
+        "64_512_64_baseline_cores1_depth2_trial2.json",
+        "64_512_64_baseline_cores1_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        512,
+        64
+      ],
+      "mode": "multicore_cores1_depth1",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 1,
+      "median_of_trial_medians_ms": 73.771766,
+      "trial_medians_ms": [
+        84.605454,
+        73.771766,
+        70.639621
+      ],
+      "pooled_median_ms": 74.796178,
+      "pooled_p95_ms": 138.605114,
+      "min_ms": 67.371556,
+      "max_ms": 149.245801,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.173434630804419,
+      "same_depth_multicore1_median_ratio": 1.0,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 6144,
+      "output_tiles": 4,
+      "max_output_tiles_per_core": 4,
+      "max_matmul_calls_per_core_model": 64,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "64_512_64_multicore_cores1_depth1_trial1.json",
+        "64_512_64_multicore_cores1_depth1_trial2.json",
+        "64_512_64_multicore_cores1_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        512,
+        64
+      ],
+      "mode": "multicore_cores1_depth2",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 2,
+      "median_of_trial_medians_ms": 71.326924,
+      "trial_medians_ms": [
+        71.481914,
+        71.326924,
+        54.083874
+      ],
+      "pooled_median_ms": 69.699667,
+      "pooled_p95_ms": 79.582208,
+      "min_ms": 51.44805,
+      "max_ms": 82.046072,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 0.9740284047577882,
+      "same_depth_multicore1_median_ratio": 1.0,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 12288,
+      "output_tiles": 4,
+      "max_output_tiles_per_core": 4,
+      "max_matmul_calls_per_core_model": 64,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "64_512_64_multicore_cores1_depth2_trial1.json",
+        "64_512_64_multicore_cores1_depth2_trial2.json",
+        "64_512_64_multicore_cores1_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        512,
+        64
+      ],
+      "mode": "multicore_cores2_depth1",
+      "requested_cores": 2,
+      "active_cores": 2,
+      "depth": 1,
+      "median_of_trial_medians_ms": 72.531153,
+      "trial_medians_ms": [
+        96.762979,
+        49.333102,
+        72.531153
+      ],
+      "pooled_median_ms": 72.531153,
+      "pooled_p95_ms": 115.548375,
+      "min_ms": 47.123133,
+      "max_ms": 224.582375,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.1935057064376184,
+      "same_depth_multicore1_median_ratio": 1.0171045536805405,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 12288,
+      "output_tiles": 4,
+      "max_output_tiles_per_core": 2,
+      "max_matmul_calls_per_core_model": 32,
+      "work_distribution_factor_model": 2.0,
+      "source_reports": [
+        "64_512_64_multicore_cores2_depth1_trial1.json",
+        "64_512_64_multicore_cores2_depth1_trial2.json",
+        "64_512_64_multicore_cores2_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        512,
+        64
+      ],
+      "mode": "multicore_cores2_depth2",
+      "requested_cores": 2,
+      "active_cores": 2,
+      "depth": 2,
+      "median_of_trial_medians_ms": 50.382849,
+      "trial_medians_ms": [
+        50.382849,
+        71.344919,
+        46.766287
+      ],
+      "pooled_median_ms": 50.382849,
+      "pooled_p95_ms": 96.565043,
+      "min_ms": 39.614307,
+      "max_ms": 98.281237,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.3789305563089536,
+      "same_depth_multicore1_median_ratio": 1.41569850486224,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 24576,
+      "output_tiles": 4,
+      "max_output_tiles_per_core": 2,
+      "max_matmul_calls_per_core_model": 32,
+      "work_distribution_factor_model": 2.0,
+      "source_reports": [
+        "64_512_64_multicore_cores2_depth2_trial1.json",
+        "64_512_64_multicore_cores2_depth2_trial2.json",
+        "64_512_64_multicore_cores2_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        512,
+        64
+      ],
+      "mode": "multicore_cores4_depth1",
+      "requested_cores": 4,
+      "active_cores": 4,
+      "depth": 1,
+      "median_of_trial_medians_ms": 42.202004,
+      "trial_medians_ms": [
+        57.449644,
+        41.333294,
+        42.202004
+      ],
+      "pooled_median_ms": 44.957007,
+      "pooled_p95_ms": 66.407439,
+      "min_ms": 39.356197,
+      "max_ms": 71.337786,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 2.051237780082671,
+      "same_depth_multicore1_median_ratio": 1.7480631014584045,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 24576,
+      "output_tiles": 4,
+      "max_output_tiles_per_core": 1,
+      "max_matmul_calls_per_core_model": 16,
+      "work_distribution_factor_model": 4.0,
+      "source_reports": [
+        "64_512_64_multicore_cores4_depth1_trial1.json",
+        "64_512_64_multicore_cores4_depth1_trial2.json",
+        "64_512_64_multicore_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        64,
+        512,
+        64
+      ],
+      "mode": "multicore_cores4_depth2",
+      "requested_cores": 4,
+      "active_cores": 4,
+      "depth": 2,
+      "median_of_trial_medians_ms": 64.075075,
+      "trial_medians_ms": [
+        68.391228,
+        41.730072,
+        64.075075
+      ],
+      "pooled_median_ms": 56.376321,
+      "pooled_p95_ms": 85.94245,
+      "min_ms": 39.291739,
+      "max_ms": 101.623711,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.084266385954289,
+      "same_depth_multicore1_median_ratio": 1.1131773782551173,
+      "read_payload_bytes_model": 262144,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 49152,
+      "output_tiles": 4,
+      "max_output_tiles_per_core": 1,
+      "max_matmul_calls_per_core_model": 16,
+      "work_distribution_factor_model": 4.0,
+      "source_reports": [
+        "64_512_64_multicore_cores4_depth2_trial1.json",
+        "64_512_64_multicore_cores4_depth2_trial2.json",
+        "64_512_64_multicore_cores4_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        2,
+        3,
+        2
+      ],
+      "mode": "baseline_cores1_depth1",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 1,
+      "median_of_trial_medians_ms": 6.652448,
+      "trial_medians_ms": [
+        8.840811,
+        5.926228,
+        6.652448
+      ],
+      "pooled_median_ms": 6.617918,
+      "pooled_p95_ms": 14.453853,
+      "min_ms": 5.21054,
+      "max_ms": 16.131868,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.0,
+      "same_depth_multicore1_median_ratio": 0.9299020450817503,
+      "read_payload_bytes_model": 4096,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 6144,
+      "output_tiles": 1,
+      "max_output_tiles_per_core": 1,
+      "max_matmul_calls_per_core_model": 1,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "2_3_2_baseline_cores1_depth1_trial1.json",
+        "2_3_2_baseline_cores1_depth1_trial2.json",
+        "2_3_2_baseline_cores1_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        2,
+        3,
+        2
+      ],
+      "mode": "baseline_cores1_depth2",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 2,
+      "median_of_trial_medians_ms": 9.315932,
+      "trial_medians_ms": [
+        45.706498,
+        9.315932,
+        5.462873
+      ],
+      "pooled_median_ms": 9.315932,
+      "pooled_p95_ms": 55.882687,
+      "min_ms": 4.860388,
+      "max_ms": 64.585446,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.0,
+      "same_depth_multicore1_median_ratio": 0.7219330282788667,
+      "read_payload_bytes_model": 4096,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 12288,
+      "output_tiles": 1,
+      "max_output_tiles_per_core": 1,
+      "max_matmul_calls_per_core_model": 1,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "2_3_2_baseline_cores1_depth2_trial1.json",
+        "2_3_2_baseline_cores1_depth2_trial2.json",
+        "2_3_2_baseline_cores1_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        2,
+        3,
+        2
+      ],
+      "mode": "multicore_cores1_depth1",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 1,
+      "median_of_trial_medians_ms": 6.186125,
+      "trial_medians_ms": [
+        8.851094,
+        6.123713,
+        6.186125
+      ],
+      "pooled_median_ms": 6.268203,
+      "pooled_p95_ms": 9.272891,
+      "min_ms": 5.46297,
+      "max_ms": 9.328288,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.0753820849077573,
+      "same_depth_multicore1_median_ratio": 1.0,
+      "read_payload_bytes_model": 4096,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 6144,
+      "output_tiles": 1,
+      "max_output_tiles_per_core": 1,
+      "max_matmul_calls_per_core_model": 1,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "2_3_2_multicore_cores1_depth1_trial1.json",
+        "2_3_2_multicore_cores1_depth1_trial2.json",
+        "2_3_2_multicore_cores1_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        2,
+        3,
+        2
+      ],
+      "mode": "multicore_cores1_depth2",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "depth": 2,
+      "median_of_trial_medians_ms": 6.725479,
+      "trial_medians_ms": [
+        7.672265,
+        6.725479,
+        5.824789
+      ],
+      "pooled_median_ms": 6.725479,
+      "pooled_p95_ms": 9.255312,
+      "min_ms": 5.300426,
+      "max_ms": 9.884825,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.3851700377028908,
+      "same_depth_multicore1_median_ratio": 1.0,
+      "read_payload_bytes_model": 4096,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 12288,
+      "output_tiles": 1,
+      "max_output_tiles_per_core": 1,
+      "max_matmul_calls_per_core_model": 1,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "2_3_2_multicore_cores1_depth2_trial1.json",
+        "2_3_2_multicore_cores1_depth2_trial2.json",
+        "2_3_2_multicore_cores1_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        2,
+        3,
+        2
+      ],
+      "mode": "multicore_cores2_depth1",
+      "requested_cores": 2,
+      "active_cores": 1,
+      "depth": 1,
+      "median_of_trial_medians_ms": 11.191931,
+      "trial_medians_ms": [
+        11.191931,
+        15.998472,
+        5.993994
+      ],
+      "pooled_median_ms": 11.191931,
+      "pooled_p95_ms": 19.923081,
+      "min_ms": 5.376383,
+      "max_ms": 21.50724,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 0.5943968024820738,
+      "same_depth_multicore1_median_ratio": 0.5527308022181338,
+      "read_payload_bytes_model": 4096,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 6144,
+      "output_tiles": 1,
+      "max_output_tiles_per_core": 1,
+      "max_matmul_calls_per_core_model": 1,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "2_3_2_multicore_cores2_depth1_trial1.json",
+        "2_3_2_multicore_cores2_depth1_trial2.json",
+        "2_3_2_multicore_cores2_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        2,
+        3,
+        2
+      ],
+      "mode": "multicore_cores2_depth2",
+      "requested_cores": 2,
+      "active_cores": 1,
+      "depth": 2,
+      "median_of_trial_medians_ms": 5.769446,
+      "trial_medians_ms": [
+        8.695692,
+        5.404021,
+        5.769446
+      ],
+      "pooled_median_ms": 5.957383,
+      "pooled_p95_ms": 10.408496,
+      "min_ms": 4.779736,
+      "max_ms": 11.345147,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.61470130754322,
+      "same_depth_multicore1_median_ratio": 1.1657062047205224,
+      "read_payload_bytes_model": 4096,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 12288,
+      "output_tiles": 1,
+      "max_output_tiles_per_core": 1,
+      "max_matmul_calls_per_core_model": 1,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "2_3_2_multicore_cores2_depth2_trial1.json",
+        "2_3_2_multicore_cores2_depth2_trial2.json",
+        "2_3_2_multicore_cores2_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        2,
+        3,
+        2
+      ],
+      "mode": "multicore_cores4_depth1",
+      "requested_cores": 4,
+      "active_cores": 1,
+      "depth": 1,
+      "median_of_trial_medians_ms": 6.809192,
+      "trial_medians_ms": [
+        7.564512,
+        6.809192,
+        5.803175
+      ],
+      "pooled_median_ms": 6.660993,
+      "pooled_p95_ms": 8.706947,
+      "min_ms": 5.442034,
+      "max_ms": 9.988017,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 0.9769805286735929,
+      "same_depth_multicore1_median_ratio": 0.9084961916186237,
+      "read_payload_bytes_model": 4096,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 6144,
+      "output_tiles": 1,
+      "max_output_tiles_per_core": 1,
+      "max_matmul_calls_per_core_model": 1,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "2_3_2_multicore_cores4_depth1_trial1.json",
+        "2_3_2_multicore_cores4_depth1_trial2.json",
+        "2_3_2_multicore_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        2,
+        3,
+        2
+      ],
+      "mode": "multicore_cores4_depth2",
+      "requested_cores": 4,
+      "active_cores": 1,
+      "depth": 2,
+      "median_of_trial_medians_ms": 6.508085,
+      "trial_medians_ms": [
+        6.641623,
+        6.508085,
+        6.123802
+      ],
+      "pooled_median_ms": 6.383464,
+      "pooled_p95_ms": 8.743113,
+      "min_ms": 5.06868,
+      "max_ms": 8.852401,
+      "sample_count": 21,
+      "same_depth_baseline_median_ratio": 1.4314398167817415,
+      "same_depth_multicore1_median_ratio": 1.0334036817281889,
+      "read_payload_bytes_model": 4096,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 12288,
+      "output_tiles": 1,
+      "max_output_tiles_per_core": 1,
+      "max_matmul_calls_per_core_model": 1,
+      "work_distribution_factor_model": 1.0,
+      "source_reports": [
+        "2_3_2_multicore_cores4_depth2_trial1.json",
+        "2_3_2_multicore_cores4_depth2_trial2.json",
+        "2_3_2_multicore_cores4_depth2_trial3.json"
+      ]
+    }
+  ],
+  "primary_statistic": "median of independent process trial medians",
+  "pooled_p95_policy": "descriptive linear interpolation; samples in a process are correlated, no confidence claim"
+}

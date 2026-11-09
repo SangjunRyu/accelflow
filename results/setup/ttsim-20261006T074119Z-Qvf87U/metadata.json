@@ -1,0 +1,30 @@
+{
+  "captured_utc": "2026-10-06T07:41:21.220261+00:00",
+  "release": "v1.11.1",
+  "download_url": "https://github.com/tenstorrent/ttsim/releases/download/v1.11.1/libttsim_wh.so",
+  "library_path": "/home/ysjun5656/dev/tenstorrent/sim/libttsim_wh.so",
+  "file_size_bytes": 227544,
+  "sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "file": "/home/ysjun5656/dev/tenstorrent/sim/libttsim_wh.so: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=b62504ba40b55b9a1735eda0efe2a53f1621e3c9, stripped",
+  "elf_header": "ELF Header:\n  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 \n  Class:                             ELF64\n  Data:                              2's complement, little endian\n  Version:                           1 (current)\n  OS/ABI:                            UNIX - System V\n  ABI Version:                       0\n  Type:                              DYN (Shared object file)\n  Machine:                           Advanced Micro Devices X86-64\n  Version:                           0x1\n  Entry point address:               0x0\n  Start of program headers:          64 (bytes into file)\n  Start of section headers:          225688 (bytes into file)\n  Flags:                             0x0\n  Size of this header:               64 (bytes)\n  Size of program headers:           56 (bytes)\n  Number of program headers:         11\n  Size of section headers:           64 (bytes)\n  Number of section headers:         29\n  Section header string table index: 28\n",
+  "dynamic_section": "\nDynamic section at offset 0x36dc0 contains 26 entries:\n  Tag        Type                         Name/Value\n 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]\n 0x0000000000000010 (SYMBOLIC)           0x0\n 0x000000000000000c (INIT)               0x3000\n 0x000000000000000d (FINI)               0x27a74\n 0x0000000000000019 (INIT_ARRAY)         0x365b0\n 0x000000000000001b (INIT_ARRAYSZ)       8 (bytes)\n 0x000000000000001a (FINI_ARRAY)         0x365b8\n 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)\n 0x000000006ffffef5 (GNU_HASH)           0x2f0\n 0x0000000000000005 (STRTAB)             0x5c8\n 0x0000000000000006 (SYMTAB)             0x340\n 0x000000000000000a (STRSZ)              471 (bytes)\n 0x000000000000000b (SYMENT)             24 (bytes)\n 0x0000000000000003 (PLTGOT)             0x36fe8\n 0x0000000000000002 (PLTRELSZ)           264 (bytes)\n 0x0000000000000014 (PLTREL)             RELA\n 0x0000000000000017 (JMPREL)             0x2100\n 0x0000000000000007 (RELA)               0x828\n 0x0000000000000008 (RELASZ)             6360 (bytes)\n 0x0000000000000009 (RELAENT)            24 (bytes)\n 0x000000000000001e (FLAGS)              SYMBOLIC\n 0x000000006ffffffe (VERNEED)            0x7d8\n 0x000000006fffffff (VERNEEDNUM)         1\n 0x000000006ffffff0 (VERSYM)             0x7a0\n 0x000000006ffffff9 (RELACOUNT)          260\n 0x0000000000000000 (NULL)               0x0\n",
+  "dynamic_dependencies": "\tlinux-vdso.so.1 (0x00007ffc309e5000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fd716bec000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007fd71ed2a000)\n",
+  "symbol_versions": "\nVersion symbols section '.gnu.version' contains 27 entries:\n Addr: 0x00000000000007a0  Offset: 0x000007a0  Link: 4 (.dynsym)\n  000:   0 (*local*)       2 (GLIBC_2.3.4)   1 (*global*)      3 (GLIBC_2.2.5)\n  004:   3 (GLIBC_2.2.5)   4 (GLIBC_2.4)     3 (GLIBC_2.2.5)   3 (GLIBC_2.2.5)\n  008:   2 (GLIBC_2.3.4)   1 (*global*)      5 (GLIBC_2.14)    3 (GLIBC_2.2.5)\n  00c:   2 (GLIBC_2.3.4)   3 (GLIBC_2.2.5)   1 (*global*)      3 (GLIBC_2.2.5)\n  010:   3 (GLIBC_2.2.5)   1 (*global*)      1 (*global*)      1 (*global*)   \n  014:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   \n  018:   1 (*global*)      1 (*global*)      1 (*global*)   \n\nVersion needs section '.gnu.version_r' contains 1 entry:\n Addr: 0x00000000000007d8  Offset: 0x000007d8  Link: 5 (.dynstr)\n  000000: Version: 1  File: libc.so.6  Cnt: 4\n  0x0010:   Name: GLIBC_2.14  Flags: none  Version: 5\n  0x0020:   Name: GLIBC_2.4  Flags: none  Version: 4\n  0x0030:   Name: GLIBC_2.2.5  Flags: none  Version: 3\n  0x0040:   Name: GLIBC_2.3.4  Flags: none  Version: 2\n",
+  "exported_symbols": "000000000000d740 T libttsim_clock\n000000000000cdd0 T libttsim_exit\n000000000000cd70 T libttsim_init\n000000000000ce20 T libttsim_pci_config_rd32\n000000000000cfb0 T libttsim_pci_config_wr32\n000000000000d150 T libttsim_pci_mem_rd_bytes\n000000000000d370 T libttsim_pci_mem_wr_bytes\n000000000000ce00 T libttsim_set_pci_dma_mem_callbacks\n000000000000382c T libttsim_tile_rd_bytes\n0000000000003848 T libttsim_tile_wr_bytes\n",
+  "rtld_now_load": "pass",
+  "required_symbols": [
+    "libttsim_init",
+    "libttsim_exit",
+    "libttsim_clock",
+    "libttsim_set_pci_dma_mem_callbacks",
+    "libttsim_pci_config_rd32",
+    "libttsim_pci_config_wr32",
+    "libttsim_pci_mem_rd_bytes",
+    "libttsim_pci_mem_wr_bytes",
+    "libttsim_tile_rd_bytes",
+    "libttsim_tile_wr_bytes"
+  ],
+  "peak_rss_kib": 16900,
+  "tt_metal_smoke_test": "not run",
+  "limitations": "Loader/ABI checks do not establish TT-Metal compatibility or kernel correctness."
+}

@@ -1,0 +1,492 @@
+{
+  "evidence_directory": "results/matmul/20261007T082456744972Z",
+  "passed": true,
+  "total_cases": 84,
+  "comparisons": [
+    {
+      "name": "deterministic",
+      "shape_mkn": [
+        2,
+        3,
+        2
+      ],
+      "tile_grid_mkn": [
+        1,
+        1,
+        1
+      ],
+      "same_input_and_output_fingerprints": true,
+      "baseline_A_reads": 1,
+      "baseline_B_reads": 1,
+      "reuse_A_reads": 1,
+      "reuse_B_reads": 1,
+      "blocked_A_reads": 1,
+      "blocked_B_reads": 1,
+      "baseline_read_bytes_model": 4096,
+      "reuse_read_bytes_model": 4096,
+      "blocked_read_bytes_model": 4096,
+      "blocked_reduction_vs_baseline_model": 0.0,
+      "baseline_cb_bytes_depth2": 12288,
+      "reuse_cb_bytes_depth2": 10240,
+      "blocked_cb_bytes_depth2": 20480,
+      "max_destination_slots_baseline_blocked": [
+        1,
+        4
+      ],
+      "partial_output_block": true,
+      "multiple_input_blocks_at_depth2": false,
+      "model_kind": "source-derived payload/control model, not runtime counters"
+    },
+    {
+      "name": "zero",
+      "shape_mkn": [
+        33,
+        35,
+        31
+      ],
+      "tile_grid_mkn": [
+        2,
+        2,
+        1
+      ],
+      "same_input_and_output_fingerprints": true,
+      "baseline_A_reads": 4,
+      "baseline_B_reads": 4,
+      "reuse_A_reads": 4,
+      "reuse_B_reads": 4,
+      "blocked_A_reads": 4,
+      "blocked_B_reads": 2,
+      "baseline_read_bytes_model": 16384,
+      "reuse_read_bytes_model": 16384,
+      "blocked_read_bytes_model": 12288,
+      "blocked_reduction_vs_baseline_model": 0.25,
+      "baseline_cb_bytes_depth2": 12288,
+      "reuse_cb_bytes_depth2": 12288,
+      "blocked_cb_bytes_depth2": 36864,
+      "max_destination_slots_baseline_blocked": [
+        1,
+        4
+      ],
+      "partial_output_block": true,
+      "multiple_input_blocks_at_depth2": false,
+      "model_kind": "source-derived payload/control model, not runtime counters"
+    },
+    {
+      "name": "identity",
+      "shape_mkn": [
+        32,
+        32,
+        32
+      ],
+      "tile_grid_mkn": [
+        1,
+        1,
+        1
+      ],
+      "same_input_and_output_fingerprints": true,
+      "baseline_A_reads": 1,
+      "baseline_B_reads": 1,
+      "reuse_A_reads": 1,
+      "reuse_B_reads": 1,
+      "blocked_A_reads": 1,
+      "blocked_B_reads": 1,
+      "baseline_read_bytes_model": 4096,
+      "reuse_read_bytes_model": 4096,
+      "blocked_read_bytes_model": 4096,
+      "blocked_reduction_vs_baseline_model": 0.0,
+      "baseline_cb_bytes_depth2": 12288,
+      "reuse_cb_bytes_depth2": 10240,
+      "blocked_cb_bytes_depth2": 20480,
+      "max_destination_slots_baseline_blocked": [
+        1,
+        4
+      ],
+      "partial_output_block": true,
+      "multiple_input_blocks_at_depth2": false,
+      "model_kind": "source-derived payload/control model, not runtime counters"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        32,
+        32,
+        32
+      ],
+      "tile_grid_mkn": [
+        1,
+        1,
+        1
+      ],
+      "same_input_and_output_fingerprints": true,
+      "baseline_A_reads": 1,
+      "baseline_B_reads": 1,
+      "reuse_A_reads": 1,
+      "reuse_B_reads": 1,
+      "blocked_A_reads": 1,
+      "blocked_B_reads": 1,
+      "baseline_read_bytes_model": 4096,
+      "reuse_read_bytes_model": 4096,
+      "blocked_read_bytes_model": 4096,
+      "blocked_reduction_vs_baseline_model": 0.0,
+      "baseline_cb_bytes_depth2": 12288,
+      "reuse_cb_bytes_depth2": 10240,
+      "blocked_cb_bytes_depth2": 20480,
+      "max_destination_slots_baseline_blocked": [
+        1,
+        4
+      ],
+      "partial_output_block": true,
+      "multiple_input_blocks_at_depth2": false,
+      "model_kind": "source-derived payload/control model, not runtime counters"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        31,
+        33,
+        35
+      ],
+      "tile_grid_mkn": [
+        1,
+        2,
+        2
+      ],
+      "same_input_and_output_fingerprints": true,
+      "baseline_A_reads": 4,
+      "baseline_B_reads": 4,
+      "reuse_A_reads": 2,
+      "reuse_B_reads": 4,
+      "blocked_A_reads": 2,
+      "blocked_B_reads": 4,
+      "baseline_read_bytes_model": 16384,
+      "reuse_read_bytes_model": 12288,
+      "blocked_read_bytes_model": 12288,
+      "blocked_reduction_vs_baseline_model": 0.25,
+      "baseline_cb_bytes_depth2": 12288,
+      "reuse_cb_bytes_depth2": 12288,
+      "blocked_cb_bytes_depth2": 36864,
+      "max_destination_slots_baseline_blocked": [
+        1,
+        4
+      ],
+      "partial_output_block": true,
+      "multiple_input_blocks_at_depth2": false,
+      "model_kind": "source-derived payload/control model, not runtime counters"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        33,
+        31,
+        65
+      ],
+      "tile_grid_mkn": [
+        2,
+        1,
+        3
+      ],
+      "same_input_and_output_fingerprints": true,
+      "baseline_A_reads": 6,
+      "baseline_B_reads": 6,
+      "reuse_A_reads": 2,
+      "reuse_B_reads": 6,
+      "blocked_A_reads": 4,
+      "blocked_B_reads": 3,
+      "baseline_read_bytes_model": 24576,
+      "reuse_read_bytes_model": 16384,
+      "blocked_read_bytes_model": 14336,
+      "blocked_reduction_vs_baseline_model": 0.4166666666666667,
+      "baseline_cb_bytes_depth2": 12288,
+      "reuse_cb_bytes_depth2": 10240,
+      "blocked_cb_bytes_depth2": 20480,
+      "max_destination_slots_baseline_blocked": [
+        1,
+        4
+      ],
+      "partial_output_block": true,
+      "multiple_input_blocks_at_depth2": false,
+      "model_kind": "source-derived payload/control model, not runtime counters"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        64,
+        64,
+        96
+      ],
+      "tile_grid_mkn": [
+        2,
+        2,
+        3
+      ],
+      "same_input_and_output_fingerprints": true,
+      "baseline_A_reads": 12,
+      "baseline_B_reads": 12,
+      "reuse_A_reads": 4,
+      "reuse_B_reads": 12,
+      "blocked_A_reads": 8,
+      "blocked_B_reads": 6,
+      "baseline_read_bytes_model": 49152,
+      "reuse_read_bytes_model": 32768,
+      "blocked_read_bytes_model": 28672,
+      "blocked_reduction_vs_baseline_model": 0.4166666666666667,
+      "baseline_cb_bytes_depth2": 12288,
+      "reuse_cb_bytes_depth2": 12288,
+      "blocked_cb_bytes_depth2": 36864,
+      "max_destination_slots_baseline_blocked": [
+        1,
+        4
+      ],
+      "partial_output_block": true,
+      "multiple_input_blocks_at_depth2": false,
+      "model_kind": "source-derived payload/control model, not runtime counters"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        32,
+        128,
+        96
+      ],
+      "tile_grid_mkn": [
+        1,
+        4,
+        3
+      ],
+      "same_input_and_output_fingerprints": true,
+      "baseline_A_reads": 12,
+      "baseline_B_reads": 12,
+      "reuse_A_reads": 4,
+      "reuse_B_reads": 12,
+      "blocked_A_reads": 8,
+      "blocked_B_reads": 12,
+      "baseline_read_bytes_model": 49152,
+      "reuse_read_bytes_model": 32768,
+      "blocked_read_bytes_model": 40960,
+      "blocked_reduction_vs_baseline_model": 0.16666666666666666,
+      "baseline_cb_bytes_depth2": 12288,
+      "reuse_cb_bytes_depth2": 16384,
+      "blocked_cb_bytes_depth2": 69632,
+      "max_destination_slots_baseline_blocked": [
+        1,
+        4
+      ],
+      "partial_output_block": true,
+      "multiple_input_blocks_at_depth2": false,
+      "model_kind": "source-derived payload/control model, not runtime counters"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        65,
+        97,
+        33
+      ],
+      "tile_grid_mkn": [
+        3,
+        4,
+        2
+      ],
+      "same_input_and_output_fingerprints": true,
+      "baseline_A_reads": 24,
+      "baseline_B_reads": 24,
+      "reuse_A_reads": 12,
+      "reuse_B_reads": 24,
+      "blocked_A_reads": 12,
+      "blocked_B_reads": 16,
+      "baseline_read_bytes_model": 98304,
+      "reuse_read_bytes_model": 73728,
+      "blocked_read_bytes_model": 57344,
+      "blocked_reduction_vs_baseline_model": 0.4166666666666667,
+      "baseline_cb_bytes_depth2": 12288,
+      "reuse_cb_bytes_depth2": 16384,
+      "blocked_cb_bytes_depth2": 69632,
+      "max_destination_slots_baseline_blocked": [
+        1,
+        4
+      ],
+      "partial_output_block": true,
+      "multiple_input_blocks_at_depth2": false,
+      "model_kind": "source-derived payload/control model, not runtime counters"
+    },
+    {
+      "name": "fractional",
+      "shape_mkn": [
+        32,
+        64,
+        64
+      ],
+      "tile_grid_mkn": [
+        1,
+        2,
+        2
+      ],
+      "same_input_and_output_fingerprints": true,
+      "baseline_A_reads": 4,
+      "baseline_B_reads": 4,
+      "reuse_A_reads": 2,
+      "reuse_B_reads": 4,
+      "blocked_A_reads": 2,
+      "blocked_B_reads": 4,
+      "baseline_read_bytes_model": 16384,
+      "reuse_read_bytes_model": 12288,
+      "blocked_read_bytes_model": 12288,
+      "blocked_reduction_vs_baseline_model": 0.25,
+      "baseline_cb_bytes_depth2": 12288,
+      "reuse_cb_bytes_depth2": 12288,
+      "blocked_cb_bytes_depth2": 36864,
+      "max_destination_slots_baseline_blocked": [
+        1,
+        4
+      ],
+      "partial_output_block": true,
+      "multiple_input_blocks_at_depth2": false,
+      "model_kind": "source-derived payload/control model, not runtime counters"
+    },
+    {
+      "name": "fractional",
+      "shape_mkn": [
+        33,
+        35,
+        65
+      ],
+      "tile_grid_mkn": [
+        2,
+        2,
+        3
+      ],
+      "same_input_and_output_fingerprints": true,
+      "baseline_A_reads": 12,
+      "baseline_B_reads": 12,
+      "reuse_A_reads": 4,
+      "reuse_B_reads": 12,
+      "blocked_A_reads": 8,
+      "blocked_B_reads": 6,
+      "baseline_read_bytes_model": 49152,
+      "reuse_read_bytes_model": 32768,
+      "blocked_read_bytes_model": 28672,
+      "blocked_reduction_vs_baseline_model": 0.4166666666666667,
+      "baseline_cb_bytes_depth2": 12288,
+      "reuse_cb_bytes_depth2": 12288,
+      "blocked_cb_bytes_depth2": 36864,
+      "max_destination_slots_baseline_blocked": [
+        1,
+        4
+      ],
+      "partial_output_block": true,
+      "multiple_input_blocks_at_depth2": false,
+      "model_kind": "source-derived payload/control model, not runtime counters"
+    },
+    {
+      "name": "large_exact",
+      "shape_mkn": [
+        8,
+        16,
+        8
+      ],
+      "tile_grid_mkn": [
+        1,
+        1,
+        1
+      ],
+      "same_input_and_output_fingerprints": true,
+      "baseline_A_reads": 1,
+      "baseline_B_reads": 1,
+      "reuse_A_reads": 1,
+      "reuse_B_reads": 1,
+      "blocked_A_reads": 1,
+      "blocked_B_reads": 1,
+      "baseline_read_bytes_model": 4096,
+      "reuse_read_bytes_model": 4096,
+      "blocked_read_bytes_model": 4096,
+      "blocked_reduction_vs_baseline_model": 0.0,
+      "baseline_cb_bytes_depth2": 12288,
+      "reuse_cb_bytes_depth2": 10240,
+      "blocked_cb_bytes_depth2": 20480,
+      "max_destination_slots_baseline_blocked": [
+        1,
+        4
+      ],
+      "partial_output_block": true,
+      "multiple_input_blocks_at_depth2": false,
+      "model_kind": "source-derived payload/control model, not runtime counters"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "tile_grid_mkn": [
+        3,
+        2,
+        5
+      ],
+      "same_input_and_output_fingerprints": true,
+      "baseline_A_reads": 30,
+      "baseline_B_reads": 30,
+      "reuse_A_reads": 6,
+      "reuse_B_reads": 30,
+      "blocked_A_reads": 18,
+      "blocked_B_reads": 20,
+      "baseline_read_bytes_model": 122880,
+      "reuse_read_bytes_model": 73728,
+      "blocked_read_bytes_model": 77824,
+      "blocked_reduction_vs_baseline_model": 0.36666666666666664,
+      "baseline_cb_bytes_depth2": 12288,
+      "reuse_cb_bytes_depth2": 12288,
+      "blocked_cb_bytes_depth2": 36864,
+      "max_destination_slots_baseline_blocked": [
+        1,
+        4
+      ],
+      "partial_output_block": true,
+      "multiple_input_blocks_at_depth2": true,
+      "model_kind": "source-derived payload/control model, not runtime counters"
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "tile_grid_mkn": [
+        4,
+        4,
+        4
+      ],
+      "same_input_and_output_fingerprints": true,
+      "baseline_A_reads": 64,
+      "baseline_B_reads": 64,
+      "reuse_A_reads": 16,
+      "reuse_B_reads": 64,
+      "blocked_A_reads": 32,
+      "blocked_B_reads": 32,
+      "baseline_read_bytes_model": 262144,
+      "reuse_read_bytes_model": 163840,
+      "blocked_read_bytes_model": 131072,
+      "blocked_reduction_vs_baseline_model": 0.5,
+      "baseline_cb_bytes_depth2": 12288,
+      "reuse_cb_bytes_depth2": 16384,
+      "blocked_cb_bytes_depth2": 69632,
+      "max_destination_slots_baseline_blocked": [
+        1,
+        4
+      ],
+      "partial_output_block": false,
+      "multiple_input_blocks_at_depth2": true,
+      "model_kind": "source-derived payload/control model, not runtime counters"
+    }
+  ],
+  "verdict": {
+    "cpu_reference": "all cases pass",
+    "layout": "matches official tilizer",
+    "padding_and_full_output_write": "pass; NaN sentinel overwritten",
+    "controlled_comparison": "same input and output FNV fingerprints across six configurations",
+    "blocked_reuse": "functional execution passes; read reductions follow source loop structure",
+    "cb_wrap_and_partial_blocks": "functional fixtures pass at depths 1 and 2",
+    "physical_latency_bandwidth_overlap": "not measured"
+  }
+}

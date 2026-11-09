@@ -1,0 +1,37 @@
+2026-10-06T09:24:16+00:00
+de546d3b146758714d900f11b218c8f9c805f410
+ 9c3ca7e5fe48cecf90aa518c82552aae706cf110 tt_metal/third_party/tracy (v0.14.1-tt.0)
+ ac8a3b5ba3a54ad4e93cb75da3692942e5926c50 tt_metal/third_party/tt-cluster-descriptors (ac8a3b5)
+ f9173df20bec9bb93e5c92407e701e604ddef33d tt_metal/third_party/umd (f9173df)
+196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a  /home/ysjun5656/dev/tenstorrent/sim/libttsim_wh.so
+24fd3dfae80435a7d9113e255d6d6af9cdf83f6ae3b1c385e1d48a24795ccf49  /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/soc_descriptors/wormhole_b0_80_arch.yaml
+TT_METAL_HOME=/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0
+TT_METAL_SIMULATOR=/home/ysjun5656/dev/tenstorrent/sim/libttsim_wh.so
+TT_METAL_SLOW_DISPATCH_MODE=1 timeout 300s ./build/programming_examples/metal_example_add_2_integers_in_riscv
+WARNING: Please set the environment variable TT_METAL_DPRINT_CORES to 0,0 to see the output of the Data Movement kernels.
+WARNING: For example, export TT_METAL_DPRINT_CORES=0,0
+2026-10-06 18:24:16.675 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-10-06 18:24:16.682 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-10-06 18:24:16.686 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-10-06 18:24:16.690 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-10-06 18:24:16.699 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-10-06 18:24:16.804 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-10-06 18:24:16.805 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-10-06 18:24:16.807 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-10-06 18:24:16.808 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-10-06 18:24:16.813 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-10-06 18:24:16.813 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-10-06 18:24:16.824 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-10-06 18:24:16.824 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+Success: Result is 21
+2026-10-06 18:24:16.964 | info     |    BuildKernels | JIT cache stats: 9/9 hits (100.0%) [9 cached, 0 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-10-06 18:24:16.964 | info     |    BuildKernels | JIT telemetry: 26 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-10-06 18:24:16.967 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-10-06 18:24:16.967 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-10-06 18:24:16.967 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-10-06 18:24:16.967 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-10-06 18:24:16.967 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-10-06 18:24:16.967 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[4172] 0.5 seconds (9.0 KHz)
+example_exit_code=0
+log_exit_code=0

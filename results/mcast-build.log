@@ -1,0 +1,13 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ysjun5656/dev/accelflow/build/matmul
+[1/2] Building CXX object CMakeFiles/matmul.dir/matmul.cpp.o
+In file included from /home/ysjun5656/dev/accelflow/npu/matmul/matmul.cpp:4:
+/home/ysjun5656/dev/accelflow/npu/matmul/mcast.hpp:28:11: warning: 'CoreRange' is deprecated: Use tt::tt_metal::CoreRange [-Wdeprecated-declarations]
+   28 |     const CoreRange cores({0,0},{peers-1,0});
+      |           ^
+/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/api/tt-metalium/core_coord.hpp:222:19: note: 'CoreRange' has been explicitly marked deprecated here
+  222 | using CoreRange [[deprecated("Use tt::tt_metal::CoreRange")]] = tt::tt_metal::CoreRange;
+      |                   ^
+1 warning generated.
+[2/2] Linking CXX executable matmul

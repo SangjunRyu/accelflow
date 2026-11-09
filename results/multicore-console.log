@@ -1,0 +1,15 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ysjun5656/dev/accelflow/build/matmul
+[1/2] Building CXX object CMakeFiles/matmul.dir/matmul.cpp.o
+[2/2] Linking CXX executable matmul
+PASS baseline_cores1_depth1: 20 fixtures
+PASS baseline_cores1_depth2: 20 fixtures
+PASS multicore_cores1_depth1: 20 fixtures
+PASS multicore_cores1_depth2: 20 fixtures
+PASS multicore_cores2_depth1: 20 fixtures
+PASS multicore_cores2_depth2: 20 fixtures
+PASS multicore_cores4_depth1: 20 fixtures
+PASS multicore_cores4_depth2: 20 fixtures
+Evidence: /home/ysjun5656/dev/accelflow/results/matmul_multicore/20261019T104604881253Z
+Independent multicore MatMul PASS: 160 cases / 8 configurations

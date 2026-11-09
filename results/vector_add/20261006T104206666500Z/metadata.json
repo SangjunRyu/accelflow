@@ -1,0 +1,37 @@
+{
+  "date_utc": "20261006T104206666500Z",
+  "backend": "ttsim",
+  "architecture": "wormhole",
+  "operator": "vector_add",
+  "tt_metal_commit": "de546d3b146758714d900f11b218c8f9c805f410",
+  "tt_metal_tag": "v0.79.0",
+  "ttsim_tag": "v1.11.1",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "project_git_commit": null,
+  "compiler": "Ubuntu clang version 20.1.2 (0ubuntu1~24.04.3)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm-20/bin",
+  "cmake": "cmake version 3.28.3\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "os_release": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "kernel": "5.15.90.1sangjunryu20195834+",
+  "source_sha256": {
+    "npu/vector_add/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "npu/vector_add/CMakeLists.txt": "24536c6a862e080ff803d10a9deba0aabc71faf74570cc9325aa42c39ae6e9c6",
+    "npu/vector_add/common.hpp": "b37798410d815604d5e6e32a51a6125f6c844bbfaa3335f12fbd3a1ac6e89abc",
+    "npu/vector_add/kernels/compute.cpp": "f783982ae1aa8ae9d224cc42d87cb1a11614de737d3809ae14fd08955e6eced0",
+    "npu/vector_add/kernels/reader.cpp": "6b2793cc6b10cf4ee28ab8a959a4922275ab72cc9e3958ca9c8ce54000656cc1",
+    "npu/vector_add/kernels/vector_add_riscv.cpp": "7c2d714b00cd4a769cd9d38b66faa189f9642e752aad967f0137b7ae362e7ec0",
+    "npu/vector_add/kernels/writer.cpp": "26cb3f483d877f20c73c2e809c0672dde26779ccf29132c15f4629ee58c4c915",
+    "npu/vector_add/vector_add_riscv.cpp": "0325f7b753756689194027edf0a837095d4f5229884a7edeb9d0fc7772730717",
+    "npu/vector_add/vector_add_tiled.cpp": "4b433c3d0094e75a632bb0a1a6dd79cdcfd868295113d748b8b173ecc909274b"
+  },
+  "measurement_policy": "Functional/structural evidence only; no simulator latency comparison",
+  "runs": [
+    {
+      "variant": "riscv",
+      "exit_code": 1,
+      "passed": false,
+      "report": "riscv.json"
+    }
+  ],
+  "passed": false
+}

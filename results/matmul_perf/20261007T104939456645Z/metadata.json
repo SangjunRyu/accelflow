@@ -1,0 +1,70 @@
+{
+  "backend": "ttsim",
+  "measurement_kind": "host wall time of simulator workload submit + finish",
+  "physical_NPU_latency": false,
+  "date_utc": "2026-10-07T10:49:39.461699+00:00",
+  "tt_metal_tag": "v0.79.0",
+  "tt_metal_commit": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_tag": "v1.11.1",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "host_cpu": "Architecture:                    x86_64\nCPU op-mode(s):                  32-bit, 64-bit\nAddress sizes:                   39 bits physical, 48 bits virtual\nByte Order:                      Little Endian\nCPU(s):                          8\nOn-line CPU(s) list:             0-7\nVendor ID:                       GenuineIntel\nModel name:                      Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz\nCPU family:                      6\nModel:                           142\nThread(s) per core:              2\nCore(s) per socket:              4\nSocket(s):                       1\nStepping:                        11\nBogoMIPS:                        3984.01\nFlags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid pni pclmulqdq vmx ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp tpr_shadow vnmi ept vpid ept_ad fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 xsaves md_clear flush_l1d arch_capabilities\nVirtualization:                  VT-x\nHypervisor vendor:               Microsoft\nVirtualization type:             full\nL1d cache:                       128 KiB (4 instances)\nL1i cache:                       128 KiB (4 instances)\nL2 cache:                        1 MiB (4 instances)\nL3 cache:                        8 MiB (1 instance)\nVulnerability Itlb multihit:     KVM: Mitigation: VMX disabled\nVulnerability L1tf:              Not affected\nVulnerability Mds:               Mitigation; Clear CPU buffers; SMT Host state unknown\nVulnerability Meltdown:          Not affected\nVulnerability Mmio stale data:   Mitigation; Clear CPU buffers; SMT Host state unknown\nVulnerability Retbleed:          Mitigation; IBRS\nVulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:        Mitigation; IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS Not affected\nVulnerability Srbds:             Unknown: Dependent on hypervisor status\nVulnerability Tsx async abort:   Not affected\n",
+  "kernel": "5.15.90.1sangjunryu20195834+",
+  "compiler": "Ubuntu clang version 20.1.2 (0ubuntu1~24.04.3)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm-20/bin",
+  "os_release": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "host_before": {
+    "meminfo": "MemTotal:        3962484 kB\nMemFree:         3302284 kB\nMemAvailable:    3381972 kB\nBuffers:           14928 kB\nCached:           255716 kB\nSwapCached:          344 kB\nActive:           151288 kB\nInactive:         217788 kB\nActive(anon):       3260 kB\nInactive(anon):    99420 kB\nActive(file):     148028 kB\nInactive(file):   118368 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1034328 kB\nDirty:               176 kB\nWriteback:             0 kB\nAnonPages:         98228 kB\nMapped:            76420 kB\nShmem:              4248 kB\nKReclaimable:      26204 kB\nSlab:              65204 kB\nSReclaimable:      26204 kB\nSUnreclaim:        39000 kB\nKernelStack:        3552 kB\nPageTables:         3180 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:     586944 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        6376 kB\nVmallocChunk:          0 kB\nPercpu:             3712 kB\nAnonHugePages:     40960 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      162816 kB\nDirectMap2M:     3973120 kB\nDirectMap1G:     8388608 kB\n",
+    "loadavg": "0.16 0.07 0.02 1/210 20859\n"
+  },
+  "sample_count": 7,
+  "warmup_count": 2,
+  "order_seed": 2026,
+  "quantile_method": "linear interpolation at (n-1)*0.95",
+  "source_sha256": {
+    "npu/matmul/matmul.cpp": "82c837bf689e56e0e84ccf830dd28a0d3b95ac0251fab80f587d949dd9e7b1ee",
+    "npu/matmul/kernels/writer_blocked.cpp": "5a0d07dbc9e65fccbf1130c5d8f0f69e365ca0fb2f67063bf5a7aa093f5f7e0c",
+    "npu/matmul/kernels/writer.cpp": "3ff4232fd0f2e7342549900ec0ed0bb047d228f00a5e545abd0c3517a71776c3",
+    "npu/matmul/kernels/reader_streamed.cpp": "1ae07ffc56a8953354a4e288d518b898dfbdb86ee13c6b1087d0a9f8971b84b6",
+    "npu/matmul/kernels/compute_blocked.cpp": "80dfa9cba9a361f319b82c6d2d388e7572ea7998246a443d545eb68703e66908",
+    "npu/matmul/kernels/compute_streamed.cpp": "c9f057a6d67324dccc5da8ae904bfb6fc069a81ab51448c265ec04c5c5bd389f",
+    "npu/matmul/kernels/compute.cpp": "50aeed704fa9f95fce95a76bc3e92d0e6b0003a7c064c853bd7274fd84b73438",
+    "npu/matmul/kernels/reader_blocked.cpp": "1e97e70c12250f54c02d9eb5aa5d5562fa960a1cc11523d3be6246b20cacd252",
+    "npu/matmul/kernels/reader.cpp": "a1309a1ea8c16b4d6ca9f828049fd72edf21622ceee9abbcf008e1802416a66e",
+    "npu/matmul/benchmark.hpp": "2258dc8de4bbd30275e89a9a3dc93cc92ce51a19942022589ee93c469aa0fd12",
+    "npu/vector_add/common.hpp": "695681e02c9fa7dd8441067460df4e4c566da3f11392402bb4ecf984fe9c2df2",
+    "tools/report/benchmark_matmul.py": "312dbd6f0d08f7319cb49e99d618d3f3c6537ece132525a19a0618c04b43b695",
+    "tools/report/build_matmul.py": "9cd2342f2696cbec222ef9176cffd8cfa535f351894386ffa3ca8bbea9911ba7",
+    "npu/matmul/CMakeLists.txt": "96bd60c8703f7a6507b41d8f0059417f6aff4c9fd4ed4c876d3c551deb219a87",
+    "scripts/benchmark_matmul.sh": "adc4b4ce6dc3b3e991d2be8744a154b228be587e3d36638deb10440fe0aa7275"
+  },
+  "runs": [
+    {
+      "order": 0,
+      "shape_mkn": [
+        33,
+        257,
+        65
+      ],
+      "mode": "reuse_a_depth2",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_perf/20261007T104939456645Z/33_257_65_reuse_a_depth2.json",
+        "reuse_a",
+        "2",
+        "2",
+        "--benchmark",
+        "7",
+        "33,257,65"
+      ],
+      "report": "33_257_65_reuse_a_depth2.json",
+      "exit_code": 0,
+      "process_wall_ms": 1119.1979680006625
+    }
+  ],
+  "passed": false,
+  "host_build_wall_ms": 16174.882979001268,
+  "executable_sha256": "a92721fedce4bd7b19627aaa4e252a2f59de18659179a61c0ef2d9518084f8d5",
+  "host_after": {
+    "meminfo": "MemTotal:        3962484 kB\nMemFree:         3263472 kB\nMemAvailable:    3391608 kB\nBuffers:           16104 kB\nCached:           302660 kB\nSwapCached:          344 kB\nActive:           198080 kB\nInactive:         218344 kB\nActive(anon):       3276 kB\nInactive(anon):    98544 kB\nActive(file):     194804 kB\nInactive(file):   119800 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1034328 kB\nDirty:              1704 kB\nWriteback:             0 kB\nAnonPages:         97252 kB\nMapped:            76372 kB\nShmem:              4248 kB\nKReclaimable:      26688 kB\nSlab:              65696 kB\nSReclaimable:      26688 kB\nSUnreclaim:        39008 kB\nKernelStack:        3472 kB\nPageTables:         2968 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:     581168 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        6392 kB\nVmallocChunk:          0 kB\nPercpu:             3712 kB\nAnonHugePages:     40960 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      162816 kB\nDirectMap2M:     3973120 kB\nDirectMap1G:     8388608 kB\n",
+    "loadavg": "0.35 0.11 0.04 1/206 20885\n"
+  }
+}

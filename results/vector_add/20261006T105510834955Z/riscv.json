@@ -1,0 +1,319 @@
+{
+  "cases": [
+    {
+      "core_count": 1,
+      "dram_buffer_observation": {
+        "aligned_page_bytes": 32,
+        "aligned_size_bytes": 128,
+        "aligned_size_per_bank_bytes": 32,
+        "logical_bytes": 16,
+        "page_bytes": 4,
+        "pages": 4
+      },
+      "dram_read_payload_bytes": 32,
+      "dram_write_payload_bytes": 16,
+      "input_fingerprint_a": 9566659391000707361,
+      "input_fingerprint_b": 2426953839697244457,
+      "kernel_count": 1,
+      "l1_scratch_observation": {
+        "aligned_page_bytes": 16,
+        "aligned_size_bytes": 16,
+        "aligned_size_per_bank_bytes": 16,
+        "logical_bytes": 4,
+        "page_bytes": 4,
+        "pages": 1
+      },
+      "length": 4,
+      "logical_l1_scratch_bytes": 12,
+      "name": "deterministic",
+      "passed": true,
+      "read_barrier_calls": 4,
+      "store_visibility_checks": 4,
+      "write_barrier_calls": 4
+    },
+    {
+      "core_count": 1,
+      "dram_buffer_observation": {
+        "aligned_page_bytes": 32,
+        "aligned_size_bytes": 1056,
+        "aligned_size_per_bank_bytes": 96,
+        "logical_bytes": 132,
+        "page_bytes": 4,
+        "pages": 33
+      },
+      "dram_read_payload_bytes": 264,
+      "dram_write_payload_bytes": 132,
+      "input_fingerprint_a": 12792987984627662325,
+      "input_fingerprint_b": 12792987984627662325,
+      "kernel_count": 1,
+      "l1_scratch_observation": {
+        "aligned_page_bytes": 16,
+        "aligned_size_bytes": 16,
+        "aligned_size_per_bank_bytes": 16,
+        "logical_bytes": 4,
+        "page_bytes": 4,
+        "pages": 1
+      },
+      "length": 33,
+      "logical_l1_scratch_bytes": 12,
+      "name": "zero",
+      "passed": true,
+      "read_barrier_calls": 33,
+      "store_visibility_checks": 33,
+      "write_barrier_calls": 33
+    },
+    {
+      "core_count": 1,
+      "dram_buffer_observation": {
+        "aligned_page_bytes": 32,
+        "aligned_size_bytes": 128,
+        "aligned_size_per_bank_bytes": 32,
+        "logical_bytes": 16,
+        "page_bytes": 4,
+        "pages": 4
+      },
+      "dram_read_payload_bytes": 32,
+      "dram_write_payload_bytes": 16,
+      "input_fingerprint_a": 1575670126637975894,
+      "input_fingerprint_b": 14086395382645121779,
+      "kernel_count": 1,
+      "l1_scratch_observation": {
+        "aligned_page_bytes": 16,
+        "aligned_size_bytes": 16,
+        "aligned_size_per_bank_bytes": 16,
+        "logical_bytes": 4,
+        "page_bytes": 4,
+        "pages": 1
+      },
+      "length": 4,
+      "logical_l1_scratch_bytes": 12,
+      "name": "unsigned_wrap",
+      "passed": true,
+      "read_barrier_calls": 4,
+      "store_visibility_checks": 4,
+      "write_barrier_calls": 4
+    },
+    {
+      "core_count": 1,
+      "dram_buffer_observation": {
+        "aligned_page_bytes": 32,
+        "aligned_size_bytes": 32,
+        "aligned_size_per_bank_bytes": 32,
+        "logical_bytes": 4,
+        "page_bytes": 4,
+        "pages": 1
+      },
+      "dram_read_payload_bytes": 8,
+      "dram_write_payload_bytes": 4,
+      "input_fingerprint_a": 8132739477203871472,
+      "input_fingerprint_b": 1456817274907335392,
+      "kernel_count": 1,
+      "l1_scratch_observation": {
+        "aligned_page_bytes": 16,
+        "aligned_size_bytes": 16,
+        "aligned_size_per_bank_bytes": 16,
+        "logical_bytes": 4,
+        "page_bytes": 4,
+        "pages": 1
+      },
+      "length": 1,
+      "logical_l1_scratch_bytes": 12,
+      "name": "seeded_random",
+      "passed": true,
+      "read_barrier_calls": 1,
+      "store_visibility_checks": 1,
+      "write_barrier_calls": 1
+    },
+    {
+      "core_count": 1,
+      "dram_buffer_observation": {
+        "aligned_page_bytes": 32,
+        "aligned_size_bytes": 992,
+        "aligned_size_per_bank_bytes": 96,
+        "logical_bytes": 124,
+        "page_bytes": 4,
+        "pages": 31
+      },
+      "dram_read_payload_bytes": 248,
+      "dram_write_payload_bytes": 124,
+      "input_fingerprint_a": 12807503502165772699,
+      "input_fingerprint_b": 7130439303437671809,
+      "kernel_count": 1,
+      "l1_scratch_observation": {
+        "aligned_page_bytes": 16,
+        "aligned_size_bytes": 16,
+        "aligned_size_per_bank_bytes": 16,
+        "logical_bytes": 4,
+        "page_bytes": 4,
+        "pages": 1
+      },
+      "length": 31,
+      "logical_l1_scratch_bytes": 12,
+      "name": "seeded_random",
+      "passed": true,
+      "read_barrier_calls": 31,
+      "store_visibility_checks": 31,
+      "write_barrier_calls": 31
+    },
+    {
+      "core_count": 1,
+      "dram_buffer_observation": {
+        "aligned_page_bytes": 32,
+        "aligned_size_bytes": 1024,
+        "aligned_size_per_bank_bytes": 96,
+        "logical_bytes": 128,
+        "page_bytes": 4,
+        "pages": 32
+      },
+      "dram_read_payload_bytes": 256,
+      "dram_write_payload_bytes": 128,
+      "input_fingerprint_a": 5747694934132699708,
+      "input_fingerprint_b": 6746112879573524571,
+      "kernel_count": 1,
+      "l1_scratch_observation": {
+        "aligned_page_bytes": 16,
+        "aligned_size_bytes": 16,
+        "aligned_size_per_bank_bytes": 16,
+        "logical_bytes": 4,
+        "page_bytes": 4,
+        "pages": 1
+      },
+      "length": 32,
+      "logical_l1_scratch_bytes": 12,
+      "name": "seeded_random",
+      "passed": true,
+      "read_barrier_calls": 32,
+      "store_visibility_checks": 32,
+      "write_barrier_calls": 32
+    },
+    {
+      "core_count": 1,
+      "dram_buffer_observation": {
+        "aligned_page_bytes": 32,
+        "aligned_size_bytes": 1056,
+        "aligned_size_per_bank_bytes": 96,
+        "logical_bytes": 132,
+        "page_bytes": 4,
+        "pages": 33
+      },
+      "dram_read_payload_bytes": 264,
+      "dram_write_payload_bytes": 132,
+      "input_fingerprint_a": 6075894765269378576,
+      "input_fingerprint_b": 17288678427294841607,
+      "kernel_count": 1,
+      "l1_scratch_observation": {
+        "aligned_page_bytes": 16,
+        "aligned_size_bytes": 16,
+        "aligned_size_per_bank_bytes": 16,
+        "logical_bytes": 4,
+        "page_bytes": 4,
+        "pages": 1
+      },
+      "length": 33,
+      "logical_l1_scratch_bytes": 12,
+      "name": "seeded_random",
+      "passed": true,
+      "read_barrier_calls": 33,
+      "store_visibility_checks": 33,
+      "write_barrier_calls": 33
+    },
+    {
+      "core_count": 1,
+      "dram_buffer_observation": {
+        "aligned_page_bytes": 32,
+        "aligned_size_bytes": 32768,
+        "aligned_size_per_bank_bytes": 2752,
+        "logical_bytes": 4096,
+        "page_bytes": 4,
+        "pages": 1024
+      },
+      "dram_read_payload_bytes": 8192,
+      "dram_write_payload_bytes": 4096,
+      "input_fingerprint_a": 5299151327595037664,
+      "input_fingerprint_b": 3676080256520566961,
+      "kernel_count": 1,
+      "l1_scratch_observation": {
+        "aligned_page_bytes": 16,
+        "aligned_size_bytes": 16,
+        "aligned_size_per_bank_bytes": 16,
+        "logical_bytes": 4,
+        "page_bytes": 4,
+        "pages": 1
+      },
+      "length": 1024,
+      "logical_l1_scratch_bytes": 12,
+      "name": "seeded_random",
+      "passed": true,
+      "read_barrier_calls": 1024,
+      "store_visibility_checks": 1024,
+      "write_barrier_calls": 1024
+    },
+    {
+      "core_count": 1,
+      "dram_buffer_observation": {
+        "aligned_page_bytes": 32,
+        "aligned_size_bytes": 32800,
+        "aligned_size_per_bank_bytes": 2752,
+        "logical_bytes": 4100,
+        "page_bytes": 4,
+        "pages": 1025
+      },
+      "dram_read_payload_bytes": 8200,
+      "dram_write_payload_bytes": 4100,
+      "input_fingerprint_a": 12889422065550641461,
+      "input_fingerprint_b": 16526465756067423127,
+      "kernel_count": 1,
+      "l1_scratch_observation": {
+        "aligned_page_bytes": 16,
+        "aligned_size_bytes": 16,
+        "aligned_size_per_bank_bytes": 16,
+        "logical_bytes": 4,
+        "page_bytes": 4,
+        "pages": 1
+      },
+      "length": 1025,
+      "logical_l1_scratch_bytes": 12,
+      "name": "seeded_random",
+      "passed": true,
+      "read_barrier_calls": 1025,
+      "store_visibility_checks": 1025,
+      "write_barrier_calls": 1025
+    },
+    {
+      "core_count": 1,
+      "dram_buffer_observation": {
+        "aligned_page_bytes": 32,
+        "aligned_size_bytes": 262176,
+        "aligned_size_per_bank_bytes": 21856,
+        "logical_bytes": 32772,
+        "page_bytes": 4,
+        "pages": 8193
+      },
+      "dram_read_payload_bytes": 65544,
+      "dram_write_payload_bytes": 32772,
+      "input_fingerprint_a": 14821054911573572818,
+      "input_fingerprint_b": 356501659512033163,
+      "kernel_count": 1,
+      "l1_scratch_observation": {
+        "aligned_page_bytes": 16,
+        "aligned_size_bytes": 16,
+        "aligned_size_per_bank_bytes": 16,
+        "logical_bytes": 4,
+        "page_bytes": 4,
+        "pages": 1
+      },
+      "length": 8193,
+      "logical_l1_scratch_bytes": 12,
+      "name": "seeded_random",
+      "passed": true,
+      "read_barrier_calls": 8193,
+      "store_visibility_checks": 8193,
+      "write_barrier_calls": 8193
+    }
+  ],
+  "comparison": "exact modulo 2^32",
+  "dtype": "uint32",
+  "passed": true,
+  "seed": 2026,
+  "variant": "riscv_scalar_loop"
+}

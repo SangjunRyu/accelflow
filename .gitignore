@@ -1,0 +1,57 @@
+# Local Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Reproducible build trees / dependency caches
+build/
+build_*/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+.cpmcache/
+.cache/
+
+# TT-Metal runtime-generated inspector / watcher / fabric files
+/generated/
+
+# Compiled host, device and CUDA artifacts (retain text inspection reports)
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.dll
+*.exe
+*.pdb
+*.elf
+*.dephash
+*.cubin
+*.fatbin
+
+# Keep external TT-Metal checkouts and simulator downloads outside this repo
+/third_party/*/
+/tenstorrent/
+/downloads/
+/datasets/
+/models/**/weights/
+
+# Local experiment scratch files; JSON, CSV and validation logs remain evidence
+results/**/scratch/
+
+# Machine-local editor / OS settings and environment secrets
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Local Korean editing runs: retain originals locally, exclude from publication
+/_workspace/

@@ -1,0 +1,23 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ysjun5656/dev/accelflow/build/matmul
+[1/2] Building CXX object CMakeFiles/matmul.dir/matmul.cpp.o
+[2/2] Linking CXX executable matmul
+PASS mcast_cores4_depth1: 20 fixtures
+PASS mcast_cores4_depth2: 20 fixtures
+PASS mcast_cores2_depth1: 20 fixtures
+PASS mcast_cores2_depth2: 20 fixtures
+PASS mcast_cores1_depth1: 20 fixtures
+PASS mcast_cores1_depth2: 20 fixtures
+PASS baseline_cores1_depth1: 20 fixtures
+PASS baseline_cores1_depth2: 20 fixtures
+PASS multicore_cores4_depth1: 20 fixtures
+PASS multicore_cores4_depth2: 20 fixtures
+PASS repeat_128_128_128_depth1: 1 fixtures
+PASS repeat_128_128_128_depth2: 1 fixtures
+PASS repeat_96_64_160_depth1: 1 fixtures
+PASS repeat_96_64_160_depth2: 1 fixtures
+PASS repeat_65_257_97_depth1: 1 fixtures
+PASS repeat_65_257_97_depth2: 1 fixtures
+Evidence: /home/ysjun5656/dev/accelflow/results/matmul_mcast/20261019T110520010148Z
+A multicast MatMul PASS: 200 fixture cases + 42 repeated dispatches

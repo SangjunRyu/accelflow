@@ -1,0 +1,39 @@
+Command: ['/home/ysjun5656/dev/accelflow/build/vector_add/vector_add_tiled', '/home/ysjun5656/dev/accelflow/results/vector_add/20261006T110140818749Z/tiled_depth1.json', '1']
+2026-10-06 20:01:50.690 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-10-06 20:01:50.691 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-10-06 20:01:50.692 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-10-06 20:01:50.693 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-10-06 20:01:50.694 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-10-06 20:01:50.713 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-10-06 20:01:50.714 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-10-06 20:01:50.714 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-10-06 20:01:50.714 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-10-06 20:01:50.716 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-10-06 20:01:50.716 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-10-06 20:01:50.716 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-10-06 20:01:50.716 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+PASS tiled deterministic n=4 tiles=1 max_abs=0
+PASS tiled zero n=33 tiles=1 max_abs=0
+PASS tiled signed_integer_exact n=1 tiles=1 max_abs=0
+PASS tiled signed_integer_exact n=31 tiles=1 max_abs=0
+PASS tiled signed_integer_exact n=32 tiles=1 max_abs=0
+PASS tiled signed_integer_exact n=33 tiles=1 max_abs=0
+PASS tiled signed_integer_exact n=1023 tiles=1 max_abs=0
+PASS tiled signed_integer_exact n=1024 tiles=1 max_abs=0
+PASS tiled signed_integer_exact n=1025 tiles=2 max_abs=0
+PASS tiled signed_integer_exact n=2048 tiles=2 max_abs=0
+PASS tiled signed_integer_exact n=2051 tiles=3 max_abs=0
+PASS tiled signed_integer_exact n=8193 tiles=9 max_abs=0
+PASS tiled signed_integer_exact n=65537 tiles=65 max_abs=0
+PASS tiled fractional_bf16 n=2051 tiles=3 max_abs=0.00439453
+TILED_VECTOR_ADD_ALL_PASS cases=14
+2026-10-06 20:01:50.931 | info     |    BuildKernels | JIT cache stats: 13/13 hits (100.0%) [13 cached, 39 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-10-06 20:01:50.931 | info     |    BuildKernels | JIT telemetry: 26 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-10-06 20:01:50.933 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-10-06 20:01:50.933 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-10-06 20:01:50.933 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-10-06 20:01:50.933 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-10-06 20:01:50.933 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-10-06 20:01:50.933 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[17961] 0.3 seconds (61.4 KHz)
+example_exit_code=0

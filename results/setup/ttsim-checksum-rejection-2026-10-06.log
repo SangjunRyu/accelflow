@@ -1,0 +1,4 @@
+Release: v1.11.1
+URL: https://github.com/tenstorrent/ttsim/releases/download/v1.11.1/libttsim_wh.so
+Install directory: /home/ysjun5656/dev/tenstorrent/sim
+ERROR: Existing library checksum differs. Refusing to overwrite it.

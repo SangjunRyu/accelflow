@@ -1,0 +1,455 @@
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/ysjun5656/dev/accelflow/build/matmul
+[1/2] Building CXX object CMakeFiles/matmul.dir/matmul.cpp.o
+[2/2] Linking CXX executable matmul
+Command: ['/home/ysjun5656/dev/accelflow/build/matmul/matmul', '/home/ysjun5656/dev/accelflow/results/matmul/20261007T102645791226Z/baseline_depth1.json', 'baseline', '1']
+2026-10-07 19:26:45.946 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-10-07 19:26:45.954 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-10-07 19:26:45.959 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-10-07 19:26:45.966 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-10-07 19:26:45.971 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-10-07 19:26:46.241 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-10-07 19:26:46.242 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-10-07 19:26:46.244 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-10-07 19:26:46.245 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-10-07 19:26:46.254 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-10-07 19:26:46.254 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-10-07 19:26:46.268 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-10-07 19:26:46.268 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+PASS baseline depth=1 deterministic MKN=2,3,2 max_abs=0
+PASS baseline depth=1 zero MKN=33,35,31 max_abs=0
+PASS baseline depth=1 identity MKN=32,32,32 max_abs=0
+PASS baseline depth=1 signed_random MKN=32,32,32 max_abs=0
+PASS baseline depth=1 signed_random MKN=31,33,35 max_abs=0
+PASS baseline depth=1 signed_random MKN=33,31,65 max_abs=0
+PASS baseline depth=1 signed_random MKN=64,64,96 max_abs=0
+PASS baseline depth=1 signed_random MKN=32,128,96 max_abs=0
+PASS baseline depth=1 signed_random MKN=65,97,33 max_abs=0
+PASS baseline depth=1 fractional MKN=32,64,64 max_abs=0.00739059
+PASS baseline depth=1 fractional MKN=33,35,65 max_abs=0.00389487
+PASS baseline depth=1 large_exact MKN=8,16,8 max_abs=0
+PASS baseline depth=1 signed_random MKN=96,64,160 max_abs=0
+PASS baseline depth=1 signed_random MKN=128,128,128 max_abs=0
+PASS baseline depth=1 signed_random MKN=65,129,97 max_abs=0
+PASS baseline depth=1 signed_random MKN=65,257,97 max_abs=0
+PASS baseline depth=1 signed_random MKN=64,512,64 max_abs=0
+PASS baseline depth=1 fractional MKN=33,161,65 max_abs=0.00823828
+PASS baseline depth=1 fractional MKN=33,257,65 max_abs=0.0158138
+PASS baseline depth=1 zero MKN=33,257,65 max_abs=0
+MATMUL_ALL_PASS cases=20
+2026-10-07 19:26:50.899 | info     |    BuildKernels | JIT cache stats: 10/13 hits (76.9%) [10 cached, 57 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-10-07 19:26:50.899 | info     |    BuildKernels | JIT telemetry: 32 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-10-07 19:26:50.903 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-10-07 19:26:50.904 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-10-07 19:26:50.904 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-10-07 19:26:50.904 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-10-07 19:26:50.904 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-10-07 19:26:50.904 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[50902] 1.9 seconds (26.8 KHz)
+example_exit_code=0
+
+Command: ['/home/ysjun5656/dev/accelflow/build/matmul/matmul', '/home/ysjun5656/dev/accelflow/results/matmul/20261007T102645791226Z/baseline_depth2.json', 'baseline', '2']
+2026-10-07 19:26:50.946 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-10-07 19:26:50.949 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-10-07 19:26:50.950 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-10-07 19:26:50.952 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-10-07 19:26:50.954 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-10-07 19:26:50.981 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-10-07 19:26:50.981 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-10-07 19:26:50.982 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-10-07 19:26:50.982 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-10-07 19:26:50.984 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-10-07 19:26:50.984 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-10-07 19:26:50.984 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-10-07 19:26:50.984 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+PASS baseline depth=2 deterministic MKN=2,3,2 max_abs=0
+PASS baseline depth=2 zero MKN=33,35,31 max_abs=0
+PASS baseline depth=2 identity MKN=32,32,32 max_abs=0
+PASS baseline depth=2 signed_random MKN=32,32,32 max_abs=0
+PASS baseline depth=2 signed_random MKN=31,33,35 max_abs=0
+PASS baseline depth=2 signed_random MKN=33,31,65 max_abs=0
+PASS baseline depth=2 signed_random MKN=64,64,96 max_abs=0
+PASS baseline depth=2 signed_random MKN=32,128,96 max_abs=0
+PASS baseline depth=2 signed_random MKN=65,97,33 max_abs=0
+PASS baseline depth=2 fractional MKN=32,64,64 max_abs=0.00739059
+PASS baseline depth=2 fractional MKN=33,35,65 max_abs=0.00389487
+PASS baseline depth=2 large_exact MKN=8,16,8 max_abs=0
+PASS baseline depth=2 signed_random MKN=96,64,160 max_abs=0
+PASS baseline depth=2 signed_random MKN=128,128,128 max_abs=0
+PASS baseline depth=2 signed_random MKN=65,129,97 max_abs=0
+PASS baseline depth=2 signed_random MKN=65,257,97 max_abs=0
+PASS baseline depth=2 signed_random MKN=64,512,64 max_abs=0
+PASS baseline depth=2 fractional MKN=33,161,65 max_abs=0.00823828
+PASS baseline depth=2 fractional MKN=33,257,65 max_abs=0.0158138
+PASS baseline depth=2 zero MKN=33,257,65 max_abs=0
+MATMUL_ALL_PASS cases=20
+2026-10-07 19:26:51.805 | info     |    BuildKernels | JIT cache stats: 13/13 hits (100.0%) [13 cached, 57 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-10-07 19:26:51.805 | info     |    BuildKernels | JIT telemetry: 26 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-10-07 19:26:51.809 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-10-07 19:26:51.809 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-10-07 19:26:51.809 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-10-07 19:26:51.809 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-10-07 19:26:51.809 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-10-07 19:26:51.809 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[38260] 0.9 seconds (40.3 KHz)
+example_exit_code=0
+
+Command: ['/home/ysjun5656/dev/accelflow/build/matmul/matmul', '/home/ysjun5656/dev/accelflow/results/matmul/20261007T102645791226Z/reuse_a_depth1.json', 'reuse_a', '1']
+2026-10-07 19:26:51.871 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-10-07 19:26:51.874 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-10-07 19:26:51.876 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-10-07 19:26:51.879 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-10-07 19:26:51.882 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-10-07 19:26:51.900 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-10-07 19:26:51.900 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-10-07 19:26:51.903 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-10-07 19:26:51.903 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-10-07 19:26:51.908 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-10-07 19:26:51.908 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-10-07 19:26:51.908 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-10-07 19:26:51.909 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+PASS reuse_a depth=1 deterministic MKN=2,3,2 max_abs=0
+PASS reuse_a depth=1 zero MKN=33,35,31 max_abs=0
+PASS reuse_a depth=1 identity MKN=32,32,32 max_abs=0
+PASS reuse_a depth=1 signed_random MKN=32,32,32 max_abs=0
+PASS reuse_a depth=1 signed_random MKN=31,33,35 max_abs=0
+PASS reuse_a depth=1 signed_random MKN=33,31,65 max_abs=0
+PASS reuse_a depth=1 signed_random MKN=64,64,96 max_abs=0
+PASS reuse_a depth=1 signed_random MKN=32,128,96 max_abs=0
+PASS reuse_a depth=1 signed_random MKN=65,97,33 max_abs=0
+PASS reuse_a depth=1 fractional MKN=32,64,64 max_abs=0.00739059
+PASS reuse_a depth=1 fractional MKN=33,35,65 max_abs=0.00389487
+PASS reuse_a depth=1 large_exact MKN=8,16,8 max_abs=0
+PASS reuse_a depth=1 signed_random MKN=96,64,160 max_abs=0
+PASS reuse_a depth=1 signed_random MKN=128,128,128 max_abs=0
+PASS reuse_a depth=1 signed_random MKN=65,129,97 max_abs=0
+PASS reuse_a depth=1 signed_random MKN=65,257,97 max_abs=0
+PASS reuse_a depth=1 signed_random MKN=64,512,64 max_abs=0
+PASS reuse_a depth=1 fractional MKN=33,161,65 max_abs=0.00823828
+PASS reuse_a depth=1 fractional MKN=33,257,65 max_abs=0.0158138
+PASS reuse_a depth=1 zero MKN=33,257,65 max_abs=0
+MATMUL_ALL_PASS cases=20
+2026-10-07 19:26:53.871 | info     |    BuildKernels | JIT cache stats: 10/13 hits (76.9%) [10 cached, 57 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-10-07 19:26:53.871 | info     |    BuildKernels | JIT telemetry: 32 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-10-07 19:26:53.873 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-10-07 19:26:53.873 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-10-07 19:26:53.873 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-10-07 19:26:53.873 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-10-07 19:26:53.873 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-10-07 19:26:53.873 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[29298] 0.9 seconds (33.2 KHz)
+example_exit_code=0
+
+Command: ['/home/ysjun5656/dev/accelflow/build/matmul/matmul', '/home/ysjun5656/dev/accelflow/results/matmul/20261007T102645791226Z/reuse_a_depth2.json', 'reuse_a', '2']
+2026-10-07 19:26:53.893 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-10-07 19:26:53.895 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-10-07 19:26:53.897 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-10-07 19:26:53.900 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-10-07 19:26:53.902 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-10-07 19:26:53.919 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-10-07 19:26:53.919 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-10-07 19:26:53.921 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-10-07 19:26:53.921 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-10-07 19:26:53.924 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-10-07 19:26:53.924 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-10-07 19:26:53.925 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-10-07 19:26:53.925 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+PASS reuse_a depth=2 deterministic MKN=2,3,2 max_abs=0
+PASS reuse_a depth=2 zero MKN=33,35,31 max_abs=0
+PASS reuse_a depth=2 identity MKN=32,32,32 max_abs=0
+PASS reuse_a depth=2 signed_random MKN=32,32,32 max_abs=0
+PASS reuse_a depth=2 signed_random MKN=31,33,35 max_abs=0
+PASS reuse_a depth=2 signed_random MKN=33,31,65 max_abs=0
+PASS reuse_a depth=2 signed_random MKN=64,64,96 max_abs=0
+PASS reuse_a depth=2 signed_random MKN=32,128,96 max_abs=0
+PASS reuse_a depth=2 signed_random MKN=65,97,33 max_abs=0
+PASS reuse_a depth=2 fractional MKN=32,64,64 max_abs=0.00739059
+PASS reuse_a depth=2 fractional MKN=33,35,65 max_abs=0.00389487
+PASS reuse_a depth=2 large_exact MKN=8,16,8 max_abs=0
+PASS reuse_a depth=2 signed_random MKN=96,64,160 max_abs=0
+PASS reuse_a depth=2 signed_random MKN=128,128,128 max_abs=0
+PASS reuse_a depth=2 signed_random MKN=65,129,97 max_abs=0
+PASS reuse_a depth=2 signed_random MKN=65,257,97 max_abs=0
+PASS reuse_a depth=2 signed_random MKN=64,512,64 max_abs=0
+PASS reuse_a depth=2 fractional MKN=33,161,65 max_abs=0.00823828
+PASS reuse_a depth=2 fractional MKN=33,257,65 max_abs=0.0158138
+PASS reuse_a depth=2 zero MKN=33,257,65 max_abs=0
+MATMUL_ALL_PASS cases=20
+2026-10-07 19:26:54.570 | info     |    BuildKernels | JIT cache stats: 13/13 hits (100.0%) [13 cached, 57 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-10-07 19:26:54.570 | info     |    BuildKernels | JIT telemetry: 26 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-10-07 19:26:54.573 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-10-07 19:26:54.573 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-10-07 19:26:54.573 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-10-07 19:26:54.573 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-10-07 19:26:54.573 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-10-07 19:26:54.573 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[22644] 0.8 seconds (30.0 KHz)
+example_exit_code=0
+
+Command: ['/home/ysjun5656/dev/accelflow/build/matmul/matmul', '/home/ysjun5656/dev/accelflow/results/matmul/20261007T102645791226Z/blocked_depth1.json', 'blocked', '1']
+2026-10-07 19:26:54.608 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-10-07 19:26:54.610 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-10-07 19:26:54.611 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-10-07 19:26:54.612 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-10-07 19:26:54.616 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-10-07 19:26:54.633 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-10-07 19:26:54.633 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-10-07 19:26:54.635 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-10-07 19:26:54.636 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-10-07 19:26:54.639 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-10-07 19:26:54.639 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-10-07 19:26:54.640 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-10-07 19:26:54.640 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+PASS blocked depth=1 deterministic MKN=2,3,2 max_abs=0
+PASS blocked depth=1 zero MKN=33,35,31 max_abs=0
+PASS blocked depth=1 identity MKN=32,32,32 max_abs=0
+PASS blocked depth=1 signed_random MKN=32,32,32 max_abs=0
+PASS blocked depth=1 signed_random MKN=31,33,35 max_abs=0
+PASS blocked depth=1 signed_random MKN=33,31,65 max_abs=0
+PASS blocked depth=1 signed_random MKN=64,64,96 max_abs=0
+PASS blocked depth=1 signed_random MKN=32,128,96 max_abs=0
+PASS blocked depth=1 signed_random MKN=65,97,33 max_abs=0
+PASS blocked depth=1 fractional MKN=32,64,64 max_abs=0.00739059
+PASS blocked depth=1 fractional MKN=33,35,65 max_abs=0.00389487
+PASS blocked depth=1 large_exact MKN=8,16,8 max_abs=0
+PASS blocked depth=1 signed_random MKN=96,64,160 max_abs=0
+PASS blocked depth=1 signed_random MKN=128,128,128 max_abs=0
+MATMUL_ALL_PASS cases=14
+2026-10-07 19:26:56.825 | info     |    BuildKernels | JIT cache stats: 10/13 hits (76.9%) [10 cached, 39 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-10-07 19:26:56.825 | info     |    BuildKernels | JIT telemetry: 32 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-10-07 19:26:56.828 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-10-07 19:26:56.828 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-10-07 19:26:56.828 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-10-07 19:26:56.828 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-10-07 19:26:56.828 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-10-07 19:26:56.828 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[21831] 0.6 seconds (34.2 KHz)
+example_exit_code=0
+
+Command: ['/home/ysjun5656/dev/accelflow/build/matmul/matmul', '/home/ysjun5656/dev/accelflow/results/matmul/20261007T102645791226Z/blocked_depth2.json', 'blocked', '2']
+2026-10-07 19:26:56.885 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-10-07 19:26:56.886 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-10-07 19:26:56.887 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-10-07 19:26:56.889 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-10-07 19:26:56.890 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-10-07 19:26:56.910 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-10-07 19:26:56.910 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-10-07 19:26:56.911 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-10-07 19:26:56.911 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-10-07 19:26:56.914 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-10-07 19:26:56.914 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-10-07 19:26:56.914 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-10-07 19:26:56.914 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+PASS blocked depth=2 deterministic MKN=2,3,2 max_abs=0
+PASS blocked depth=2 zero MKN=33,35,31 max_abs=0
+PASS blocked depth=2 identity MKN=32,32,32 max_abs=0
+PASS blocked depth=2 signed_random MKN=32,32,32 max_abs=0
+PASS blocked depth=2 signed_random MKN=31,33,35 max_abs=0
+PASS blocked depth=2 signed_random MKN=33,31,65 max_abs=0
+PASS blocked depth=2 signed_random MKN=64,64,96 max_abs=0
+PASS blocked depth=2 signed_random MKN=32,128,96 max_abs=0
+PASS blocked depth=2 signed_random MKN=65,97,33 max_abs=0
+PASS blocked depth=2 fractional MKN=32,64,64 max_abs=0.00739059
+PASS blocked depth=2 fractional MKN=33,35,65 max_abs=0.00389487
+PASS blocked depth=2 large_exact MKN=8,16,8 max_abs=0
+PASS blocked depth=2 signed_random MKN=96,64,160 max_abs=0
+PASS blocked depth=2 signed_random MKN=128,128,128 max_abs=0
+MATMUL_ALL_PASS cases=14
+2026-10-07 19:26:57.233 | info     |    BuildKernels | JIT cache stats: 13/13 hits (100.0%) [13 cached, 39 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-10-07 19:26:57.233 | info     |    BuildKernels | JIT telemetry: 26 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-10-07 19:26:57.236 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-10-07 19:26:57.236 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-10-07 19:26:57.236 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-10-07 19:26:57.236 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-10-07 19:26:57.236 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-10-07 19:26:57.236 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[17225] 0.4 seconds (42.3 KHz)
+example_exit_code=0
+
+Command: ['/home/ysjun5656/dev/accelflow/build/matmul/matmul', '/home/ysjun5656/dev/accelflow/results/matmul/20261007T102645791226Z/streamed_depth1_chunk1.json', 'streamed', '1', '1']
+2026-10-07 19:26:57.257 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-10-07 19:26:57.259 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-10-07 19:26:57.262 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-10-07 19:26:57.263 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-10-07 19:26:57.266 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-10-07 19:26:57.278 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-10-07 19:26:57.279 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-10-07 19:26:57.280 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-10-07 19:26:57.280 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-10-07 19:26:57.283 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-10-07 19:26:57.283 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-10-07 19:26:57.283 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-10-07 19:26:57.283 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+PASS streamed depth=1 deterministic MKN=2,3,2 max_abs=0
+PASS streamed depth=1 zero MKN=33,35,31 max_abs=0
+PASS streamed depth=1 identity MKN=32,32,32 max_abs=0
+PASS streamed depth=1 signed_random MKN=32,32,32 max_abs=0
+PASS streamed depth=1 signed_random MKN=31,33,35 max_abs=0
+PASS streamed depth=1 signed_random MKN=33,31,65 max_abs=0
+PASS streamed depth=1 signed_random MKN=64,64,96 max_abs=0
+PASS streamed depth=1 signed_random MKN=32,128,96 max_abs=0
+PASS streamed depth=1 signed_random MKN=65,97,33 max_abs=0
+PASS streamed depth=1 fractional MKN=32,64,64 max_abs=0.00739059
+PASS streamed depth=1 fractional MKN=33,35,65 max_abs=0.00389487
+PASS streamed depth=1 large_exact MKN=8,16,8 max_abs=0
+PASS streamed depth=1 signed_random MKN=96,64,160 max_abs=0
+PASS streamed depth=1 signed_random MKN=128,128,128 max_abs=0
+PASS streamed depth=1 signed_random MKN=65,129,97 max_abs=0
+PASS streamed depth=1 signed_random MKN=65,257,97 max_abs=0
+PASS streamed depth=1 signed_random MKN=64,512,64 max_abs=0
+PASS streamed depth=1 fractional MKN=33,161,65 max_abs=0.00823828
+PASS streamed depth=1 fractional MKN=33,257,65 max_abs=0.0158138
+PASS streamed depth=1 zero MKN=33,257,65 max_abs=0
+MATMUL_ALL_PASS cases=20
+2026-10-07 19:26:59.689 | info     |    BuildKernels | JIT cache stats: 9/13 hits (69.2%) [9 cached, 57 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-10-07 19:26:59.689 | info     |    BuildKernels | JIT telemetry: 34 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-10-07 19:26:59.691 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-10-07 19:26:59.691 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-10-07 19:26:59.691 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-10-07 19:26:59.691 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-10-07 19:26:59.691 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-10-07 19:26:59.691 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[53386] 1.1 seconds (48.3 KHz)
+example_exit_code=0
+
+Command: ['/home/ysjun5656/dev/accelflow/build/matmul/matmul', '/home/ysjun5656/dev/accelflow/results/matmul/20261007T102645791226Z/streamed_depth2_chunk1.json', 'streamed', '2', '1']
+2026-10-07 19:26:59.730 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-10-07 19:26:59.732 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-10-07 19:26:59.735 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-10-07 19:26:59.736 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-10-07 19:26:59.738 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-10-07 19:26:59.755 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-10-07 19:26:59.755 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-10-07 19:26:59.756 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-10-07 19:26:59.757 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-10-07 19:26:59.760 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-10-07 19:26:59.760 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-10-07 19:26:59.760 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-10-07 19:26:59.760 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+PASS streamed depth=2 deterministic MKN=2,3,2 max_abs=0
+PASS streamed depth=2 zero MKN=33,35,31 max_abs=0
+PASS streamed depth=2 identity MKN=32,32,32 max_abs=0
+PASS streamed depth=2 signed_random MKN=32,32,32 max_abs=0
+PASS streamed depth=2 signed_random MKN=31,33,35 max_abs=0
+PASS streamed depth=2 signed_random MKN=33,31,65 max_abs=0
+PASS streamed depth=2 signed_random MKN=64,64,96 max_abs=0
+PASS streamed depth=2 signed_random MKN=32,128,96 max_abs=0
+PASS streamed depth=2 signed_random MKN=65,97,33 max_abs=0
+PASS streamed depth=2 fractional MKN=32,64,64 max_abs=0.00739059
+PASS streamed depth=2 fractional MKN=33,35,65 max_abs=0.00389487
+PASS streamed depth=2 large_exact MKN=8,16,8 max_abs=0
+PASS streamed depth=2 signed_random MKN=96,64,160 max_abs=0
+PASS streamed depth=2 signed_random MKN=128,128,128 max_abs=0
+PASS streamed depth=2 signed_random MKN=65,129,97 max_abs=0
+PASS streamed depth=2 signed_random MKN=65,257,97 max_abs=0
+PASS streamed depth=2 signed_random MKN=64,512,64 max_abs=0
+PASS streamed depth=2 fractional MKN=33,161,65 max_abs=0.00823828
+PASS streamed depth=2 fractional MKN=33,257,65 max_abs=0.0158138
+PASS streamed depth=2 zero MKN=33,257,65 max_abs=0
+MATMUL_ALL_PASS cases=20
+2026-10-07 19:27:00.366 | info     |    BuildKernels | JIT cache stats: 13/13 hits (100.0%) [13 cached, 57 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-10-07 19:27:00.366 | info     |    BuildKernels | JIT telemetry: 26 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-10-07 19:27:00.368 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-10-07 19:27:00.368 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-10-07 19:27:00.368 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-10-07 19:27:00.368 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-10-07 19:27:00.368 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-10-07 19:27:00.368 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[31743] 0.7 seconds (45.0 KHz)
+example_exit_code=0
+
+Command: ['/home/ysjun5656/dev/accelflow/build/matmul/matmul', '/home/ysjun5656/dev/accelflow/results/matmul/20261007T102645791226Z/streamed_depth1_chunk2.json', 'streamed', '1', '2']
+2026-10-07 19:27:00.403 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-10-07 19:27:00.405 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-10-07 19:27:00.407 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-10-07 19:27:00.410 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-10-07 19:27:00.413 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-10-07 19:27:00.428 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-10-07 19:27:00.428 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-10-07 19:27:00.430 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-10-07 19:27:00.430 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-10-07 19:27:00.433 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-10-07 19:27:00.433 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-10-07 19:27:00.434 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-10-07 19:27:00.434 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+PASS streamed depth=1 deterministic MKN=2,3,2 max_abs=0
+PASS streamed depth=1 zero MKN=33,35,31 max_abs=0
+PASS streamed depth=1 identity MKN=32,32,32 max_abs=0
+PASS streamed depth=1 signed_random MKN=32,32,32 max_abs=0
+PASS streamed depth=1 signed_random MKN=31,33,35 max_abs=0
+PASS streamed depth=1 signed_random MKN=33,31,65 max_abs=0
+PASS streamed depth=1 signed_random MKN=64,64,96 max_abs=0
+PASS streamed depth=1 signed_random MKN=32,128,96 max_abs=0
+PASS streamed depth=1 signed_random MKN=65,97,33 max_abs=0
+PASS streamed depth=1 fractional MKN=32,64,64 max_abs=0.00739059
+PASS streamed depth=1 fractional MKN=33,35,65 max_abs=0.00389487
+PASS streamed depth=1 large_exact MKN=8,16,8 max_abs=0
+PASS streamed depth=1 signed_random MKN=96,64,160 max_abs=0
+PASS streamed depth=1 signed_random MKN=128,128,128 max_abs=0
+PASS streamed depth=1 signed_random MKN=65,129,97 max_abs=0
+PASS streamed depth=1 signed_random MKN=65,257,97 max_abs=0
+PASS streamed depth=1 signed_random MKN=64,512,64 max_abs=0
+PASS streamed depth=1 fractional MKN=33,161,65 max_abs=0.00823828
+PASS streamed depth=1 fractional MKN=33,257,65 max_abs=0.0158138
+PASS streamed depth=1 zero MKN=33,257,65 max_abs=0
+MATMUL_ALL_PASS cases=20
+2026-10-07 19:27:01.237 | info     |    BuildKernels | JIT cache stats: 13/13 hits (100.0%) [13 cached, 57 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-10-07 19:27:01.237 | info     |    BuildKernels | JIT telemetry: 26 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-10-07 19:27:01.240 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-10-07 19:27:01.240 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-10-07 19:27:01.240 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-10-07 19:27:01.240 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-10-07 19:27:01.240 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-10-07 19:27:01.240 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[47973] 0.9 seconds (52.5 KHz)
+example_exit_code=0
+
+Command: ['/home/ysjun5656/dev/accelflow/build/matmul/matmul', '/home/ysjun5656/dev/accelflow/results/matmul/20261007T102645791226Z/streamed_depth2_chunk2.json', 'streamed', '2', '2']
+2026-10-07 19:27:01.276 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-10-07 19:27:01.278 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-10-07 19:27:01.281 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-10-07 19:27:01.283 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-10-07 19:27:01.285 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-10-07 19:27:01.303 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-10-07 19:27:01.303 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-10-07 19:27:01.306 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-10-07 19:27:01.306 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-10-07 19:27:01.310 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-10-07 19:27:01.310 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-10-07 19:27:01.311 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-10-07 19:27:01.311 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+PASS streamed depth=2 deterministic MKN=2,3,2 max_abs=0
+PASS streamed depth=2 zero MKN=33,35,31 max_abs=0
+PASS streamed depth=2 identity MKN=32,32,32 max_abs=0
+PASS streamed depth=2 signed_random MKN=32,32,32 max_abs=0
+PASS streamed depth=2 signed_random MKN=31,33,35 max_abs=0
+PASS streamed depth=2 signed_random MKN=33,31,65 max_abs=0
+PASS streamed depth=2 signed_random MKN=64,64,96 max_abs=0
+PASS streamed depth=2 signed_random MKN=32,128,96 max_abs=0
+PASS streamed depth=2 signed_random MKN=65,97,33 max_abs=0
+PASS streamed depth=2 fractional MKN=32,64,64 max_abs=0.00739059
+PASS streamed depth=2 fractional MKN=33,35,65 max_abs=0.00389487
+PASS streamed depth=2 large_exact MKN=8,16,8 max_abs=0
+PASS streamed depth=2 signed_random MKN=96,64,160 max_abs=0
+PASS streamed depth=2 signed_random MKN=128,128,128 max_abs=0
+PASS streamed depth=2 signed_random MKN=65,129,97 max_abs=0
+PASS streamed depth=2 signed_random MKN=65,257,97 max_abs=0
+PASS streamed depth=2 signed_random MKN=64,512,64 max_abs=0
+PASS streamed depth=2 fractional MKN=33,161,65 max_abs=0.00823828
+PASS streamed depth=2 fractional MKN=33,257,65 max_abs=0.0158138
+PASS streamed depth=2 zero MKN=33,257,65 max_abs=0
+MATMUL_ALL_PASS cases=20
+2026-10-07 19:27:01.866 | info     |    BuildKernels | JIT cache stats: 13/13 hits (100.0%) [13 cached, 57 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-10-07 19:27:01.866 | info     |    BuildKernels | JIT telemetry: 26 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-10-07 19:27:01.868 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-10-07 19:27:01.868 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-10-07 19:27:01.868 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-10-07 19:27:01.868 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-10-07 19:27:01.868 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-10-07 19:27:01.868 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[26462] 0.7 seconds (40.0 KHz)
+example_exit_code=0
+
+Evidence: /home/ysjun5656/dev/accelflow/results/matmul/20261007T102645791226Z
+MatMul K-streaming assessment PASS: 188 cases; evidence=/home/ysjun5656/dev/accelflow/results/matmul/20261007T102645791226Z

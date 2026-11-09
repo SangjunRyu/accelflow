@@ -1,0 +1,1198 @@
+{
+  "passed": true,
+  "total_fixture_cases": 200,
+  "repeat_profiles": 6,
+  "repeat_dispatches": 42,
+  "coverage": {
+    "tail_receiver": true,
+    "multi_row": true,
+    "CB_wrap": true,
+    "three_active_cores": true,
+    "four_active_cores": true,
+    "single_core_fallback": true,
+    "large_K": true
+  },
+  "comparisons": [
+    {
+      "name": "deterministic",
+      "shape_mkn": [
+        2,
+        3,
+        2
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "zero",
+      "shape_mkn": [
+        33,
+        35,
+        31
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 1,
+          "A_reads": 4,
+          "B_reads": 4,
+          "read_payload_bytes_model": 16384,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 1,
+          "A_reads": 4,
+          "B_reads": 4,
+          "read_payload_bytes_model": 16384,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 1,
+          "A_reads": 4,
+          "B_reads": 4,
+          "read_payload_bytes_model": 16384,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 1,
+          "A_reads": 4,
+          "B_reads": 4,
+          "read_payload_bytes_model": 16384,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 4,
+          "B_reads": 4,
+          "read_payload_bytes_model": 16384,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 4,
+          "B_reads": 4,
+          "read_payload_bytes_model": 16384,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "identity",
+      "shape_mkn": [
+        32,
+        32,
+        32
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        32,
+        32,
+        32
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        31,
+        33,
+        35
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 2,
+          "A_reads": 2,
+          "B_reads": 4,
+          "read_payload_bytes_model": 12288,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 2,
+          "A_reads": 2,
+          "B_reads": 4,
+          "read_payload_bytes_model": 12288,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 2,
+          "A_reads": 2,
+          "B_reads": 4,
+          "read_payload_bytes_model": 12288,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 2,
+          "A_reads": 2,
+          "B_reads": 4,
+          "read_payload_bytes_model": 12288,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 4,
+          "B_reads": 4,
+          "read_payload_bytes_model": 16384,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 4,
+          "B_reads": 4,
+          "read_payload_bytes_model": 16384,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        33,
+        31,
+        65
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 3,
+          "A_reads": 2,
+          "B_reads": 6,
+          "read_payload_bytes_model": 16384,
+          "reduction_vs_baseline_model": 0.33333333333333337,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 3,
+          "A_reads": 2,
+          "B_reads": 6,
+          "read_payload_bytes_model": 16384,
+          "reduction_vs_baseline_model": 0.33333333333333337,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 2,
+          "A_reads": 4,
+          "B_reads": 6,
+          "read_payload_bytes_model": 20480,
+          "reduction_vs_baseline_model": 0.16666666666666663,
+          "tail_a_discarded_model": 2
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 2,
+          "A_reads": 4,
+          "B_reads": 6,
+          "read_payload_bytes_model": 20480,
+          "reduction_vs_baseline_model": 0.16666666666666663,
+          "tail_a_discarded_model": 2
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 6,
+          "B_reads": 6,
+          "read_payload_bytes_model": 24576,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 6,
+          "B_reads": 6,
+          "read_payload_bytes_model": 24576,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        64,
+        64,
+        96
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 3,
+          "A_reads": 4,
+          "B_reads": 12,
+          "read_payload_bytes_model": 32768,
+          "reduction_vs_baseline_model": 0.33333333333333337,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 3,
+          "A_reads": 4,
+          "B_reads": 12,
+          "read_payload_bytes_model": 32768,
+          "reduction_vs_baseline_model": 0.33333333333333337,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 2,
+          "A_reads": 8,
+          "B_reads": 12,
+          "read_payload_bytes_model": 40960,
+          "reduction_vs_baseline_model": 0.16666666666666663,
+          "tail_a_discarded_model": 4
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 2,
+          "A_reads": 8,
+          "B_reads": 12,
+          "read_payload_bytes_model": 40960,
+          "reduction_vs_baseline_model": 0.16666666666666663,
+          "tail_a_discarded_model": 4
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 12,
+          "B_reads": 12,
+          "read_payload_bytes_model": 49152,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 12,
+          "B_reads": 12,
+          "read_payload_bytes_model": 49152,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        32,
+        128,
+        96
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 3,
+          "A_reads": 4,
+          "B_reads": 12,
+          "read_payload_bytes_model": 32768,
+          "reduction_vs_baseline_model": 0.33333333333333337,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 3,
+          "A_reads": 4,
+          "B_reads": 12,
+          "read_payload_bytes_model": 32768,
+          "reduction_vs_baseline_model": 0.33333333333333337,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 2,
+          "A_reads": 8,
+          "B_reads": 12,
+          "read_payload_bytes_model": 40960,
+          "reduction_vs_baseline_model": 0.16666666666666663,
+          "tail_a_discarded_model": 4
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 2,
+          "A_reads": 8,
+          "B_reads": 12,
+          "read_payload_bytes_model": 40960,
+          "reduction_vs_baseline_model": 0.16666666666666663,
+          "tail_a_discarded_model": 4
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 12,
+          "B_reads": 12,
+          "read_payload_bytes_model": 49152,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 12,
+          "B_reads": 12,
+          "read_payload_bytes_model": 49152,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        65,
+        97,
+        33
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 2,
+          "A_reads": 12,
+          "B_reads": 24,
+          "read_payload_bytes_model": 73728,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 2,
+          "A_reads": 12,
+          "B_reads": 24,
+          "read_payload_bytes_model": 73728,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 2,
+          "A_reads": 12,
+          "B_reads": 24,
+          "read_payload_bytes_model": 73728,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 2,
+          "A_reads": 12,
+          "B_reads": 24,
+          "read_payload_bytes_model": 73728,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 24,
+          "B_reads": 24,
+          "read_payload_bytes_model": 98304,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 24,
+          "B_reads": 24,
+          "read_payload_bytes_model": 98304,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "fractional",
+      "shape_mkn": [
+        32,
+        64,
+        64
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 2,
+          "A_reads": 2,
+          "B_reads": 4,
+          "read_payload_bytes_model": 12288,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 2,
+          "A_reads": 2,
+          "B_reads": 4,
+          "read_payload_bytes_model": 12288,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 2,
+          "A_reads": 2,
+          "B_reads": 4,
+          "read_payload_bytes_model": 12288,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 2,
+          "A_reads": 2,
+          "B_reads": 4,
+          "read_payload_bytes_model": 12288,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 4,
+          "B_reads": 4,
+          "read_payload_bytes_model": 16384,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 4,
+          "B_reads": 4,
+          "read_payload_bytes_model": 16384,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "fractional",
+      "shape_mkn": [
+        33,
+        35,
+        65
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 3,
+          "A_reads": 4,
+          "B_reads": 12,
+          "read_payload_bytes_model": 32768,
+          "reduction_vs_baseline_model": 0.33333333333333337,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 3,
+          "A_reads": 4,
+          "B_reads": 12,
+          "read_payload_bytes_model": 32768,
+          "reduction_vs_baseline_model": 0.33333333333333337,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 2,
+          "A_reads": 8,
+          "B_reads": 12,
+          "read_payload_bytes_model": 40960,
+          "reduction_vs_baseline_model": 0.16666666666666663,
+          "tail_a_discarded_model": 4
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 2,
+          "A_reads": 8,
+          "B_reads": 12,
+          "read_payload_bytes_model": 40960,
+          "reduction_vs_baseline_model": 0.16666666666666663,
+          "tail_a_discarded_model": 4
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 12,
+          "B_reads": 12,
+          "read_payload_bytes_model": 49152,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 12,
+          "B_reads": 12,
+          "read_payload_bytes_model": 49152,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "large_exact",
+      "shape_mkn": [
+        8,
+        16,
+        8
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 1,
+          "B_reads": 1,
+          "read_payload_bytes_model": 4096,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 4,
+          "A_reads": 12,
+          "B_reads": 30,
+          "read_payload_bytes_model": 86016,
+          "reduction_vs_baseline_model": 0.30000000000000004,
+          "tail_a_discarded_model": 18
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 4,
+          "A_reads": 12,
+          "B_reads": 30,
+          "read_payload_bytes_model": 86016,
+          "reduction_vs_baseline_model": 0.30000000000000004,
+          "tail_a_discarded_model": 18
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 2,
+          "A_reads": 18,
+          "B_reads": 30,
+          "read_payload_bytes_model": 98304,
+          "reduction_vs_baseline_model": 0.19999999999999996,
+          "tail_a_discarded_model": 6
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 2,
+          "A_reads": 18,
+          "B_reads": 30,
+          "read_payload_bytes_model": 98304,
+          "reduction_vs_baseline_model": 0.19999999999999996,
+          "tail_a_discarded_model": 6
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 30,
+          "B_reads": 30,
+          "read_payload_bytes_model": 122880,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 30,
+          "B_reads": 30,
+          "read_payload_bytes_model": 122880,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 4,
+          "A_reads": 16,
+          "B_reads": 64,
+          "read_payload_bytes_model": 163840,
+          "reduction_vs_baseline_model": 0.375,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 4,
+          "A_reads": 16,
+          "B_reads": 64,
+          "read_payload_bytes_model": 163840,
+          "reduction_vs_baseline_model": 0.375,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 2,
+          "A_reads": 32,
+          "B_reads": 64,
+          "read_payload_bytes_model": 196608,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 2,
+          "A_reads": 32,
+          "B_reads": 64,
+          "read_payload_bytes_model": 196608,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 64,
+          "B_reads": 64,
+          "read_payload_bytes_model": 262144,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 64,
+          "B_reads": 64,
+          "read_payload_bytes_model": 262144,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        65,
+        129,
+        97
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 4,
+          "A_reads": 15,
+          "B_reads": 60,
+          "read_payload_bytes_model": 153600,
+          "reduction_vs_baseline_model": 0.375,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 4,
+          "A_reads": 15,
+          "B_reads": 60,
+          "read_payload_bytes_model": 153600,
+          "reduction_vs_baseline_model": 0.375,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 2,
+          "A_reads": 30,
+          "B_reads": 60,
+          "read_payload_bytes_model": 184320,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 2,
+          "A_reads": 30,
+          "B_reads": 60,
+          "read_payload_bytes_model": 184320,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 60,
+          "B_reads": 60,
+          "read_payload_bytes_model": 245760,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 60,
+          "B_reads": 60,
+          "read_payload_bytes_model": 245760,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 4,
+          "A_reads": 27,
+          "B_reads": 108,
+          "read_payload_bytes_model": 276480,
+          "reduction_vs_baseline_model": 0.375,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 4,
+          "A_reads": 27,
+          "B_reads": 108,
+          "read_payload_bytes_model": 276480,
+          "reduction_vs_baseline_model": 0.375,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 2,
+          "A_reads": 54,
+          "B_reads": 108,
+          "read_payload_bytes_model": 331776,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 2,
+          "A_reads": 54,
+          "B_reads": 108,
+          "read_payload_bytes_model": 331776,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 108,
+          "B_reads": 108,
+          "read_payload_bytes_model": 442368,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 108,
+          "B_reads": 108,
+          "read_payload_bytes_model": 442368,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        64,
+        512,
+        64
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 2,
+          "A_reads": 32,
+          "B_reads": 64,
+          "read_payload_bytes_model": 196608,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 2,
+          "A_reads": 32,
+          "B_reads": 64,
+          "read_payload_bytes_model": 196608,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 2,
+          "A_reads": 32,
+          "B_reads": 64,
+          "read_payload_bytes_model": 196608,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 2,
+          "A_reads": 32,
+          "B_reads": 64,
+          "read_payload_bytes_model": 196608,
+          "reduction_vs_baseline_model": 0.25,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 64,
+          "B_reads": 64,
+          "read_payload_bytes_model": 262144,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 64,
+          "B_reads": 64,
+          "read_payload_bytes_model": 262144,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "fractional",
+      "shape_mkn": [
+        33,
+        161,
+        65
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 3,
+          "A_reads": 12,
+          "B_reads": 36,
+          "read_payload_bytes_model": 98304,
+          "reduction_vs_baseline_model": 0.33333333333333337,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 3,
+          "A_reads": 12,
+          "B_reads": 36,
+          "read_payload_bytes_model": 98304,
+          "reduction_vs_baseline_model": 0.33333333333333337,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 2,
+          "A_reads": 24,
+          "B_reads": 36,
+          "read_payload_bytes_model": 122880,
+          "reduction_vs_baseline_model": 0.16666666666666663,
+          "tail_a_discarded_model": 12
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 2,
+          "A_reads": 24,
+          "B_reads": 36,
+          "read_payload_bytes_model": 122880,
+          "reduction_vs_baseline_model": 0.16666666666666663,
+          "tail_a_discarded_model": 12
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 36,
+          "B_reads": 36,
+          "read_payload_bytes_model": 147456,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 36,
+          "B_reads": 36,
+          "read_payload_bytes_model": 147456,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "fractional",
+      "shape_mkn": [
+        33,
+        257,
+        65
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 3,
+          "A_reads": 18,
+          "B_reads": 54,
+          "read_payload_bytes_model": 147456,
+          "reduction_vs_baseline_model": 0.33333333333333337,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 3,
+          "A_reads": 18,
+          "B_reads": 54,
+          "read_payload_bytes_model": 147456,
+          "reduction_vs_baseline_model": 0.33333333333333337,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 2,
+          "A_reads": 36,
+          "B_reads": 54,
+          "read_payload_bytes_model": 184320,
+          "reduction_vs_baseline_model": 0.16666666666666663,
+          "tail_a_discarded_model": 18
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 2,
+          "A_reads": 36,
+          "B_reads": 54,
+          "read_payload_bytes_model": 184320,
+          "reduction_vs_baseline_model": 0.16666666666666663,
+          "tail_a_discarded_model": 18
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 54,
+          "B_reads": 54,
+          "read_payload_bytes_model": 221184,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 54,
+          "B_reads": 54,
+          "read_payload_bytes_model": 221184,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    },
+    {
+      "name": "zero",
+      "shape_mkn": [
+        33,
+        257,
+        65
+      ],
+      "controlled_outputs_match": true,
+      "mcast_models": {
+        "mcast_cores4_depth1": {
+          "active_cores": 3,
+          "A_reads": 18,
+          "B_reads": 54,
+          "read_payload_bytes_model": 147456,
+          "reduction_vs_baseline_model": 0.33333333333333337,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores4_depth2": {
+          "active_cores": 3,
+          "A_reads": 18,
+          "B_reads": 54,
+          "read_payload_bytes_model": 147456,
+          "reduction_vs_baseline_model": 0.33333333333333337,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores2_depth1": {
+          "active_cores": 2,
+          "A_reads": 36,
+          "B_reads": 54,
+          "read_payload_bytes_model": 184320,
+          "reduction_vs_baseline_model": 0.16666666666666663,
+          "tail_a_discarded_model": 18
+        },
+        "mcast_cores2_depth2": {
+          "active_cores": 2,
+          "A_reads": 36,
+          "B_reads": 54,
+          "read_payload_bytes_model": 184320,
+          "reduction_vs_baseline_model": 0.16666666666666663,
+          "tail_a_discarded_model": 18
+        },
+        "mcast_cores1_depth1": {
+          "active_cores": 1,
+          "A_reads": 54,
+          "B_reads": 54,
+          "read_payload_bytes_model": 221184,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        },
+        "mcast_cores1_depth2": {
+          "active_cores": 1,
+          "A_reads": 54,
+          "B_reads": 54,
+          "read_payload_bytes_model": 221184,
+          "reduction_vs_baseline_model": 0.0,
+          "tail_a_discarded_model": 0
+        }
+      }
+    }
+  ],
+  "scope": "A multicast only; B read locally; no hardware bandwidth/speedup claim"
+}

@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+
+# Preserve whitespace in archived tool output.
+results/** -whitespace

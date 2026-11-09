@@ -1,0 +1,3347 @@
+{
+  "passed": true,
+  "total_cases": 160,
+  "coverage": {
+    "more_requested_than_tiles": true,
+    "uneven_partition": true,
+    "range_crosses_output_row": true,
+    "CB_wrap_per_core": true,
+    "four_active_cores": true,
+    "large_K_512": true
+  },
+  "comparisons": [
+    {
+      "name": "deterministic",
+      "shape_mkn": [
+        2,
+        3,
+        2
+      ],
+      "output_tiles": 1,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "zero",
+      "shape_mkn": [
+        33,
+        35,
+        31
+      ],
+      "output_tiles": 2,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "identity",
+      "shape_mkn": [
+        32,
+        32,
+        32
+      ],
+      "output_tiles": 1,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        32,
+        32,
+        32
+      ],
+      "output_tiles": 1,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        31,
+        33,
+        35
+      ],
+      "output_tiles": 2,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        33,
+        31,
+        65
+      ],
+      "output_tiles": 6,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 5,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 5,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        64,
+        64,
+        96
+      ],
+      "output_tiles": 6,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 5,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 5,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        32,
+        128,
+        96
+      ],
+      "output_tiles": 3,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 3,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 3,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        65,
+        97,
+        33
+      ],
+      "output_tiles": 6,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 5,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 5,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "fractional",
+      "shape_mkn": [
+        32,
+        64,
+        64
+      ],
+      "output_tiles": 2,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "fractional",
+      "shape_mkn": [
+        33,
+        35,
+        65
+      ],
+      "output_tiles": 6,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 5,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 5,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "large_exact",
+      "shape_mkn": [
+        8,
+        16,
+        8
+      ],
+      "output_tiles": 1,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "output_tiles": 15,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 15
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 15
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 8
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 8,
+              "tile_count": 7
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 8
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 8,
+              "tile_count": 7
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 4
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 4
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 8,
+              "tile_count": 4
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 12,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 4
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 4
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 8,
+              "tile_count": 4
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 12,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "output_tiles": 16,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 16
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 16
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 8
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 8,
+              "tile_count": 8
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 8
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 8,
+              "tile_count": 8
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 4
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 4
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 8,
+              "tile_count": 4
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 12,
+              "tile_count": 4
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 4
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 4
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 8,
+              "tile_count": 4
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 12,
+              "tile_count": 4
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        65,
+        129,
+        97
+      ],
+      "output_tiles": 12,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 12
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 12
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 6,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 6,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 6,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 9,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 6,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 9,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "output_tiles": 12,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 12
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 12
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 6,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 6,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 6,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 9,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 6,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 9,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "signed_random",
+      "shape_mkn": [
+        64,
+        512,
+        64
+      ],
+      "output_tiles": 4,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 4
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 4
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 1,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "fractional",
+      "shape_mkn": [
+        33,
+        161,
+        65
+      ],
+      "output_tiles": 6,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 5,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 5,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "fractional",
+      "shape_mkn": [
+        33,
+        257,
+        65
+      ],
+      "output_tiles": 6,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 5,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 5,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    },
+    {
+      "name": "zero",
+      "shape_mkn": [
+        33,
+        257,
+        65
+      ],
+      "output_tiles": 6,
+      "input_output_fingerprints_match": true,
+      "global_DRAM_payload_matches_baseline_model": true,
+      "partitions": {
+        "multicore_cores1_depth1": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores1_depth2": {
+          "active_cores": 1,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 6
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 1
+        },
+        "multicore_cores2_depth1": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores2_depth2": {
+          "active_cores": 2,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 3
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 3,
+              "tile_count": 3
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 2
+        },
+        "multicore_cores4_depth1": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 5,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        },
+        "multicore_cores4_depth2": {
+          "active_cores": 4,
+          "assignments": [
+            {
+              "logical_core": [
+                0,
+                0
+              ],
+              "start_tile": 0,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                1,
+                0
+              ],
+              "start_tile": 2,
+              "tile_count": 2
+            },
+            {
+              "logical_core": [
+                2,
+                0
+              ],
+              "start_tile": 4,
+              "tile_count": 1
+            },
+            {
+              "logical_core": [
+                3,
+                0
+              ],
+              "start_tile": 5,
+              "tile_count": 1
+            }
+          ],
+          "grid": [
+            8,
+            9
+          ],
+          "requested_cores": 4
+        }
+      }
+    }
+  ],
+  "performance": "Not measured; independent-core mapping does not reduce global input payload"
+}

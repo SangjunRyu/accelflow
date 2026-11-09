@@ -1,0 +1,143 @@
+# AccelFlow environment report
+Captured (Asia/Seoul): 2026-10-06T16:49:52+09:00
+Captured (UTC): 2026-10-06T07:49:52+00:00
+
+## OS and WSL
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.5 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+Kernel: 5.15.90.1sangjunryu20195834+
+WSL detected: yes; distribution: Ubuntu-24.04
+
+## CPU, memory, and storage
+Architecture: x86_64
+
+Available CPU cores: 8
+
+CPU capabilities: Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Address sizes:                   39 bits physical, 48 bits virtual
+Byte Order:                      Little Endian
+CPU(s):                          8
+On-line CPU(s) list:             0-7
+Vendor ID:                       GenuineIntel
+Model name:                      Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+CPU family:                      6
+Model:                           142
+Thread(s) per core:              2
+Core(s) per socket:              4
+Socket(s):                       1
+Stepping:                        11
+BogoMIPS:                        3984.01
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid pni pclmulqdq vmx ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp tpr_shadow vnmi ept vpid ept_ad fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 xsaves md_clear flush_l1d arch_capabilities
+Virtualization:                  VT-x
+Hypervisor vendor:               Microsoft
+Virtualization type:             full
+L1d cache:                       128 KiB (4 instances)
+L1i cache:                       128 KiB (4 instances)
+L2 cache:                        1 MiB (4 instances)
+L3 cache:                        8 MiB (1 instance)
+Vulnerability Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerability L1tf:              Not affected
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT Host state unknown
+Vulnerability Meltdown:          Not affected
+Vulnerability Mmio stale data:   Mitigation; Clear CPU buffers; SMT Host state unknown
+Vulnerability Retbleed:          Mitigation; IBRS
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS Not affected
+Vulnerability Srbds:             Unknown: Dependent on hypervisor status
+Vulnerability Tsx async abort:   Not affected
+
+RAM and swap:                total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       561Mi       3.2Gi       4.1Mi       270Mi       3.2Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+Project filesystem: Filesystem      Size  Used Avail Use% Mounted on
+C:\             953G  919G   35G  97% /mnt/c
+
+Linux home filesystem: Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdc       1007G   26G  930G   3% /
+
+## Tool versions
+
+Python: Python 3.12.3
+
+GCC: gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+G++: g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+Clang: not found
+
+Clang 20: not found
+
+CMake: cmake version 3.28.3
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+
+Ninja: 1.11.1
+
+Git: git version 2.43.0
+
+glibc: glibc 2.39
+
+## Docker
+
+Docker client: Docker version 29.0.1, build eedd969
+
+Docker server access (10 second timeout): 
+failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+WARNING: probe failed for Docker server access (10 second timeout)
+
+## NVIDIA and CUDA (informational, unrelated to TTSim)
+
+NVIDIA GPU: Tue Oct  6 16:49:56 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.159.06             Driver Version: 582.66         CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce MX150           On  |   00000000:01:00.0 Off |                  N/A |
+| N/A   64C    P8            N/A  / 5001W |       0MiB /   2048MiB |      2%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A              33      G   /Xwayland                             N/A      |
++-----------------------------------------------------------------------------------------+
+
+CUDA compiler: not found
+
+## External checkouts (only explicitly configured paths)
+TT_METAL_HOME: not set
+TT_METAL_SIMULATOR: not set
+
+## Interpretation
+Missing optional tools are observations, not script failures.
+No dependencies were installed and no system configuration was changed.
+This report does not prove TT-Metal/TTSim compatibility or kernel correctness.
+Simulator wall-clock time is not physical NPU latency.

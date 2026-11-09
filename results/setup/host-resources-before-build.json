@@ -1,0 +1,12 @@
+{
+  "captured_at": "2026-10-06T16:55:15.7124478+09:00",
+  "distribution": "Ubuntu-24.04",
+  "wsl_version": 2,
+  "vhdx_path": "C:\\Users\\ysjun5656\\AppData\\Local\\wsl\\{903dd91c-8ce5-45d9-b15f-9bbfce2d29dc}\\ext4.vhdx",
+  "vhdx_file_length_bytes": 33411825664,
+  "backing_volume": "C",
+  "volume_size_bytes": 1023000178688,
+  "volume_free_bytes": 37139771392,
+  "host_physical_memory_bytes": 8476680192,
+  "host_free_physical_memory_kib": 1036624
+}

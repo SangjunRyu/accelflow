@@ -1,0 +1,29 @@
+Command: ['/home/ysjun5656/dev/accelflow/build/vector_add/vector_add_riscv', '/home/ysjun5656/dev/accelflow/results/vector_add/20261006T104206666500Z/riscv.json']
+2026-10-06 19:42:06.828 | critical |           Metal | Failed to determine TT-Metal root directory. Root directory must be set via one of the following methods:
+1. Automatically determined when using a package install
+2. Set TT_METAL_RUNTIME_ROOT environment variable to the path containing tt_metal/
+3. Call RunTimeOptions::set_root_dir() API before creating RunTimeOptions
+4. Run from the root of the repository
+Current working directory: /home/ysjun5656/dev/accelflow (rtoptions.cpp:373)
+2026-10-06 19:42:06.831 | critical |          Always | TT_FATAL: Root Directory is not set. (assert.hpp:104)
+TT_FATAL @ /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/llrt/rtoptions.cpp:376: !this->root_dir.empty()
+info:
+Root Directory is not set.
+backtrace:
+ --- /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/libtt_metal.so(+0x4092f8) [0x7f25c37982f8]
+ --- tt::llrt::RunTimeOptions::RunTimeOptions()
+ --- tt::tt_metal::MetalEnvImpl::initialize_base_objects()
+ --- tt::tt_metal::MetalEnvImpl::MetalEnvImpl(tt::tt_metal::MetalEnvDescriptor)
+ --- std::__detail::_MakeUniq<tt::tt_metal::MetalEnvImpl>::__single_object std::make_unique<tt::tt_metal::MetalEnvImpl, tt::tt_metal::MetalEnvDescriptor>(tt::tt_metal::MetalEnvDescriptor&&)
+ --- tt::tt_metal::MetalEnv::MetalEnv(tt::tt_metal::MetalEnvDescriptor)
+ --- tt::tt_metal::MetalContext::create_default_instance_implicit_locked()
+ --- tt::tt_metal::MetalContext::instance(ttsl::StrongType<int, tt::tt_metal::ContextIdTag>)
+ --- tt::tt_metal::distributed::MeshDeviceImpl::create_unit_meshes(ttsl::StrongType<int, tt::tt_metal::ContextIdTag>, std::vector<int, std::allocator<int> > const&, unsigned long, unsigned long, unsigned long, tt::tt_metal::DispatchCoreConfig const&, std::span<unsigned int const, 18446744073709551615ul>, unsigned long)
+ --- tt::tt_metal::distributed::MeshDeviceImpl::create_unit_mesh(ttsl::StrongType<int, tt::tt_metal::ContextIdTag>, int, unsigned long, unsigned long, unsigned long, tt::tt_metal::DispatchCoreConfig const&, std::span<unsigned int const, 18446744073709551615ul>, unsigned long)
+ --- tt::tt_metal::distributed::MeshDevice::create_unit_mesh(int, unsigned long, unsigned long, unsigned long, tt::tt_metal::DispatchCoreConfig const&, std::span<unsigned int const, 18446744073709551615ul>, unsigned long)
+ --- /home/ysjun5656/dev/accelflow/build/vector_add/vector_add_riscv(+0x2fa54) [0x55bb28828a54]
+ --- /lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7f25c2a071ca]
+ --- /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7f25c2a0728b]
+ --- /home/ysjun5656/dev/accelflow/build/vector_add/vector_add_riscv(+0x2f915) [0x55bb28828915]
+
+example_exit_code=1

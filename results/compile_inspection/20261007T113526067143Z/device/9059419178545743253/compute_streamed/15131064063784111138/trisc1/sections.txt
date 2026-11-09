@@ -1,0 +1,24 @@
+/home/ysjun5656/.cache/tt-metal-cache/9059419178545743253/kernels/compute_streamed/15131064063784111138/trisc1/trisc1.elf  :
+section                        size         addr
+.device_print_strings             0    104857600
+.device_print_strings_info        0    105906176
+.tt_zone_str                      0    106954752
+.tt_zone_meta                     0    108003328
+.text                          1216        26752
+.data                            12   4289724448
+.bss                              0   4289724460
+.segments                        24            0
+.riscv.attributes                57            0
+.comment                         43            0
+.debug_aranges                   40            0
+.debug_info                   42746            0
+.debug_abbrev                  4579            0
+.debug_line                    5412            0
+.debug_frame                    112            0
+.debug_str                    39238            0
+.debug_loclists                3442            0
+.debug_rnglists                 731            0
+.debug_line_str                4367            0
+Total                        102019
+
+

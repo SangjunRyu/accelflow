@@ -1,0 +1,60 @@
+/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T113209749850Z
+PASS correctness_b1_d1_p4 cases=20
+PASS correctness_b1_d2_p4 cases=20
+PASS correctness_b4_d1_p4 cases=20
+PASS correctness_b4_d2_p4 cases=20
+PASS correctness_b8_d1_p4 cases=20
+PASS correctness_b8_d2_p4 cases=20
+PASS correctness_b8_d1_p1 cases=20
+PASS correctness_b8_d2_p1 cases=20
+PASS correctness_b8_d1_p2 cases=20
+PASS correctness_b8_d2_p2 cases=20
+PASS trial1_320x320x320_multicore cases=1
+PASS trial1_640x320x640_multicore cases=1
+PASS trial1_320x320x320_mcast2d cases=1
+PASS trial1_320x320x320_mcast2d_batch1 cases=1
+PASS trial1_640x320x640_mcast2d_batch4 cases=1
+PASS trial1_320x320x320_mcast2d_batch4 cases=1
+PASS trial1_640x320x640_mcast cases=1
+PASS trial1_640x320x640_mcast2d_batch8 cases=1
+PASS trial1_640x320x640_mcast2d_batch1 cases=1
+PASS trial1_640x320x640_mcast2d cases=1
+PASS trial1_320x320x320_mcast2d_batch8 cases=1
+PASS trial1_320x320x320_mcast cases=1
+PASS trial2_320x320x320_mcast2d cases=1
+PASS trial2_320x320x320_mcast2d_batch4 cases=1
+PASS trial2_640x320x640_mcast2d cases=1
+PASS trial2_640x320x640_mcast2d_batch4 cases=1
+PASS trial2_640x320x640_mcast2d_batch1 cases=1
+PASS trial2_320x320x320_mcast2d_batch1 cases=1
+PASS trial2_640x320x640_multicore cases=1
+PASS trial2_320x320x320_mcast2d_batch8 cases=1
+PASS trial2_320x320x320_multicore cases=1
+PASS trial2_640x320x640_mcast2d_batch8 cases=1
+PASS trial2_640x320x640_mcast cases=1
+PASS trial2_320x320x320_mcast cases=1
+PASS trial3_320x320x320_mcast2d_batch4 cases=1
+PASS trial3_640x320x640_multicore cases=1
+PASS trial3_320x320x320_mcast2d_batch1 cases=1
+PASS trial3_640x320x640_mcast cases=1
+PASS trial3_640x320x640_mcast2d_batch1 cases=1
+PASS trial3_320x320x320_mcast cases=1
+PASS trial3_640x320x640_mcast2d_batch4 cases=1
+PASS trial3_640x320x640_mcast2d cases=1
+PASS trial3_640x320x640_mcast2d_batch8 cases=1
+PASS trial3_320x320x320_multicore cases=1
+PASS trial3_320x320x320_mcast2d cases=1
+PASS trial3_320x320x320_mcast2d_batch8 cases=1
+(320, 320, 320) multicore 512.976 [510.809399, 579.235737, 512.975702]
+(320, 320, 320) mcast 882.779 [902.915528, 816.258254, 882.77891]
+(320, 320, 320) mcast2d 1162.351 [1307.529323, 1067.286045, 1162.35098]
+(320, 320, 320) mcast2d_batch1 1393.987 [1583.93116, 1391.587259, 1393.986577]
+(320, 320, 320) mcast2d_batch4 746.244 [732.257137, 746.244374, 751.001622]
+(320, 320, 320) mcast2d_batch8 780.125 [780.124812, 729.910406, 903.521232]
+(640, 320, 640) multicore 2329.654 [2029.955974, 2429.699913, 2329.653876]
+(640, 320, 640) mcast 2806.735 [2806.734752, 3199.800182, 2757.97844]
+(640, 320, 640) mcast2d 4629.212 [5223.903834, 4629.212351, 4410.138039]
+(640, 320, 640) mcast2d_batch1 6026.675 [6488.855623, 6026.674985, 5401.107326]
+(640, 320, 640) mcast2d_batch4 3241.892 [4157.122089, 3029.069086, 3241.891663]
+(640, 320, 640) mcast2d_batch8 2975.694 [2609.171242, 3178.755444, 2975.693916]
+ALL_PASS /home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T113209749850Z

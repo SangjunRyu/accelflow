@@ -1,0 +1,45 @@
+Command: ['/home/ysjun5656/dev/accelflow/build/matmul/matmul', '/home/ysjun5656/dev/accelflow/results/matmul/20261007T105319808353Z/streamed_depth1_chunk2.json', 'streamed', '1', '2']
+2026-10-07 19:53:26.968 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-10-07 19:53:26.970 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-10-07 19:53:26.973 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-10-07 19:53:26.975 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-10-07 19:53:26.977 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-10-07 19:53:26.997 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-10-07 19:53:26.998 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-10-07 19:53:26.999 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-10-07 19:53:27.000 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-10-07 19:53:27.003 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-10-07 19:53:27.003 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-10-07 19:53:27.003 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-10-07 19:53:27.003 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+PASS streamed depth=1 deterministic MKN=2,3,2 max_abs=0
+PASS streamed depth=1 zero MKN=33,35,31 max_abs=0
+PASS streamed depth=1 identity MKN=32,32,32 max_abs=0
+PASS streamed depth=1 signed_random MKN=32,32,32 max_abs=0
+PASS streamed depth=1 signed_random MKN=31,33,35 max_abs=0
+PASS streamed depth=1 signed_random MKN=33,31,65 max_abs=0
+PASS streamed depth=1 signed_random MKN=64,64,96 max_abs=0
+PASS streamed depth=1 signed_random MKN=32,128,96 max_abs=0
+PASS streamed depth=1 signed_random MKN=65,97,33 max_abs=0
+PASS streamed depth=1 fractional MKN=32,64,64 max_abs=0.00739059
+PASS streamed depth=1 fractional MKN=33,35,65 max_abs=0.00389487
+PASS streamed depth=1 large_exact MKN=8,16,8 max_abs=0
+PASS streamed depth=1 signed_random MKN=96,64,160 max_abs=0
+PASS streamed depth=1 signed_random MKN=128,128,128 max_abs=0
+PASS streamed depth=1 signed_random MKN=65,129,97 max_abs=0
+PASS streamed depth=1 signed_random MKN=65,257,97 max_abs=0
+PASS streamed depth=1 signed_random MKN=64,512,64 max_abs=0
+PASS streamed depth=1 fractional MKN=33,161,65 max_abs=0.00823828
+PASS streamed depth=1 fractional MKN=33,257,65 max_abs=0.0158138
+PASS streamed depth=1 zero MKN=33,257,65 max_abs=0
+MATMUL_ALL_PASS cases=20
+2026-10-07 19:53:27.890 | info     |    BuildKernels | JIT cache stats: 13/13 hits (100.0%) [13 cached, 57 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-10-07 19:53:27.890 | info     |    BuildKernels | JIT telemetry: 26 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-10-07 19:53:27.894 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-10-07 19:53:27.894 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-10-07 19:53:27.894 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-10-07 19:53:27.894 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-10-07 19:53:27.894 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-10-07 19:53:27.894 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[47973] 1.0 seconds (48.2 KHz)
+example_exit_code=0

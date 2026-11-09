@@ -1,0 +1,92 @@
+{
+  "date_utc": "2026-10-19T10:45:06.414180+00:00",
+  "backend": "ttsim",
+  "tt_metal_revision": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "compiler": "Ubuntu clang version 20.1.2 (0ubuntu1~24.04.3)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm-20/bin",
+  "kernel": "5.15.90.1sangjunryu20195834+",
+  "os_release": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "source_sha256": {
+    "npu/matmul/README.md": "b8d58bfb1a2c78c0d911a6f3003d6cc3dc2ff24b208d5dfd303d56b9a88d0da3",
+    "npu/matmul/multicore.hpp": "a8150954468960658546e93c3932113d4e34aba0ecb76e9ac42ce8c43611818f",
+    "npu/matmul/matmul.cpp": "543aaa066a355fa5e28175e76327babb6696fee20ec8a6764301629ce90fed75",
+    "npu/matmul/benchmark.hpp": "2258dc8de4bbd30275e89a9a3dc93cc92ce51a19942022589ee93c469aa0fd12",
+    "npu/matmul/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "npu/matmul/CMakeLists.txt": "96bd60c8703f7a6507b41d8f0059417f6aff4c9fd4ed4c876d3c551deb219a87",
+    "npu/matmul/kernels/writer_blocked.cpp": "5a0d07dbc9e65fccbf1130c5d8f0f69e365ca0fb2f67063bf5a7aa093f5f7e0c",
+    "npu/matmul/kernels/writer.cpp": "3ff4232fd0f2e7342549900ec0ed0bb047d228f00a5e545abd0c3517a71776c3",
+    "npu/matmul/kernels/reader_streamed.cpp": "1ae07ffc56a8953354a4e288d518b898dfbdb86ee13c6b1087d0a9f8971b84b6",
+    "npu/matmul/kernels/reader_multicore.cpp": "444efa4cbc92135992fd7c25d31aa93c4f24ef5fa667ebd8c354fc0e97796588",
+    "npu/matmul/kernels/compute_multicore.cpp": "3478d3c06ed2ee0800e8dff3b0aab63fc99b95eddec759bee82571a4c4f22158",
+    "npu/matmul/kernels/compute_blocked.cpp": "80dfa9cba9a361f319b82c6d2d388e7572ea7998246a443d545eb68703e66908",
+    "npu/matmul/kernels/compute_streamed.cpp": "c9f057a6d67324dccc5da8ae904bfb6fc069a81ab51448c265ec04c5c5bd389f",
+    "npu/matmul/kernels/compute.cpp": "50aeed704fa9f95fce95a76bc3e92d0e6b0003a7c064c853bd7274fd84b73438",
+    "npu/matmul/kernels/reader_blocked.cpp": "1e97e70c12250f54c02d9eb5aa5d5562fa960a1cc11523d3be6246b20cacd252",
+    "npu/matmul/kernels/reader.cpp": "a1309a1ea8c16b4d6ca9f828049fd72edf21622ceee9abbcf008e1802416a66e",
+    "npu/matmul/kernels/writer_multicore.cpp": "197ab7244694adab382e313cd389181448e85bb7b2367fbcbebe5415339fc158",
+    "tools/report/run_multicore_matmul.py": "952384d295c0ed1a240baf8376cf99199f1f193f47b68efb2f7ba6ba9ed8f0c5",
+    "tools/report/build_matmul.py": "9cd2342f2696cbec222ef9176cffd8cfa535f351894386ffa3ca8bbea9911ba7",
+    "scripts/run_multicore_matmul.sh": "cd2953cfa260c6c666fba4c80bec2e27e1efca7cd843e5fdf9bbb4b8366c34c5",
+    "npu/vector_add/common.hpp": "695681e02c9fa7dd8441067460df4e4c566da3f11392402bb4ecf984fe9c2df2"
+  },
+  "runs": [
+    {
+      "name": "baseline_cores1_depth1",
+      "variant": "baseline",
+      "cores": 1,
+      "depth": 1,
+      "exit_code": 0
+    },
+    {
+      "name": "baseline_cores1_depth2",
+      "variant": "baseline",
+      "cores": 1,
+      "depth": 2,
+      "exit_code": 0
+    },
+    {
+      "name": "multicore_cores1_depth1",
+      "variant": "multicore",
+      "cores": 1,
+      "depth": 1,
+      "exit_code": 0
+    },
+    {
+      "name": "multicore_cores1_depth2",
+      "variant": "multicore",
+      "cores": 1,
+      "depth": 2,
+      "exit_code": 0
+    },
+    {
+      "name": "multicore_cores2_depth1",
+      "variant": "multicore",
+      "cores": 2,
+      "depth": 1,
+      "exit_code": 0
+    },
+    {
+      "name": "multicore_cores2_depth2",
+      "variant": "multicore",
+      "cores": 2,
+      "depth": 2,
+      "exit_code": 0
+    },
+    {
+      "name": "multicore_cores4_depth1",
+      "variant": "multicore",
+      "cores": 4,
+      "depth": 1,
+      "exit_code": 0
+    },
+    {
+      "name": "multicore_cores4_depth2",
+      "variant": "multicore",
+      "cores": 4,
+      "depth": 2,
+      "exit_code": 0
+    }
+  ],
+  "passed": true,
+  "policy": "Functional output partitioning and source-derived models; no hardware speedup claim"
+}

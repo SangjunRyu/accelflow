@@ -1,0 +1,50 @@
+{
+  "source_blob_bytes": {
+    "tt-metal": 405201675,
+    "tt-umd": 4416834,
+    "tracy": 24578427,
+    "cluster": 4292448
+  },
+  "total_source_blob_bytes": 438489384,
+  "sources_are_uncompressed_git_blobs_not_clone_disk_measurements": true,
+  "toolchain_proposal_packages": [
+    "clang-20",
+    "lld-20",
+    "g++-14",
+    "libc++-20-dev",
+    "libc++abi-20-dev",
+    "libatomic1",
+    "libstdc++6",
+    "xz-utils",
+    "pandoc",
+    "python3-pip",
+    "python3-pkg-resources",
+    "xxd"
+  ],
+  "additional_disk_budget_gib": {
+    "shallow_sources_git_and_filesystem_overhead": [
+      1,
+      2
+    ],
+    "host_toolchains_and_download_cache": [
+      2,
+      3
+    ],
+    "sfpi_and_cmake_fetched_dependencies": [
+      2,
+      4
+    ],
+    "build_objects_pch_libraries_runtime_cache": [
+      10,
+      25
+    ]
+  },
+  "additional_disk_budget_total_gib": [
+    15,
+    34
+  ],
+  "host_free_reserve_gib": 10,
+  "conservative_required_free_gib": 44,
+  "build_estimate_is_planning_allowance_not_measured_or_upstream_minimum": true,
+  "build_decision": "defer; 33.26 GiB current C: free is below conservative 44 GiB allowance"
+}

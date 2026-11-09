@@ -1,0 +1,42 @@
+Planned baseline packages:
+  build-essential
+  cmake
+  ninja-build
+  git
+  pkg-config
+  ca-certificates
+  curl
+  wget
+  python3-dev
+  python3-venv
+  libssl-dev
+  libhwloc-dev
+  libnuma-dev
+  libtbb-dev
+  libcapstone-dev
+No LLVM/GCC repositories, driver packages, or Python package installation.
+This baseline does not certify readiness to build a selected TT-Metal tag.
+NOTE: This is only a simulation!
+      apt-get needs root privileges for real execution.
+      Keep also in mind that locking is deactivated,
+      so don't depend on the relevance to the real current situation!
+Reading package lists...
+Building dependency tree...
+Reading state information...
+build-essential is already the newest version (12.10ubuntu1).
+cmake is already the newest version (3.28.3-1build7).
+ninja-build is already the newest version (1.11.1-2).
+git is already the newest version (1:2.43.0-1ubuntu7.3).
+pkg-config is already the newest version (1.8.1-2build1).
+ca-certificates is already the newest version (20260601~24.04.1).
+curl is already the newest version (8.5.0-2ubuntu10.15).
+curl set to manually installed.
+wget is already the newest version (1.21.4-1ubuntu4.5).
+python3-dev is already the newest version (3.12.3-0ubuntu2.1).
+python3-venv is already the newest version (3.12.3-0ubuntu2.1).
+libssl-dev is already the newest version (3.0.13-0ubuntu3.16).
+libhwloc-dev is already the newest version (2.10.0-1build1).
+libnuma-dev is already the newest version (2.0.18-1ubuntu0.24.04.1).
+libtbb-dev is already the newest version (2021.11.0-2ubuntu2).
+libcapstone-dev is already the newest version (4.0.2-5.1build1).
+0 upgraded, 0 newly installed, 0 to remove and 39 not upgraded.

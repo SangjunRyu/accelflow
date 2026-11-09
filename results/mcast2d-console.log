@@ -1,0 +1,33 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ysjun5656/dev/accelflow/build/matmul
+[1/2] Building CXX object CMakeFiles/matmul.dir/matmul.cpp.o
+[2/2] Linking CXX executable matmul
+PASS mcast2d_cores4_depth1: 20 fixtures
+PASS mcast2d_cores4_depth2: 20 fixtures
+PASS mcast2d_cores2_depth1: 20 fixtures
+PASS mcast2d_cores2_depth2: 20 fixtures
+PASS mcast2d_cores1_depth1: 20 fixtures
+PASS mcast2d_cores1_depth2: 20 fixtures
+PASS baseline_cores1_depth1: 20 fixtures
+PASS baseline_cores1_depth2: 20 fixtures
+PASS multicore_cores4_depth1: 20 fixtures
+PASS multicore_cores4_depth2: 20 fixtures
+PASS mcast_cores4_depth1: 20 fixtures
+PASS mcast_cores4_depth2: 20 fixtures
+PASS repeat_128_128_128_depth1: 1 fixtures
+PASS repeat_128_128_128_depth2: 1 fixtures
+PASS repeat_96_64_160_depth1: 1 fixtures
+PASS repeat_96_64_160_depth2: 1 fixtures
+PASS repeat_64_512_64_depth1: 1 fixtures
+PASS repeat_64_512_64_depth2: 1 fixtures
+PASS fallback_baseline_32_64_128_depth1: 1 fixtures
+PASS fallback_mcast2d_32_64_128_depth1: 1 fixtures
+PASS fallback_baseline_32_64_128_depth2: 1 fixtures
+PASS fallback_mcast2d_32_64_128_depth2: 1 fixtures
+PASS fallback_baseline_128_64_32_depth1: 1 fixtures
+PASS fallback_mcast2d_128_64_32_depth1: 1 fixtures
+PASS fallback_baseline_128_64_32_depth2: 1 fixtures
+PASS fallback_mcast2d_128_64_32_depth2: 1 fixtures
+Evidence: /home/ysjun5656/dev/accelflow/results/matmul_mcast2d/20261019T111449423414Z
+2D multicast MatMul PASS: 240 fixture cases + 98 repeated/fallback dispatches

@@ -1,0 +1,1186 @@
+{
+  "cases": [
+    {
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 2048,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 2048,
+        "page_bytes": 2048,
+        "pages": 1
+      },
+      "a_shape": [
+        2,
+        3
+      ],
+      "a_tile_reads_model": 1,
+      "atol": 0.0,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 2048,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 2048,
+        "page_bytes": 2048,
+        "pages": 1
+      },
+      "b_shape": [
+        3,
+        2
+      ],
+      "b_tile_reads_model": 1,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 2048,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 2048,
+        "page_bytes": 2048,
+        "pages": 1
+      },
+      "c_shape": [
+        2,
+        2
+      ],
+      "cb_capacity_bytes_model": 6144,
+      "cb_capacity_tiles": [
+        1,
+        1,
+        1
+      ],
+      "destination_tile_slots_max": 1,
+      "dram_read_payload_model": 4096,
+      "dram_write_payload_model": 2048,
+      "input_fingerprint_a": 13477532300641617856,
+      "input_fingerprint_b": 876603184060230674,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 1,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "deterministic",
+      "output_block_tiles": 1,
+      "output_fingerprint": 8868142451398953688,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 1,
+      "padded_flops_model": 65536,
+      "padded_mkn": [
+        32,
+        32,
+        32
+      ],
+      "padding_verified": true,
+      "passed": true,
+      "read_barriers_model": 2,
+      "rtol": 0.0,
+      "shape_mkn": [
+        2,
+        3,
+        2
+      ],
+      "tile_grid_mkn": [
+        1,
+        1,
+        1
+      ],
+      "useful_flops_model": 24
+    },
+    {
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 8192,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 8192,
+        "page_bytes": 2048,
+        "pages": 4
+      },
+      "a_shape": [
+        33,
+        35
+      ],
+      "a_tile_reads_model": 4,
+      "atol": 0.0,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 4096,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 4096,
+        "page_bytes": 2048,
+        "pages": 2
+      },
+      "b_shape": [
+        35,
+        31
+      ],
+      "b_tile_reads_model": 4,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 4096,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 4096,
+        "page_bytes": 2048,
+        "pages": 2
+      },
+      "c_shape": [
+        33,
+        31
+      ],
+      "cb_capacity_bytes_model": 8192,
+      "cb_capacity_tiles": [
+        2,
+        1,
+        1
+      ],
+      "destination_tile_slots_max": 1,
+      "dram_read_payload_model": 16384,
+      "dram_write_payload_model": 4096,
+      "input_fingerprint_a": 13389487554061181733,
+      "input_fingerprint_b": 15568855504211839600,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 4,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "zero",
+      "output_block_tiles": 1,
+      "output_fingerprint": 13346994205906133797,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 2,
+      "padded_flops_model": 262144,
+      "padded_mkn": [
+        64,
+        64,
+        32
+      ],
+      "padding_verified": true,
+      "passed": true,
+      "read_barriers_model": 6,
+      "rtol": 0.0,
+      "shape_mkn": [
+        33,
+        35,
+        31
+      ],
+      "tile_grid_mkn": [
+        2,
+        2,
+        1
+      ],
+      "useful_flops_model": 71610
+    },
+    {
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 2048,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 2048,
+        "page_bytes": 2048,
+        "pages": 1
+      },
+      "a_shape": [
+        32,
+        32
+      ],
+      "a_tile_reads_model": 1,
+      "atol": 0.0,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 2048,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 2048,
+        "page_bytes": 2048,
+        "pages": 1
+      },
+      "b_shape": [
+        32,
+        32
+      ],
+      "b_tile_reads_model": 1,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 2048,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 2048,
+        "page_bytes": 2048,
+        "pages": 1
+      },
+      "c_shape": [
+        32,
+        32
+      ],
+      "cb_capacity_bytes_model": 6144,
+      "cb_capacity_tiles": [
+        1,
+        1,
+        1
+      ],
+      "destination_tile_slots_max": 1,
+      "dram_read_payload_model": 4096,
+      "dram_write_payload_model": 2048,
+      "input_fingerprint_a": 4114579223130642853,
+      "input_fingerprint_b": 14079123138422722456,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 1,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "identity",
+      "output_block_tiles": 1,
+      "output_fingerprint": 14079123138422722456,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 1,
+      "padded_flops_model": 65536,
+      "padded_mkn": [
+        32,
+        32,
+        32
+      ],
+      "padding_verified": true,
+      "passed": true,
+      "read_barriers_model": 2,
+      "rtol": 0.0,
+      "shape_mkn": [
+        32,
+        32,
+        32
+      ],
+      "tile_grid_mkn": [
+        1,
+        1,
+        1
+      ],
+      "useful_flops_model": 65536
+    },
+    {
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 2048,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 2048,
+        "page_bytes": 2048,
+        "pages": 1
+      },
+      "a_shape": [
+        32,
+        32
+      ],
+      "a_tile_reads_model": 1,
+      "atol": 0.0,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 2048,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 2048,
+        "page_bytes": 2048,
+        "pages": 1
+      },
+      "b_shape": [
+        32,
+        32
+      ],
+      "b_tile_reads_model": 1,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 2048,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 2048,
+        "page_bytes": 2048,
+        "pages": 1
+      },
+      "c_shape": [
+        32,
+        32
+      ],
+      "cb_capacity_bytes_model": 6144,
+      "cb_capacity_tiles": [
+        1,
+        1,
+        1
+      ],
+      "destination_tile_slots_max": 1,
+      "dram_read_payload_model": 4096,
+      "dram_write_payload_model": 2048,
+      "input_fingerprint_a": 17553209874422522472,
+      "input_fingerprint_b": 2194480749115402824,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 1,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "signed_random",
+      "output_block_tiles": 1,
+      "output_fingerprint": 11213486060744227717,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 1,
+      "padded_flops_model": 65536,
+      "padded_mkn": [
+        32,
+        32,
+        32
+      ],
+      "padding_verified": true,
+      "passed": true,
+      "read_barriers_model": 2,
+      "rtol": 0.0,
+      "shape_mkn": [
+        32,
+        32,
+        32
+      ],
+      "tile_grid_mkn": [
+        1,
+        1,
+        1
+      ],
+      "useful_flops_model": 65536
+    },
+    {
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 4096,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 4096,
+        "page_bytes": 2048,
+        "pages": 2
+      },
+      "a_shape": [
+        31,
+        33
+      ],
+      "a_tile_reads_model": 2,
+      "atol": 0.0,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 8192,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 8192,
+        "page_bytes": 2048,
+        "pages": 4
+      },
+      "b_shape": [
+        33,
+        35
+      ],
+      "b_tile_reads_model": 4,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 4096,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 4096,
+        "page_bytes": 2048,
+        "pages": 2
+      },
+      "c_shape": [
+        31,
+        35
+      ],
+      "cb_capacity_bytes_model": 8192,
+      "cb_capacity_tiles": [
+        2,
+        1,
+        1
+      ],
+      "destination_tile_slots_max": 1,
+      "dram_read_payload_model": 12288,
+      "dram_write_payload_model": 4096,
+      "input_fingerprint_a": 15141699359305608869,
+      "input_fingerprint_b": 2871040156782505544,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 4,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "signed_random",
+      "output_block_tiles": 1,
+      "output_fingerprint": 12486346568400639632,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 2,
+      "padded_flops_model": 262144,
+      "padded_mkn": [
+        32,
+        64,
+        64
+      ],
+      "padding_verified": true,
+      "passed": true,
+      "read_barriers_model": 5,
+      "rtol": 0.0,
+      "shape_mkn": [
+        31,
+        33,
+        35
+      ],
+      "tile_grid_mkn": [
+        1,
+        2,
+        2
+      ],
+      "useful_flops_model": 71610
+    },
+    {
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 4096,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 4096,
+        "page_bytes": 2048,
+        "pages": 2
+      },
+      "a_shape": [
+        33,
+        31
+      ],
+      "a_tile_reads_model": 2,
+      "atol": 0.0,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 6144,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 6144,
+        "page_bytes": 2048,
+        "pages": 3
+      },
+      "b_shape": [
+        31,
+        65
+      ],
+      "b_tile_reads_model": 6,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 12288,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 12288,
+        "page_bytes": 2048,
+        "pages": 6
+      },
+      "c_shape": [
+        33,
+        65
+      ],
+      "cb_capacity_bytes_model": 6144,
+      "cb_capacity_tiles": [
+        1,
+        1,
+        1
+      ],
+      "destination_tile_slots_max": 1,
+      "dram_read_payload_model": 16384,
+      "dram_write_payload_model": 12288,
+      "input_fingerprint_a": 5701170054359458784,
+      "input_fingerprint_b": 6024798220314248365,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 6,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "signed_random",
+      "output_block_tiles": 1,
+      "output_fingerprint": 7893077792038036418,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 6,
+      "padded_flops_model": 393216,
+      "padded_mkn": [
+        64,
+        32,
+        96
+      ],
+      "padding_verified": true,
+      "passed": true,
+      "read_barriers_model": 8,
+      "rtol": 0.0,
+      "shape_mkn": [
+        33,
+        31,
+        65
+      ],
+      "tile_grid_mkn": [
+        2,
+        1,
+        3
+      ],
+      "useful_flops_model": 132990
+    },
+    {
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 8192,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 8192,
+        "page_bytes": 2048,
+        "pages": 4
+      },
+      "a_shape": [
+        64,
+        64
+      ],
+      "a_tile_reads_model": 4,
+      "atol": 0.0,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 12288,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 12288,
+        "page_bytes": 2048,
+        "pages": 6
+      },
+      "b_shape": [
+        64,
+        96
+      ],
+      "b_tile_reads_model": 12,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 12288,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 12288,
+        "page_bytes": 2048,
+        "pages": 6
+      },
+      "c_shape": [
+        64,
+        96
+      ],
+      "cb_capacity_bytes_model": 8192,
+      "cb_capacity_tiles": [
+        2,
+        1,
+        1
+      ],
+      "destination_tile_slots_max": 1,
+      "dram_read_payload_model": 32768,
+      "dram_write_payload_model": 12288,
+      "input_fingerprint_a": 5437882992048753872,
+      "input_fingerprint_b": 18434489578246074821,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 12,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "signed_random",
+      "output_block_tiles": 1,
+      "output_fingerprint": 7879305462765351952,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 6,
+      "padded_flops_model": 786432,
+      "padded_mkn": [
+        64,
+        64,
+        96
+      ],
+      "padding_verified": true,
+      "passed": true,
+      "read_barriers_model": 14,
+      "rtol": 0.0,
+      "shape_mkn": [
+        64,
+        64,
+        96
+      ],
+      "tile_grid_mkn": [
+        2,
+        2,
+        3
+      ],
+      "useful_flops_model": 786432
+    },
+    {
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 8192,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 8192,
+        "page_bytes": 2048,
+        "pages": 4
+      },
+      "a_shape": [
+        32,
+        128
+      ],
+      "a_tile_reads_model": 4,
+      "atol": 0.0,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 24576,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 24576,
+        "page_bytes": 2048,
+        "pages": 12
+      },
+      "b_shape": [
+        128,
+        96
+      ],
+      "b_tile_reads_model": 12,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 6144,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 6144,
+        "page_bytes": 2048,
+        "pages": 3
+      },
+      "c_shape": [
+        32,
+        96
+      ],
+      "cb_capacity_bytes_model": 12288,
+      "cb_capacity_tiles": [
+        4,
+        1,
+        1
+      ],
+      "destination_tile_slots_max": 1,
+      "dram_read_payload_model": 32768,
+      "dram_write_payload_model": 6144,
+      "input_fingerprint_a": 16986878874336827797,
+      "input_fingerprint_b": 8366208216245505568,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 12,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "signed_random",
+      "output_block_tiles": 1,
+      "output_fingerprint": 16660352786060744869,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 3,
+      "padded_flops_model": 786432,
+      "padded_mkn": [
+        32,
+        128,
+        96
+      ],
+      "padding_verified": true,
+      "passed": true,
+      "read_barriers_model": 13,
+      "rtol": 0.0,
+      "shape_mkn": [
+        32,
+        128,
+        96
+      ],
+      "tile_grid_mkn": [
+        1,
+        4,
+        3
+      ],
+      "useful_flops_model": 786432
+    },
+    {
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 24576,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 24576,
+        "page_bytes": 2048,
+        "pages": 12
+      },
+      "a_shape": [
+        65,
+        97
+      ],
+      "a_tile_reads_model": 12,
+      "atol": 0.0,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 16384,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 16384,
+        "page_bytes": 2048,
+        "pages": 8
+      },
+      "b_shape": [
+        97,
+        33
+      ],
+      "b_tile_reads_model": 24,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 12288,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 12288,
+        "page_bytes": 2048,
+        "pages": 6
+      },
+      "c_shape": [
+        65,
+        33
+      ],
+      "cb_capacity_bytes_model": 12288,
+      "cb_capacity_tiles": [
+        4,
+        1,
+        1
+      ],
+      "destination_tile_slots_max": 1,
+      "dram_read_payload_model": 73728,
+      "dram_write_payload_model": 12288,
+      "input_fingerprint_a": 14649091124424683760,
+      "input_fingerprint_b": 15090736424557884637,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 24,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "signed_random",
+      "output_block_tiles": 1,
+      "output_fingerprint": 10309349141778470920,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 6,
+      "padded_flops_model": 1572864,
+      "padded_mkn": [
+        96,
+        128,
+        64
+      ],
+      "padding_verified": true,
+      "passed": true,
+      "read_barriers_model": 27,
+      "rtol": 0.0,
+      "shape_mkn": [
+        65,
+        97,
+        33
+      ],
+      "tile_grid_mkn": [
+        3,
+        4,
+        2
+      ],
+      "useful_flops_model": 416130
+    },
+    {
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 4096,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 4096,
+        "page_bytes": 2048,
+        "pages": 2
+      },
+      "a_shape": [
+        32,
+        64
+      ],
+      "a_tile_reads_model": 2,
+      "atol": 0.03,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 8192,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 8192,
+        "page_bytes": 2048,
+        "pages": 4
+      },
+      "b_shape": [
+        64,
+        64
+      ],
+      "b_tile_reads_model": 4,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 4096,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 4096,
+        "page_bytes": 2048,
+        "pages": 2
+      },
+      "c_shape": [
+        32,
+        64
+      ],
+      "cb_capacity_bytes_model": 8192,
+      "cb_capacity_tiles": [
+        2,
+        1,
+        1
+      ],
+      "destination_tile_slots_max": 1,
+      "dram_read_payload_model": 12288,
+      "dram_write_payload_model": 4096,
+      "input_fingerprint_a": 12709826978417637529,
+      "input_fingerprint_b": 14850618867507439671,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 4,
+      "max_abs_error": 0.024003068916499615,
+      "max_relative_error": 1.0595318071417499,
+      "mean_abs_error": 0.002328691582768272,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "fractional",
+      "output_block_tiles": 1,
+      "output_fingerprint": 923419143091807832,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 2,
+      "padded_flops_model": 262144,
+      "padded_mkn": [
+        32,
+        64,
+        64
+      ],
+      "padding_verified": true,
+      "passed": true,
+      "read_barriers_model": 5,
+      "rtol": 0.03,
+      "shape_mkn": [
+        32,
+        64,
+        64
+      ],
+      "tile_grid_mkn": [
+        1,
+        2,
+        2
+      ],
+      "useful_flops_model": 262144
+    },
+    {
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 8192,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 8192,
+        "page_bytes": 2048,
+        "pages": 4
+      },
+      "a_shape": [
+        33,
+        35
+      ],
+      "a_tile_reads_model": 4,
+      "atol": 0.03,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 12288,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 12288,
+        "page_bytes": 2048,
+        "pages": 6
+      },
+      "b_shape": [
+        35,
+        65
+      ],
+      "b_tile_reads_model": 12,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 12288,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 12288,
+        "page_bytes": 2048,
+        "pages": 6
+      },
+      "c_shape": [
+        33,
+        65
+      ],
+      "cb_capacity_bytes_model": 8192,
+      "cb_capacity_tiles": [
+        2,
+        1,
+        1
+      ],
+      "destination_tile_slots_max": 1,
+      "dram_read_payload_model": 32768,
+      "dram_write_payload_model": 12288,
+      "input_fingerprint_a": 14998500581209873903,
+      "input_fingerprint_b": 5511823356004044384,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 12,
+      "max_abs_error": 0.013579726219177246,
+      "max_relative_error": 1.7548011793768428,
+      "mean_abs_error": 0.0014557104783256415,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "fractional",
+      "output_block_tiles": 1,
+      "output_fingerprint": 16861344565778599415,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 6,
+      "padded_flops_model": 786432,
+      "padded_mkn": [
+        64,
+        64,
+        96
+      ],
+      "padding_verified": true,
+      "passed": true,
+      "read_barriers_model": 14,
+      "rtol": 0.03,
+      "shape_mkn": [
+        33,
+        35,
+        65
+      ],
+      "tile_grid_mkn": [
+        2,
+        2,
+        3
+      ],
+      "useful_flops_model": 150150
+    },
+    {
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 2048,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 2048,
+        "page_bytes": 2048,
+        "pages": 1
+      },
+      "a_shape": [
+        8,
+        16
+      ],
+      "a_tile_reads_model": 1,
+      "atol": 0.0,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 2048,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 2048,
+        "page_bytes": 2048,
+        "pages": 1
+      },
+      "b_shape": [
+        16,
+        8
+      ],
+      "b_tile_reads_model": 1,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 2048,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 2048,
+        "page_bytes": 2048,
+        "pages": 1
+      },
+      "c_shape": [
+        8,
+        8
+      ],
+      "cb_capacity_bytes_model": 6144,
+      "cb_capacity_tiles": [
+        1,
+        1,
+        1
+      ],
+      "destination_tile_slots_max": 1,
+      "dram_read_payload_model": 4096,
+      "dram_write_payload_model": 2048,
+      "input_fingerprint_a": 18138476474787231013,
+      "input_fingerprint_b": 490568344001131813,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 1,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "large_exact",
+      "output_block_tiles": 1,
+      "output_fingerprint": 18221339754051268389,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 1,
+      "padded_flops_model": 65536,
+      "padded_mkn": [
+        32,
+        32,
+        32
+      ],
+      "padding_verified": true,
+      "passed": true,
+      "read_barriers_model": 2,
+      "rtol": 0.0,
+      "shape_mkn": [
+        8,
+        16,
+        8
+      ],
+      "tile_grid_mkn": [
+        1,
+        1,
+        1
+      ],
+      "useful_flops_model": 2048
+    },
+    {
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 12288,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 12288,
+        "page_bytes": 2048,
+        "pages": 6
+      },
+      "a_shape": [
+        96,
+        64
+      ],
+      "a_tile_reads_model": 6,
+      "atol": 0.0,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 20480,
+        "aligned_size_per_bank_bytes": 2048,
+        "logical_bytes": 20480,
+        "page_bytes": 2048,
+        "pages": 10
+      },
+      "b_shape": [
+        64,
+        160
+      ],
+      "b_tile_reads_model": 30,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 30720,
+        "aligned_size_per_bank_bytes": 4096,
+        "logical_bytes": 30720,
+        "page_bytes": 2048,
+        "pages": 15
+      },
+      "c_shape": [
+        96,
+        160
+      ],
+      "cb_capacity_bytes_model": 8192,
+      "cb_capacity_tiles": [
+        2,
+        1,
+        1
+      ],
+      "destination_tile_slots_max": 1,
+      "dram_read_payload_model": 73728,
+      "dram_write_payload_model": 30720,
+      "input_fingerprint_a": 3064025906767672173,
+      "input_fingerprint_b": 4385645256503098733,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 30,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "signed_random",
+      "output_block_tiles": 1,
+      "output_fingerprint": 4836832691310774784,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 15,
+      "padded_flops_model": 1966080,
+      "padded_mkn": [
+        96,
+        64,
+        160
+      ],
+      "padding_verified": true,
+      "passed": true,
+      "read_barriers_model": 33,
+      "rtol": 0.0,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "tile_grid_mkn": [
+        3,
+        2,
+        5
+      ],
+      "useful_flops_model": 1966080
+    },
+    {
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 32768,
+        "aligned_size_per_bank_bytes": 4096,
+        "logical_bytes": 32768,
+        "page_bytes": 2048,
+        "pages": 16
+      },
+      "a_shape": [
+        128,
+        128
+      ],
+      "a_tile_reads_model": 16,
+      "atol": 0.0,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 32768,
+        "aligned_size_per_bank_bytes": 4096,
+        "logical_bytes": 32768,
+        "page_bytes": 2048,
+        "pages": 16
+      },
+      "b_shape": [
+        128,
+        128
+      ],
+      "b_tile_reads_model": 64,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 32768,
+        "aligned_size_per_bank_bytes": 4096,
+        "logical_bytes": 32768,
+        "page_bytes": 2048,
+        "pages": 16
+      },
+      "c_shape": [
+        128,
+        128
+      ],
+      "cb_capacity_bytes_model": 12288,
+      "cb_capacity_tiles": [
+        4,
+        1,
+        1
+      ],
+      "destination_tile_slots_max": 1,
+      "dram_read_payload_model": 163840,
+      "dram_write_payload_model": 32768,
+      "input_fingerprint_a": 10505404799017070829,
+      "input_fingerprint_b": 7289593503068866336,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 64,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "signed_random",
+      "output_block_tiles": 1,
+      "output_fingerprint": 5195744401960344368,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 16,
+      "padded_flops_model": 4194304,
+      "padded_mkn": [
+        128,
+        128,
+        128
+      ],
+      "padding_verified": true,
+      "passed": true,
+      "read_barriers_model": 68,
+      "rtol": 0.0,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "tile_grid_mkn": [
+        4,
+        4,
+        4
+      ],
+      "useful_flops_model": 4194304
+    }
+  ],
+  "dtype": "bf16",
+  "passed": true,
+  "reference": "FP64 accumulation of products of quantized BF16 inputs",
+  "seed": 2026,
+  "stream_cb_depth": 1,
+  "variant": "reuse_a"
+}

@@ -1,0 +1,107 @@
+-- The CXX compiler identification is Clang 20.1.2
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++-20 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (13.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ysjun5656/dev/accelflow/build/vector_add
+[1/4] Building CXX object CMakeFiles/vector_add_riscv.dir/vector_add_riscv.cpp.o
+FAILED: CMakeFiles/vector_add_riscv.dir/vector_add_riscv.cpp.o 
+/usr/bin/clang++-20 -DACCELFLOW_KERNEL_DIR=\"/home/ysjun5656/dev/accelflow/npu/vector_add/kernels\" -DENCHANTUM_ENABLE_MSVC_SPEEDUP=1 -DFMT_HEADER_ONLY=1 -DNDEBUG -DNTEST -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DTRACY_IMPORTS -DTRACY_TIMER_FALLBACK -DTT_ENABLE_LIGHT_METAL_TRACE=1 -DTT_UMD_BUILD_SIMULATION -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_stl/. -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/api -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/api -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hostdevcommon/api -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0 -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/.cpmcache/reflect/f93e77475670eaeacf332927dfe8b50e3f3812e0 -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/.cpmcache/enchantum/2fb7ab238e36c101b9848892ddb6382276b65837/enchantum/include -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/.cpmcache/nlohmann_json/798e0374658476027d9723eeb67a262d0f3c8308/include -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/.cpmcache/fmt/69912fb6b71fcb1f7e5deca191a2bb4748c4e7b6/include -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/.cpmcache/tt-logger/d2339ce68562cae34cd95f3fece7fd94eb0529b7/include -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/.cpmcache/spdlog/b1c2586bb5c35a7929362e87f62433eb68206873/include -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/third_party/umd/device/api -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/third_party/tracy/public -std=gnu++20 -O2 -Wall -Wextra -MD -MT CMakeFiles/vector_add_riscv.dir/vector_add_riscv.cpp.o -MF CMakeFiles/vector_add_riscv.dir/vector_add_riscv.cpp.o.d -o CMakeFiles/vector_add_riscv.dir/vector_add_riscv.cpp.o -c /home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_riscv.cpp
+In file included from /home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_riscv.cpp:1:
+/home/ysjun5656/dev/accelflow/npu/vector_add/common.hpp:31:79: warning: missing field 'sharding_args' initializer [-Wmissing-designated-field-initializers]
+   31 |     dist::DeviceLocalBufferConfig local{.page_size = page, .buffer_type = type};
+      |                                                                               ^
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_riscv.cpp:28:77: warning: missing field 'compile_args' initializer [-Wmissing-designated-field-initializers]
+   28 |                                              .noc = af::NOC::RISCV_0_default});
+      |                                                                             ^
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_riscv.cpp:30:18: error: non-constant-expression cannot be narrowed from type 'DeviceAddr' (aka 'unsigned long') to 'unsigned int' in initializer list [-Wc++11-narrowing]
+   30 |                 {ad->address(), bd->address(), cd->address(), al->address(), bl->address(), cl->address(), n});
+      |                  ^~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_riscv.cpp:30:18: note: insert an explicit cast to silence this issue
+   30 |                 {ad->address(), bd->address(), cd->address(), al->address(), bl->address(), cl->address(), n});
+      |                  ^~~~~~~~~~~~~
+      |                  static_cast<unsigned int>( )
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_riscv.cpp:30:33: error: non-constant-expression cannot be narrowed from type 'DeviceAddr' (aka 'unsigned long') to 'unsigned int' in initializer list [-Wc++11-narrowing]
+   30 |                 {ad->address(), bd->address(), cd->address(), al->address(), bl->address(), cl->address(), n});
+      |                                 ^~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_riscv.cpp:30:33: note: insert an explicit cast to silence this issue
+   30 |                 {ad->address(), bd->address(), cd->address(), al->address(), bl->address(), cl->address(), n});
+      |                                 ^~~~~~~~~~~~~
+      |                                 static_cast<unsigned int>( )
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_riscv.cpp:30:48: error: non-constant-expression cannot be narrowed from type 'DeviceAddr' (aka 'unsigned long') to 'unsigned int' in initializer list [-Wc++11-narrowing]
+   30 |                 {ad->address(), bd->address(), cd->address(), al->address(), bl->address(), cl->address(), n});
+      |                                                ^~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_riscv.cpp:30:48: note: insert an explicit cast to silence this issue
+   30 |                 {ad->address(), bd->address(), cd->address(), al->address(), bl->address(), cl->address(), n});
+      |                                                ^~~~~~~~~~~~~
+      |                                                static_cast<unsigned int>( )
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_riscv.cpp:30:63: error: non-constant-expression cannot be narrowed from type 'DeviceAddr' (aka 'unsigned long') to 'unsigned int' in initializer list [-Wc++11-narrowing]
+   30 |                 {ad->address(), bd->address(), cd->address(), al->address(), bl->address(), cl->address(), n});
+      |                                                               ^~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_riscv.cpp:30:63: note: insert an explicit cast to silence this issue
+   30 |                 {ad->address(), bd->address(), cd->address(), al->address(), bl->address(), cl->address(), n});
+      |                                                               ^~~~~~~~~~~~~
+      |                                                               static_cast<unsigned int>( )
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_riscv.cpp:30:78: error: non-constant-expression cannot be narrowed from type 'DeviceAddr' (aka 'unsigned long') to 'unsigned int' in initializer list [-Wc++11-narrowing]
+   30 |                 {ad->address(), bd->address(), cd->address(), al->address(), bl->address(), cl->address(), n});
+      |                                                                              ^~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_riscv.cpp:30:78: note: insert an explicit cast to silence this issue
+   30 |                 {ad->address(), bd->address(), cd->address(), al->address(), bl->address(), cl->address(), n});
+      |                                                                              ^~~~~~~~~~~~~
+      |                                                                              static_cast<unsigned int>( )
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_riscv.cpp:30:93: error: non-constant-expression cannot be narrowed from type 'DeviceAddr' (aka 'unsigned long') to 'unsigned int' in initializer list [-Wc++11-narrowing]
+   30 |                 {ad->address(), bd->address(), cd->address(), al->address(), bl->address(), cl->address(), n});
+      |                                                                                             ^~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_riscv.cpp:30:93: note: insert an explicit cast to silence this issue
+   30 |                 {ad->address(), bd->address(), cd->address(), al->address(), bl->address(), cl->address(), n});
+      |                                                                                             ^~~~~~~~~~~~~
+      |                                                                                             static_cast<unsigned int>( )
+2 warnings and 6 errors generated.
+[2/4] Building CXX object CMakeFiles/vector_add_tiled.dir/vector_add_tiled.cpp.o
+FAILED: CMakeFiles/vector_add_tiled.dir/vector_add_tiled.cpp.o 
+/usr/bin/clang++-20 -DACCELFLOW_KERNEL_DIR=\"/home/ysjun5656/dev/accelflow/npu/vector_add/kernels\" -DENCHANTUM_ENABLE_MSVC_SPEEDUP=1 -DFMT_HEADER_ONLY=1 -DNDEBUG -DNTEST -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DTRACY_IMPORTS -DTRACY_TIMER_FALLBACK -DTT_ENABLE_LIGHT_METAL_TRACE=1 -DTT_UMD_BUILD_SIMULATION -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_stl/. -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/api -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/build_Release/tt_metal/api -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/hostdevcommon/api -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0 -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/.cpmcache/reflect/f93e77475670eaeacf332927dfe8b50e3f3812e0 -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/.cpmcache/enchantum/2fb7ab238e36c101b9848892ddb6382276b65837/enchantum/include -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/.cpmcache/nlohmann_json/798e0374658476027d9723eeb67a262d0f3c8308/include -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/.cpmcache/fmt/69912fb6b71fcb1f7e5deca191a2bb4748c4e7b6/include -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/.cpmcache/tt-logger/d2339ce68562cae34cd95f3fece7fd94eb0529b7/include -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/.cpmcache/spdlog/b1c2586bb5c35a7929362e87f62433eb68206873/include -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/third_party/umd/device/api -isystem /home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/third_party/tracy/public -std=gnu++20 -O2 -Wall -Wextra -MD -MT CMakeFiles/vector_add_tiled.dir/vector_add_tiled.cpp.o -MF CMakeFiles/vector_add_tiled.dir/vector_add_tiled.cpp.o.d -o CMakeFiles/vector_add_tiled.dir/vector_add_tiled.cpp.o -c /home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_tiled.cpp
+In file included from /home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_tiled.cpp:1:
+/home/ysjun5656/dev/accelflow/npu/vector_add/common.hpp:31:79: warning: missing field 'sharding_args' initializer [-Wmissing-designated-field-initializers]
+   31 |     dist::DeviceLocalBufferConfig local{.page_size = page, .buffer_type = type};
+      |                                                                               ^
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_tiled.cpp:48:81: warning: missing field 'defines' initializer [-Wmissing-designated-field-initializers]
+   48 |                     .noc = af::NOC::RISCV_0_default, .compile_args = reader_args});
+      |                                                                                 ^
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_tiled.cpp:51:81: warning: missing field 'defines' initializer [-Wmissing-designated-field-initializers]
+   51 |                     .noc = af::NOC::RISCV_1_default, .compile_args = writer_args});
+      |                                                                                 ^
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_tiled.cpp:54:73: warning: missing field 'unpack_to_dest_mode' initializer [-Wmissing-designated-field-initializers]
+   54 |                     .fp32_dest_acc_en = false, .math_approx_mode = false});
+      |                                                                         ^
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_tiled.cpp:55:56: error: non-constant-expression cannot be narrowed from type 'DeviceAddr' (aka 'unsigned long') to 'unsigned int' in initializer list [-Wc++11-narrowing]
+   55 |             af::SetRuntimeArgs(program, reader, core, {ad->address(), bd->address(), tiles});
+      |                                                        ^~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_tiled.cpp:55:56: note: insert an explicit cast to silence this issue
+   55 |             af::SetRuntimeArgs(program, reader, core, {ad->address(), bd->address(), tiles});
+      |                                                        ^~~~~~~~~~~~~
+      |                                                        static_cast<unsigned int>( )
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_tiled.cpp:55:71: error: non-constant-expression cannot be narrowed from type 'DeviceAddr' (aka 'unsigned long') to 'unsigned int' in initializer list [-Wc++11-narrowing]
+   55 |             af::SetRuntimeArgs(program, reader, core, {ad->address(), bd->address(), tiles});
+      |                                                                       ^~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_tiled.cpp:55:71: note: insert an explicit cast to silence this issue
+   55 |             af::SetRuntimeArgs(program, reader, core, {ad->address(), bd->address(), tiles});
+      |                                                                       ^~~~~~~~~~~~~
+      |                                                                       static_cast<unsigned int>( )
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_tiled.cpp:56:56: error: non-constant-expression cannot be narrowed from type 'DeviceAddr' (aka 'unsigned long') to 'unsigned int' in initializer list [-Wc++11-narrowing]
+   56 |             af::SetRuntimeArgs(program, writer, core, {cd->address(), tiles});
+      |                                                        ^~~~~~~~~~~~~
+/home/ysjun5656/dev/accelflow/npu/vector_add/vector_add_tiled.cpp:56:56: note: insert an explicit cast to silence this issue
+   56 |             af::SetRuntimeArgs(program, writer, core, {cd->address(), tiles});
+      |                                                        ^~~~~~~~~~~~~
+      |                                                        static_cast<unsigned int>( )
+4 warnings and 3 errors generated.
+ninja: build stopped: subcommand failed.
+Traceback (most recent call last):
+  File "/home/ysjun5656/dev/accelflow/tools/report/build_vector_add.py", line 40, in <module>
+    subprocess.run(['cmake','--build',str(out),'--parallel','2'],check=True)
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['cmake', '--build', '/home/ysjun5656/dev/accelflow/build/vector_add', '--parallel', '2']' returned non-zero exit status 1.

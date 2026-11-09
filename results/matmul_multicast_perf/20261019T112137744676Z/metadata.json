@@ -1,0 +1,2748 @@
+{
+  "date_utc": "2026-10-19T11:21:37.746888+00:00",
+  "backend": "ttsim",
+  "measurement_kind": "host steady_clock: EnqueueMeshWorkload + Finish",
+  "physical_chip_latency": false,
+  "tt_metal_revision": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "samples_per_process": 7,
+  "warmups_per_process": 2,
+  "independent_trials": 3,
+  "order_seed_base": 2026,
+  "host_before": {
+    "meminfo": "MemTotal:        3962484 kB\nMemFree:         3447256 kB\nMemAvailable:    3418688 kB\nBuffers:            9112 kB\nCached:           141852 kB\nSwapCached:            0 kB\nActive:            44860 kB\nInactive:         204736 kB\nActive(anon):       3316 kB\nInactive(anon):    99760 kB\nActive(file):      41544 kB\nInactive(file):   104976 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1048576 kB\nDirty:               196 kB\nWriteback:             0 kB\nAnonPages:         98908 kB\nMapped:           132416 kB\nShmem:              4248 kB\nKReclaimable:      27020 kB\nSlab:              65888 kB\nSReclaimable:      27020 kB\nSUnreclaim:        38868 kB\nKernelStack:        3560 kB\nPageTables:         3008 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:     662604 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        6768 kB\nVmallocChunk:          0 kB\nPercpu:             3424 kB\nAnonHugePages:     32768 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      113664 kB\nDirectMap2M:     4022272 kB\nDirectMap1G:     8388608 kB\n",
+    "loadavg": "0.04 0.10 0.12 1/215 10215\n"
+  },
+  "os_release": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "cpu": "Architecture:                    x86_64\nCPU op-mode(s):                  32-bit, 64-bit\nAddress sizes:                   39 bits physical, 48 bits virtual\nByte Order:                      Little Endian\nCPU(s):                          8\nOn-line CPU(s) list:             0-7\nVendor ID:                       GenuineIntel\nModel name:                      Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz\nCPU family:                      6\nModel:                           142\nThread(s) per core:              2\nCore(s) per socket:              4\nSocket(s):                       1\nStepping:                        11\nBogoMIPS:                        3984.01\nFlags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid pni pclmulqdq vmx ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp tpr_shadow vnmi ept vpid ept_ad fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 xsaves md_clear flush_l1d arch_capabilities\nVirtualization:                  VT-x\nHypervisor vendor:               Microsoft\nVirtualization type:             full\nL1d cache:                       128 KiB (4 instances)\nL1i cache:                       128 KiB (4 instances)\nL2 cache:                        1 MiB (4 instances)\nL3 cache:                        8 MiB (1 instance)\nVulnerability Itlb multihit:     KVM: Mitigation: VMX disabled\nVulnerability L1tf:              Not affected\nVulnerability Mds:               Mitigation; Clear CPU buffers; SMT Host state unknown\nVulnerability Meltdown:          Not affected\nVulnerability Mmio stale data:   Mitigation; Clear CPU buffers; SMT Host state unknown\nVulnerability Retbleed:          Mitigation; IBRS\nVulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:        Mitigation; IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS Not affected\nVulnerability Srbds:             Unknown: Dependent on hypervisor status\nVulnerability Tsx async abort:   Not affected\n",
+  "compiler": "Ubuntu clang version 20.1.2 (0ubuntu1~24.04.3)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm-20/bin\n",
+  "kernel": "5.15.90.1sangjunryu20195834+",
+  "scope_note": "Existing implementations differ in partition and reader NoC/RISC-V placement; not an isolated multicast ablation",
+  "source_sha256": {
+    "npu/matmul/matmul.cpp": "ea24bb2d8330e7bc91953a028a139e0cc4e6d2dc5b564ab0eb21a4d6c95e29ba",
+    "npu/matmul/kernels/reader_mcast.cpp": "202044db641ea105151f09af7d74426bfabf9d88d1e5277a2eeacae4e08f4c3b",
+    "npu/matmul/kernels/writer_blocked.cpp": "5a0d07dbc9e65fccbf1130c5d8f0f69e365ca0fb2f67063bf5a7aa093f5f7e0c",
+    "npu/matmul/kernels/reader_mcast2d.cpp": "9f675a05c53f34ba5567d2175f3e635e345dddf0063ff8c3ec398f39fc43abaf",
+    "npu/matmul/kernels/writer.cpp": "3ff4232fd0f2e7342549900ec0ed0bb047d228f00a5e545abd0c3517a71776c3",
+    "npu/matmul/kernels/writer_mcast2d.cpp": "7e00b8600d33968489945afebd566e5a0e20889e8b60f74b40c6d9360ded0b54",
+    "npu/matmul/kernels/reader_streamed.cpp": "1ae07ffc56a8953354a4e288d518b898dfbdb86ee13c6b1087d0a9f8971b84b6",
+    "npu/matmul/kernels/reader_multicore.cpp": "444efa4cbc92135992fd7c25d31aa93c4f24ef5fa667ebd8c354fc0e97796588",
+    "npu/matmul/kernels/compute_multicore.cpp": "3478d3c06ed2ee0800e8dff3b0aab63fc99b95eddec759bee82571a4c4f22158",
+    "npu/matmul/kernels/writer_mcast.cpp": "ddc7c697269d43286a00bd321dd3c193ff1bf38da9363cc0abcae80ad7e8d0ef",
+    "npu/matmul/kernels/compute_blocked.cpp": "80dfa9cba9a361f319b82c6d2d388e7572ea7998246a443d545eb68703e66908",
+    "npu/matmul/kernels/compute_mcast.cpp": "5846eab77d7e540c5f6b2cca60b4e45d396ed99d34da67386d72ac01663f7ba4",
+    "npu/matmul/kernels/compute_streamed.cpp": "c9f057a6d67324dccc5da8ae904bfb6fc069a81ab51448c265ec04c5c5bd389f",
+    "npu/matmul/kernels/compute.cpp": "50aeed704fa9f95fce95a76bc3e92d0e6b0003a7c064c853bd7274fd84b73438",
+    "npu/matmul/kernels/reader_blocked.cpp": "1e97e70c12250f54c02d9eb5aa5d5562fa960a1cc11523d3be6246b20cacd252",
+    "npu/matmul/kernels/reader.cpp": "a1309a1ea8c16b4d6ca9f828049fd72edf21622ceee9abbcf008e1802416a66e",
+    "npu/matmul/kernels/compute_mcast2d.cpp": "9017c73e1db56d67e471ea44e7209ee3491b5253c4536fd0b1d250629a7bc55f",
+    "npu/matmul/kernels/writer_multicore.cpp": "197ab7244694adab382e313cd389181448e85bb7b2367fbcbebe5415339fc158",
+    "npu/matmul/mcast2d.hpp": "95f427f70f63afaff8a296084d363791ae5859d8ca1fa42894fcc3cd77bdf5e8",
+    "npu/matmul/multicore.hpp": "c39b49db9e193b5fd08c88a4cc3bde6a9e45ef2f185858e3e27d1198dd870e4d",
+    "npu/matmul/benchmark.hpp": "2258dc8de4bbd30275e89a9a3dc93cc92ce51a19942022589ee93c469aa0fd12",
+    "npu/matmul/mcast.hpp": "46b56f82f51d2a48569f834f2384268752b9e6c880b7cdf8e5b6367b6eebfc1c",
+    "tools/report/benchmark_multicast_matmul.py": "95b93e0dcb978e61090a7e2d0a782ac3b59cfe0a02dbffffb3292ca0fbc31e2c",
+    "scripts/benchmark_multicast_matmul.sh": "90ddd8bab57a938ac0d98cb73ec58bc274111c0195a2dfb99d49b409120a1f4b",
+    "tools/report/build_matmul.py": "9cd2342f2696cbec222ef9176cffd8cfa535f351894386ffa3ca8bbea9911ba7",
+    "npu/matmul/CMakeLists.txt": "96bd60c8703f7a6507b41d8f0059417f6aff4c9fd4ed4c876d3c551deb219a87",
+    "npu/vector_add/common.hpp": "695681e02c9fa7dd8441067460df4e4c566da3f11392402bb4ecf984fe9c2df2"
+  },
+  "runs": [
+    {
+      "order": 0,
+      "trial": 1,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "report": "96_64_160_multicore_cores1_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_multicore_cores1_depth1_trial1.json",
+        "multicore",
+        "1",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 815.9759299996949,
+      "host_loadavg_after": "0.04 0.10 0.12 1/215 10239\n",
+      "median_ms": 38.293717
+    },
+    {
+      "order": 1,
+      "trial": 1,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "report": "128_128_128_mcast2d_cores4_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_mcast2d_cores4_depth1_trial1.json",
+        "mcast2d",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 815.9940610021295,
+      "host_loadavg_after": "0.12 0.11 0.13 1/212 10251\n",
+      "median_ms": 75.482187
+    },
+    {
+      "order": 2,
+      "trial": 1,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "report": "96_64_160_multicore_cores4_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_multicore_cores4_depth2_trial1.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 365.3260329992918,
+      "host_loadavg_after": "0.12 0.11 0.13 1/212 10263\n",
+      "median_ms": 24.24214
+    },
+    {
+      "order": 3,
+      "trial": 1,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "report": "32_64_128_multicore_cores4_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_multicore_cores4_depth1_trial1.json",
+        "multicore",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 214.56091300206026,
+      "host_loadavg_after": "0.12 0.11 0.13 1/212 10275\n",
+      "median_ms": 10.07958
+    },
+    {
+      "order": 4,
+      "trial": 1,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "report": "32_64_128_mcast2d_cores4_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_mcast2d_cores4_depth1_trial1.json",
+        "mcast2d",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 466.44484799981,
+      "host_loadavg_after": "0.12 0.11 0.13 1/212 10287\n",
+      "median_ms": 30.372814
+    },
+    {
+      "order": 5,
+      "trial": 1,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "report": "128_128_128_multicore_cores4_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_multicore_cores4_depth1_trial1.json",
+        "multicore",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 669.0847079989908,
+      "host_loadavg_after": "0.12 0.11 0.13 1/212 10299\n",
+      "median_ms": 47.593458
+    },
+    {
+      "order": 6,
+      "trial": 1,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "report": "128_128_128_mcast_cores4_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_mcast_cores4_depth2_trial1.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 665.797213998303,
+      "host_loadavg_after": "0.12 0.11 0.13 1/212 10311\n",
+      "median_ms": 54.86946
+    },
+    {
+      "order": 7,
+      "trial": 1,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "report": "65_257_97_mcast2d_cores4_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_mcast2d_cores4_depth2_trial1.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 1266.4890009982628,
+      "host_loadavg_after": "0.12 0.11 0.13 1/212 10323\n",
+      "median_ms": 124.752506
+    },
+    {
+      "order": 8,
+      "trial": 1,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "report": "32_64_128_multicore_cores4_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_multicore_cores4_depth2_trial1.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 165.06510900217108,
+      "host_loadavg_after": "0.12 0.11 0.13 1/212 10335\n",
+      "median_ms": 9.524102
+    },
+    {
+      "order": 9,
+      "trial": 1,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "report": "32_64_128_mcast_cores4_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_mcast_cores4_depth1_trial1.json",
+        "mcast",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 214.64545399794588,
+      "host_loadavg_after": "0.12 0.11 0.13 1/212 10347\n",
+      "median_ms": 12.497528
+    },
+    {
+      "order": 10,
+      "trial": 1,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "report": "96_64_160_mcast_cores4_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_mcast_cores4_depth1_trial1.json",
+        "mcast",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 465.2208379993681,
+      "host_loadavg_after": "0.12 0.11 0.13 1/212 10359\n",
+      "median_ms": 39.012499
+    },
+    {
+      "order": 11,
+      "trial": 1,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "report": "128_128_128_mcast_cores4_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_mcast_cores4_depth1_trial1.json",
+        "mcast",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 665.2740280005673,
+      "host_loadavg_after": "0.19 0.13 0.13 1/212 10371\n",
+      "median_ms": 60.120999
+    },
+    {
+      "order": 12,
+      "trial": 1,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "report": "65_257_97_mcast_cores4_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_mcast_cores4_depth2_trial1.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 866.1745190001966,
+      "host_loadavg_after": "0.19 0.13 0.13 1/212 10383\n",
+      "median_ms": 79.815866
+    },
+    {
+      "order": 13,
+      "trial": 1,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "report": "128_128_128_multicore_cores1_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_multicore_cores1_depth2_trial1.json",
+        "multicore",
+        "2",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 615.4827399986971,
+      "host_loadavg_after": "0.19 0.13 0.13 1/212 10395\n",
+      "median_ms": 55.738044
+    },
+    {
+      "order": 14,
+      "trial": 1,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "report": "96_64_160_multicore_cores1_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_multicore_cores1_depth2_trial1.json",
+        "multicore",
+        "2",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 364.93798199808225,
+      "host_loadavg_after": "0.19 0.13 0.13 1/212 10407\n",
+      "median_ms": 30.394851
+    },
+    {
+      "order": 15,
+      "trial": 1,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "report": "128_128_128_multicore_cores1_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_multicore_cores1_depth1_trial1.json",
+        "multicore",
+        "1",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 715.5108619990642,
+      "host_loadavg_after": "0.19 0.13 0.13 1/212 10419\n",
+      "median_ms": 64.989285
+    },
+    {
+      "order": 16,
+      "trial": 1,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "report": "32_64_128_multicore_cores1_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_multicore_cores1_depth2_trial1.json",
+        "multicore",
+        "2",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 264.881430000969,
+      "host_loadavg_after": "0.19 0.13 0.13 1/212 10431\n",
+      "median_ms": 13.72321
+    },
+    {
+      "order": 17,
+      "trial": 1,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "report": "96_64_160_mcast2d_cores4_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_mcast2d_cores4_depth1_trial1.json",
+        "mcast2d",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 666.4407489988662,
+      "host_loadavg_after": "0.19 0.13 0.13 3/212 10443\n",
+      "median_ms": 56.788751
+    },
+    {
+      "order": 18,
+      "trial": 1,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "report": "96_64_160_mcast2d_cores4_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_mcast2d_cores4_depth2_trial1.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 716.6040250012884,
+      "host_loadavg_after": "0.19 0.13 0.13 1/212 10455\n",
+      "median_ms": 48.350084
+    },
+    {
+      "order": 19,
+      "trial": 1,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "report": "65_257_97_mcast2d_cores4_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_mcast2d_cores4_depth1_trial1.json",
+        "mcast2d",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 1617.2232869976142,
+      "host_loadavg_after": "0.25 0.14 0.14 1/212 10467\n",
+      "median_ms": 149.44828
+    },
+    {
+      "order": 20,
+      "trial": 1,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "report": "65_257_97_multicore_cores4_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_multicore_cores4_depth1_trial1.json",
+        "multicore",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 766.294408000249,
+      "host_loadavg_after": "0.25 0.14 0.14 1/212 10479\n",
+      "median_ms": 70.4219
+    },
+    {
+      "order": 21,
+      "trial": 1,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "report": "96_64_160_mcast_cores4_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_mcast_cores4_depth2_trial1.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 415.19539300134056,
+      "host_loadavg_after": "0.25 0.14 0.14 1/212 10491\n",
+      "median_ms": 32.314728
+    },
+    {
+      "order": 22,
+      "trial": 1,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "report": "65_257_97_multicore_cores1_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_multicore_cores1_depth2_trial1.json",
+        "multicore",
+        "2",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 865.8726100002241,
+      "host_loadavg_after": "0.25 0.14 0.14 1/212 10503\n",
+      "median_ms": 81.668299
+    },
+    {
+      "order": 23,
+      "trial": 1,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "report": "32_64_128_multicore_cores1_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_multicore_cores1_depth1_trial1.json",
+        "multicore",
+        "1",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 265.0180669988913,
+      "host_loadavg_after": "0.25 0.14 0.14 1/212 10515\n",
+      "median_ms": 12.348413
+    },
+    {
+      "order": 24,
+      "trial": 1,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "report": "65_257_97_multicore_cores4_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_multicore_cores4_depth2_trial1.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 867.2233109973604,
+      "host_loadavg_after": "0.25 0.14 0.14 1/212 10527\n",
+      "median_ms": 96.322275
+    },
+    {
+      "order": 25,
+      "trial": 1,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "report": "32_64_128_mcast2d_cores4_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_mcast2d_cores4_depth2_trial1.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 366.3545620001969,
+      "host_loadavg_after": "0.25 0.14 0.14 1/212 10539\n",
+      "median_ms": 21.542803
+    },
+    {
+      "order": 26,
+      "trial": 1,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "report": "128_128_128_multicore_cores4_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_multicore_cores4_depth2_trial1.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 917.4483379974845,
+      "host_loadavg_after": "0.39 0.17 0.15 1/212 10551\n",
+      "median_ms": 61.946377
+    },
+    {
+      "order": 27,
+      "trial": 1,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "report": "65_257_97_mcast_cores4_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_mcast_cores4_depth1_trial1.json",
+        "mcast",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 1118.0403079997632,
+      "host_loadavg_after": "0.39 0.17 0.15 1/212 10563\n",
+      "median_ms": 91.753613
+    },
+    {
+      "order": 28,
+      "trial": 1,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "report": "32_64_128_mcast_cores4_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_mcast_cores4_depth2_trial1.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 265.58482000109507,
+      "host_loadavg_after": "0.39 0.17 0.15 1/212 10575\n",
+      "median_ms": 14.813343
+    },
+    {
+      "order": 29,
+      "trial": 1,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "report": "65_257_97_multicore_cores1_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_multicore_cores1_depth1_trial1.json",
+        "multicore",
+        "1",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 1518.8287900018622,
+      "host_loadavg_after": "0.39 0.17 0.15 1/212 10587\n",
+      "median_ms": 144.438418
+    },
+    {
+      "order": 30,
+      "trial": 1,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "report": "96_64_160_multicore_cores4_depth1_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_multicore_cores4_depth1_trial1.json",
+        "multicore",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 465.87437500056694,
+      "host_loadavg_after": "0.39 0.17 0.15 1/212 10599\n",
+      "median_ms": 27.726504
+    },
+    {
+      "order": 31,
+      "trial": 1,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "report": "128_128_128_mcast2d_cores4_depth2_trial1.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_mcast2d_cores4_depth2_trial1.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 1069.0927420000662,
+      "host_loadavg_after": "0.44 0.19 0.15 1/212 10611\n",
+      "median_ms": 107.542785
+    },
+    {
+      "order": 32,
+      "trial": 2,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "report": "128_128_128_multicore_cores4_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_multicore_cores4_depth2_trial2.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 867.4804000002041,
+      "host_loadavg_after": "0.44 0.19 0.15 1/212 10623\n",
+      "median_ms": 68.933951
+    },
+    {
+      "order": 33,
+      "trial": 2,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "report": "32_64_128_multicore_cores4_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_multicore_cores4_depth2_trial2.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 617.7165310000419,
+      "host_loadavg_after": "0.44 0.19 0.15 1/212 10635\n",
+      "median_ms": 48.898422
+    },
+    {
+      "order": 34,
+      "trial": 2,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "report": "128_128_128_mcast2d_cores4_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_mcast2d_cores4_depth2_trial2.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 1117.2126830024354,
+      "host_loadavg_after": "0.44 0.19 0.15 1/212 10647\n",
+      "median_ms": 86.351255
+    },
+    {
+      "order": 35,
+      "trial": 2,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "report": "96_64_160_mcast2d_cores4_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_mcast2d_cores4_depth2_trial2.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 615.5828830014798,
+      "host_loadavg_after": "0.44 0.19 0.15 1/212 10659\n",
+      "median_ms": 51.066042
+    },
+    {
+      "order": 36,
+      "trial": 2,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "report": "65_257_97_mcast_cores4_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_mcast_cores4_depth2_trial2.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 917.0078749993991,
+      "host_loadavg_after": "0.44 0.19 0.15 1/212 10671\n",
+      "median_ms": 82.627701
+    },
+    {
+      "order": 37,
+      "trial": 2,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "report": "96_64_160_mcast_cores4_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_mcast_cores4_depth2_trial2.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 414.9213620003138,
+      "host_loadavg_after": "0.44 0.19 0.15 1/212 10683\n",
+      "median_ms": 32.933037
+    },
+    {
+      "order": 38,
+      "trial": 2,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "report": "65_257_97_multicore_cores1_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_multicore_cores1_depth2_trial2.json",
+        "multicore",
+        "2",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 966.4906920006615,
+      "host_loadavg_after": "0.49 0.20 0.16 1/212 10695\n",
+      "median_ms": 91.478062
+    },
+    {
+      "order": 39,
+      "trial": 2,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "report": "32_64_128_mcast2d_cores4_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_mcast2d_cores4_depth2_trial2.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 315.29404100001557,
+      "host_loadavg_after": "0.49 0.20 0.16 1/212 10707\n",
+      "median_ms": 18.462418
+    },
+    {
+      "order": 40,
+      "trial": 2,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "report": "65_257_97_multicore_cores1_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_multicore_cores1_depth1_trial2.json",
+        "multicore",
+        "1",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 1167.051440999785,
+      "host_loadavg_after": "0.49 0.20 0.16 1/212 10719\n",
+      "median_ms": 115.469223
+    },
+    {
+      "order": 41,
+      "trial": 2,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "report": "65_257_97_multicore_cores4_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_multicore_cores4_depth2_trial2.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 716.1230999990948,
+      "host_loadavg_after": "0.49 0.20 0.16 1/212 10731\n",
+      "median_ms": 62.646755
+    },
+    {
+      "order": 42,
+      "trial": 2,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "report": "128_128_128_multicore_cores1_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_multicore_cores1_depth2_trial2.json",
+        "multicore",
+        "2",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 715.8116799982963,
+      "host_loadavg_after": "0.49 0.20 0.16 1/212 10743\n",
+      "median_ms": 62.629691
+    },
+    {
+      "order": 43,
+      "trial": 2,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "report": "128_128_128_mcast_cores4_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_mcast_cores4_depth1_trial2.json",
+        "mcast",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 666.3266449977527,
+      "host_loadavg_after": "0.49 0.20 0.16 1/212 10755\n",
+      "median_ms": 58.654441
+    },
+    {
+      "order": 44,
+      "trial": 2,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "report": "65_257_97_multicore_cores4_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_multicore_cores4_depth1_trial2.json",
+        "multicore",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 766.481170001498,
+      "host_loadavg_after": "0.49 0.20 0.16 1/212 10767\n",
+      "median_ms": 66.754478
+    },
+    {
+      "order": 45,
+      "trial": 2,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "report": "32_64_128_mcast2d_cores4_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_mcast2d_cores4_depth1_trial2.json",
+        "mcast2d",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 214.94543999870075,
+      "host_loadavg_after": "0.45 0.20 0.16 1/212 10779\n",
+      "median_ms": 12.585925
+    },
+    {
+      "order": 46,
+      "trial": 2,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "report": "32_64_128_multicore_cores1_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_multicore_cores1_depth2_trial2.json",
+        "multicore",
+        "2",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 214.9500200030161,
+      "host_loadavg_after": "0.45 0.20 0.16 1/212 10791\n",
+      "median_ms": 11.734419
+    },
+    {
+      "order": 47,
+      "trial": 2,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "report": "32_64_128_mcast_cores4_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_mcast_cores4_depth1_trial2.json",
+        "mcast",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 214.56773500176496,
+      "host_loadavg_after": "0.45 0.20 0.16 1/212 10803\n",
+      "median_ms": 12.177683
+    },
+    {
+      "order": 48,
+      "trial": 2,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "report": "96_64_160_multicore_cores1_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_multicore_cores1_depth2_trial2.json",
+        "multicore",
+        "2",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 415.2753890011809,
+      "host_loadavg_after": "0.45 0.20 0.16 1/212 10815\n",
+      "median_ms": 30.768424
+    },
+    {
+      "order": 49,
+      "trial": 2,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "report": "96_64_160_multicore_cores1_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_multicore_cores1_depth1_trial2.json",
+        "multicore",
+        "1",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 465.2298349974444,
+      "host_loadavg_after": "0.45 0.20 0.16 1/212 10827\n",
+      "median_ms": 39.590185
+    },
+    {
+      "order": 50,
+      "trial": 2,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "report": "65_257_97_mcast2d_cores4_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_mcast2d_cores4_depth2_trial2.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 1517.934982002771,
+      "host_loadavg_after": "0.45 0.20 0.16 1/212 10839\n",
+      "median_ms": 145.35684
+    },
+    {
+      "order": 51,
+      "trial": 2,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "report": "96_64_160_multicore_cores4_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_multicore_cores4_depth2_trial2.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 365.65131500174175,
+      "host_loadavg_after": "0.45 0.20 0.16 1/212 10851\n",
+      "median_ms": 25.903974
+    },
+    {
+      "order": 52,
+      "trial": 2,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "report": "65_257_97_mcast2d_cores4_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_mcast2d_cores4_depth1_trial2.json",
+        "mcast2d",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 1467.3397350015875,
+      "host_loadavg_after": "0.45 0.20 0.16 1/212 10863\n",
+      "median_ms": 152.083857
+    },
+    {
+      "order": 53,
+      "trial": 2,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "report": "32_64_128_multicore_cores1_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_multicore_cores1_depth1_trial2.json",
+        "multicore",
+        "1",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 265.04426899919054,
+      "host_loadavg_after": "0.49 0.21 0.16 1/212 10875\n",
+      "median_ms": 19.250914
+    },
+    {
+      "order": 54,
+      "trial": 2,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "report": "128_128_128_mcast_cores4_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_mcast_cores4_depth2_trial2.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 867.5859399991168,
+      "host_loadavg_after": "0.49 0.21 0.16 1/212 10887\n",
+      "median_ms": 62.425431
+    },
+    {
+      "order": 55,
+      "trial": 2,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "report": "32_64_128_multicore_cores4_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_multicore_cores4_depth1_trial2.json",
+        "multicore",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 416.23393800182384,
+      "host_loadavg_after": "0.49 0.21 0.16 1/212 10899\n",
+      "median_ms": 15.632547
+    },
+    {
+      "order": 56,
+      "trial": 2,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "report": "96_64_160_mcast_cores4_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_mcast_cores4_depth1_trial2.json",
+        "mcast",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 616.5129770015483,
+      "host_loadavg_after": "0.49 0.21 0.16 1/212 10911\n",
+      "median_ms": 47.104293
+    },
+    {
+      "order": 57,
+      "trial": 2,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "report": "96_64_160_multicore_cores4_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_multicore_cores4_depth1_trial2.json",
+        "multicore",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 415.5861239996739,
+      "host_loadavg_after": "0.49 0.21 0.16 1/212 10923\n",
+      "median_ms": 25.676338
+    },
+    {
+      "order": 58,
+      "trial": 2,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "report": "65_257_97_mcast_cores4_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_mcast_cores4_depth1_trial2.json",
+        "mcast",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 1975.0918919999094,
+      "host_loadavg_after": "0.49 0.21 0.16 1/212 10935\n",
+      "median_ms": 134.649837
+    },
+    {
+      "order": 59,
+      "trial": 2,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "report": "128_128_128_multicore_cores1_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_multicore_cores1_depth1_trial2.json",
+        "multicore",
+        "1",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 1167.746705999889,
+      "host_loadavg_after": "0.53 0.22 0.17 1/212 10947\n",
+      "median_ms": 93.436837
+    },
+    {
+      "order": 60,
+      "trial": 2,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "report": "128_128_128_multicore_cores4_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_multicore_cores4_depth1_trial2.json",
+        "multicore",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 617.4738209992938,
+      "host_loadavg_after": "0.53 0.22 0.17 1/212 10959\n",
+      "median_ms": 46.050235
+    },
+    {
+      "order": 61,
+      "trial": 2,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "report": "96_64_160_mcast2d_cores4_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_mcast2d_cores4_depth1_trial2.json",
+        "mcast2d",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 566.5604960013297,
+      "host_loadavg_after": "0.53 0.22 0.17 1/212 10971\n",
+      "median_ms": 48.037183
+    },
+    {
+      "order": 62,
+      "trial": 2,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "report": "32_64_128_mcast_cores4_depth2_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_mcast_cores4_depth2_trial2.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 214.8978849982086,
+      "host_loadavg_after": "0.53 0.22 0.17 1/212 10983\n",
+      "median_ms": 10.64247
+    },
+    {
+      "order": 63,
+      "trial": 2,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "report": "128_128_128_mcast2d_cores4_depth1_trial2.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_mcast2d_cores4_depth1_trial2.json",
+        "mcast2d",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 816.2432329991134,
+      "host_loadavg_after": "0.53 0.22 0.17 1/212 10995\n",
+      "median_ms": 74.734949
+    },
+    {
+      "order": 64,
+      "trial": 3,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "report": "96_64_160_multicore_cores4_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_multicore_cores4_depth1_trial3.json",
+        "multicore",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 315.37461999687366,
+      "host_loadavg_after": "0.53 0.22 0.17 1/212 11007\n",
+      "median_ms": 21.540344
+    },
+    {
+      "order": 65,
+      "trial": 3,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "report": "96_64_160_mcast2d_cores4_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_mcast2d_cores4_depth1_trial3.json",
+        "mcast2d",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 565.433165000286,
+      "host_loadavg_after": "0.53 0.22 0.17 1/212 11019\n",
+      "median_ms": 56.424135
+    },
+    {
+      "order": 66,
+      "trial": 3,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "report": "65_257_97_mcast_cores4_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_mcast_cores4_depth1_trial3.json",
+        "mcast",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 966.7525889999524,
+      "host_loadavg_after": "0.53 0.22 0.17 1/212 11031\n",
+      "median_ms": 86.746283
+    },
+    {
+      "order": 67,
+      "trial": 3,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "report": "96_64_160_mcast_cores4_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_mcast_cores4_depth1_trial3.json",
+        "mcast",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 415.30113199769403,
+      "host_loadavg_after": "0.53 0.22 0.17 1/212 11043\n",
+      "median_ms": 34.918799
+    },
+    {
+      "order": 68,
+      "trial": 3,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "report": "96_64_160_mcast2d_cores4_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_mcast2d_cores4_depth2_trial3.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 515.0243729985959,
+      "host_loadavg_after": "0.57 0.24 0.17 1/212 11055\n",
+      "median_ms": 45.602243
+    },
+    {
+      "order": 69,
+      "trial": 3,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "report": "65_257_97_mcast2d_cores4_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_mcast2d_cores4_depth2_trial3.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 1367.091911000898,
+      "host_loadavg_after": "0.57 0.24 0.17 1/212 11067\n",
+      "median_ms": 137.838876
+    },
+    {
+      "order": 70,
+      "trial": 3,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "report": "32_64_128_multicore_cores1_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_multicore_cores1_depth1_trial3.json",
+        "multicore",
+        "1",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 265.1552960014669,
+      "host_loadavg_after": "0.57 0.24 0.17 1/212 11079\n",
+      "median_ms": 14.607058
+    },
+    {
+      "order": 71,
+      "trial": 3,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "report": "128_128_128_multicore_cores4_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_multicore_cores4_depth1_trial3.json",
+        "multicore",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 565.4660530017281,
+      "host_loadavg_after": "0.57 0.24 0.17 1/212 11091\n",
+      "median_ms": 41.902788
+    },
+    {
+      "order": 72,
+      "trial": 3,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "report": "128_128_128_mcast2d_cores4_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_mcast2d_cores4_depth2_trial3.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 916.2638170018909,
+      "host_loadavg_after": "0.57 0.24 0.17 1/212 11103\n",
+      "median_ms": 90.67591
+    },
+    {
+      "order": 73,
+      "trial": 3,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "report": "128_128_128_mcast_cores4_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_mcast_cores4_depth1_trial3.json",
+        "mcast",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 615.4130340000847,
+      "host_loadavg_after": "0.57 0.24 0.17 1/212 11115\n",
+      "median_ms": 55.720849
+    },
+    {
+      "order": 74,
+      "trial": 3,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "report": "65_257_97_multicore_cores4_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_multicore_cores4_depth1_trial3.json",
+        "multicore",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 715.475521999906,
+      "host_loadavg_after": "0.57 0.24 0.17 1/212 11127\n",
+      "median_ms": 61.354722
+    },
+    {
+      "order": 75,
+      "trial": 3,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "report": "65_257_97_multicore_cores1_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_multicore_cores1_depth2_trial3.json",
+        "multicore",
+        "2",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 916.2180120001722,
+      "host_loadavg_after": "0.60 0.25 0.18 1/212 11139\n",
+      "median_ms": 93.355431
+    },
+    {
+      "order": 76,
+      "trial": 3,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "report": "128_128_128_multicore_cores4_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_multicore_cores4_depth2_trial3.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 617.0093529981386,
+      "host_loadavg_after": "0.60 0.25 0.18 1/212 11151\n",
+      "median_ms": 43.562948
+    },
+    {
+      "order": 77,
+      "trial": 3,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "report": "65_257_97_multicore_cores4_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_multicore_cores4_depth2_trial3.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 665.5910170011339,
+      "host_loadavg_after": "0.60 0.25 0.18 1/212 11163\n",
+      "median_ms": 55.494941
+    },
+    {
+      "order": 78,
+      "trial": 3,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "report": "96_64_160_mcast_cores4_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_mcast_cores4_depth2_trial3.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 415.1738279979327,
+      "host_loadavg_after": "0.60 0.25 0.18 1/212 11175\n",
+      "median_ms": 31.017324
+    },
+    {
+      "order": 79,
+      "trial": 3,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "report": "128_128_128_multicore_cores1_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_multicore_cores1_depth2_trial3.json",
+        "multicore",
+        "2",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 615.8156689998577,
+      "host_loadavg_after": "0.60 0.25 0.18 1/212 11187\n",
+      "median_ms": 54.94424
+    },
+    {
+      "order": 80,
+      "trial": 3,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "report": "32_64_128_mcast_cores4_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_mcast_cores4_depth1_trial3.json",
+        "mcast",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 214.97524100050214,
+      "host_loadavg_after": "0.60 0.25 0.18 1/212 11199\n",
+      "median_ms": 12.040133
+    },
+    {
+      "order": 81,
+      "trial": 3,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "report": "65_257_97_multicore_cores1_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_multicore_cores1_depth1_trial3.json",
+        "multicore",
+        "1",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 1168.135533000168,
+      "host_loadavg_after": "0.60 0.25 0.18 1/212 11211\n",
+      "median_ms": 115.046902
+    },
+    {
+      "order": 82,
+      "trial": 3,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "report": "32_64_128_multicore_cores1_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_multicore_cores1_depth2_trial3.json",
+        "multicore",
+        "2",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 214.6882960005314,
+      "host_loadavg_after": "0.60 0.25 0.18 1/212 11223\n",
+      "median_ms": 12.034026
+    },
+    {
+      "order": 83,
+      "trial": 3,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "report": "96_64_160_multicore_cores1_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_multicore_cores1_depth2_trial3.json",
+        "multicore",
+        "2",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 415.506290999474,
+      "host_loadavg_after": "0.72 0.28 0.19 1/212 11235\n",
+      "median_ms": 31.6645
+    },
+    {
+      "order": 84,
+      "trial": 3,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "report": "128_128_128_mcast2d_cores4_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_mcast2d_cores4_depth1_trial3.json",
+        "mcast2d",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 866.4285490012844,
+      "host_loadavg_after": "0.72 0.28 0.19 1/212 11247\n",
+      "median_ms": 83.098033
+    },
+    {
+      "order": 85,
+      "trial": 3,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "report": "32_64_128_multicore_cores4_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_multicore_cores4_depth2_trial3.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 215.37908200116362,
+      "host_loadavg_after": "0.72 0.28 0.19 1/212 11259\n",
+      "median_ms": 10.5889
+    },
+    {
+      "order": 86,
+      "trial": 3,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "report": "65_257_97_mcast_cores4_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_mcast_cores4_depth2_trial3.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 866.4960140013136,
+      "host_loadavg_after": "0.72 0.28 0.19 1/212 11271\n",
+      "median_ms": 81.722091
+    },
+    {
+      "order": 87,
+      "trial": 3,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "report": "32_64_128_mcast_cores4_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_mcast_cores4_depth2_trial3.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 315.25150100060273,
+      "host_loadavg_after": "0.72 0.28 0.19 1/212 11283\n",
+      "median_ms": 18.771358
+    },
+    {
+      "order": 88,
+      "trial": 3,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "report": "96_64_160_multicore_cores1_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_multicore_cores1_depth1_trial3.json",
+        "multicore",
+        "1",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 515.6948559997545,
+      "host_loadavg_after": "0.72 0.28 0.19 1/212 11295\n",
+      "median_ms": 41.653936
+    },
+    {
+      "order": 89,
+      "trial": 3,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "report": "32_64_128_mcast2d_cores4_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_mcast2d_cores4_depth1_trial3.json",
+        "mcast2d",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 265.2700590006134,
+      "host_loadavg_after": "0.72 0.28 0.19 1/212 11307\n",
+      "median_ms": 15.516105
+    },
+    {
+      "order": 90,
+      "trial": 3,
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "report": "96_64_160_multicore_cores4_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/96_64_160_multicore_cores4_depth2_trial3.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:96,64,160"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 315.39158599844086,
+      "host_loadavg_after": "0.72 0.28 0.19 1/212 11319\n",
+      "median_ms": 23.080587
+    },
+    {
+      "order": 91,
+      "trial": 3,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "report": "128_128_128_multicore_cores1_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_multicore_cores1_depth1_trial3.json",
+        "multicore",
+        "1",
+        "1",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 765.9200220005005,
+      "host_loadavg_after": "0.72 0.28 0.19 1/212 11331\n",
+      "median_ms": 71.577206
+    },
+    {
+      "order": 92,
+      "trial": 3,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "report": "32_64_128_mcast2d_cores4_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_mcast2d_cores4_depth2_trial3.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 214.59706899986486,
+      "host_loadavg_after": "0.72 0.28 0.19 1/212 11343\n",
+      "median_ms": 11.981446
+    },
+    {
+      "order": 93,
+      "trial": 3,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "report": "128_128_128_mcast_cores4_depth2_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/128_128_128_mcast_cores4_depth2_trial3.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:128,128,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 716.304058998503,
+      "host_loadavg_after": "0.74 0.29 0.19 1/212 11355\n",
+      "median_ms": 58.089824
+    },
+    {
+      "order": 94,
+      "trial": 3,
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "report": "32_64_128_multicore_cores4_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/32_64_128_multicore_cores4_depth1_trial3.json",
+        "multicore",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:32,64,128"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 415.4536679998273,
+      "host_loadavg_after": "0.74 0.29 0.19 1/212 11367\n",
+      "median_ms": 14.40706
+    },
+    {
+      "order": 95,
+      "trial": 3,
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "report": "65_257_97_mcast2d_cores4_depth1_trial3.json",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_multicast_perf/20261019T112137744676Z/65_257_97_mcast2d_cores4_depth1_trial3.json",
+        "mcast2d",
+        "1",
+        "4",
+        "--benchmark",
+        "7",
+        "signed_random:65,257,97"
+      ],
+      "exit_code": 0,
+      "whole_process_wall_ms": 1818.887340999936,
+      "host_loadavg_after": "0.74 0.29 0.19 1/212 11379\n",
+      "median_ms": 145.79355
+    }
+  ],
+  "passed": true,
+  "host_build_wall_ms": 542.5338610002655,
+  "build_exit_code": 0,
+  "executable_sha256": "b358bbf2b9b4b383b86b33f5b015cb61009fe9db924504aa2dd37fabb99b5f4f",
+  "host_after": {
+    "meminfo": "MemTotal:        3962484 kB\nMemFree:         3301328 kB\nMemAvailable:    3414520 kB\nBuffers:           15284 kB\nCached:           288388 kB\nSwapCached:            0 kB\nActive:            93864 kB\nInactive:         308444 kB\nActive(anon):       3348 kB\nInactive(anon):    99536 kB\nActive(file):      90516 kB\nInactive(file):   208908 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1048576 kB\nDirty:               948 kB\nWriteback:           204 kB\nAnonPages:         99016 kB\nMapped:           132472 kB\nShmem:              4248 kB\nKReclaimable:      27160 kB\nSlab:              66064 kB\nSReclaimable:      27160 kB\nSUnreclaim:        38904 kB\nKernelStack:        3648 kB\nPageTables:         3004 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:     659112 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        6752 kB\nVmallocChunk:          0 kB\nPercpu:             3424 kB\nAnonHugePages:     34816 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      113664 kB\nDirectMap2M:     4022272 kB\nDirectMap1G:     8388608 kB\n",
+    "loadavg": "0.74 0.29 0.19 1/212 11379\n"
+  }
+}

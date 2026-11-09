@@ -1,0 +1,1717 @@
+{
+  "passed": true,
+  "unique_configurations": 32,
+  "process_trials": 96,
+  "timed_samples": 672,
+  "dispatches": 864,
+  "scope": "host steady_clock: EnqueueMeshWorkload + Finish",
+  "physical_chip_latency": false,
+  "primary_statistic": "median of independent process trial medians",
+  "comparisons": [
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "active_cores": 1,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        16
+      ],
+      "max_matmul_calls_per_core_model": 64,
+      "read_bytes_model": 262144,
+      "write_bytes_model": 32768,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 6144,
+      "median_of_trial_medians_ms": 71.577206,
+      "trial_medians_ms": [
+        64.989285,
+        93.436837,
+        71.577206
+      ],
+      "pooled_p95_ms": 99.453304,
+      "pooled_median_ms": 71.577206,
+      "min_ms": 59.57728,
+      "max_ms": 147.886617,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.6433645230578013,
+      "within_trial_independent4_ratios": [
+        0.7323277675696848,
+        0.49284882149852743,
+        0.5854208391425616
+      ],
+      "trial_median_min_ms": 64.989285,
+      "trial_median_max_ms": 93.436837,
+      "source_reports": [
+        "128_128_128_multicore_cores1_depth1_trial1.json",
+        "128_128_128_multicore_cores1_depth1_trial2.json",
+        "128_128_128_multicore_cores1_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "active_cores": 1,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        16
+      ],
+      "max_matmul_calls_per_core_model": 64,
+      "read_bytes_model": 262144,
+      "write_bytes_model": 32768,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 12288,
+      "median_of_trial_medians_ms": 55.738044,
+      "trial_medians_ms": [
+        55.738044,
+        62.629691,
+        54.94424
+      ],
+      "pooled_p95_ms": 65.507996,
+      "pooled_median_ms": 56.584296,
+      "min_ms": 49.447158,
+      "max_ms": 74.048053,
+      "sample_count": 21,
+      "independent4_median_ratio": 1.1113841203326043,
+      "within_trial_independent4_ratios": [
+        1.1113841203326043,
+        1.1006592863439162,
+        0.7928574132611534
+      ],
+      "trial_median_min_ms": 54.94424,
+      "trial_median_max_ms": 62.629691,
+      "source_reports": [
+        "128_128_128_multicore_cores1_depth2_trial1.json",
+        "128_128_128_multicore_cores1_depth2_trial2.json",
+        "128_128_128_multicore_cores1_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "active_cores": 4,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "max_matmul_calls_per_core_model": 16,
+      "read_bytes_model": 262144,
+      "write_bytes_model": 32768,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 24576,
+      "median_of_trial_medians_ms": 46.050235,
+      "trial_medians_ms": [
+        47.593458,
+        46.050235,
+        41.902788
+      ],
+      "pooled_p95_ms": 54.951812,
+      "pooled_median_ms": 45.161286,
+      "min_ms": 40.810711,
+      "max_ms": 55.477813,
+      "sample_count": 21,
+      "independent4_median_ratio": 1.0,
+      "within_trial_independent4_ratios": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "trial_median_min_ms": 41.902788,
+      "trial_median_max_ms": 47.593458,
+      "source_reports": [
+        "128_128_128_multicore_cores4_depth1_trial1.json",
+        "128_128_128_multicore_cores4_depth1_trial2.json",
+        "128_128_128_multicore_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "active_cores": 4,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "max_matmul_calls_per_core_model": 16,
+      "read_bytes_model": 262144,
+      "write_bytes_model": 32768,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 49152,
+      "median_of_trial_medians_ms": 61.946377,
+      "trial_medians_ms": [
+        61.946377,
+        68.933951,
+        43.562948
+      ],
+      "pooled_p95_ms": 95.884967,
+      "pooled_median_ms": 55.629163,
+      "min_ms": 41.591121,
+      "max_ms": 102.879658,
+      "sample_count": 21,
+      "independent4_median_ratio": 1.0,
+      "within_trial_independent4_ratios": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "trial_median_min_ms": 43.562948,
+      "trial_median_max_ms": 68.933951,
+      "source_reports": [
+        "128_128_128_multicore_cores4_depth2_trial1.json",
+        "128_128_128_multicore_cores4_depth2_trial2.json",
+        "128_128_128_multicore_cores4_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "active_cores": 4,
+      "topology": "1 rows x 4 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "max_matmul_calls_per_core_model": 16,
+      "read_bytes_model": 163840,
+      "write_bytes_model": 32768,
+      "receiver_data_bytes_model": 98304,
+      "payload_multicast_calls_model": 16,
+      "ready_atomic_increments_model": 48,
+      "valid_multicast_calls_model": 16,
+      "input_transport_write_barriers_model": 32,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 24576,
+      "median_of_trial_medians_ms": 58.654441,
+      "trial_medians_ms": [
+        60.120999,
+        58.654441,
+        55.720849
+      ],
+      "pooled_p95_ms": 67.30036,
+      "pooled_median_ms": 58.883043,
+      "min_ms": 52.283275,
+      "max_ms": 70.149813,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.7851107983451756,
+      "within_trial_independent4_ratios": [
+        0.7916278636687325,
+        0.7851107983451756,
+        0.7520127340486144
+      ],
+      "trial_median_min_ms": 55.720849,
+      "trial_median_max_ms": 60.120999,
+      "source_reports": [
+        "128_128_128_mcast_cores4_depth1_trial1.json",
+        "128_128_128_mcast_cores4_depth1_trial2.json",
+        "128_128_128_mcast_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "active_cores": 4,
+      "topology": "1 rows x 4 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "max_matmul_calls_per_core_model": 16,
+      "read_bytes_model": 163840,
+      "write_bytes_model": 32768,
+      "receiver_data_bytes_model": 98304,
+      "payload_multicast_calls_model": 16,
+      "ready_atomic_increments_model": 48,
+      "valid_multicast_calls_model": 16,
+      "input_transport_write_barriers_model": 32,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 49152,
+      "median_of_trial_medians_ms": 58.089824,
+      "trial_medians_ms": [
+        54.86946,
+        62.425431,
+        58.089824
+      ],
+      "pooled_p95_ms": 89.15261,
+      "pooled_median_ms": 59.782879,
+      "min_ms": 51.813711,
+      "max_ms": 91.225313,
+      "sample_count": 21,
+      "independent4_median_ratio": 1.0663894764081228,
+      "within_trial_independent4_ratios": [
+        1.1289773400357868,
+        1.1042607138747667,
+        0.7499239109417856
+      ],
+      "trial_median_min_ms": 54.86946,
+      "trial_median_max_ms": 62.425431,
+      "source_reports": [
+        "128_128_128_mcast_cores4_depth2_trial1.json",
+        "128_128_128_mcast_cores4_depth2_trial2.json",
+        "128_128_128_mcast_cores4_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "active_cores": 4,
+      "topology": "2 rows x 2 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "max_matmul_calls_per_core_model": 16,
+      "read_bytes_model": 131072,
+      "write_bytes_model": 32768,
+      "receiver_data_bytes_model": 131072,
+      "payload_multicast_calls_model": 64,
+      "ready_atomic_increments_model": 64,
+      "valid_multicast_calls_model": 64,
+      "input_transport_write_barriers_model": 128,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 24576,
+      "median_of_trial_medians_ms": 75.482187,
+      "trial_medians_ms": [
+        75.482187,
+        74.734949,
+        83.098033
+      ],
+      "pooled_p95_ms": 86.106229,
+      "pooled_median_ms": 79.758314,
+      "min_ms": 69.985918,
+      "max_ms": 96.762633,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.610080826089472,
+      "within_trial_independent4_ratios": [
+        0.6305256894583618,
+        0.6161807242284999,
+        0.5042572788696454
+      ],
+      "trial_median_min_ms": 74.734949,
+      "trial_median_max_ms": 83.098033,
+      "source_reports": [
+        "128_128_128_mcast2d_cores4_depth1_trial1.json",
+        "128_128_128_mcast2d_cores4_depth1_trial2.json",
+        "128_128_128_mcast2d_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "active_cores": 4,
+      "topology": "2 rows x 2 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "max_matmul_calls_per_core_model": 16,
+      "read_bytes_model": 131072,
+      "write_bytes_model": 32768,
+      "receiver_data_bytes_model": 131072,
+      "payload_multicast_calls_model": 64,
+      "ready_atomic_increments_model": 64,
+      "valid_multicast_calls_model": 64,
+      "input_transport_write_barriers_model": 128,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 49152,
+      "median_of_trial_medians_ms": 90.67591,
+      "trial_medians_ms": [
+        107.542785,
+        86.351255,
+        90.67591
+      ],
+      "pooled_p95_ms": 113.710864,
+      "pooled_median_ms": 93.977671,
+      "min_ms": 78.961498,
+      "max_ms": 127.96003,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.6831624518573897,
+      "within_trial_independent4_ratios": [
+        0.576016113028875,
+        0.7982970369104653,
+        0.4804247125835296
+      ],
+      "trial_median_min_ms": 86.351255,
+      "trial_median_max_ms": 107.542785,
+      "source_reports": [
+        "128_128_128_mcast2d_cores4_depth2_trial1.json",
+        "128_128_128_mcast2d_cores4_depth2_trial2.json",
+        "128_128_128_mcast2d_cores4_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "active_cores": 1,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        15
+      ],
+      "max_matmul_calls_per_core_model": 30,
+      "read_bytes_model": 122880,
+      "write_bytes_model": 30720,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 6144,
+      "median_of_trial_medians_ms": 39.590185,
+      "trial_medians_ms": [
+        38.293717,
+        39.590185,
+        41.653936
+      ],
+      "pooled_p95_ms": 44.148979,
+      "pooled_median_ms": 40.591755,
+      "min_ms": 30.424727,
+      "max_ms": 45.180753,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.6485531199210108,
+      "within_trial_independent4_ratios": [
+        0.7240483863188313,
+        0.6485531199210108,
+        0.5171262566879634
+      ],
+      "trial_median_min_ms": 38.293717,
+      "trial_median_max_ms": 41.653936,
+      "source_reports": [
+        "96_64_160_multicore_cores1_depth1_trial1.json",
+        "96_64_160_multicore_cores1_depth1_trial2.json",
+        "96_64_160_multicore_cores1_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "active_cores": 1,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        15
+      ],
+      "max_matmul_calls_per_core_model": 30,
+      "read_bytes_model": 122880,
+      "write_bytes_model": 30720,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 12288,
+      "median_of_trial_medians_ms": 30.768424,
+      "trial_medians_ms": [
+        30.394851,
+        30.768424,
+        31.6645
+      ],
+      "pooled_p95_ms": 34.74522,
+      "pooled_median_ms": 31.535771,
+      "min_ms": 27.145224,
+      "max_ms": 36.634599,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.7878902084812663,
+      "within_trial_independent4_ratios": [
+        0.797573904869611,
+        0.8419012296502415,
+        0.728910514929969
+      ],
+      "trial_median_min_ms": 30.394851,
+      "trial_median_max_ms": 31.6645,
+      "source_reports": [
+        "96_64_160_multicore_cores1_depth2_trial1.json",
+        "96_64_160_multicore_cores1_depth2_trial2.json",
+        "96_64_160_multicore_cores1_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "active_cores": 4,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        4,
+        4,
+        4,
+        3
+      ],
+      "max_matmul_calls_per_core_model": 8,
+      "read_bytes_model": 122880,
+      "write_bytes_model": 30720,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 24576,
+      "median_of_trial_medians_ms": 25.676338,
+      "trial_medians_ms": [
+        27.726504,
+        25.676338,
+        21.540344
+      ],
+      "pooled_p95_ms": 33.750839,
+      "pooled_median_ms": 25.606932,
+      "min_ms": 21.147077,
+      "max_ms": 62.925173,
+      "sample_count": 21,
+      "independent4_median_ratio": 1.0,
+      "within_trial_independent4_ratios": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "trial_median_min_ms": 21.540344,
+      "trial_median_max_ms": 27.726504,
+      "source_reports": [
+        "96_64_160_multicore_cores4_depth1_trial1.json",
+        "96_64_160_multicore_cores4_depth1_trial2.json",
+        "96_64_160_multicore_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "active_cores": 4,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        4,
+        4,
+        4,
+        3
+      ],
+      "max_matmul_calls_per_core_model": 8,
+      "read_bytes_model": 122880,
+      "write_bytes_model": 30720,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 49152,
+      "median_of_trial_medians_ms": 24.24214,
+      "trial_medians_ms": [
+        24.24214,
+        25.903974,
+        23.080587
+      ],
+      "pooled_p95_ms": 28.286567,
+      "pooled_median_ms": 23.631956,
+      "min_ms": 21.836114,
+      "max_ms": 36.679744,
+      "sample_count": 21,
+      "independent4_median_ratio": 1.0,
+      "within_trial_independent4_ratios": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "trial_median_min_ms": 23.080587,
+      "trial_median_max_ms": 25.903974,
+      "source_reports": [
+        "96_64_160_multicore_cores4_depth2_trial1.json",
+        "96_64_160_multicore_cores4_depth2_trial2.json",
+        "96_64_160_multicore_cores4_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "active_cores": 4,
+      "topology": "1 rows x 4 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        6,
+        3,
+        3,
+        3
+      ],
+      "max_matmul_calls_per_core_model": 12,
+      "read_bytes_model": 86016,
+      "write_bytes_model": 30720,
+      "receiver_data_bytes_model": 73728,
+      "payload_multicast_calls_model": 12,
+      "ready_atomic_increments_model": 36,
+      "valid_multicast_calls_model": 12,
+      "input_transport_write_barriers_model": 24,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 24576,
+      "median_of_trial_medians_ms": 39.012499,
+      "trial_medians_ms": [
+        39.012499,
+        47.104293,
+        34.918799
+      ],
+      "pooled_p95_ms": 48.88478,
+      "pooled_median_ms": 39.012499,
+      "min_ms": 32.920443,
+      "max_ms": 51.567818,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.6581567102379163,
+      "within_trial_independent4_ratios": [
+        0.7107082271248504,
+        0.5450954969221171,
+        0.6168695549924269
+      ],
+      "trial_median_min_ms": 34.918799,
+      "trial_median_max_ms": 47.104293,
+      "source_reports": [
+        "96_64_160_mcast_cores4_depth1_trial1.json",
+        "96_64_160_mcast_cores4_depth1_trial2.json",
+        "96_64_160_mcast_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "active_cores": 4,
+      "topology": "1 rows x 4 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        6,
+        3,
+        3,
+        3
+      ],
+      "max_matmul_calls_per_core_model": 12,
+      "read_bytes_model": 86016,
+      "write_bytes_model": 30720,
+      "receiver_data_bytes_model": 73728,
+      "payload_multicast_calls_model": 12,
+      "ready_atomic_increments_model": 36,
+      "valid_multicast_calls_model": 12,
+      "input_transport_write_barriers_model": 24,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 49152,
+      "median_of_trial_medians_ms": 32.314728,
+      "trial_medians_ms": [
+        32.314728,
+        32.933037,
+        31.017324
+      ],
+      "pooled_p95_ms": 35.281777,
+      "pooled_median_ms": 32.138471,
+      "min_ms": 30.506922,
+      "max_ms": 36.176022,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.7501885827415907,
+      "within_trial_independent4_ratios": [
+        0.7501885827415907,
+        0.7865649924724526,
+        0.7441192218903218
+      ],
+      "trial_median_min_ms": 31.017324,
+      "trial_median_max_ms": 32.933037,
+      "source_reports": [
+        "96_64_160_mcast_cores4_depth2_trial1.json",
+        "96_64_160_mcast_cores4_depth2_trial2.json",
+        "96_64_160_mcast_cores4_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "active_cores": 4,
+      "topology": "2 rows x 2 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        6,
+        4,
+        3,
+        2
+      ],
+      "max_matmul_calls_per_core_model": 12,
+      "read_bytes_model": 77824,
+      "write_bytes_model": 30720,
+      "receiver_data_bytes_model": 77824,
+      "payload_multicast_calls_model": 38,
+      "ready_atomic_increments_model": 38,
+      "valid_multicast_calls_model": 38,
+      "input_transport_write_barriers_model": 76,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 24576,
+      "median_of_trial_medians_ms": 56.424135,
+      "trial_medians_ms": [
+        56.788751,
+        48.037183,
+        56.424135
+      ],
+      "pooled_p95_ms": 68.378777,
+      "pooled_median_ms": 52.92614,
+      "min_ms": 46.676106,
+      "max_ms": 68.791694,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.45505948828457893,
+      "within_trial_independent4_ratios": [
+        0.4882393698005438,
+        0.5345096526580254,
+        0.38175762907131855
+      ],
+      "trial_median_min_ms": 48.037183,
+      "trial_median_max_ms": 56.788751,
+      "source_reports": [
+        "96_64_160_mcast2d_cores4_depth1_trial1.json",
+        "96_64_160_mcast2d_cores4_depth1_trial2.json",
+        "96_64_160_mcast2d_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        96,
+        64,
+        160
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "active_cores": 4,
+      "topology": "2 rows x 2 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        6,
+        4,
+        3,
+        2
+      ],
+      "max_matmul_calls_per_core_model": 12,
+      "read_bytes_model": 77824,
+      "write_bytes_model": 30720,
+      "receiver_data_bytes_model": 77824,
+      "payload_multicast_calls_model": 38,
+      "ready_atomic_increments_model": 38,
+      "valid_multicast_calls_model": 38,
+      "input_transport_write_barriers_model": 76,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 49152,
+      "median_of_trial_medians_ms": 48.350084,
+      "trial_medians_ms": [
+        48.350084,
+        51.066042,
+        45.602243
+      ],
+      "pooled_p95_ms": 75.825582,
+      "pooled_median_ms": 48.350084,
+      "min_ms": 42.069597,
+      "max_ms": 121.140819,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.5013877535352368,
+      "within_trial_independent4_ratios": [
+        0.5013877535352368,
+        0.5072641815474949,
+        0.5061283279421146
+      ],
+      "trial_median_min_ms": 45.602243,
+      "trial_median_max_ms": 51.066042,
+      "source_reports": [
+        "96_64_160_mcast2d_cores4_depth2_trial1.json",
+        "96_64_160_mcast2d_cores4_depth2_trial2.json",
+        "96_64_160_mcast2d_cores4_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "active_cores": 1,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        12
+      ],
+      "max_matmul_calls_per_core_model": 108,
+      "read_bytes_model": 442368,
+      "write_bytes_model": 24576,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 6144,
+      "median_of_trial_medians_ms": 115.469223,
+      "trial_medians_ms": [
+        144.438418,
+        115.469223,
+        115.046902
+      ],
+      "pooled_p95_ms": 147.13066,
+      "pooled_median_ms": 119.695654,
+      "min_ms": 108.930769,
+      "max_ms": 149.30205,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.5781148973350241,
+      "within_trial_independent4_ratios": [
+        0.4875565723795174,
+        0.5781148973350241,
+        0.5333018180706857
+      ],
+      "trial_median_min_ms": 115.046902,
+      "trial_median_max_ms": 144.438418,
+      "source_reports": [
+        "65_257_97_multicore_cores1_depth1_trial1.json",
+        "65_257_97_multicore_cores1_depth1_trial2.json",
+        "65_257_97_multicore_cores1_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "active_cores": 1,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        12
+      ],
+      "max_matmul_calls_per_core_model": 108,
+      "read_bytes_model": 442368,
+      "write_bytes_model": 24576,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 12288,
+      "median_of_trial_medians_ms": 91.478062,
+      "trial_medians_ms": [
+        81.668299,
+        91.478062,
+        93.355431
+      ],
+      "pooled_p95_ms": 95.614242,
+      "pooled_median_ms": 90.535272,
+      "min_ms": 79.561895,
+      "max_ms": 99.809604,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.6848281831768583,
+      "within_trial_independent4_ratios": [
+        1.1794328543563763,
+        0.6848281831768583,
+        0.5944479116592585
+      ],
+      "trial_median_min_ms": 81.668299,
+      "trial_median_max_ms": 93.355431,
+      "source_reports": [
+        "65_257_97_multicore_cores1_depth2_trial1.json",
+        "65_257_97_multicore_cores1_depth2_trial2.json",
+        "65_257_97_multicore_cores1_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "active_cores": 4,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "max_matmul_calls_per_core_model": 27,
+      "read_bytes_model": 442368,
+      "write_bytes_model": 24576,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 24576,
+      "median_of_trial_medians_ms": 66.754478,
+      "trial_medians_ms": [
+        70.4219,
+        66.754478,
+        61.354722
+      ],
+      "pooled_p95_ms": 91.915232,
+      "pooled_median_ms": 67.319006,
+      "min_ms": 56.264788,
+      "max_ms": 100.133068,
+      "sample_count": 21,
+      "independent4_median_ratio": 1.0,
+      "within_trial_independent4_ratios": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "trial_median_min_ms": 61.354722,
+      "trial_median_max_ms": 70.4219,
+      "source_reports": [
+        "65_257_97_multicore_cores4_depth1_trial1.json",
+        "65_257_97_multicore_cores4_depth1_trial2.json",
+        "65_257_97_multicore_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "active_cores": 4,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "max_matmul_calls_per_core_model": 27,
+      "read_bytes_model": 442368,
+      "write_bytes_model": 24576,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 49152,
+      "median_of_trial_medians_ms": 62.646755,
+      "trial_medians_ms": [
+        96.322275,
+        62.646755,
+        55.494941
+      ],
+      "pooled_p95_ms": 99.98188,
+      "pooled_median_ms": 62.646755,
+      "min_ms": 52.961774,
+      "max_ms": 115.833299,
+      "sample_count": 21,
+      "independent4_median_ratio": 1.0,
+      "within_trial_independent4_ratios": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "trial_median_min_ms": 55.494941,
+      "trial_median_max_ms": 96.322275,
+      "source_reports": [
+        "65_257_97_multicore_cores4_depth2_trial1.json",
+        "65_257_97_multicore_cores4_depth2_trial2.json",
+        "65_257_97_multicore_cores4_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "active_cores": 4,
+      "topology": "1 rows x 4 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "max_matmul_calls_per_core_model": 27,
+      "read_bytes_model": 276480,
+      "write_bytes_model": 24576,
+      "receiver_data_bytes_model": 165888,
+      "payload_multicast_calls_model": 27,
+      "ready_atomic_increments_model": 81,
+      "valid_multicast_calls_model": 27,
+      "input_transport_write_barriers_model": 54,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 24576,
+      "median_of_trial_medians_ms": 91.753613,
+      "trial_medians_ms": [
+        91.753613,
+        134.649837,
+        86.746283
+      ],
+      "pooled_p95_ms": 215.273811,
+      "pooled_median_ms": 92.942705,
+      "min_ms": 82.424447,
+      "max_ms": 232.395831,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.7275405928701686,
+      "within_trial_independent4_ratios": [
+        0.7675109207961107,
+        0.49576352624920006,
+        0.7072893486398719
+      ],
+      "trial_median_min_ms": 86.746283,
+      "trial_median_max_ms": 134.649837,
+      "source_reports": [
+        "65_257_97_mcast_cores4_depth1_trial1.json",
+        "65_257_97_mcast_cores4_depth1_trial2.json",
+        "65_257_97_mcast_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "active_cores": 4,
+      "topology": "1 rows x 4 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "max_matmul_calls_per_core_model": 27,
+      "read_bytes_model": 276480,
+      "write_bytes_model": 24576,
+      "receiver_data_bytes_model": 165888,
+      "payload_multicast_calls_model": 27,
+      "ready_atomic_increments_model": 81,
+      "valid_multicast_calls_model": 27,
+      "input_transport_write_barriers_model": 54,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 49152,
+      "median_of_trial_medians_ms": 81.722091,
+      "trial_medians_ms": [
+        79.815866,
+        82.627701,
+        81.722091
+      ],
+      "pooled_p95_ms": 90.326928,
+      "pooled_median_ms": 81.722091,
+      "min_ms": 70.269057,
+      "max_ms": 95.249329,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.7665828692513508,
+      "within_trial_independent4_ratios": [
+        1.2068061129600474,
+        0.7581810245452671,
+        0.6790690292053344
+      ],
+      "trial_median_min_ms": 79.815866,
+      "trial_median_max_ms": 82.627701,
+      "source_reports": [
+        "65_257_97_mcast_cores4_depth2_trial1.json",
+        "65_257_97_mcast_cores4_depth2_trial2.json",
+        "65_257_97_mcast_cores4_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "active_cores": 4,
+      "topology": "2 rows x 2 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        4,
+        4,
+        2,
+        2
+      ],
+      "max_matmul_calls_per_core_model": 36,
+      "read_bytes_model": 258048,
+      "write_bytes_model": 24576,
+      "receiver_data_bytes_model": 258048,
+      "payload_multicast_calls_model": 126,
+      "ready_atomic_increments_model": 126,
+      "valid_multicast_calls_model": 126,
+      "input_transport_write_barriers_model": 252,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 24576,
+      "median_of_trial_medians_ms": 149.44828,
+      "trial_medians_ms": [
+        149.44828,
+        152.083857,
+        145.79355
+      ],
+      "pooled_p95_ms": 193.798749,
+      "pooled_median_ms": 149.44828,
+      "min_ms": 128.869003,
+      "max_ms": 259.104822,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.44667277535746813,
+      "within_trial_independent4_ratios": [
+        0.4712125157947618,
+        0.438932042603312,
+        0.4208328969285678
+      ],
+      "trial_median_min_ms": 145.79355,
+      "trial_median_max_ms": 152.083857,
+      "source_reports": [
+        "65_257_97_mcast2d_cores4_depth1_trial1.json",
+        "65_257_97_mcast2d_cores4_depth1_trial2.json",
+        "65_257_97_mcast2d_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        65,
+        257,
+        97
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "active_cores": 4,
+      "topology": "2 rows x 2 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        4,
+        4,
+        2,
+        2
+      ],
+      "max_matmul_calls_per_core_model": 36,
+      "read_bytes_model": 258048,
+      "write_bytes_model": 24576,
+      "receiver_data_bytes_model": 258048,
+      "payload_multicast_calls_model": 126,
+      "ready_atomic_increments_model": 126,
+      "valid_multicast_calls_model": 126,
+      "input_transport_write_barriers_model": 252,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 49152,
+      "median_of_trial_medians_ms": 137.838876,
+      "trial_medians_ms": [
+        124.752506,
+        145.35684,
+        137.838876
+      ],
+      "pooled_p95_ms": 160.657222,
+      "pooled_median_ms": 137.838876,
+      "min_ms": 118.30167,
+      "max_ms": 185.573893,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.45449264255463023,
+      "within_trial_independent4_ratios": [
+        0.7721069346695129,
+        0.43098594465867585,
+        0.40260732393087706
+      ],
+      "trial_median_min_ms": 124.752506,
+      "trial_median_max_ms": 145.35684,
+      "source_reports": [
+        "65_257_97_mcast2d_cores4_depth2_trial1.json",
+        "65_257_97_mcast2d_cores4_depth2_trial2.json",
+        "65_257_97_mcast2d_cores4_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth1",
+      "active_cores": 1,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        4
+      ],
+      "max_matmul_calls_per_core_model": 8,
+      "read_bytes_model": 32768,
+      "write_bytes_model": 8192,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 6144,
+      "median_of_trial_medians_ms": 14.607058,
+      "trial_medians_ms": [
+        12.348413,
+        19.250914,
+        14.607058
+      ],
+      "pooled_p95_ms": 19.543114,
+      "pooled_median_ms": 14.549549,
+      "min_ms": 11.659033,
+      "max_ms": 23.912102,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.9863081258388924,
+      "within_trial_independent4_ratios": [
+        0.8162652156192054,
+        0.812041807469505,
+        0.9863081258388924
+      ],
+      "trial_median_min_ms": 12.348413,
+      "trial_median_max_ms": 19.250914,
+      "source_reports": [
+        "32_64_128_multicore_cores1_depth1_trial1.json",
+        "32_64_128_multicore_cores1_depth1_trial2.json",
+        "32_64_128_multicore_cores1_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 1,
+      "mode": "multicore_cores1_depth2",
+      "active_cores": 1,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        4
+      ],
+      "max_matmul_calls_per_core_model": 8,
+      "read_bytes_model": 32768,
+      "write_bytes_model": 8192,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 12288,
+      "median_of_trial_medians_ms": 12.034026,
+      "trial_medians_ms": [
+        13.72321,
+        11.734419,
+        12.034026
+      ],
+      "pooled_p95_ms": 14.825151,
+      "pooled_median_ms": 12.452372,
+      "min_ms": 11.61313,
+      "max_ms": 15.826533,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.8799133390604275,
+      "within_trial_independent4_ratios": [
+        0.6940141555802177,
+        4.167093573188412,
+        0.8799133390604275
+      ],
+      "trial_median_min_ms": 11.734419,
+      "trial_median_max_ms": 13.72321,
+      "source_reports": [
+        "32_64_128_multicore_cores1_depth2_trial1.json",
+        "32_64_128_multicore_cores1_depth2_trial2.json",
+        "32_64_128_multicore_cores1_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth1",
+      "active_cores": 4,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_matmul_calls_per_core_model": 2,
+      "read_bytes_model": 32768,
+      "write_bytes_model": 8192,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 24576,
+      "median_of_trial_medians_ms": 14.40706,
+      "trial_medians_ms": [
+        10.07958,
+        15.632547,
+        14.40706
+      ],
+      "pooled_p95_ms": 18.419197,
+      "pooled_median_ms": 13.207585,
+      "min_ms": 9.072527,
+      "max_ms": 19.215584,
+      "sample_count": 21,
+      "independent4_median_ratio": 1.0,
+      "within_trial_independent4_ratios": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "trial_median_min_ms": 10.07958,
+      "trial_median_max_ms": 15.632547,
+      "source_reports": [
+        "32_64_128_multicore_cores4_depth1_trial1.json",
+        "32_64_128_multicore_cores4_depth1_trial2.json",
+        "32_64_128_multicore_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "multicore",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "multicore_cores4_depth2",
+      "active_cores": 4,
+      "topology": "contiguous C tile ranges",
+      "reader_placement": "RISCV_1 / NoC1",
+      "output_tiles_per_core": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_matmul_calls_per_core_model": 2,
+      "read_bytes_model": 32768,
+      "write_bytes_model": 8192,
+      "receiver_data_bytes_model": 0,
+      "payload_multicast_calls_model": 0,
+      "ready_atomic_increments_model": 0,
+      "valid_multicast_calls_model": 0,
+      "input_transport_write_barriers_model": 0,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 49152,
+      "median_of_trial_medians_ms": 10.5889,
+      "trial_medians_ms": [
+        9.524102,
+        48.898422,
+        10.5889
+      ],
+      "pooled_p95_ms": 61.351909,
+      "pooled_median_ms": 11.075285,
+      "min_ms": 8.57901,
+      "max_ms": 72.29517,
+      "sample_count": 21,
+      "independent4_median_ratio": 1.0,
+      "within_trial_independent4_ratios": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "trial_median_min_ms": 9.524102,
+      "trial_median_max_ms": 48.898422,
+      "source_reports": [
+        "32_64_128_multicore_cores4_depth2_trial1.json",
+        "32_64_128_multicore_cores4_depth2_trial2.json",
+        "32_64_128_multicore_cores4_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth1",
+      "active_cores": 4,
+      "topology": "1 rows x 4 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_matmul_calls_per_core_model": 2,
+      "read_bytes_model": 20480,
+      "write_bytes_model": 8192,
+      "receiver_data_bytes_model": 12288,
+      "payload_multicast_calls_model": 2,
+      "ready_atomic_increments_model": 6,
+      "valid_multicast_calls_model": 2,
+      "input_transport_write_barriers_model": 4,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 24576,
+      "median_of_trial_medians_ms": 12.177683,
+      "trial_medians_ms": [
+        12.497528,
+        12.177683,
+        12.040133
+      ],
+      "pooled_p95_ms": 13.157929,
+      "pooled_median_ms": 12.174865,
+      "min_ms": 10.53016,
+      "max_ms": 13.332936,
+      "sample_count": 21,
+      "independent4_median_ratio": 1.1830707040083077,
+      "within_trial_independent4_ratios": [
+        0.8065258985616995,
+        1.2837045437954002,
+        1.1965864496679561
+      ],
+      "trial_median_min_ms": 12.040133,
+      "trial_median_max_ms": 12.497528,
+      "source_reports": [
+        "32_64_128_mcast_cores4_depth1_trial1.json",
+        "32_64_128_mcast_cores4_depth1_trial2.json",
+        "32_64_128_mcast_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast_cores4_depth2",
+      "active_cores": 4,
+      "topology": "1 rows x 4 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_matmul_calls_per_core_model": 2,
+      "read_bytes_model": 20480,
+      "write_bytes_model": 8192,
+      "receiver_data_bytes_model": 12288,
+      "payload_multicast_calls_model": 2,
+      "ready_atomic_increments_model": 6,
+      "valid_multicast_calls_model": 2,
+      "input_transport_write_barriers_model": 4,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 49152,
+      "median_of_trial_medians_ms": 14.813343,
+      "trial_medians_ms": [
+        14.813343,
+        10.64247,
+        18.771358
+      ],
+      "pooled_p95_ms": 19.362424,
+      "pooled_median_ms": 14.813343,
+      "min_ms": 10.453755,
+      "max_ms": 27.44688,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.7148217657553735,
+      "within_trial_independent4_ratios": [
+        0.64294075955711,
+        4.594649738265647,
+        0.5640987721825986
+      ],
+      "trial_median_min_ms": 10.64247,
+      "trial_median_max_ms": 18.771358,
+      "source_reports": [
+        "32_64_128_mcast_cores4_depth2_trial1.json",
+        "32_64_128_mcast_cores4_depth2_trial2.json",
+        "32_64_128_mcast_cores4_depth2_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 1,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth1",
+      "active_cores": 4,
+      "topology": "1 rows x 4 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_matmul_calls_per_core_model": 2,
+      "read_bytes_model": 20480,
+      "write_bytes_model": 8192,
+      "receiver_data_bytes_model": 12288,
+      "payload_multicast_calls_model": 2,
+      "ready_atomic_increments_model": 6,
+      "valid_multicast_calls_model": 2,
+      "input_transport_write_barriers_model": 4,
+      "cb_bytes_per_core_model": 6144,
+      "cb_bytes_total_model": 24576,
+      "median_of_trial_medians_ms": 15.516105,
+      "trial_medians_ms": [
+        30.372814,
+        12.585925,
+        15.516105
+      ],
+      "pooled_p95_ms": 31.832766,
+      "pooled_median_ms": 15.516105,
+      "min_ms": 11.843207,
+      "max_ms": 53.815076,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.9285229766104316,
+      "within_trial_independent4_ratios": [
+        0.3318619078232264,
+        1.242065799692911,
+        0.9285229766104316
+      ],
+      "trial_median_min_ms": 12.585925,
+      "trial_median_max_ms": 30.372814,
+      "source_reports": [
+        "32_64_128_mcast2d_cores4_depth1_trial1.json",
+        "32_64_128_mcast2d_cores4_depth1_trial2.json",
+        "32_64_128_mcast2d_cores4_depth1_trial3.json"
+      ]
+    },
+    {
+      "shape_mkn": [
+        32,
+        64,
+        128
+      ],
+      "variant": "mcast2d",
+      "depth": 2,
+      "requested_cores": 4,
+      "mode": "mcast2d_cores4_depth2",
+      "active_cores": 4,
+      "topology": "1 rows x 4 cols, strided C",
+      "reader_placement": "RISCV_0 / NoC0",
+      "output_tiles_per_core": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_matmul_calls_per_core_model": 2,
+      "read_bytes_model": 20480,
+      "write_bytes_model": 8192,
+      "receiver_data_bytes_model": 12288,
+      "payload_multicast_calls_model": 2,
+      "ready_atomic_increments_model": 6,
+      "valid_multicast_calls_model": 2,
+      "input_transport_write_barriers_model": 4,
+      "cb_bytes_per_core_model": 12288,
+      "cb_bytes_total_model": 49152,
+      "median_of_trial_medians_ms": 18.462418,
+      "trial_medians_ms": [
+        21.542803,
+        18.462418,
+        11.981446
+      ],
+      "pooled_p95_ms": 26.225788,
+      "pooled_median_ms": 18.40688,
+      "min_ms": 11.688585,
+      "max_ms": 31.815444,
+      "sample_count": 21,
+      "independent4_median_ratio": 0.57353809235605,
+      "within_trial_independent4_ratios": [
+        0.44210133658094536,
+        2.648538344219051,
+        0.8837747964644669
+      ],
+      "trial_median_min_ms": 11.981446,
+      "trial_median_max_ms": 21.542803,
+      "source_reports": [
+        "32_64_128_mcast2d_cores4_depth2_trial1.json",
+        "32_64_128_mcast2d_cores4_depth2_trial2.json",
+        "32_64_128_mcast2d_cores4_depth2_trial3.json"
+      ]
+    }
+  ],
+  "interpretation": "Different partition/reader placement and communication; measured whole implementations, not multicast alone"
+}

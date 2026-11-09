@@ -1,0 +1,21 @@
+{
+  "date_local": "2026-10-06",
+  "timezone": "Asia/Seoul",
+  "distribution": "Ubuntu-24.04",
+  "wsl_version": 2,
+  "vhdx_path": "C:\\Users\\ysjun5656\\AppData\\Local\\wsl\\{903dd91c-8ce5-45d9-b15f-9bbfce2d29dc}\\ext4.vhdx",
+  "vhdx_file_length_bytes": 33411825664,
+  "backing_volume": "C:",
+  "volume_size_bytes": 1023000178688,
+  "volume_free_bytes_before_install": 13134454784,
+  "host_physical_memory_bytes": 8476680192,
+  "host_free_physical_memory_kib_snapshot": 1587136,
+  "host_total_visible_memory_kib": 8278008,
+  "wsl_memory_bytes": 4057583616,
+  "wsl_swap_bytes": 1073741824,
+  "minimal_install_download_mb_apt_estimate": 24.1,
+  "minimal_install_additional_disk_mb_apt_estimate": 74.8,
+  "minimal_dependency_install_resource_review": "pass",
+  "tt_metal_build_resource_review": "defer",
+  "notes": "File length is not allocated disk clusters. Host available RAM and disk space are time-varying. Registry, file metadata, Get-Volume and Win32 CIM queries were used."
+}

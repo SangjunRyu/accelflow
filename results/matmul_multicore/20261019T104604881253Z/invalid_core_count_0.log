@@ -1,0 +1,2 @@
+Multicore requests must be 1, 2, or 4
+example_exit_code=1

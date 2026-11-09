@@ -1,0 +1,24 @@
+/home/ysjun5656/.cache/tt-metal-cache/9059419178545743253/kernels/writer_blocked/12925800970514938734/brisc/brisc.elf  :
+section                       size         addr
+.device_print_strings            0    104857600
+.device_print_strings_info       0    105906176
+.tt_zone_str                     0    106954752
+.tt_zone_meta                    0    108003328
+.text                         1088        18928
+.data                            0   4289726240
+.bss                             0   4289726240
+.segments                       24            0
+.riscv.attributes               42            0
+.comment                        43            0
+.debug_aranges                  32            0
+.debug_info                  33809            0
+.debug_abbrev                 3618            0
+.debug_line                   3812            0
+.debug_frame                   100            0
+.debug_str                   34205            0
+.debug_loclists               2973            0
+.debug_rnglists                527            0
+.debug_line_str               3733            0
+Total                        84006
+
+

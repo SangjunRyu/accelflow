@@ -1,0 +1,57 @@
+{
+  "backend": "ttsim",
+  "architecture": "wormhole",
+  "operator": "matmul",
+  "tt_metal_tag": "v0.79.0",
+  "tt_metal_commit": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_tag": "v1.11.1",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "project_git_commit": null,
+  "date_utc": "2026-10-06T11:14:19.214946+00:00",
+  "os_release": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "kernel": "5.15.90.1sangjunryu20195834+",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "compiler": "Ubuntu clang version 20.1.2 (0ubuntu1~24.04.3)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm-20/bin",
+  "source_sha256": {
+    "npu/matmul/matmul.cpp": "586069d5435269f566569053a34219d801ad67b52ac98ba9a30e739ad56e7afd",
+    "npu/matmul/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "npu/matmul/CMakeLists.txt": "96bd60c8703f7a6507b41d8f0059417f6aff4c9fd4ed4c876d3c551deb219a87",
+    "npu/matmul/kernels/writer.cpp": "4e4bad0701ad91c931e5d90485e6310504f5624d08ebdeb6797b2a3006db5a09",
+    "npu/matmul/kernels/compute.cpp": "c5a27dda7b84029014a51c3a435e5609ffb8f4674e5b15743d7dbcc7d41eceea",
+    "npu/matmul/kernels/reader.cpp": "1a533b820a64ff2a98cfc4c409bc06f8ee3a66f64dd52c4763753d0ffb10a4b9",
+    "npu/vector_add/common.hpp": "103249f94ab49fc67eda78fac4b418b2aae2eb88b3329b16e71ad844b8633a05"
+  },
+  "runtime_root": "/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0",
+  "runs": [
+    {
+      "variant": "baseline",
+      "depth": 1,
+      "exit_code": 0,
+      "passed": true,
+      "report": "baseline_depth1.json"
+    },
+    {
+      "variant": "baseline",
+      "depth": 2,
+      "exit_code": 0,
+      "passed": true,
+      "report": "baseline_depth2.json"
+    },
+    {
+      "variant": "reuse_a",
+      "depth": 1,
+      "exit_code": 0,
+      "passed": true,
+      "report": "reuse_a_depth1.json"
+    },
+    {
+      "variant": "reuse_a",
+      "depth": 2,
+      "exit_code": 0,
+      "passed": true,
+      "report": "reuse_a_depth2.json"
+    }
+  ],
+  "measurement_policy": "No simulator timing used as NPU performance",
+  "passed": true
+}

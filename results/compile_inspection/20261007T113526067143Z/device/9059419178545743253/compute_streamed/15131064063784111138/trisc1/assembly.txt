@@ -1,0 +1,749 @@
+
+/home/ysjun5656/.cache/tt-metal-cache/9059419178545743253/kernels/compute_streamed/15131064063784111138/trisc1/trisc1.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00006880 <_start>:
+    6880:	fd010113          	addi	sp,sp,-48
+    6884:	02112623          	sw	ra,44(sp)
+    6888:	02812423          	sw	s0,40(sp)
+    688c:	02912223          	sw	s1,36(sp)
+    6890:	03212023          	sw	s2,32(sp)
+    6894:	01312e23          	sw	s3,28(sp)
+    6898:	01412c23          	sw	s4,24(sp)
+    689c:	01512a23          	sw	s5,20(sp)
+    68a0:	01612823          	sw	s6,16(sp)
+    68a4:	01712623          	sw	s7,12(sp)
+    68a8:	01812423          	sw	s8,8(sp)
+
+000068ac <.LBB412>:
+    68ac:	ffb007b7          	lui	a5,0xffb00
+
+000068b0 <.LM21>:
+    68b0:	03c78793          	addi	a5,a5,60 # ffb0003c <__stack_base+0xc>
+
+000068b4 <.LM22>:
+    68b4:	83c18713          	addi	a4,gp,-1988 # ffb0002c <__ldm_bss_end>
+    68b8:	00f76e63          	bltu	a4,a5,68d4 <.L4>
+
+000068bc <.L5>:
+    68bc:	fe07ae23          	sw	zero,-4(a5)
+
+000068c0 <.LM24>:
+    68c0:	fe07ac23          	sw	zero,-8(a5)
+
+000068c4 <.LM25>:
+    68c4:	fe07aa23          	sw	zero,-12(a5)
+
+000068c8 <.LM26>:
+    68c8:	fe07a823          	sw	zero,-16(a5)
+
+000068cc <.LM27>:
+    68cc:	01078793          	addi	a5,a5,16
+
+000068d0 <.LM28>:
+    68d0:	fef776e3          	bgeu	a4,a5,68bc <.L5>
+
+000068d4 <.L4>:
+    68d4:	ff878693          	addi	a3,a5,-8
+
+000068d8 <.LM30>:
+    68d8:	42d76c63          	bltu	a4,a3,6d10 <.L45>
+
+000068dc <.LM31>:
+    68dc:	fe07aa23          	sw	zero,-12(a5)
+
+000068e0 <.LM32>:
+    68e0:	fe07a823          	sw	zero,-16(a5)
+
+000068e4 <.L6>:
+    68e4:	ffc78693          	addi	a3,a5,-4
+
+000068e8 <.LM34>:
+    68e8:	00d76463          	bltu	a4,a3,68f0 <.L7>
+
+000068ec <.LM35>:
+    68ec:	fe07ac23          	sw	zero,-8(a5)
+
+000068f0 <.L7>:
+    68f0:	00007737          	lui	a4,0x7
+    68f4:	d4070713          	addi	a4,a4,-704 # 6d40 <__kernel_data_lma>
+    68f8:	83018793          	addi	a5,gp,-2000 # ffb00020 <ckernel::math::src_zero_flag_srcb_fmt>
+    68fc:	06f70263          	beq	a4,a5,6960 <.L9>
+
+00006900 <.LBB417>:
+    6900:	ffb00637          	lui	a2,0xffb00
+    6904:	02c60613          	addi	a2,a2,44 # ffb0002c <__ldm_bss_end>
+    6908:	40f60633          	sub	a2,a2,a5
+
+0000690c <.LBB420>:
+    690c:	00800593          	li	a1,8
+
+00006910 <.LBB424>:
+    6910:	40265693          	srai	a3,a2,0x2
+
+00006914 <.LBB425>:
+    6914:	02c5d863          	bge	a1,a2,6944 <.L10>
+    6918:	00200813          	li	a6,2
+
+0000691c <.L11>:
+    691c:	00072503          	lw	a0,0(a4)
+    6920:	00472583          	lw	a1,4(a4)
+    6924:	00872603          	lw	a2,8(a4)
+
+00006928 <.LM44>:
+    6928:	00c70713          	addi	a4,a4,12
+    692c:	00c78793          	addi	a5,a5,12
+    6930:	ffd68693          	addi	a3,a3,-3
+
+00006934 <.LM45>:
+    6934:	fea7aa23          	sw	a0,-12(a5)
+    6938:	feb7ac23          	sw	a1,-8(a5)
+    693c:	fec7ae23          	sw	a2,-4(a5)
+
+00006940 <.LBE422>:
+    6940:	fcd84ee3          	blt	a6,a3,691c <.L11>
+
+00006944 <.L10>:
+    6944:	00d05e63          	blez	a3,6960 <.L9>
+
+00006948 <.LM48>:
+    6948:	00072583          	lw	a1,0(a4)
+
+0000694c <.LM49>:
+    694c:	00200613          	li	a2,2
+
+00006950 <.LM50>:
+    6950:	00b7a023          	sw	a1,0(a5)
+
+00006954 <.LM51>:
+    6954:	00c69663          	bne	a3,a2,6960 <.L9>
+
+00006958 <.LM52>:
+    6958:	00472703          	lw	a4,4(a4)
+    695c:	00e7a223          	sw	a4,4(a5)
+
+00006960 <.L9>:
+    6960:	4d002783          	lw	a5,1232(zero) # 4d0 <.LVUS120>
+
+00006964 <.LM59>:
+    6964:	08000693          	li	a3,128
+
+00006968 <.LM61>:
+    6968:	00279793          	slli	a5,a5,0x2
+
+0000696c <.LM62>:
+    696c:	4a078793          	addi	a5,a5,1184
+
+00006970 <.L13>:
+    6970:	0037c703          	lbu	a4,3(a5)
+
+00006974 <.LM65>:
+    6974:	fed71ee3          	bne	a4,a3,6970 <.L13>
+
+00006978 <.LBB430>:
+    6978:	c8240002          	ttsetc16	9,0
+
+0000697c <.LM79>:
+    697c:	c8600002          	ttsetc16	24,0
+
+00006980 <.LM81>:
+    6980:	c8c40002          	ttsetc16	49,0
+
+00006984 <.LBE433>:
+    6984:	40620000          	ttzeroacc	3,1,0
+
+00006988 <.LBB435>:
+    6988:	8201a683          	lw	a3,-2016(gp) # ffb00010 <rta_l1_base>
+
+0000698c <.LBB442>:
+    698c:	ffe80737          	lui	a4,0xffe80
+
+00006990 <.LBB489>:
+    6990:	0006ab03          	lw	s6,0(a3)
+
+00006994 <.LBB490>:
+    6994:	0046a903          	lw	s2,4(a3)
+
+00006998 <.LBB492>:
+    6998:	0086a983          	lw	s3,8(a3)
+
+0000699c <.LBB494>:
+    699c:	00c6a483          	lw	s1,12(a3)
+
+000069a0 <.LBB452>:
+    69a0:	00000793          	li	a5,0
+    69a4:	00470693          	addi	a3,a4,4 # ffe80004 <__instrn_buffer+0x40004>
+    69a8:	00f6a023          	sw	a5,0(a3)
+    69ac:	0006a783          	lw	a5,0(a3)
+    69b0:	0007f793          	andi	a5,a5,0
+
+000069b4 <.L14>:
+    69b4:	02472783          	lw	a5,36(a4)
+
+000069b8 <.LBE455>:
+    69b8:	0ff7f793          	zext.b	a5,a5
+    69bc:	fe079ce3          	bnez	a5,69b4 <.L14>
+
+000069c0 <.LM128>:
+    69c0:	8c800022          	ttseminit	2,0,2
+
+000069c4 <.LBB457>:
+    69c4:	8001a823          	sw	zero,-2032(gp) # ffb00000 <ckernel::dest_offset_id>
+
+000069c8 <.LBB459>:
+    69c8:	c8040002          	ttsetc16	1,0
+
+000069cc <.LBB464>:
+    69cc:	89010202          	ttstallwait	128,16512
+
+000069d0 <.LBB468>:
+    69d0:	ffe40437          	lui	s0,0xffe40
+    69d4:	b5feb7b7          	lui	a5,0xb5feb
+    69d8:	00040413          	mv	s0,s0
+    69dc:	a0178793          	addi	a5,a5,-1535 # b5feaa01 <__tt_zone_meta_end+0xaf8eaa01>
+    69e0:	00f42023          	sw	a5,0(s0) # ffe40000 <__instrn_buffer>
+
+000069e4 <.LBB471>:
+    69e4:	b68107b7          	lui	a5,0xb6810
+    69e8:	00178793          	addi	a5,a5,1 # b6810001 <__tt_zone_meta_end+0xb0110001>
+    69ec:	00f42023          	sw	a5,0(s0)
+
+000069f0 <.LBB472>:
+    69f0:	b3ff07b7          	lui	a5,0xb3ff0
+    69f4:	00f42023          	sw	a5,0(s0)
+
+000069f8 <.LBB475>:
+    69f8:	b40307b7          	lui	a5,0xb4030
+    69fc:	00f42023          	sw	a5,0(s0)
+
+00006a00 <.LBB476>:
+    6a00:	b62027b7          	lui	a5,0xb6202
+    6a04:	00178793          	addi	a5,a5,1 # b6202001 <__tt_zone_meta_end+0xafb02001>
+    6a08:	00f42023          	sw	a5,0(s0)
+
+00006a0c <.LBB479>:
+    6a0c:	b64047b7          	lui	a5,0xb6404
+    6a10:	00178793          	addi	a5,a5,1 # b6404001 <__tt_zone_meta_end+0xafd04001>
+    6a14:	00f42023          	sw	a5,0(s0)
+
+00006a18 <.LBB482>:
+    6a18:	00500793          	li	a5,5
+
+00006a1c <.LBB486>:
+    6a1c:	8381a703          	lw	a4,-1992(gp) # ffb00028 <ckernel::math::src_zero_flag_hw>
+
+00006a20 <.LBE486>:
+    6a20:	82f1aa23          	sw	a5,-1996(gp) # ffb00024 <ckernel::math::src_zero_flag_srca_fmt>
+
+00006a24 <.LM154>:
+    6a24:	82f1a823          	sw	a5,-2000(gp) # ffb00020 <ckernel::math::src_zero_flag_srcb_fmt>
+
+00006a28 <.LBB487>:
+    6a28:	00070663          	beqz	a4,6a34 <.L15>
+
+00006a2c <.LM158>:
+    6a2c:	00000513          	li	a0,0
+    6a30:	2e8000ef          	jal	6d18 <ckernel::math::_apply_src_zero_flag_(unsigned long)>
+
+00006a34 <.L15>:
+    6a34:	c81c2002          	ttsetc16	7,2048
+
+00006a38 <.LM170>:
+    6a38:	c85c0022          	ttsetc16	23,8
+
+00006a3c <.LM171>:
+    6a3c:	c8c00002          	ttsetc16	48,0
+
+00006a40 <.LBB506>:
+    6a40:	c8342002          	ttsetc16	13,2048
+
+00006a44 <.LM174>:
+    6a44:	c8680022          	ttsetc16	26,8
+
+00006a48 <.LM175>:
+    6a48:	c8cc0006          	ttsetc16	51,1
+
+00006a4c <.LBB508>:
+    6a4c:	c8470302          	ttsetc16	17,49344
+
+00006a50 <.LM178>:
+    6a50:	c870b002          	ttsetc16	28,11264
+
+00006a54 <.LM179>:
+    6a54:	c8d40006          	ttsetc16	53,1
+
+00006a58 <.LBB510>:
+    6a58:	c8250042          	ttsetc16	9,16400
+
+00006a5c <.LM182>:
+    6a5c:	c8600022          	ttsetc16	24,8
+
+00006a60 <.LM183>:
+    6a60:	c8c40002          	ttsetc16	49,0
+
+00006a64 <.LBB512>:
+    6a64:	c82d8102          	ttsetc16	11,24640
+
+00006a68 <.LM186>:
+    6a68:	c8640022          	ttsetc16	25,8
+
+00006a6c <.LM187>:
+    6a6c:	c8c80002          	ttsetc16	50,0
+
+00006a70 <.LBB514>:
+    6a70:	c83dc182          	ttsetc16	15,28768
+
+00006a74 <.LM191>:
+    6a74:	c86c1002          	ttsetc16	27,1024
+
+00006a78 <.LM192>:
+    6a78:	c8d00006          	ttsetc16	52,1
+
+00006a7c <.LBE502>:
+    6a7c:	c8140002          	ttsetc16	5,0
+
+00006a80 <.LBB518>:
+    6a80:	10100404          	ttreplay	16,16,0,1
+
+00006a84 <.LBE520>:
+    6a84:	98000000          	ttmvmul	0,0,0,0
+
+00006a88 <.LM199>:
+    6a88:	98020000          	ttmvmul	0,0,1,0
+
+00006a8c <.LM200>:
+    6a8c:	98000000          	ttmvmul	0,0,0,0
+
+00006a90 <.LM201>:
+    6a90:	98040000          	ttmvmul	0,0,2,0
+
+00006a94 <.LM202>:
+    6a94:	98000000          	ttmvmul	0,0,0,0
+
+00006a98 <.LM203>:
+    6a98:	98020000          	ttmvmul	0,0,1,0
+
+00006a9c <.LM204>:
+    6a9c:	98060000          	ttmvmul	0,0,3,0
+
+00006aa0 <.LM205>:
+    6aa0:	98000000          	ttmvmul	0,0,0,0
+
+00006aa4 <.LM206>:
+    6aa4:	98000000          	ttmvmul	0,0,0,0
+
+00006aa8 <.LM207>:
+    6aa8:	98020000          	ttmvmul	0,0,1,0
+
+00006aac <.LM208>:
+    6aac:	98000000          	ttmvmul	0,0,0,0
+
+00006ab0 <.LM209>:
+    6ab0:	98040000          	ttmvmul	0,0,2,0
+
+00006ab4 <.LM210>:
+    6ab4:	98000000          	ttmvmul	0,0,0,0
+
+00006ab8 <.LM211>:
+    6ab8:	98020000          	ttmvmul	0,0,1,0
+
+00006abc <.LM212>:
+    6abc:	98060000          	ttmvmul	0,0,3,0
+
+00006ac0 <.LM213>:
+    6ac0:	98020000          	ttmvmul	0,0,1,0
+
+00006ac4 <.LBB522>:
+    6ac4:	ffe80737          	lui	a4,0xffe80
+    6ac8:	00000793          	li	a5,0
+    6acc:	00870713          	addi	a4,a4,8 # ffe80008 <__instrn_buffer+0x40008>
+    6ad0:	00f72023          	sw	a5,0(a4)
+    6ad4:	00072783          	lw	a5,0(a4)
+    6ad8:	0007f793          	andi	a5,a5,0
+
+00006adc <.LBE524>:
+    6adc:	ffb807b7          	lui	a5,0xffb80
+    6ae0:	00100713          	li	a4,1
+    6ae4:	00e7a023          	sw	a4,0(a5) # ffb80000 <__global_pointer$+0x7f810>
+
+00006ae8 <.LM224>:
+    6ae8:	00400713          	li	a4,4
+    6aec:	00e7a223          	sw	a4,4(a5)
+
+00006af0 <.LM226>:
+    6af0:	020006b7          	lui	a3,0x2000
+
+00006af4 <.LM228>:
+    6af4:	37400737          	lui	a4,0x37400
+
+00006af8 <.LM229>:
+    6af8:	00d7a423          	sw	a3,8(a5)
+
+00006afc <.LM230>:
+    6afc:	00f70713          	addi	a4,a4,15 # 3740000f <__tt_zone_meta_end+0x30d0000f>
+    6b00:	00e7a623          	sw	a4,12(a5)
+
+00006b04 <.LM232>:
+    6b04:	04040737          	lui	a4,0x4040
+
+00006b08 <.LM234>:
+    6b08:	00d7a823          	sw	a3,16(a5)
+
+00006b0c <.LM235>:
+    6b0c:	10070713          	addi	a4,a4,256 # 4040100 <.LASF998+0x40367c3>
+    6b10:	00e7aa23          	sw	a4,20(a5)
+
+00006b14 <.LM237>:
+    6b14:	00d7ac23          	sw	a3,24(a5)
+
+00006b18 <.LM239>:
+    6b18:	00e7ae23          	sw	a4,28(a5)
+
+00006b1c <.LM241>:
+    6b1c:	02e7a023          	sw	a4,32(a5)
+
+00006b20 <.LBB527>:
+    6b20:	dc00003c          	ttsetrwc	0,0,0,0,0,15
+
+00006b24 <.LBB529>:
+    6b24:	8341a503          	lw	a0,-1996(gp) # ffb00024 <ckernel::math::src_zero_flag_srca_fmt>
+
+00006b28 <.LM251>:
+    6b28:	8301a783          	lw	a5,-2000(gp) # ffb00020 <ckernel::math::src_zero_flag_srcb_fmt>
+
+00006b2c <.LM252>:
+    6b2c:	ff750513          	addi	a0,a0,-9
+
+00006b30 <.LM253>:
+    6b30:	ff778793          	addi	a5,a5,-9
+
+00006b34 <.LM254>:
+    6b34:	00153513          	seqz	a0,a0
+
+00006b38 <.LM255>:
+    6b38:	0017b793          	seqz	a5,a5
+
+00006b3c <.LBE531>:
+    6b3c:	8381a703          	lw	a4,-1992(gp) # ffb00028 <ckernel::math::src_zero_flag_hw>
+
+00006b40 <.LM257>:
+    6b40:	00f56533          	or	a0,a0,a5
+
+00006b44 <.LM258>:
+    6b44:	00e50463          	beq	a0,a4,6b4c <.L16>
+
+00006b48 <.LM259>:
+    6b48:	1d0000ef          	jal	6d18 <ckernel::math::_apply_src_zero_flag_(unsigned long)>
+
+00006b4c <.L16>:
+    6b4c:	020b0463          	beqz	s6,6b74 <.L41>
+    6b50:	8101ae83          	lw	t4,-2032(gp) # ffb00000 <ckernel::dest_offset_id>
+    6b54:	00000c13          	li	s8,0
+
+00006b58 <.LBB534>:
+    6b58:	00100793          	li	a5,1
+
+00006b5c <.L39>:
+    6b5c:	418b0533          	sub	a0,s6,s8
+
+00006b60 <.LBB718>:
+    6b60:	00f50463          	beq	a0,a5,6b68 <.L17>
+
+00006b64 <.LM269>:
+    6b64:	00200513          	li	a0,2
+
+00006b68 <.L17>:
+    6b68:	04099063          	bnez	s3,6ba8 <.L72>
+
+00006b6c <.LBE716>:
+    6b6c:	002c0c13          	addi	s8,s8,2
+
+00006b70 <.LM272>:
+    6b70:	ff6c66e3          	bltu	s8,s6,6b5c <.L39>
+
+00006b74 <.L41>:
+    6b74:	02c12083          	lw	ra,44(sp)
+    6b78:	02812403          	lw	s0,40(sp)
+    6b7c:	02412483          	lw	s1,36(sp)
+
+00006b80 <.LM279>:
+    6b80:	02012903          	lw	s2,32(sp)
+
+00006b84 <.LM280>:
+    6b84:	01c12983          	lw	s3,28(sp)
+
+00006b88 <.LM281>:
+    6b88:	01812a03          	lw	s4,24(sp)
+    6b8c:	01412a83          	lw	s5,20(sp)
+    6b90:	01012b03          	lw	s6,16(sp)
+
+00006b94 <.LM282>:
+    6b94:	00c12b83          	lw	s7,12(sp)
+    6b98:	00812c03          	lw	s8,8(sp)
+    6b9c:	00000513          	li	a0,0
+    6ba0:	03010113          	addi	sp,sp,48
+    6ba4:	00008067          	ret
+
+00006ba8 <.L72>:
+    6ba8:	b20102b7          	lui	t0,0xb2010
+    6bac:	01912223          	sw	s9,4(sp)
+    6bb0:	01a12023          	sw	s10,0(sp)
+
+00006bb4 <.LBB536>:
+    6bb4:	04028a93          	addi	s5,t0,64 # b2010040 <__tt_zone_meta_end+0xab910040>
+    6bb8:	08028393          	addi	t2,t0,128
+    6bbc:	0c028a13          	addi	s4,t0,192
+
+00006bc0 <.LBE537>:
+    6bc0:	00100f93          	li	t6,1
+
+00006bc4 <.LM286>:
+    6bc4:	00200613          	li	a2,2
+
+00006bc8 <.L18>:
+    6bc8:	00000f13          	li	t5,0
+
+00006bcc <.L22>:
+    6bcc:	41e98cb3          	sub	s9,s3,t5
+
+00006bd0 <.LM290>:
+    6bd0:	01fc8463          	beq	s9,t6,6bd8 <.L20>
+
+00006bd4 <.LM291>:
+    6bd4:	00200c93          	li	s9,2
+
+00006bd8 <.L20>:
+    6bd8:	9a84002a          	ttsemwait	322,2,2
+
+00006bdc <.LBB550>:
+    6bdc:	01d03d33          	snez	s10,t4
+    6be0:	009d1d13          	slli	s10,s10,0x9
+    6be4:	005d06b3          	add	a3,s10,t0
+
+00006be8 <.LBE550>:
+    6be8:	015d0e33          	add	t3,s10,s5
+    6bec:	007d08b3          	add	a7,s10,t2
+    6bf0:	014d0833          	add	a6,s10,s4
+
+00006bf4 <.LBE561>:
+    6bf4:	00000593          	li	a1,0
+
+00006bf8 <.LM307>:
+    6bf8:	06090e63          	beqz	s2,6c74 <.L36>
+
+00006bfc <.L35>:
+    6bfc:	40b90733          	sub	a4,s2,a1
+
+00006c00 <.LM310>:
+    6c00:	00e4f463          	bgeu	s1,a4,6c08 <.L24>
+    6c04:	00048713          	mv	a4,s1
+
+00006c08 <.L24>:
+    6c08:	06070263          	beqz	a4,6c6c <.L25>
+
+00006c0c <.LBB562>:
+    6c0c:	00d42023          	sw	a3,0(s0)
+
+00006c10 <.LBB563>:
+    6c10:	06000000          	ttmop	1,0,0
+
+00006c14 <.LBE563>:
+    6c14:	de00001c          	ttsetrwc	2,0,0,0,0,7
+
+00006c18 <.LBE585>:
+    6c18:	00000793          	li	a5,0
+
+00006c1c <.LBB571>:
+    6c1c:	007d0333          	add	t1,s10,t2
+
+00006c20 <.LBE571>:
+    6c20:	02cc8a63          	beq	s9,a2,6c54 <.L26>
+    6c24:	0840006f          	j	6ca8 <.L27>
+
+00006c28 <.L33>:
+    6c28:	01142023          	sw	a7,0(s0)
+
+00006c2c <.LBB573>:
+    6c2c:	06000000          	ttmop	1,0,0
+
+00006c30 <.LBE573>:
+    6c30:	de00001c          	ttsetrwc	2,0,0,0,0,7
+
+00006c34 <.LBB574>:
+    6c34:	01042023          	sw	a6,0(s0)
+
+00006c38 <.LBB575>:
+    6c38:	06000000          	ttmop	1,0,0
+
+00006c3c <.LBE575>:
+    6c3c:	de00001c          	ttsetrwc	2,0,0,0,0,7
+
+00006c40 <.LBE588>:
+    6c40:	00178793          	addi	a5,a5,1
+
+00006c44 <.LBB648>:
+    6c44:	02e78463          	beq	a5,a4,6c6c <.L25>
+
+00006c48 <.L70>:
+    6c48:	00d42023          	sw	a3,0(s0)
+
+00006c4c <.LBB577>:
+    6c4c:	06000000          	ttmop	1,0,0
+
+00006c50 <.LBE577>:
+    6c50:	de00001c          	ttsetrwc	2,0,0,0,0,7
+
+00006c54 <.L26>:
+    6c54:	01c42023          	sw	t3,0(s0)
+
+00006c58 <.LBB579>:
+    6c58:	06000000          	ttmop	1,0,0
+
+00006c5c <.LBE579>:
+    6c5c:	de00001c          	ttsetrwc	2,0,0,0,0,7
+
+00006c60 <.LBB651>:
+    6c60:	fcc504e3          	beq	a0,a2,6c28 <.L33>
+
+00006c64 <.LBE673>:
+    6c64:	00178793          	addi	a5,a5,1
+
+00006c68 <.LBB652>:
+    6c68:	fee790e3          	bne	a5,a4,6c48 <.L70>
+
+00006c6c <.L25>:
+    6c6c:	009585b3          	add	a1,a1,s1
+
+00006c70 <.LM417>:
+    6c70:	f925e6e3          	bltu	a1,s2,6bfc <.L35>
+
+00006c74 <.L36>:
+    6c74:	88050202          	ttstallwait	2,16512
+
+00006c78 <.LM427>:
+    6c78:	90000022          	ttsempost	2
+
+00006c7c <.LBB698>:
+    6c7c:	41df8733          	sub	a4,t6,t4
+
+00006c80 <.LBB703>:
+    6c80:	89010202          	ttstallwait	128,16512
+
+00006c84 <.LBB706>:
+    6c84:	fffe8793          	addi	a5,t4,-1
+    6c88:	00f037b3          	snez	a5,a5
+    6c8c:	00979793          	slli	a5,a5,0x9
+
+00006c90 <.LBE706>:
+    6c90:	005787b3          	add	a5,a5,t0
+    6c94:	00f42023          	sw	a5,0(s0)
+
+00006c98 <.LBE692>:
+    6c98:	002f0f13          	addi	t5,t5,2
+
+00006c9c <.LM447>:
+    6c9c:	053f7463          	bgeu	t5,s3,6ce4 <.L73>
+
+00006ca0 <.LBB707>:
+    6ca0:	00070e93          	mv	t4,a4
+
+00006ca4 <.LM449>:
+    6ca4:	f29ff06f          	j	6bcc <.L22>
+
+00006ca8 <.L27>:
+    6ca8:	02c51463          	bne	a0,a2,6cd0 <.L31>
+
+00006cac <.L74>:
+    6cac:	00642023          	sw	t1,0(s0)
+
+00006cb0 <.LBB581>:
+    6cb0:	06000000          	ttmop	1,0,0
+
+00006cb4 <.LBE581>:
+    6cb4:	de00001c          	ttsetrwc	2,0,0,0,0,7
+
+00006cb8 <.LBE591>:
+    6cb8:	00178793          	addi	a5,a5,1
+
+00006cbc <.LBB655>:
+    6cbc:	fae788e3          	beq	a5,a4,6c6c <.L25>
+
+00006cc0 <.L69>:
+    6cc0:	00d42023          	sw	a3,0(s0)
+
+00006cc4 <.LBB583>:
+    6cc4:	06000000          	ttmop	1,0,0
+
+00006cc8 <.LBE583>:
+    6cc8:	de00001c          	ttsetrwc	2,0,0,0,0,7
+
+00006ccc <.LBB657>:
+    6ccc:	fec500e3          	beq	a0,a2,6cac <.L74>
+
+00006cd0 <.L31>:
+    6cd0:	00178793          	addi	a5,a5,1
+
+00006cd4 <.LBB658>:
+    6cd4:	fef716e3          	bne	a4,a5,6cc0 <.L69>
+
+00006cd8 <.LBE682>:
+    6cd8:	009585b3          	add	a1,a1,s1
+
+00006cdc <.LM523>:
+    6cdc:	f325e0e3          	bltu	a1,s2,6bfc <.L35>
+    6ce0:	f95ff06f          	j	6c74 <.L36>
+
+00006ce4 <.L73>:
+    6ce4:	002c0c13          	addi	s8,s8,2
+
+00006ce8 <.LM527>:
+    6ce8:	016c7c63          	bgeu	s8,s6,6d00 <.L40>
+
+00006cec <.LBB720>:
+    6cec:	418b0533          	sub	a0,s6,s8
+
+00006cf0 <.LM529>:
+    6cf0:	01f50463          	beq	a0,t6,6cf8 <.L38>
+
+00006cf4 <.LM530>:
+    6cf4:	00200513          	li	a0,2
+
+00006cf8 <.L38>:
+    6cf8:	00070e93          	mv	t4,a4
+
+00006cfc <.LM532>:
+    6cfc:	ecdff06f          	j	6bc8 <.L18>
+
+00006d00 <.L40>:
+    6d00:	00412c83          	lw	s9,4(sp)
+
+00006d04 <.LM534>:
+    6d04:	00012d03          	lw	s10,0(sp)
+    6d08:	80e1a823          	sw	a4,-2032(gp) # ffb00000 <ckernel::dest_offset_id>
+    6d0c:	e69ff06f          	j	6b74 <.L41>
+
+00006d10 <.L45>:
+    6d10:	00068793          	mv	a5,a3
+    6d14:	bd1ff06f          	j	68e4 <.L6>
+
+00006d18 <ckernel::math::_apply_src_zero_flag_(unsigned long)>:
+    6d18:	82a1ac23          	sw	a0,-1992(gp) # ffb00028 <ckernel::math::src_zero_flag_hw>
+
+00006d1c <.LM4>:
+    6d1c:	89010202          	ttstallwait	128,16512
+
+00006d20 <.LBB2>:
+    6d20:	b30107b7          	lui	a5,0xb3010
+    6d24:	00278713          	addi	a4,a5,2 # b3010002 <__tt_zone_meta_end+0xac910002>
+    6d28:	00851513          	slli	a0,a0,0x8
+
+00006d2c <.LM8>:
+    6d2c:	ffe407b7          	lui	a5,0xffe40
+    6d30:	00e50533          	add	a0,a0,a4
+    6d34:	00078793          	mv	a5,a5
+    6d38:	00a7a023          	sw	a0,0(a5) # ffe40000 <__instrn_buffer>
+
+00006d3c <.LBE2>:
+    6d3c:	00008067          	ret

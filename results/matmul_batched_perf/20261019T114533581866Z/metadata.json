@@ -1,0 +1,658 @@
+{
+  "tt_metal_revision": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "samples": 5,
+  "trials": 3,
+  "warmups": 2,
+  "measurement": "host EnqueueMeshWorkload + Finish; not chip latency",
+  "meminfo_before": "MemTotal:        3962484 kB\nMemFree:         3080868 kB\nMemAvailable:    3383992 kB\nBuffers:           28060 kB\nCached:           460708 kB\nSwapCached:            0 kB\nActive:           260016 kB\nInactive:         317940 kB\nActive(anon):       3316 kB\nInactive(anon):    90124 kB\nActive(file):     256700 kB\nInactive(file):   227816 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1048576 kB\nDirty:                28 kB\nWriteback:             0 kB\nAnonPages:         89424 kB\nMapped:           122080 kB\nShmem:              4244 kB\nKReclaimable:      36836 kB\nSlab:              76004 kB\nSReclaimable:      36836 kB\nSUnreclaim:        39168 kB\nKernelStack:        3432 kB\nPageTables:         2660 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:     556488 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        6376 kB\nVmallocChunk:          0 kB\nPercpu:             3424 kB\nAnonHugePages:     24576 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      113664 kB\nDirectMap2M:     4022272 kB\nDirectMap1G:     8388608 kB\n",
+  "source_sha256": {
+    "npu/matmul/matmul.cpp": "96ab5b42a83454bbb9cfa41723eee6817de4afcc69896836dfed36c23081e8da",
+    "npu/matmul/kernels/reader_mcast.cpp": "202044db641ea105151f09af7d74426bfabf9d88d1e5277a2eeacae4e08f4c3b",
+    "npu/matmul/kernels/writer_blocked.cpp": "5a0d07dbc9e65fccbf1130c5d8f0f69e365ca0fb2f67063bf5a7aa093f5f7e0c",
+    "npu/matmul/kernels/reader_mcast2d.cpp": "9f675a05c53f34ba5567d2175f3e635e345dddf0063ff8c3ec398f39fc43abaf",
+    "npu/matmul/kernels/writer.cpp": "3ff4232fd0f2e7342549900ec0ed0bb047d228f00a5e545abd0c3517a71776c3",
+    "npu/matmul/kernels/writer_mcast2d.cpp": "7e00b8600d33968489945afebd566e5a0e20889e8b60f74b40c6d9360ded0b54",
+    "npu/matmul/kernels/reader_streamed.cpp": "1ae07ffc56a8953354a4e288d518b898dfbdb86ee13c6b1087d0a9f8971b84b6",
+    "npu/matmul/kernels/reader_multicore.cpp": "444efa4cbc92135992fd7c25d31aa93c4f24ef5fa667ebd8c354fc0e97796588",
+    "npu/matmul/kernels/compute_mcast2d_batched.cpp": "ccc97e97785d8c3a5ee0ee95bbbbad0d903c04517a93c31115540a4b1907be17",
+    "npu/matmul/kernels/compute_multicore.cpp": "3478d3c06ed2ee0800e8dff3b0aab63fc99b95eddec759bee82571a4c4f22158",
+    "npu/matmul/kernels/writer_mcast.cpp": "ddc7c697269d43286a00bd321dd3c193ff1bf38da9363cc0abcae80ad7e8d0ef",
+    "npu/matmul/kernels/compute_blocked.cpp": "80dfa9cba9a361f319b82c6d2d388e7572ea7998246a443d545eb68703e66908",
+    "npu/matmul/kernels/reader_mcast2d_batched.cpp": "c73cf3dddd26c04e8122b96260845d897b5c3e08c760fdfb0f96e9acb8c57f19",
+    "npu/matmul/kernels/compute_mcast.cpp": "5846eab77d7e540c5f6b2cca60b4e45d396ed99d34da67386d72ac01663f7ba4",
+    "npu/matmul/kernels/compute_streamed.cpp": "c9f057a6d67324dccc5da8ae904bfb6fc069a81ab51448c265ec04c5c5bd389f",
+    "npu/matmul/kernels/compute.cpp": "50aeed704fa9f95fce95a76bc3e92d0e6b0003a7c064c853bd7274fd84b73438",
+    "npu/matmul/kernels/reader_blocked.cpp": "1e97e70c12250f54c02d9eb5aa5d5562fa960a1cc11523d3be6246b20cacd252",
+    "npu/matmul/kernels/reader.cpp": "a1309a1ea8c16b4d6ca9f828049fd72edf21622ceee9abbcf008e1802416a66e",
+    "npu/matmul/kernels/compute_mcast2d.cpp": "9017c73e1db56d67e471ea44e7209ee3491b5253c4536fd0b1d250629a7bc55f",
+    "npu/matmul/kernels/writer_multicore.cpp": "197ab7244694adab382e313cd389181448e85bb7b2367fbcbebe5415339fc158",
+    "npu/matmul/mcast2d.hpp": "9734b9e141c504aa14a588298241105ddca26ea147f5e71640cee8845eeb9875",
+    "npu/matmul/multicore.hpp": "c39b49db9e193b5fd08c88a4cc3bde6a9e45ef2f185858e3e27d1198dd870e4d",
+    "npu/matmul/benchmark.hpp": "2258dc8de4bbd30275e89a9a3dc93cc92ce51a19942022589ee93c469aa0fd12",
+    "npu/matmul/mcast.hpp": "46b56f82f51d2a48569f834f2384268752b9e6c880b7cdf8e5b6367b6eebfc1c",
+    "tools/report/benchmark_batched_matmul.py": "c48674d41e33326a5d7855bfec4fe055904c686b74a16547f6e18231e6f2a923",
+    "tools/report/build_matmul.py": "9cd2342f2696cbec222ef9176cffd8cfa535f351894386ffa3ca8bbea9911ba7",
+    "npu/vector_add/common.hpp": "695681e02c9fa7dd8441067460df4e4c566da3f11392402bb4ecf984fe9c2df2"
+  },
+  "runs": [
+    {
+      "label": "correctness_b1_d1_p4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/correctness_b1_d1_p4.json",
+        "mcast2d_batch1",
+        "1",
+        "4"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "correctness_b1_d2_p4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/correctness_b1_d2_p4.json",
+        "mcast2d_batch1",
+        "2",
+        "4"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "correctness_b4_d1_p4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/correctness_b4_d1_p4.json",
+        "mcast2d_batch4",
+        "1",
+        "4"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "correctness_b4_d2_p4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/correctness_b4_d2_p4.json",
+        "mcast2d_batch4",
+        "2",
+        "4"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "correctness_b8_d1_p4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/correctness_b8_d1_p4.json",
+        "mcast2d_batch8",
+        "1",
+        "4"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "correctness_b8_d2_p4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/correctness_b8_d2_p4.json",
+        "mcast2d_batch8",
+        "2",
+        "4"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "correctness_b8_d1_p1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/correctness_b8_d1_p1.json",
+        "mcast2d_batch8",
+        "1",
+        "1"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "correctness_b8_d2_p1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/correctness_b8_d2_p1.json",
+        "mcast2d_batch8",
+        "2",
+        "1"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "correctness_b8_d1_p2",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/correctness_b8_d1_p2.json",
+        "mcast2d_batch8",
+        "1",
+        "2"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "correctness_b8_d2_p2",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/correctness_b8_d2_p2.json",
+        "mcast2d_batch8",
+        "2",
+        "2"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial1_320x320x320_multicore",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial1_320x320x320_multicore.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial1_640x320x640_multicore",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial1_640x320x640_multicore.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial1_320x320x320_mcast2d",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial1_320x320x320_mcast2d.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial1_320x320x320_mcast2d_batch1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial1_320x320x320_mcast2d_batch1.json",
+        "mcast2d_batch1",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial1_640x320x640_mcast2d_batch4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial1_640x320x640_mcast2d_batch4.json",
+        "mcast2d_batch4",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial1_320x320x320_mcast2d_batch4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial1_320x320x320_mcast2d_batch4.json",
+        "mcast2d_batch4",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial1_640x320x640_mcast",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial1_640x320x640_mcast.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial1_640x320x640_mcast2d_batch8",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial1_640x320x640_mcast2d_batch8.json",
+        "mcast2d_batch8",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial1_640x320x640_mcast2d_batch1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial1_640x320x640_mcast2d_batch1.json",
+        "mcast2d_batch1",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial1_640x320x640_mcast2d",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial1_640x320x640_mcast2d.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial1_320x320x320_mcast2d_batch8",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial1_320x320x320_mcast2d_batch8.json",
+        "mcast2d_batch8",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial1_320x320x320_mcast",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial1_320x320x320_mcast.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial2_320x320x320_mcast2d",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial2_320x320x320_mcast2d.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial2_320x320x320_mcast2d_batch4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial2_320x320x320_mcast2d_batch4.json",
+        "mcast2d_batch4",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial2_640x320x640_mcast2d",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial2_640x320x640_mcast2d.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial2_640x320x640_mcast2d_batch4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial2_640x320x640_mcast2d_batch4.json",
+        "mcast2d_batch4",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial2_640x320x640_mcast2d_batch1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial2_640x320x640_mcast2d_batch1.json",
+        "mcast2d_batch1",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial2_320x320x320_mcast2d_batch1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial2_320x320x320_mcast2d_batch1.json",
+        "mcast2d_batch1",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial2_640x320x640_multicore",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial2_640x320x640_multicore.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial2_320x320x320_mcast2d_batch8",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial2_320x320x320_mcast2d_batch8.json",
+        "mcast2d_batch8",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial2_320x320x320_multicore",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial2_320x320x320_multicore.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial2_640x320x640_mcast2d_batch8",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial2_640x320x640_mcast2d_batch8.json",
+        "mcast2d_batch8",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial2_640x320x640_mcast",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial2_640x320x640_mcast.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial2_320x320x320_mcast",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial2_320x320x320_mcast.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial3_320x320x320_mcast2d_batch4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial3_320x320x320_mcast2d_batch4.json",
+        "mcast2d_batch4",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial3_640x320x640_multicore",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial3_640x320x640_multicore.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial3_320x320x320_mcast2d_batch1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial3_320x320x320_mcast2d_batch1.json",
+        "mcast2d_batch1",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial3_640x320x640_mcast",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial3_640x320x640_mcast.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial3_640x320x640_mcast2d_batch1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial3_640x320x640_mcast2d_batch1.json",
+        "mcast2d_batch1",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial3_320x320x320_mcast",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial3_320x320x320_mcast.json",
+        "mcast",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial3_640x320x640_mcast2d_batch4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial3_640x320x640_mcast2d_batch4.json",
+        "mcast2d_batch4",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial3_640x320x640_mcast2d",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial3_640x320x640_mcast2d.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial3_640x320x640_mcast2d_batch8",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial3_640x320x640_mcast2d_batch8.json",
+        "mcast2d_batch8",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:640,320,640"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial3_320x320x320_multicore",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial3_320x320x320_multicore.json",
+        "multicore",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial3_320x320x320_mcast2d",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial3_320x320x320_mcast2d.json",
+        "mcast2d",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "trial3_320x320x320_mcast2d_batch8",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/matmul/matmul",
+        "/home/ysjun5656/dev/accelflow/results/matmul_batched_perf/20261019T114533581866Z/trial3_320x320x320_mcast2d_batch8.json",
+        "mcast2d_batch8",
+        "2",
+        "4",
+        "--benchmark",
+        "5",
+        "signed_random:320,320,320"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "passed": true,
+  "executable_sha256": "a9c3610fa53f971d60f9ce27ec86ea953f94984eb758abb9c9ee152467340a69",
+  "meminfo_after": "MemTotal:        3962484 kB\nMemFree:         3068300 kB\nMemAvailable:    3398292 kB\nBuffers:           29948 kB\nCached:           484836 kB\nSwapCached:            0 kB\nActive:           262300 kB\nInactive:         349740 kB\nActive(anon):       3336 kB\nInactive(anon):    98168 kB\nActive(file):     258964 kB\nInactive(file):   251572 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1048576 kB\nDirty:               396 kB\nWriteback:             0 kB\nAnonPages:         97256 kB\nMapped:           131844 kB\nShmem:              4248 kB\nKReclaimable:      38532 kB\nSlab:              77632 kB\nSReclaimable:      38532 kB\nSUnreclaim:        39100 kB\nKernelStack:        3440 kB\nPageTables:         2732 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:     650340 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        6696 kB\nVmallocChunk:          0 kB\nPercpu:             3424 kB\nAnonHugePages:     30720 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      113664 kB\nDirectMap2M:     4022272 kB\nDirectMap1G:     8388608 kB\n",
+  "correctness_cases": 200
+}

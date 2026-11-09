@@ -1,0 +1,26 @@
+Command: ['/home/ysjun5656/dev/accelflow/build/matmul/matmul', '/home/ysjun5656/dev/accelflow/results/matmul_mcast/20261019T110420378207Z/repeat_96_64_160_depth1.json', 'mcast', '1', '4', '--benchmark', '5', 'signed_random:96,64,160']
+2026-10-19 20:04:31.238 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-10-19 20:04:31.238 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-10-19 20:04:31.239 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-10-19 20:04:31.240 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-10-19 20:04:31.240 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-10-19 20:04:31.251 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-10-19 20:04:31.252 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-10-19 20:04:31.252 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-10-19 20:04:31.252 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-10-19 20:04:31.254 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-10-19 20:04:31.254 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-10-19 20:04:31.254 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-10-19 20:04:31.254 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+PASS mcast depth=1 signed_random MKN=96,64,160 max_abs=0
+MATMUL_ALL_PASS cases=1
+2026-10-19 20:04:31.526 | info     |    BuildKernels | JIT cache stats: 13/13 hits (100.0%) [13 cached, 0 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-10-19 20:04:31.526 | info     |    BuildKernels | JIT telemetry: 26 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-10-19 20:04:31.528 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-10-19 20:04:31.528 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-10-19 20:04:31.528 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-10-19 20:04:31.528 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-10-19 20:04:31.528 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-10-19 20:04:31.528 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[20346] 0.3 seconds (60.5 KHz)
+example_exit_code=0

@@ -1,0 +1,37 @@
+Cloning into '/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0'...
+Note: switching to 'de546d3b146758714d900f11b218c8f9c805f410'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Updating files:  11% (2660/22177)Updating files:  12% (2662/22177)Updating files:  13% (2884/22177)Updating files:  14% (3105/22177)Updating files:  15% (3327/22177)Updating files:  16% (3549/22177)Updating files:  17% (3771/22177)Updating files:  18% (3992/22177)Updating files:  19% (4214/22177)Updating files:  20% (4436/22177)Updating files:  21% (4658/22177)Updating files:  22% (4879/22177)Updating files:  23% (5101/22177)Updating files:  24% (5323/22177)Updating files:  25% (5545/22177)Updating files:  26% (5767/22177)Updating files:  27% (5988/22177)Updating files:  27% (5993/22177)Updating files:  28% (6210/22177)Updating files:  29% (6432/22177)Updating files:  30% (6654/22177)Updating files:  31% (6875/22177)Updating files:  32% (7097/22177)Updating files:  33% (7319/22177)Updating files:  34% (7541/22177)Updating files:  34% (7753/22177)Updating files:  35% (7762/22177)Updating files:  36% (7984/22177)Updating files:  37% (8206/22177)Updating files:  38% (8428/22177)Updating files:  39% (8650/22177)Updating files:  40% (8871/22177)Updating files:  41% (9093/22177)Updating files:  42% (9315/22177)Updating files:  43% (9537/22177)Updating files:  44% (9758/22177)Updating files:  45% (9980/22177)Updating files:  46% (10202/22177)Updating files:  47% (10424/22177)Updating files:  48% (10645/22177)Updating files:  49% (10867/22177)Updating files:  50% (11089/22177)Updating files:  51% (11311/22177)Updating files:  52% (11533/22177)Updating files:  53% (11754/22177)Updating files:  54% (11976/22177)Updating files:  55% (12198/22177)Updating files:  56% (12420/22177)Updating files:  57% (12641/22177)Updating files:  58% (12863/22177)Updating files:  59% (13085/22177)Updating files:  60% (13307/22177)Updating files:  61% (13528/22177)Updating files:  62% (13750/22177)Updating files:  63% (13972/22177)Updating files:  64% (14194/22177)Updating files:  65% (14416/22177)Updating files:  66% (14637/22177)Updating files:  67% (14859/22177)Updating files:  68% (15081/22177)Updating files:  69% (15303/22177)Updating files:  70% (15524/22177)Updating files:  71% (15746/22177)Updating files:  72% (15968/22177)Updating files:  73% (16190/22177)Updating files:  74% (16411/22177)Updating files:  75% (16633/22177)Updating files:  76% (16855/22177)Updating files:  77% (17077/22177)Updating files:  78% (17299/22177)Updating files:  79% (17520/22177)Updating files:  80% (17742/22177)Updating files:  81% (17964/22177)Updating files:  82% (18186/22177)Updating files:  83% (18407/22177)Updating files:  84% (18629/22177)Updating files:  85% (18851/22177)Updating files:  86% (19073/22177)Updating files:  87% (19294/22177)Updating files:  88% (19516/22177)Updating files:  89% (19738/22177)Updating files:  90% (19960/22177)Updating files:  91% (20182/22177)Updating files:  92% (20403/22177)Updating files:  93% (20625/22177)Updating files:  94% (20847/22177)Updating files:  95% (21069/22177)Updating files:  96% (21290/22177)Updating files:  96% (21346/22177)Updating files:  97% (21512/22177)Updating files:  98% (21734/22177)Updating files:  99% (21956/22177)Updating files: 100% (22177/22177)Updating files: 100% (22177/22177), done.
+Submodule 'tt_metal/third_party/tracy' (https://github.com/tenstorrent-metal/tracy.git) registered for path 'tt_metal/third_party/tracy'
+Submodule 'tt_metal/third_party/tt-cluster-descriptors' (https://github.com/tenstorrent/tt-cluster-descriptors.git) registered for path 'tt_metal/third_party/tt-cluster-descriptors'
+Submodule 'tt_metal/third_party/umd' (https://github.com/tenstorrent/tt-umd.git) registered for path 'tt_metal/third_party/umd'
+Cloning into '/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/third_party/tracy'...
+Cloning into '/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/third_party/tt-cluster-descriptors'...
+Cloning into '/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0/tt_metal/third_party/umd'...
+Submodule path 'tt_metal/third_party/tracy': checked out '9c3ca7e5fe48cecf90aa518c82552aae706cf110'
+From https://github.com/tenstorrent/tt-cluster-descriptors
+ * branch            ac8a3b5ba3a54ad4e93cb75da3692942e5926c50 -> FETCH_HEAD
+Submodule path 'tt_metal/third_party/tt-cluster-descriptors': checked out 'ac8a3b5ba3a54ad4e93cb75da3692942e5926c50'
+From https://github.com/tenstorrent/tt-umd
+ * branch            f9173df20bec9bb93e5c92407e701e604ddef33d -> FETCH_HEAD
+Submodule path 'tt_metal/third_party/umd': checked out 'f9173df20bec9bb93e5c92407e701e604ddef33d'
+ 9c3ca7e5fe48cecf90aa518c82552aae706cf110 tt_metal/third_party/tracy (v0.14.1-tt.0)
+ ac8a3b5ba3a54ad4e93cb75da3692942e5926c50 tt_metal/third_party/tt-cluster-descriptors (ac8a3b5)
+ f9173df20bec9bb93e5c92407e701e604ddef33d tt_metal/third_party/umd (f9173df)
+699M	/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0
+TT_METAL_HOME=/home/ysjun5656/dev/tenstorrent/tt-metal-v0.79.0

@@ -1,0 +1,168 @@
+{
+  "benchmark_enabled": true,
+  "cases": [
+    {
+      "a_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 32768,
+        "aligned_size_per_bank_bytes": 4096,
+        "logical_bytes": 32768,
+        "page_bytes": 2048,
+        "pages": 16
+      },
+      "a_shape": [
+        128,
+        128
+      ],
+      "a_tile_reads_model": 64,
+      "atol": 0.0,
+      "b_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 32768,
+        "aligned_size_per_bank_bytes": 4096,
+        "logical_bytes": 32768,
+        "page_bytes": 2048,
+        "pages": 16
+      },
+      "b_shape": [
+        128,
+        128
+      ],
+      "b_tile_reads_model": 64,
+      "c_buffer": {
+        "aligned_page_bytes": 2048,
+        "aligned_size_bytes": 32768,
+        "aligned_size_per_bank_bytes": 4096,
+        "logical_bytes": 32768,
+        "page_bytes": 2048,
+        "pages": 16
+      },
+      "c_shape": [
+        128,
+        128
+      ],
+      "cb_capacity_bytes_model": 12288,
+      "cb_capacity_bytes_total_model": 49152,
+      "cb_capacity_tiles": [
+        2,
+        2,
+        2
+      ],
+      "core_count": 4,
+      "destination_tile_slots_max": 1,
+      "distribution": {
+        "active_cores": 4,
+        "assignments": [
+          {
+            "logical_core": [
+              0,
+              0
+            ],
+            "start_tile": 0,
+            "tile_count": 4
+          },
+          {
+            "logical_core": [
+              1,
+              0
+            ],
+            "start_tile": 4,
+            "tile_count": 4
+          },
+          {
+            "logical_core": [
+              2,
+              0
+            ],
+            "start_tile": 8,
+            "tile_count": 4
+          },
+          {
+            "logical_core": [
+              3,
+              0
+            ],
+            "start_tile": 12,
+            "tile_count": 4
+          }
+        ],
+        "grid": [
+          8,
+          9
+        ],
+        "requested_cores": 4
+      },
+      "dram_read_payload_model": 262144,
+      "dram_write_payload_model": 32768,
+      "fp32_destination_accumulation": true,
+      "input_chunks_per_output_block": 1,
+      "input_fingerprint_a": 9132800447260629488,
+      "input_fingerprint_b": 3003786663738285880,
+      "k_chunk_tiles": 0,
+      "layout_matches_official_tilizer": true,
+      "matmul_tile_calls_model": 64,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0,
+      "mean_abs_error": 0.0,
+      "model_policy": "code-derived counts, not hardware counters",
+      "name": "signed_random",
+      "output_block_tiles": 1,
+      "output_fingerprint": 8433452526452658680,
+      "output_sentinel_overwritten": true,
+      "output_tile_writes_model": 16,
+      "padded_flops_model": 4194304,
+      "padded_mkn": [
+        128,
+        128,
+        128
+      ],
+      "padding_verified": true,
+      "partial_result_pack_calls_model": 0,
+      "passed": true,
+      "read_barriers_model": 128,
+      "rtol": 0.0,
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "tile_grid_mkn": [
+        4,
+        4,
+        4
+      ],
+      "timing": {
+        "all_repetition_outputs_equal": true,
+        "clock": "host std::chrono::steady_clock",
+        "first_dispatch_is_not_guaranteed_cold_JIT": true,
+        "physical_NPU_latency": false,
+        "sample_count": 7,
+        "samples_ms": [
+          33.269732,
+          34.823696,
+          34.23381,
+          34.008856,
+          38.90907,
+          33.047833,
+          34.894256
+        ],
+        "scope": "EnqueueMeshWorkload + Finish; simulator/host dispatch wall time",
+        "warmup_count": 2,
+        "warmup_ms": [
+          43.736338,
+          36.533582
+        ]
+      },
+      "useful_flops_model": 4194304
+    }
+  ],
+  "destination_accumulation": "fp32",
+  "dtype": "bf16",
+  "k_chunk_tiles": 0,
+  "passed": true,
+  "reference": "FP64 accumulation of products of quantized BF16 inputs",
+  "requested_cores": 4,
+  "seed": 2026,
+  "stream_cb_depth": 2,
+  "variant": "multicore"
+}

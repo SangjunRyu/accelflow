@@ -1,0 +1,797 @@
+{
+  "captured_utc": "2026-10-06T18:19:40.658585+09:00",
+  "source_windows": "C:\\Users\\ysjun5656\\AccelFlow",
+  "target_linux": "/home/ysjun5656/dev/accelflow",
+  "target_windows": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\ysjun5656\\dev\\accelflow",
+  "file_count": 184,
+  "directory_count": 41,
+  "total_file_bytes": 10428613,
+  "copy_verified": true,
+  "source_cleanup_completed": true,
+  "manifest": {
+    "files": {
+      ".gitattributes": {
+        "size": 46,
+        "sha256": "886b58ceecb0b5faa1038abe7325e7fdeff15cd1f5699c37ad33587a060e2e7d"
+      },
+      ".gitignore": {
+        "size": 101,
+        "sha256": "287d0dd79098e0c227de7db31166f1a5baf21c8f286f033008babafa54286d9a"
+      },
+      "AccelFlow_PROJECT.md": {
+        "size": 27152,
+        "sha256": "618088f78a94ff391d72c4cd3cb1724d67cdb01e9477aadab5fe7ae25c93beb6"
+      },
+      "LICENSE": {
+        "size": 197,
+        "sha256": "72173221451cdd7bb92080abbd51ec8f41c9deef99c26c8325c738320ea37168"
+      },
+      "PROJECT.md": {
+        "size": 279,
+        "sha256": "7efa70c056124fcd3dbda0cf65f21961bbabb39d4f1f7c9836435ddc71aedcbf"
+      },
+      "README.md": {
+        "size": 3004,
+        "sha256": "17f89c1c89e62e1a02ce5fd16b705a923c15677bbbae29ebaa7f0125362ff4b8"
+      },
+      "benchmark/cuda/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "benchmark/results/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "benchmark/ttsim/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "cuda/benchmark/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "cuda/matmul/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "cuda/reduction/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "cuda/rmsnorm/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "cuda/vector_add/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "docs/01-environment.md": {
+        "size": 4663,
+        "sha256": "31f51502fa56f813d63115ac60dd089aeb8d8fed4312a5057d5ed476c0245428"
+      },
+      "docs/02-installation-plan.md": {
+        "size": 6863,
+        "sha256": "ea03c7812ddc789ec7e3844e1f5f7c750101bbdc2c69bcaa5dbe42bfb67eed99"
+      },
+      "docs/03-resource-risk.md": {
+        "size": 5566,
+        "sha256": "8c5d433999004419f1dca6ec13bb49c27bd22ca3d35fa032a3514da9ea76ea9f"
+      },
+      "docs/04-ttsim-installation.md": {
+        "size": 5357,
+        "sha256": "8655c08beabfb70486d6f54bb2db8a7f4c1ea2adcefa0dd3e9a1a810e41749ab"
+      },
+      "docs/05-tt-metal-stage-plan.md": {
+        "size": 9984,
+        "sha256": "0086be899412e9eee1e633e66524dfc388feb2de431814180c09efb39cef0b5f"
+      },
+      "docs/06-tt-metal-build-validation.md": {
+        "size": 5349,
+        "sha256": "4af5800f9556e8670f0af481b99c71c660bf8beb3abbcdb0d446a1240db345b0"
+      },
+      "docs/07-wsl-workspace-migration.md": {
+        "size": 1816,
+        "sha256": "55a61bc996ea63858911a201b6781ff081cc9b8f97dc1899ee5aa567d1c815dd"
+      },
+      "docs/90-architecture.md": {
+        "size": 438,
+        "sha256": "2a3b51d227c0f2769c73964500449ef2c74b45e2762928c24084c0f8fb6ba2a4"
+      },
+      "docs/91-cuda-vs-npu.md": {
+        "size": 516,
+        "sha256": "aa27ec7d2211882f83be6dbc381929d8b75a19aa7fa192ce1a9763600a6ff467"
+      },
+      "docs/92-measurement-policy.md": {
+        "size": 777,
+        "sha256": "3b20207292e428354893f032a8cecd3ec6b45717ecd2d1df7d7317a5c1202f01"
+      },
+      "docs/93-troubleshooting.md": {
+        "size": 2665,
+        "sha256": "b9f3d5af95bed97023632a9cc96783f893d5a238724e180f9adf701dddaaa93f"
+      },
+      "docs/94-portfolio-notes.md": {
+        "size": 407,
+        "sha256": "78530e41b3207ec3f33a3cde83ab8a7938fc29e697a9108a3bc85c0cc622f73a"
+      },
+      "docs/README.md": {
+        "size": 4410,
+        "sha256": "224b6c0a537691b61845f10510c6955fe982f4d655b561be3db25c13f791553b"
+      },
+      "models/mini_cnn/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "models/mobilenet_block/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "models/resnet_block/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "models/tiny_transformer/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "npu/data_movement/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "npu/experiments/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "npu/matmul/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "npu/reduction/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "npu/rmsnorm/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "npu/vector_add/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "results/figures/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "results/logs/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "results/setup/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "results/setup/apt-update-2026-10-06.log": {
+        "size": 2362,
+        "sha256": "eb62accaaf02759873fd231dc84ac4bc60aba30e4df4b9692d6ee3009519e3e2"
+      },
+      "results/setup/dependency-install-2026-10-06.log": {
+        "size": 12933,
+        "sha256": "b86798e64a769ff5d605f993927957c8909f4da7b3641e822dc604f65d1a0ef2"
+      },
+      "results/setup/dependency-plan-2026-10-06.log": {
+        "size": 6125,
+        "sha256": "8488e7c539d79f79c4a381e3507f708576d25a208b974849b25997087412cef4"
+      },
+      "results/setup/dependency-plan-after-install-2026-10-06.log": {
+        "size": 1672,
+        "sha256": "8b1c0a2412a687d77f449153b82319eeeb0f0422dd44964f4316de1b87281de9"
+      },
+      "results/setup/environment-2026-10-06.txt": {
+        "size": 6756,
+        "sha256": "421b709937f15e600eefd6fa8421dd6c029a97728c03438e2a54f8c240a3f121"
+      },
+      "results/setup/environment-after-deps-2026-10-06.txt": {
+        "size": 6834,
+        "sha256": "d855771711636a82d2d210573c1734f85ce89dc00374ce50c9eff43d711b9158"
+      },
+      "results/setup/environment-after-metal-build.txt": {
+        "size": 6954,
+        "sha256": "e2f02d37a6b2a14f0ce5278a6593f614c985c2dde4ab8d755c4465a7de6fe7b1"
+      },
+      "results/setup/environment-after-ttsim-2026-10-06.txt": {
+        "size": 6834,
+        "sha256": "cceaf77f2655368cd76892b387ebd0a96acf2c5a25e7b2acc5d81088629cdcdc"
+      },
+      "results/setup/host-resources-2026-10-06.json": {
+        "size": 980,
+        "sha256": "e17c8d1914823c883d45a9f86bbcc367318bfa236425fca266e969dd72fda071"
+      },
+      "results/setup/host-resources-after-build.json": {
+        "size": 461,
+        "sha256": "19e2c6c14e091ce00aef1f0758d45152d89e0fceeee4fb7d7e10220e84f2de5d"
+      },
+      "results/setup/host-resources-before-build.json": {
+        "size": 462,
+        "sha256": "00d5966ebc1b23a60d2c6b12cb5b3a47fc6c2b459bb0457fc0f28e32b08145a2"
+      },
+      "results/setup/host-resources-phase0c-2026-10-06.json": {
+        "size": 461,
+        "sha256": "34eea0b37dbc19fc0fe1cb02808aa631ced5cd44356a93534987495541c79225"
+      },
+      "results/setup/metal-smoke-20261006T085752Z.log": {
+        "size": 3898,
+        "sha256": "f72ba84351a6fc1c1bb153efc0cf3304b1caff5c162e8f56941775f00d62f5ff"
+      },
+      "results/setup/tt-metal-bootstrap-metadata.json": {
+        "size": 2448,
+        "sha256": "7fe0db06e03fa127e7daed9dbdface3966e6bc00f4ff15e30fc73400da41bfcf"
+      },
+      "results/setup/tt-metal-build.log": {
+        "size": 113344,
+        "sha256": "f37108eec3a5da061deb6dd757f80d99fe20b9d971261454a9dcf6a86b008f46"
+      },
+      "results/setup/tt-metal-clone.log": {
+        "size": 5594,
+        "sha256": "92a2fa7a3a9b80286db824c6cccea401d34ee59d01768453e86bb76a2e4a8b57"
+      },
+      "results/setup/tt-metal-configure.log": {
+        "size": 23492,
+        "sha256": "a98aeb20d3aa9e108e3597e7ed49bd87231fe4f70bcff59ca18da0ded9554fbb"
+      },
+      "results/setup/tt-metal-resource-budget-2026-10-06.json": {
+        "size": 1132,
+        "sha256": "d6159e0127ef98b7b406029f5937c3c89bcdfdf5f7056505a819c357fb43deff"
+      },
+      "results/setup/tt-metal-toolchain-install.log": {
+        "size": 13234,
+        "sha256": "aaccc2d331a9b2cc9fce534bf3edadf5d1f9627a8a366d54ac30013fbcd93302"
+      },
+      "results/setup/tt-metal-toolchain-proposal-2026-10-06.log": {
+        "size": 2080,
+        "sha256": "a7aa77b8fe3cc094e9837903362bf73bcb9a00f2f470b83eea5f980293cb58a2"
+      },
+      "results/setup/ttsim-20261006T074119Z-Qvf87U/metadata.json": {
+        "size": 5258,
+        "sha256": "66ba93049ee1e2f077853f468e8551b5849cc3b6332ab342283f04aedff88a69"
+      },
+      "results/setup/ttsim-20261006T074119Z-Qvf87U/validation.log": {
+        "size": 7523,
+        "sha256": "2d53cc70b21db4e5a7c9fb0f1ca25a7a973b2485e56076d142d9664b2eeecfdb"
+      },
+      "results/setup/ttsim-20261006T074331Z-VzDFn2/metadata.json": {
+        "size": 5571,
+        "sha256": "02b07c2629eb62fa063cdc10319a5d893500661ac4bab860789660c6964d2b1b"
+      },
+      "results/setup/ttsim-20261006T074331Z-VzDFn2/validation.log": {
+        "size": 7300,
+        "sha256": "d359881a8ee99afbff3b191a64d94d458c8a0dfccab58ebe5536beab3bc5edec"
+      },
+      "results/setup/ttsim-20261006T074911Z-hxvdXD/validation.log": {
+        "size": 223,
+        "sha256": "2069da3fb28c486d5ebf5a5923dd144645460bf131ceed13e6f6bc656060c007"
+      },
+      "results/setup/ttsim-checksum-after-rejection-2026-10-06.txt": {
+        "size": 117,
+        "sha256": "25b91864f7f354f9a069bb4a404afee1d68a7220726c5a25a6e2443940200e84"
+      },
+      "results/setup/ttsim-checksum-rejection-2026-10-06.log": {
+        "size": 223,
+        "sha256": "2069da3fb28c486d5ebf5a5923dd144645460bf131ceed13e6f6bc656060c007"
+      },
+      "results/setup/ttsim-reuse-2026-10-06.log": {
+        "size": 7300,
+        "sha256": "d359881a8ee99afbff3b191a64d94d458c8a0dfccab58ebe5536beab3bc5edec"
+      },
+      "results/setup/upstream-2026-10-06/cluster-tree.json": {
+        "size": 112736,
+        "sha256": "bdff5ac6000845c93f278538137827551ee2e409bc8543dceb98032c6df9843c"
+      },
+      "results/setup/upstream-2026-10-06/metal-main-.gitmodules": {
+        "size": 473,
+        "sha256": "1d776fc665a25e6221b6c86ba2a71dba3142174d538127ca1e7f34b316119116"
+      },
+      "results/setup/upstream-2026-10-06/metal-main-CMakeLists.txt": {
+        "size": 13675,
+        "sha256": "2dfc82e8acd4f769be1549777ffb9fbea73fbc5cab9c4a6241278bf7f9b7871b"
+      },
+      "results/setup/upstream-2026-10-06/metal-main-INSTALLING.md": {
+        "size": 10405,
+        "sha256": "620d632fab34f4feaf3111447f9038b7503b91b68e980226d855d33aee581688"
+      },
+      "results/setup/upstream-2026-10-06/metal-main-build_metal.sh": {
+        "size": 17082,
+        "sha256": "02ee4dcbaab586dd2748d2518d24df1fb3859e0806a295f821cead8680a30f81"
+      },
+      "results/setup/upstream-2026-10-06/metal-main-cmake_x86_64-linux-clang-20-libstdcpp-toolchain.cmake": {
+        "size": 560,
+        "sha256": "f86d9990b12bea4ade99dfc38d6bdf211d9c24d3bb43f13fe75b42e71e811c3f"
+      },
+      "results/setup/upstream-2026-10-06/metal-main-install_dependencies.sh": {
+        "size": 19946,
+        "sha256": "f42a38064b6c5fafe1931a4d5022c0ead284253459d3b8dfbed84926756fd6a4"
+      },
+      "results/setup/upstream-2026-10-06/metal-main-tt_metal_sfpi-info.sh": {
+        "size": 6039,
+        "sha256": "ee8ffea73bd21c7294c951f7928db2d0f6164edb4d69e55d538008ba8f94ea21"
+      },
+      "results/setup/upstream-2026-10-06/metal-tree.json": {
+        "size": 7394966,
+        "sha256": "22c5983196e93d18b97034c28f95a3446561b7a15d2aefa033545d27453075e8"
+      },
+      "results/setup/upstream-2026-10-06/metal-tt_metal_programming_examples_CMakeLists.txt": {
+        "size": 3324,
+        "sha256": "162532c0f9ccf171395385d9fef6f107b76882efbf3c0616aa5b6b598c2f8a4e"
+      },
+      "results/setup/upstream-2026-10-06/metal-tt_metal_programming_examples_add_2_integers_in_riscv_CMakeLists.txt": {
+        "size": 510,
+        "sha256": "cc22c4cad44b0ed037d53a120aa371f7fabfe8ebbfc5267d40e7bece59fa24c1"
+      },
+      "results/setup/upstream-2026-10-06/metal-tt_metal_programming_examples_add_2_integers_in_riscv_add_2_integers_in_riscv.cpp": {
+        "size": 7650,
+        "sha256": "be862541480b3a04bca8db9fad41d8e9a1165c71948309a4736d7d48f6464f13"
+      },
+      "results/setup/upstream-2026-10-06/metal-tt_metal_sfpi-version": {
+        "size": 718,
+        "sha256": "b36b5c4553fb88f4c3a739281ca94dd08d97633b0136895f65a83f5a687ca27f"
+      },
+      "results/setup/upstream-2026-10-06/metal-tt_metal_soc_descriptors_wormhole_b0_80_arch.yaml": {
+        "size": 3125,
+        "sha256": "24fd3dfae80435a7d9113e255d6d6af9cdf83f6ae3b1c385e1d48a24795ccf49"
+      },
+      "results/setup/upstream-2026-10-06/metal-v0.78.0-.gitmodules": {
+        "size": 656,
+        "sha256": "b7b592312ef28023c98b1c639f409d95ac8188aa05fcad3884eac686f31405aa"
+      },
+      "results/setup/upstream-2026-10-06/metal-v0.78.0-CMakeLists.txt": {
+        "size": 13516,
+        "sha256": "fbf15005db324e4c0f3f1821970a5a5a6f32e9300a5cf12099826d6cb7807dfb"
+      },
+      "results/setup/upstream-2026-10-06/metal-v0.78.0-INSTALLING.md": {
+        "size": 10405,
+        "sha256": "620d632fab34f4feaf3111447f9038b7503b91b68e980226d855d33aee581688"
+      },
+      "results/setup/upstream-2026-10-06/metal-v0.78.0-build_metal.sh": {
+        "size": 17082,
+        "sha256": "02ee4dcbaab586dd2748d2518d24df1fb3859e0806a295f821cead8680a30f81"
+      },
+      "results/setup/upstream-2026-10-06/metal-v0.78.0-cmake_x86_64-linux-clang-20-libstdcpp-toolchain.cmake": {
+        "size": 560,
+        "sha256": "f86d9990b12bea4ade99dfc38d6bdf211d9c24d3bb43f13fe75b42e71e811c3f"
+      },
+      "results/setup/upstream-2026-10-06/metal-v0.78.0-install_dependencies.sh": {
+        "size": 19946,
+        "sha256": "f42a38064b6c5fafe1931a4d5022c0ead284253459d3b8dfbed84926756fd6a4"
+      },
+      "results/setup/upstream-2026-10-06/metal-v0.78.0-tt_metal_sfpi-info.sh": {
+        "size": 5693,
+        "sha256": "889a70fb149820aa53bef260820e1847eb9f064eff0ebfc5464ad6c9e1b1f69d"
+      },
+      "results/setup/upstream-2026-10-06/metal-v0.79.0-.gitmodules": {
+        "size": 473,
+        "sha256": "1d776fc665a25e6221b6c86ba2a71dba3142174d538127ca1e7f34b316119116"
+      },
+      "results/setup/upstream-2026-10-06/metal-v0.79.0-CMakeLists.txt": {
+        "size": 13675,
+        "sha256": "2dfc82e8acd4f769be1549777ffb9fbea73fbc5cab9c4a6241278bf7f9b7871b"
+      },
+      "results/setup/upstream-2026-10-06/metal-v0.79.0-INSTALLING.md": {
+        "size": 10405,
+        "sha256": "620d632fab34f4feaf3111447f9038b7503b91b68e980226d855d33aee581688"
+      },
+      "results/setup/upstream-2026-10-06/metal-v0.79.0-build_metal.sh": {
+        "size": 17082,
+        "sha256": "02ee4dcbaab586dd2748d2518d24df1fb3859e0806a295f821cead8680a30f81"
+      },
+      "results/setup/upstream-2026-10-06/metal-v0.79.0-cmake_x86_64-linux-clang-20-libstdcpp-toolchain.cmake": {
+        "size": 560,
+        "sha256": "f86d9990b12bea4ade99dfc38d6bdf211d9c24d3bb43f13fe75b42e71e811c3f"
+      },
+      "results/setup/upstream-2026-10-06/metal-v0.79.0-install_dependencies.sh": {
+        "size": 19946,
+        "sha256": "f42a38064b6c5fafe1931a4d5022c0ead284253459d3b8dfbed84926756fd6a4"
+      },
+      "results/setup/upstream-2026-10-06/metal-v0.79.0-tt_metal_sfpi-info.sh": {
+        "size": 5693,
+        "sha256": "889a70fb149820aa53bef260820e1847eb9f064eff0ebfc5464ad6c9e1b1f69d"
+      },
+      "results/setup/upstream-2026-10-06/sim-README.md": {
+        "size": 23850,
+        "sha256": "e7dbef9d6ac2e1a4a40ff8499a5c15620e7fe3dfad7510754f8b743759485d54"
+      },
+      "results/setup/upstream-2026-10-06/sim-docs_libttsim_api.md": {
+        "size": 14365,
+        "sha256": "df826e8f038edf383dfe989c454179c9b11b0cd8e1ead64a39492b959b9893fe"
+      },
+      "results/setup/upstream-2026-10-06/sim-src_libttsim.cpp": {
+        "size": 40296,
+        "sha256": "53343799df01b813c8384b49a9fb5767728a39627c3c3919b5afb442a622673d"
+      },
+      "results/setup/upstream-2026-10-06/sim-src_sim.cpp": {
+        "size": 3267,
+        "sha256": "52169835e384a0ce4d888e9755fcec82d7891aac6462530bfa11e2869dc3e307"
+      },
+      "results/setup/upstream-2026-10-06/sim-tree.json": {
+        "size": 15328,
+        "sha256": "b5ebce0804167e1ccdeeb72f8f6e89205f02c2b0f48a2c9eb2443e7d8619bee9"
+      },
+      "results/setup/upstream-2026-10-06/tracy-tree.json": {
+        "size": 156156,
+        "sha256": "a881815180dfb7984961518ab620312e0c1dc6d6ff884c3a400c2a8dca2fb070"
+      },
+      "results/setup/upstream-2026-10-06/tt-metal-commit.json": {
+        "size": 1268245,
+        "sha256": "fee36be014427057c2bedfecafc977f42f9d9bf8f901e477cdbbec0e6c18ed8a"
+      },
+      "results/setup/upstream-2026-10-06/tt-metal-release.json": {
+        "size": 158039,
+        "sha256": "8a25c25906e5c843f22bea0c2ce9c24b3ad5c7ddd9bc7976071f38aff05f8f0f"
+      },
+      "results/setup/upstream-2026-10-06/ttsim-commit.json": {
+        "size": 8073,
+        "sha256": "ef840e79bf24ed1a90e60a9a0a1d9bff4916947baa4cae7402e0becfe3d6c459"
+      },
+      "results/setup/upstream-2026-10-06/ttsim-release.json": {
+        "size": 33157,
+        "sha256": "972807f52cddd68fd643155843e2a7816ad8253cbc011df78579ba69f88a89f7"
+      },
+      "results/setup/upstream-2026-10-06/umd-.github_workflows_run-ttsim-tests.yml": {
+        "size": 31915,
+        "sha256": "e417d21895cd829a629dd316082b68e6ac1517ae437b3ee9141c1b5a9a6cc351"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_api_umd_device_chip_helpers_simulation_sysmem_manager.hpp": {
+        "size": 5542,
+        "sha256": "18d39c603bd74e111741a976dff6652a69ad83242eb833cf7974bc31ab596661"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_api_umd_device_chip_helpers_simulation_tlb_allocator.hpp": {
+        "size": 3139,
+        "sha256": "c19d9026594a89f00f2adb2d9d79d340989967260bf64f4659e0cb4c42159192"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_api_umd_device_simulation_rtl_sim_communicator.hpp": {
+        "size": 7812,
+        "sha256": "d3a703a34d902d38066918b8b3e852448aa6ccb5ad1bc97bbc3f59410f788b18"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_api_umd_device_simulation_simulation_chip.hpp": {
+        "size": 5037,
+        "sha256": "f00cab6d32aeab91c951be9972ccc8574850ec57086dd74825ba3ffd596d55bb"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_api_umd_device_simulation_simulation_client.hpp": {
+        "size": 2037,
+        "sha256": "6c271df4aa536217cc3f8f35cf54d7f974e178d53c6e0cadf70346b011928ef8"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_api_umd_device_simulation_simulation_connector.hpp": {
+        "size": 5641,
+        "sha256": "b7b5e49b2a1c5fdd15980b987d653468a946a145ef98e5a32a99b4cb1038db28"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_api_umd_device_simulation_simulation_device_identity.hpp": {
+        "size": 1959,
+        "sha256": "add046b247ab419cda5e116f9399d8425bb6658887615e8dbf66fff60100f08b"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_api_umd_device_simulation_simulation_host.hpp": {
+        "size": 744,
+        "sha256": "a77df4ea8f94918832efb1e19370c45436e96fb224403ffc821f11a4841561fd"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_api_umd_device_simulation_simulation_server_protocol.hpp": {
+        "size": 5561,
+        "sha256": "bac569ef1f2d34f730a3bb2e872c4948f9e1847499ff5c647b010b29e6c8e56d"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_api_umd_device_simulation_tt_sim_communicator.hpp": {
+        "size": 14114,
+        "sha256": "cc59fed3ed1d2a167545cc1e29dea28a14e674247f90ce347381a92026e48b70"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_api_umd_device_tt_device_firmware_simulation_device_firmware.hpp": {
+        "size": 5113,
+        "sha256": "b1639c5b5aa41e7d8c73a3eef94b45ee7043f94ccc8fa3b24374b4263d153dc3"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_api_umd_device_tt_device_model_simulation_tt_device_model.hpp": {
+        "size": 1270,
+        "sha256": "0267c6c39224e2cba256b2a805131116b233b84154723ac5af42df24a570911c"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_api_umd_device_tt_device_rtl_simulation_tt_device.hpp": {
+        "size": 4330,
+        "sha256": "740454f5dd1db2e64c013a92a77668821a655ba7d2bb846a0a2632b642f2e1ba"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_api_umd_device_tt_device_simulation_device_factory.hpp": {
+        "size": 1610,
+        "sha256": "aa71537d8cb3dd2fa7b527d756a695cf2837879596f530b0a8250a7f6a38d967"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_api_umd_device_tt_device_simulation_tt_device.hpp": {
+        "size": 9319,
+        "sha256": "0c80f2c166bb5774e5226fa13b34623f3ea6c99016aa83a5f519622b416efd33"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_chip_helpers_simulation_sysmem_manager.cpp": {
+        "size": 9730,
+        "sha256": "8610c731a1572c73f9016f348fc016a28326285499d1deec59748b150ebb0c97"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_chip_helpers_simulation_tlb_allocator.cpp": {
+        "size": 5724,
+        "sha256": "279b8b307191eb7a5228de312778c4f41f4c2fec28bf6adf931a409dd0ee1398"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_simulation_rtl_sim_communicator.cpp": {
+        "size": 17652,
+        "sha256": "b405c4e87a726b32ecd74d9398bbc05fdb3d185cad62253eaf7837017a5ef44c"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_simulation_simulation_chip.cpp": {
+        "size": 7831,
+        "sha256": "fc70412c845ec351e8da55d6a8f56d8f848ecc5bfdab196898d7d9e75ea76b6e"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_simulation_simulation_client.cpp": {
+        "size": 6457,
+        "sha256": "199914a0bdc5b2501887af46e8fcb19344e2dcd98094ca1214eea81133776699"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_simulation_simulation_connector.cpp": {
+        "size": 13790,
+        "sha256": "ac2f1537b8b577e8ab8876973d50635158e6283c8ecdf5b690e1bc3f9409482a"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_simulation_simulation_device.fbs": {
+        "size": 1137,
+        "sha256": "f96d607a0f06aeffa22546193f7798f015c3d2839e459c960d324d516a097af1"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_simulation_simulation_device_identity.cpp": {
+        "size": 7671,
+        "sha256": "23d29b81347d9884d26f0bb4c4fbe9064ffb4aac90ca4a8cd68e1df857ba05df"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_simulation_simulation_host.cpp": {
+        "size": 4923,
+        "sha256": "2873aa6a5474b9f0ed8e1f2139b6915577d3ddf664b4585d02fa3a1ad908e4a5"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_simulation_simulation_server_protocol.cpp": {
+        "size": 6398,
+        "sha256": "d82f2af63ecfa9623e3a190590947c7555641a5fe5d47da71a24efde619542cb"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_simulation_simulation_server_protocol.fbs": {
+        "size": 3617,
+        "sha256": "37fab847e123a70df38581d2b281ac56d77b7a663a22e3484e927826adb539ab"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_simulation_simulation_server_socket.cpp": {
+        "size": 22091,
+        "sha256": "2b091aa6640ce5c5e819f96365e0584b1544ae3f85733f5a7111551ad92ce7fb"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_simulation_simulation_server_socket.hpp": {
+        "size": 9084,
+        "sha256": "331bbf785861eb2bc073fb8a336b2817c8b50e2d69d6ee35cc1cb01bcaaa3809"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_simulation_simulation_server_transport.cpp": {
+        "size": 4766,
+        "sha256": "ed9de65fac27f2d9121096341e103babb6b520aedf3d62684392c221702999d0"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_simulation_simulation_server_transport.hpp": {
+        "size": 1620,
+        "sha256": "34142f61fcb48da668145eb9e07c514d375544d1902ff25e942d49a1cdb59ef0"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_simulation_tt_sim_communicator.cpp": {
+        "size": 31402,
+        "sha256": "0c316d2c7911fc3c0935276d6f601923608dfb1c026c0a7c392842c5250dbf50"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_tt_device_model_simulation_tt_device_model.cpp": {
+        "size": 1586,
+        "sha256": "84a78cbdf3de328acb8a6bcd8c51241942d9d6c7c3294b76b1ffff331b088893"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_tt_device_rtl_simulation_tt_device.cpp": {
+        "size": 14071,
+        "sha256": "393d0f57990ab3d3b89ff66d82a71746ebefce2ab948423158b193080eb2778f"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_tt_device_simulation_device_factory.cpp": {
+        "size": 1421,
+        "sha256": "04e828ca657e9afb98fb6b46e8062763e3ceacc5647c94c4ef2057bd1e11f5b1"
+      },
+      "results/setup/upstream-2026-10-06/umd-device_tt_device_simulation_tt_device.cpp": {
+        "size": 15004,
+        "sha256": "3c2954240cdb182f5ddd09d47f9956492ae380b8aea5c8bdc319583ba97abfba"
+      },
+      "results/setup/upstream-2026-10-06/umd-docs_SIMULATION_SERVER.md": {
+        "size": 12389,
+        "sha256": "fdaf37bbc271160e195fe8d7bbb820debb117496317009e4fecae25fc5a2f0d9"
+      },
+      "results/setup/upstream-2026-10-06/umd-nanobind_py_api_simulation.cpp": {
+        "size": 7391,
+        "sha256": "fed3e2f7d1c2db2b8450a6d24694f6506795788aa77ef82fe216b0c707483bd2"
+      },
+      "results/setup/upstream-2026-10-06/umd-nanobind_tests_test_py_simulation_connector.py": {
+        "size": 7025,
+        "sha256": "f3c57950162898898f63c1e024a5ec14c39a7f5c9556db24dc488b1ed5a211ea"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_api_test_simulation_connector.cpp": {
+        "size": 24183,
+        "sha256": "c9ee0b6d8fcec3e818b048221c5f21a5dd4d99db7fb404e6eb0b766e896861c2"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_api_test_simulation_device_identity.cpp": {
+        "size": 4147,
+        "sha256": "8fecc42844cb303d3bc85154cf7c5623495f51bfa20f310af57a516939ce3886"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_api_test_simulation_server_protocol.cpp": {
+        "size": 7669,
+        "sha256": "483517676ba4ca9da417fbc3cf06461533d7d9276375621e34f15447dc772169"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_api_test_simulation_sysmem_manager.cpp": {
+        "size": 28067,
+        "sha256": "ba91958fb9ab17a10010e6d918e205615dc6bb18f45d516a0709daa2f640f82c"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_api_test_ttsim_device_io.cpp": {
+        "size": 21850,
+        "sha256": "e7a80c112c370223e8a8dcf2ab60a1487be82872e70ac32c9f52f9bc4aadaca2"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_baremetal_test_simulation_client.cpp": {
+        "size": 4586,
+        "sha256": "1c66953b037020b4fbacd8dcdd61b61a8d87bf22bfaa5d7639ff3d5b6b2bec47"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_baremetal_test_simulation_server_socket.cpp": {
+        "size": 15287,
+        "sha256": "8e6bf9a9aab3f368b3c77ec136471cfce56a14603942e7328844571362f50867"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_baremetal_test_simulation_server_transport.cpp": {
+        "size": 4672,
+        "sha256": "8354d292f72d670746bef5587720c4886f1ffb1696139153f499356ca71562ea"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_baremetal_test_simulation_tlb_allocator.cpp": {
+        "size": 7002,
+        "sha256": "4bc74289f308e1d017f76b63eaf6041a30f91dc17ab10ec394291f7288a27077"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_microbenchmark_benchmarks_simulator_test_simulator.cpp": {
+        "size": 2780,
+        "sha256": "c36470c4604f62f0e2809a907c41dd0e780b72b743513717c20968fec5429d72"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_soc_descs_blackhole_simulation_1x2.yaml": {
+        "size": 486,
+        "sha256": "606ef799f19670ec1a51944ca98bf94c4cddd3a9f170f17d913f156e5264a21a"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_soc_descs_quasar_simulation_1x1.yaml": {
+        "size": 422,
+        "sha256": "dcde015007888cd331536c0a37696771f412f6813a6f1a7b529d5b1eddbc5c76"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_soc_descs_quasar_simulation_1x3.yaml": {
+        "size": 448,
+        "sha256": "77db87ecff09426c18c19a9162199dad0335d5b96af4b45667a6b48609298ed1"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_soc_descs_quasar_simulation_2x3.yaml": {
+        "size": 460,
+        "sha256": "3f58ea2bec3dc41af204f5f055c737b75e9a5c46c387332b82a70413d5026b64"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_soc_descs_quasar_simulation_9x4.yaml": {
+        "size": 770,
+        "sha256": "553f418a2e4189e1519fe76b206e4331f9008b4a7c8a4f4b603a91da1756f809"
+      },
+      "results/setup/upstream-2026-10-06/umd-tests_test_utils_simulation_socket_test_utils.hpp": {
+        "size": 2836,
+        "sha256": "248462e7cb7e3c38db46db0e25630216f7fdc5670ab9ebb052abf2ba136eb6b7"
+      },
+      "results/setup/upstream-2026-10-06/umd-tree.json": {
+        "size": 166675,
+        "sha256": "ca484a09100681e1084dfb038180133e51db545e8d6d19b8671686cd525f4d5c"
+      },
+      "results/setup/upstream-inspection-2026-10-06.log": {
+        "size": 8191,
+        "sha256": "696961d3e2015be8ebbba1c3fe1bf76efd7280c02d71b4ab5e544a796cb2664f"
+      },
+      "results/tables/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "scripts/README.md": {
+        "size": 1739,
+        "sha256": "82babbb9247780b0fd65a795e21cbf691d7cd3738ebc840bbb7270735bf918ab"
+      },
+      "scripts/build_tt_metal.sh": {
+        "size": 879,
+        "sha256": "e86b8acb310b9eb1e6ec39fbb1243ec96fea28a698a1c428705caa5786199559"
+      },
+      "scripts/check_env.sh": {
+        "size": 2938,
+        "sha256": "8b76d6da5438ce62800c581a8c34efb4ebd63aef33cb1040e96089cb9c517275"
+      },
+      "scripts/check_host_resources.ps1": {
+        "size": 1277,
+        "sha256": "718511644214df7ba22302843566a69b8e2d97308057b42ca2085bb0778d7064"
+      },
+      "scripts/install_deps.sh": {
+        "size": 1621,
+        "sha256": "1c517a0cc1fbbddbeca6c69fb96469ae99740a8e2d54daafd8bc4125c1396875"
+      },
+      "scripts/setup_tt_metal.sh": {
+        "size": 729,
+        "sha256": "a0ecbe97c310f385e3862efc69b3c3f811f977b91461393ef554d2ed6000b356"
+      },
+      "scripts/setup_ttsim.sh": {
+        "size": 3482,
+        "sha256": "adb3438f28a42c76de16c0c86e5f772ad7d49fb6ba1babe632c5ee886ce73a9e"
+      },
+      "scripts/verify_ttsim.sh": {
+        "size": 1676,
+        "sha256": "143b5d0a33cadea793e14a91d7f03eef2e1fda1b2c43a96f4bc464caef2088a4"
+      },
+      "tests/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "third_party/README.md": {
+        "size": 675,
+        "sha256": "c1313f3e0122774766ce617f52cbd9d05a678d273df13e353668af307daffd54"
+      },
+      "tools/plotting/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "tools/report/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "tools/report/guarded_command.py": {
+        "size": 1348,
+        "sha256": "25a06eb06ca247a3aa6da17b09051f3e5d25ada03e1e00d183231989137ad445"
+      },
+      "tools/report/inspect_upstream.py": {
+        "size": 3745,
+        "sha256": "2075a557dd8b95cd4e1e698191f685b5437180f991b4f42ca7c864ddae17207b"
+      },
+      "tools/report/migrate_workspace.py": {
+        "size": 2013,
+        "sha256": "a06c4ddf60e4c0147c072d773fc25adb7c3cbd874eefe23ea0910717f7314468"
+      },
+      "tools/report/plan_tt_metal.py": {
+        "size": 2920,
+        "sha256": "419ea293b5405fe6ff78af77b0e0a66a17ed42dc69afa23dec44addd5f45f9ad"
+      },
+      "tools/report/record_bootstrap.py": {
+        "size": 2224,
+        "sha256": "5b964d2d0f80412e0d375ad627aee68493db4a0ad27c843207226f2cdf712c0d"
+      },
+      "tools/report/validate_ttsim.py": {
+        "size": 4055,
+        "sha256": "3d8801043ebc8fb01472e88691eeea9170fdcece93960b31b6f653e1aa8233b1"
+      },
+      "validation/numerical/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "validation/reference/.gitkeep": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "directories": [
+      "benchmark",
+      "benchmark/cuda",
+      "benchmark/results",
+      "benchmark/ttsim",
+      "cuda",
+      "cuda/benchmark",
+      "cuda/matmul",
+      "cuda/reduction",
+      "cuda/rmsnorm",
+      "cuda/vector_add",
+      "docs",
+      "models",
+      "models/mini_cnn",
+      "models/mobilenet_block",
+      "models/resnet_block",
+      "models/tiny_transformer",
+      "npu",
+      "npu/data_movement",
+      "npu/experiments",
+      "npu/matmul",
+      "npu/reduction",
+      "npu/rmsnorm",
+      "npu/vector_add",
+      "results",
+      "results/figures",
+      "results/logs",
+      "results/setup",
+      "results/setup/ttsim-20261006T074119Z-Qvf87U",
+      "results/setup/ttsim-20261006T074331Z-VzDFn2",
+      "results/setup/ttsim-20261006T074911Z-hxvdXD",
+      "results/setup/upstream-2026-10-06",
+      "results/tables",
+      "scripts",
+      "tests",
+      "third_party",
+      "tools",
+      "tools/plotting",
+      "tools/report",
+      "validation",
+      "validation/numerical",
+      "validation/reference"
+    ]
+  },
+  "smoke_log": "results/setup/metal-smoke-20261006T091940Z.log",
+  "example_exit_code": 0,
+  "completed_at": "2026-10-06T18:20:31.4536511+09:00"
+}

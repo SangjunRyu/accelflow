@@ -1,0 +1,225 @@
+{
+  "date_utc": "2026-10-19T11:14:49.424827+00:00",
+  "backend": "ttsim",
+  "tt_metal_revision": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "runs": [
+    {
+      "name": "mcast2d_cores4_depth1",
+      "variant": "mcast2d",
+      "depth": 1,
+      "cores": 4,
+      "exit_code": 0
+    },
+    {
+      "name": "mcast2d_cores4_depth2",
+      "variant": "mcast2d",
+      "depth": 2,
+      "cores": 4,
+      "exit_code": 0
+    },
+    {
+      "name": "mcast2d_cores2_depth1",
+      "variant": "mcast2d",
+      "depth": 1,
+      "cores": 2,
+      "exit_code": 0
+    },
+    {
+      "name": "mcast2d_cores2_depth2",
+      "variant": "mcast2d",
+      "depth": 2,
+      "cores": 2,
+      "exit_code": 0
+    },
+    {
+      "name": "mcast2d_cores1_depth1",
+      "variant": "mcast2d",
+      "depth": 1,
+      "cores": 1,
+      "exit_code": 0
+    },
+    {
+      "name": "mcast2d_cores1_depth2",
+      "variant": "mcast2d",
+      "depth": 2,
+      "cores": 1,
+      "exit_code": 0
+    },
+    {
+      "name": "baseline_cores1_depth1",
+      "variant": "baseline",
+      "depth": 1,
+      "cores": 1,
+      "exit_code": 0
+    },
+    {
+      "name": "baseline_cores1_depth2",
+      "variant": "baseline",
+      "depth": 2,
+      "cores": 1,
+      "exit_code": 0
+    },
+    {
+      "name": "multicore_cores4_depth1",
+      "variant": "multicore",
+      "depth": 1,
+      "cores": 4,
+      "exit_code": 0
+    },
+    {
+      "name": "multicore_cores4_depth2",
+      "variant": "multicore",
+      "depth": 2,
+      "cores": 4,
+      "exit_code": 0
+    },
+    {
+      "name": "mcast_cores4_depth1",
+      "variant": "mcast",
+      "depth": 1,
+      "cores": 4,
+      "exit_code": 0
+    },
+    {
+      "name": "mcast_cores4_depth2",
+      "variant": "mcast",
+      "depth": 2,
+      "cores": 4,
+      "exit_code": 0
+    }
+  ],
+  "repeat_runs": [
+    {
+      "name": "repeat_128_128_128_depth1",
+      "variant": "mcast2d",
+      "depth": 1,
+      "cores": 4,
+      "exit_code": 0
+    },
+    {
+      "name": "repeat_128_128_128_depth2",
+      "variant": "mcast2d",
+      "depth": 2,
+      "cores": 4,
+      "exit_code": 0
+    },
+    {
+      "name": "repeat_96_64_160_depth1",
+      "variant": "mcast2d",
+      "depth": 1,
+      "cores": 4,
+      "exit_code": 0
+    },
+    {
+      "name": "repeat_96_64_160_depth2",
+      "variant": "mcast2d",
+      "depth": 2,
+      "cores": 4,
+      "exit_code": 0
+    },
+    {
+      "name": "repeat_64_512_64_depth1",
+      "variant": "mcast2d",
+      "depth": 1,
+      "cores": 4,
+      "exit_code": 0
+    },
+    {
+      "name": "repeat_64_512_64_depth2",
+      "variant": "mcast2d",
+      "depth": 2,
+      "cores": 4,
+      "exit_code": 0
+    },
+    {
+      "name": "fallback_baseline_32_64_128_depth1",
+      "variant": "baseline",
+      "depth": 1,
+      "cores": 1,
+      "exit_code": 0
+    },
+    {
+      "name": "fallback_mcast2d_32_64_128_depth1",
+      "variant": "mcast2d",
+      "depth": 1,
+      "cores": 4,
+      "exit_code": 0
+    },
+    {
+      "name": "fallback_baseline_32_64_128_depth2",
+      "variant": "baseline",
+      "depth": 2,
+      "cores": 1,
+      "exit_code": 0
+    },
+    {
+      "name": "fallback_mcast2d_32_64_128_depth2",
+      "variant": "mcast2d",
+      "depth": 2,
+      "cores": 4,
+      "exit_code": 0
+    },
+    {
+      "name": "fallback_baseline_128_64_32_depth1",
+      "variant": "baseline",
+      "depth": 1,
+      "cores": 1,
+      "exit_code": 0
+    },
+    {
+      "name": "fallback_mcast2d_128_64_32_depth1",
+      "variant": "mcast2d",
+      "depth": 1,
+      "cores": 4,
+      "exit_code": 0
+    },
+    {
+      "name": "fallback_baseline_128_64_32_depth2",
+      "variant": "baseline",
+      "depth": 2,
+      "cores": 1,
+      "exit_code": 0
+    },
+    {
+      "name": "fallback_mcast2d_128_64_32_depth2",
+      "variant": "mcast2d",
+      "depth": 2,
+      "cores": 4,
+      "exit_code": 0
+    }
+  ],
+  "passed": true,
+  "compiler": "Ubuntu clang version 20.1.2 (0ubuntu1~24.04.3)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm-20/bin\n",
+  "kernel": "5.15.90.1sangjunryu20195834+\n",
+  "source_sha256": {
+    "npu/matmul/mcast2d.hpp": "95f427f70f63afaff8a296084d363791ae5859d8ca1fa42894fcc3cd77bdf5e8",
+    "npu/matmul/README.md": "c31df8b49ec408659be7a28c6832f9557abae06ca72a45a2aee262b50bcfb71e",
+    "npu/matmul/multicore.hpp": "c39b49db9e193b5fd08c88a4cc3bde6a9e45ef2f185858e3e27d1198dd870e4d",
+    "npu/matmul/matmul.cpp": "ea24bb2d8330e7bc91953a028a139e0cc4e6d2dc5b564ab0eb21a4d6c95e29ba",
+    "npu/matmul/benchmark.hpp": "2258dc8de4bbd30275e89a9a3dc93cc92ce51a19942022589ee93c469aa0fd12",
+    "npu/matmul/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "npu/matmul/CMakeLists.txt": "96bd60c8703f7a6507b41d8f0059417f6aff4c9fd4ed4c876d3c551deb219a87",
+    "npu/matmul/mcast.hpp": "46b56f82f51d2a48569f834f2384268752b9e6c880b7cdf8e5b6367b6eebfc1c",
+    "npu/matmul/kernels/reader_mcast.cpp": "202044db641ea105151f09af7d74426bfabf9d88d1e5277a2eeacae4e08f4c3b",
+    "npu/matmul/kernels/writer_blocked.cpp": "5a0d07dbc9e65fccbf1130c5d8f0f69e365ca0fb2f67063bf5a7aa093f5f7e0c",
+    "npu/matmul/kernels/reader_mcast2d.cpp": "9f675a05c53f34ba5567d2175f3e635e345dddf0063ff8c3ec398f39fc43abaf",
+    "npu/matmul/kernels/writer.cpp": "3ff4232fd0f2e7342549900ec0ed0bb047d228f00a5e545abd0c3517a71776c3",
+    "npu/matmul/kernels/writer_mcast2d.cpp": "7e00b8600d33968489945afebd566e5a0e20889e8b60f74b40c6d9360ded0b54",
+    "npu/matmul/kernels/reader_streamed.cpp": "1ae07ffc56a8953354a4e288d518b898dfbdb86ee13c6b1087d0a9f8971b84b6",
+    "npu/matmul/kernels/reader_multicore.cpp": "444efa4cbc92135992fd7c25d31aa93c4f24ef5fa667ebd8c354fc0e97796588",
+    "npu/matmul/kernels/compute_multicore.cpp": "3478d3c06ed2ee0800e8dff3b0aab63fc99b95eddec759bee82571a4c4f22158",
+    "npu/matmul/kernels/writer_mcast.cpp": "ddc7c697269d43286a00bd321dd3c193ff1bf38da9363cc0abcae80ad7e8d0ef",
+    "npu/matmul/kernels/compute_blocked.cpp": "80dfa9cba9a361f319b82c6d2d388e7572ea7998246a443d545eb68703e66908",
+    "npu/matmul/kernels/compute_mcast.cpp": "5846eab77d7e540c5f6b2cca60b4e45d396ed99d34da67386d72ac01663f7ba4",
+    "npu/matmul/kernels/compute_streamed.cpp": "c9f057a6d67324dccc5da8ae904bfb6fc069a81ab51448c265ec04c5c5bd389f",
+    "npu/matmul/kernels/compute.cpp": "50aeed704fa9f95fce95a76bc3e92d0e6b0003a7c064c853bd7274fd84b73438",
+    "npu/matmul/kernels/reader_blocked.cpp": "1e97e70c12250f54c02d9eb5aa5d5562fa960a1cc11523d3be6246b20cacd252",
+    "npu/matmul/kernels/reader.cpp": "a1309a1ea8c16b4d6ca9f828049fd72edf21622ceee9abbcf008e1802416a66e",
+    "npu/matmul/kernels/compute_mcast2d.cpp": "9017c73e1db56d67e471ea44e7209ee3491b5253c4536fd0b1d250629a7bc55f",
+    "npu/matmul/kernels/writer_multicore.cpp": "197ab7244694adab382e313cd389181448e85bb7b2367fbcbebe5415339fc158",
+    "tools/report/run_mcast2d_matmul.py": "c6b29c91f5f040d608593f2f7264d57b9eb9d14a6be31639e20d008e7179d721",
+    "scripts/run_mcast2d_matmul.sh": "ce5d4c3eb8dcd5c326a1069597cd773842a263bf034875321b9f71b05d58c262",
+    "npu/vector_add/common.hpp": "695681e02c9fa7dd8441067460df4e4c566da3f11392402bb4ecf984fe9c2df2"
+  }
+}
