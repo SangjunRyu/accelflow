@@ -165,3 +165,27 @@ coverage, no overlaps, balanced group counts, skipped idle workers and bitwise o
 Follow with `.venv/bin/python tools/report/audit_rmsnorm_multicore.py --results <new-output>`
 for PyTorch FP32/FP64 comparison. The existing host CLI adds an optional final core count;
 omission still uses one core. See [27](../docs/27-multicore-rmsnorm.md).
+
+## RMSNorm 열 분할 검증
+
+```bash
+bash scripts/run_rmsnorm_column.sh
+.venv/bin/python tools/report/audit_rmsnorm_column.py --results <RESULTS>
+```
+
+첫 명령이 출력한 새 RESULTS 경로를 audit에 전달합니다. 기존 TT-Metal 라이브러리로 자체 host만
+빌드하고 행/열 분할 1·2·4코어, depth1 반복·경계·분할 모델을 검사합니다.
+결과는 `results/rmsnorm_column/`에 저장하며 실제 NPU 성능 측정은 아닙니다.
+[28. 열 분할 보고서](../docs/28-column-sharded-rmsnorm.md), [29. 최종 정리](../docs/29-metalium-results.md).
+
+## 공개 포트폴리오 재현 진입점
+
+```bash
+bash scripts/reproduce_portfolio.sh --evidence
+# 고정 TT-Metal/TTSim 환경이 이미 준비된 경우
+bash scripts/reproduce_portfolio.sh --simulate
+```
+
+기본값은 evidence다. Python 표준 라이브러리로 저장된 대표 기록 68개와 수치를 대조한다.
+simulate는 자체 host를 빌드하고 작은 MatMul 6개 mode를 총42회 실행한다.
+전체 upstream 빌드·의존성 설치·CUDA 실행은 하지 않는다. [30번](../docs/30-portfolio.md).

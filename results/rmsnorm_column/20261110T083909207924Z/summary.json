@@ -1,0 +1,501 @@
+{
+  "passed": true,
+  "fixtures": 7,
+  "unique_configurations": 49,
+  "total_operator_submissions": 67,
+  "max_abs_error_vs_cpu_fp64": 2.2254493825535349e-07,
+  "max_abs_difference_vs_row_single": 2.384185791015625e-07,
+  "comparisons": [
+    {
+      "label": "fused1",
+      "key": "idle_zero_1x1",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 61440,
+      "total_cb_bytes": 61440,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused1",
+      "key": "two_tiles_17x33",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 69632,
+      "total_cb_bytes": 69632,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused1",
+      "key": "uneven_33x129",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 94208,
+      "total_cb_bytes": 94208,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused1",
+      "key": "remote_spike_33x257",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 126976,
+      "total_cb_bytes": 126976,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused1",
+      "key": "mixed_65x65",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 77824,
+      "total_cb_bytes": 77824,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused1",
+      "key": "wide_1x1025",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 323584,
+      "total_cb_bytes": 323584,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused1",
+      "key": "epsilon_1x31",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 61440,
+      "total_cb_bytes": 61440,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused2",
+      "key": "idle_zero_1x1",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 61440,
+      "total_cb_bytes": 61440,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused2",
+      "key": "two_tiles_17x33",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 69632,
+      "total_cb_bytes": 69632,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused2",
+      "key": "uneven_33x129",
+      "active_cores": 2,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 94208,
+      "total_cb_bytes": 188416,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused2",
+      "key": "remote_spike_33x257",
+      "active_cores": 2,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 126976,
+      "total_cb_bytes": 253952,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused2",
+      "key": "mixed_65x65",
+      "active_cores": 2,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 77824,
+      "total_cb_bytes": 155648,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused2",
+      "key": "wide_1x1025",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 323584,
+      "total_cb_bytes": 323584,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused2",
+      "key": "epsilon_1x31",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 61440,
+      "total_cb_bytes": 61440,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused4",
+      "key": "idle_zero_1x1",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 61440,
+      "total_cb_bytes": 61440,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused4",
+      "key": "two_tiles_17x33",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 69632,
+      "total_cb_bytes": 69632,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused4",
+      "key": "uneven_33x129",
+      "active_cores": 2,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 94208,
+      "total_cb_bytes": 188416,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused4",
+      "key": "remote_spike_33x257",
+      "active_cores": 2,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 126976,
+      "total_cb_bytes": 253952,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused4",
+      "key": "mixed_65x65",
+      "active_cores": 3,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 77824,
+      "total_cb_bytes": 233472,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused4",
+      "key": "wide_1x1025",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 323584,
+      "total_cb_bytes": 323584,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "fused4",
+      "key": "epsilon_1x31",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 61440,
+      "total_cb_bytes": 61440,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "column1",
+      "key": "idle_zero_1x1",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 69632,
+      "total_cb_bytes": 69632,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "column1",
+      "key": "two_tiles_17x33",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 77824,
+      "total_cb_bytes": 77824,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "column1",
+      "key": "uneven_33x129",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 102400,
+      "total_cb_bytes": 102400,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "column1",
+      "key": "remote_spike_33x257",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 135168,
+      "total_cb_bytes": 135168,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "column1",
+      "key": "mixed_65x65",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 86016,
+      "total_cb_bytes": 86016,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "column1",
+      "key": "wide_1x1025",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 331776,
+      "total_cb_bytes": 331776,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "column1",
+      "key": "epsilon_1x31",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 69632,
+      "total_cb_bytes": 69632,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "column2",
+      "key": "idle_zero_1x1",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 69632,
+      "total_cb_bytes": 69632,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "column2",
+      "key": "two_tiles_17x33",
+      "active_cores": 2,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 69632,
+      "total_cb_bytes": 139264,
+      "peer_payload_bytes_model": 256
+    },
+    {
+      "label": "column2",
+      "key": "uneven_33x129",
+      "active_cores": 2,
+      "max_abs_difference_vs_row_single": 1.1920928955078125e-07,
+      "bitwise_equal_to_row_single": false,
+      "per_core_peak_cb_bytes": 86016,
+      "total_cb_bytes": 163840,
+      "peer_payload_bytes_model": 512
+    },
+    {
+      "label": "column2",
+      "key": "remote_spike_33x257",
+      "active_cores": 2,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 102400,
+      "total_cb_bytes": 196608,
+      "peer_payload_bytes_model": 512
+    },
+    {
+      "label": "column2",
+      "key": "mixed_65x65",
+      "active_cores": 2,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 77824,
+      "total_cb_bytes": 147456,
+      "peer_payload_bytes_model": 768
+    },
+    {
+      "label": "column2",
+      "key": "wide_1x1025",
+      "active_cores": 2,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 200704,
+      "total_cb_bytes": 393216,
+      "peer_payload_bytes_model": 256
+    },
+    {
+      "label": "column2",
+      "key": "epsilon_1x31",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 69632,
+      "total_cb_bytes": 69632,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "column4",
+      "key": "idle_zero_1x1",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 69632,
+      "total_cb_bytes": 69632,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "column4",
+      "key": "two_tiles_17x33",
+      "active_cores": 2,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 69632,
+      "total_cb_bytes": 139264,
+      "peer_payload_bytes_model": 256
+    },
+    {
+      "label": "column4",
+      "key": "uneven_33x129",
+      "active_cores": 4,
+      "max_abs_difference_vs_row_single": 2.384185791015625e-07,
+      "bitwise_equal_to_row_single": false,
+      "per_core_peak_cb_bytes": 77824,
+      "total_cb_bytes": 286720,
+      "peer_payload_bytes_model": 1536
+    },
+    {
+      "label": "column4",
+      "key": "remote_spike_33x257",
+      "active_cores": 4,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 86016,
+      "total_cb_bytes": 319488,
+      "peer_payload_bytes_model": 1536
+    },
+    {
+      "label": "column4",
+      "key": "mixed_65x65",
+      "active_cores": 3,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 69632,
+      "total_cb_bytes": 208896,
+      "peer_payload_bytes_model": 1536
+    },
+    {
+      "label": "column4",
+      "key": "wide_1x1025",
+      "active_cores": 4,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 135168,
+      "total_cb_bytes": 516096,
+      "peer_payload_bytes_model": 768
+    },
+    {
+      "label": "column4",
+      "key": "epsilon_1x31",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 69632,
+      "total_cb_bytes": 69632,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "column4-depth1",
+      "key": "idle_zero_1x1",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 45056,
+      "total_cb_bytes": 45056,
+      "peer_payload_bytes_model": 0
+    },
+    {
+      "label": "column4-depth1",
+      "key": "two_tiles_17x33",
+      "active_cores": 2,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 45056,
+      "total_cb_bytes": 90112,
+      "peer_payload_bytes_model": 256
+    },
+    {
+      "label": "column4-depth1",
+      "key": "uneven_33x129",
+      "active_cores": 4,
+      "max_abs_difference_vs_row_single": 2.384185791015625e-07,
+      "bitwise_equal_to_row_single": false,
+      "per_core_peak_cb_bytes": 53248,
+      "total_cb_bytes": 188416,
+      "peer_payload_bytes_model": 1536
+    },
+    {
+      "label": "column4-depth1",
+      "key": "remote_spike_33x257",
+      "active_cores": 4,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 61440,
+      "total_cb_bytes": 221184,
+      "peer_payload_bytes_model": 1536
+    },
+    {
+      "label": "column4-depth1",
+      "key": "mixed_65x65",
+      "active_cores": 3,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 45056,
+      "total_cb_bytes": 135168,
+      "peer_payload_bytes_model": 1536
+    },
+    {
+      "label": "column4-depth1",
+      "key": "wide_1x1025",
+      "active_cores": 4,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 110592,
+      "total_cb_bytes": 417792,
+      "peer_payload_bytes_model": 768
+    },
+    {
+      "label": "column4-depth1",
+      "key": "epsilon_1x31",
+      "active_cores": 1,
+      "max_abs_difference_vs_row_single": 0.0,
+      "bitwise_equal_to_row_single": true,
+      "per_core_peak_cb_bytes": 45056,
+      "total_cb_bytes": 45056,
+      "peer_payload_bytes_model": 0
+    }
+  ],
+  "performance_policy": "One process per configuration; wall time includes simulator/JIT/host cost, not real chip performance"
+}

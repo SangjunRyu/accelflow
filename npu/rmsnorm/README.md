@@ -94,3 +94,17 @@ aggregate CB payload grows with active cores. Total DRAM request payload remains
 `bash scripts/run_rmsnorm_multicore.sh` validates balanced, uneven, and idle-worker cases.
 Then run `.venv/bin/python tools/report/audit_rmsnorm_multicore.py --results <new-output>`.
 See [27](../../docs/27-multicore-rmsnorm.md) for exact scope, assignments and simulator timing limits.
+
+## 열 분할과 부분합 교환
+
+variant `column`은 타일 열을 연속 구간으로 나누며 요청 코어는 1·2·4입니다.
+모든 코어가 같은 32행 묶음을 처리하고, leader가 FP32 부분합을 더한 뒤 전체 합을 돌려줍니다.
+dataflow kernel은 비트 배치와 NoC 이동을 맡고 덧셈·정규화는 compute에서 수행합니다.
+CLI는 `rmsnorm list.txt report.json depth repeats [unfused|fused|column] [cores]`입니다.
+
+```bash
+bash scripts/run_rmsnorm_column.sh
+.venv/bin/python tools/report/audit_rmsnorm_column.py --results <RESULTS>
+```
+
+분할·semaphore 수명·검증 결과·L1/통신 모델은 [28번](../../docs/28-column-sharded-rmsnorm.md)에 있습니다.

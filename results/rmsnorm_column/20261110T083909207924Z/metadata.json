@@ -1,0 +1,145 @@
+{
+  "passed": true,
+  "tt_metal_revision": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "runs": [
+    {
+      "label": "pilot-column4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/pilot.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/pilot-column4.json",
+        "2",
+        "2",
+        "column",
+        "4"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 32.864974611000434
+    },
+    {
+      "label": "fused1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/fused1.json",
+        "2",
+        "1",
+        "fused",
+        "1"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 69.17187777899926
+    },
+    {
+      "label": "fused2",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/fused2.json",
+        "2",
+        "1",
+        "fused",
+        "2"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 68.84206978100156
+    },
+    {
+      "label": "fused4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/fused4.json",
+        "2",
+        "1",
+        "fused",
+        "4"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 61.69106636500146
+    },
+    {
+      "label": "column1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/column1.json",
+        "2",
+        "1",
+        "column",
+        "1"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 50.78652175800016
+    },
+    {
+      "label": "column2",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/column2.json",
+        "2",
+        "1",
+        "column",
+        "2"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 39.856564596999306
+    },
+    {
+      "label": "column4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/column4.json",
+        "2",
+        "2",
+        "column",
+        "4"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 59.7511985910005
+    },
+    {
+      "label": "column4-depth1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/column4-depth1.json",
+        "1",
+        "2",
+        "column",
+        "4"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 66.42010877999928
+    }
+  ],
+  "meminfo_before": "MemTotal:        3962484 kB\nMemFree:         2635424 kB\nMemAvailable:    2892960 kB\nBuffers:           19560 kB\nCached:           365612 kB\nSwapCached:            0 kB\nActive:           131944 kB\nInactive:         758256 kB\nActive(anon):       3228 kB\nInactive(anon):   506092 kB\nActive(file):     128716 kB\nInactive(file):   252164 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1048576 kB\nDirty:                80 kB\nWriteback:             0 kB\nAnonPages:        505100 kB\nMapped:           190008 kB\nShmem:              4260 kB\nKReclaimable:     152932 kB\nSlab:             198192 kB\nSReclaimable:     152932 kB\nSUnreclaim:        45260 kB\nKernelStack:        4576 kB\nPageTables:         9980 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:    1535384 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        7800 kB\nVmallocChunk:          0 kB\nPercpu:             3712 kB\nAnonHugePages:    219136 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      152576 kB\nDirectMap2M:     3983360 kB\nDirectMap1G:     8388608 kB\n",
+  "disk_available_bytes": 976601825280,
+  "source_sha256": {
+    "npu/rmsnorm/column_sharded.hpp": "35976acdb65fcbe2de035a5bc0841860265e56cab891946dfaa1011f410d6029",
+    "npu/rmsnorm/kernels/column_compute.cpp": "8cdc23f53509db651f232e968eb4c888ea9000bf564f39d67fc144f02d983ea6",
+    "npu/rmsnorm/kernels/column_reader.cpp": "d5f1d4ba0795bdf7a7ad16a1fe2889487839b2f77ccaf6f7d19370761d997bbb",
+    "npu/rmsnorm/kernels/column_writer.cpp": "1422c13f3d898e95a9f122fd5a2d7bdbd460a36e165393b7af041c4734b2d619",
+    "npu/rmsnorm/kernels/fused_compute.cpp": "9d7ad11c4c016eef4cdd6b42b6d476045873a1b7cc7100eb76be38e246c3d2ff",
+    "npu/rmsnorm/kernels/fused_reader.cpp": "9e4653d92b80055769c0f4729a927a3569a0f6ecddf4739cc8d6c48b2f73f1da",
+    "npu/rmsnorm/kernels/fused_writer.cpp": "19e399e8d3d5335f12d731b90321968858edf1c9341166e342ee5015330c782a",
+    "npu/rmsnorm/kernels/normalize.cpp": "aa1abb7b58581e9ef1f2312acb91b873887502194c9546bef9431cadf4729f4b",
+    "npu/rmsnorm/kernels/reader.cpp": "bdc9258fe8afd4ed1d49f03dcc867195533a0fd185cd9049edc0e5a8d2b6e72b",
+    "npu/rmsnorm/kernels/reader_normalize.cpp": "b990dc69297b35a869f7e835d115ac604033491264d711bc4347134acd1f7a40",
+    "npu/rmsnorm/kernels/reader_sum.cpp": "6c3bc354ef810fc26fc9b239783b64a16bfa5aab8583694bf776a7c08c40821a",
+    "npu/rmsnorm/kernels/square.cpp": "c5fb23be76fa3af601326d8a28cf9507e8e2e466696617cf9cc828b1b7ff0e59",
+    "npu/rmsnorm/kernels/sum.cpp": "fa6a0d862118c1d949a79b63a48fec7428d0cfc5ef89617f851d7dd1537244a3",
+    "npu/rmsnorm/kernels/writer.cpp": "88dfe29fe4b8fdf6a0ea3ff44dbd7f757b0f5aea9a4e8cd1821cb6ea09972ec8",
+    "npu/rmsnorm/rmsnorm.cpp": "507ebee1497d9a94db9c621d5173b5a29ef261a949b7b78ac78253b967496e7f",
+    "npu/rmsnorm/CMakeLists.txt": "77fb1d1c19fb7f16551b4167a240505cbbbeaa50db8b4d535dacc448ee0abe2b",
+    "npu/vector_add/common.hpp": "695681e02c9fa7dd8441067460df4e4c566da3f11392402bb4ecf984fe9c2df2",
+    "tools/report/build_rmsnorm.py": "55f6bb2d7a3601421255ecbbdb65c318a50b9c892e7a372006bca8051403f060",
+    "tools/report/run_rmsnorm_column.py": "5ddaf40edcc94afdc3c9931942e565516ad39689b0a5ae4881de3847681b373c",
+    "tools/report/audit_rmsnorm_column.py": "734310403fa90cc7f9be0ffde6cff11ab6310f0f92edfaa90cb76fa20652ba76",
+    "scripts/run_rmsnorm_column.sh": "47d82d15e3c742c07feadbf921377e5f64ef4f6792bd6fd1349555f40ee97355"
+  },
+  "executable_sha256": "cae54ca5e44c70c478ce338a2d1047ed5340ada7017aedd32d5cfe7f3823f3a1"
+}

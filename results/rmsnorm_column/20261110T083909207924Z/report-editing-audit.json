@@ -1,0 +1,12 @@
+{
+  "route": "standard",
+  "run_id": "2026-11-10-003-1182",
+  "change_rate_percent": 0.03,
+  "grade": "B",
+  "self_checks_passed": 6,
+  "gate_exit_code": 1,
+  "gate_status": "WARN",
+  "finalizer": "accept",
+  "edits": "One connective comma and one double-particle expression; all numbers, tables and code preserved",
+  "remaining_warnings": "Four footnote_anchor false positives reproduced on original-versus-original input; formula parentheses are misidentified as footnotes"
+}

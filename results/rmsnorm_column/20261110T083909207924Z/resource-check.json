@@ -1,0 +1,6 @@
+{
+  "windows_c_free_bytes": 10746224640,
+  "measured_at": "2026-11-10T17:48:31.0119018+09:00",
+  "initial_windows_c_free_bytes": 10754945024,
+  "note": "WSL VHDX is on C:; Linux logical free space is not physical host capacity. Only the project RMSNorm host was built; no full TT-Metal build."
+}

@@ -23,18 +23,21 @@ static std::vector<float> pack(const std::vector<float>& values, uint32_t h, uin
 
 static float widen(uint16_t bits) { return std::bit_cast<float>(uint32_t(bits) << 16); }
 
+#include "column_sharded.hpp"
+
 int main(int argc, char** argv) {
     try {
         if (argc != 5 && argc != 6 && argc != 7)
-            throw std::runtime_error("Usage: rmsnorm fixture-list.txt report.json depth repeats [unfused|fused] [cores:1|2|4]");
+            throw std::runtime_error("Usage: rmsnorm fixture-list.txt report.json depth repeats [unfused|fused|column] [cores:1|2|4]");
         const std::string variant = argc >= 6 ? argv[5] : "unfused";
-        if (variant != "unfused" && variant != "fused")
-            throw std::runtime_error("Expected unfused or fused");
-        const bool fused = variant == "fused";
+        if (variant != "unfused" && variant != "fused" && variant != "column")
+            throw std::runtime_error("Expected unfused, fused, or column");
+        const bool column = variant == "column";
+        const bool fused = variant != "unfused";
         const uint32_t requested_cores = argc == 7 ? std::stoul(argv[6]) : 1;
         if ((requested_cores != 1 && requested_cores != 2 && requested_cores != 4) ||
             (!fused && requested_cores != 1))
-            throw std::runtime_error("Only fused supports 1/2/4 cores; unfused requires one core");
+            throw std::runtime_error("Fused and column support 1/2/4 cores; unfused requires one core");
         const uint32_t depth = std::stoul(argv[3]), repeats = std::stoul(argv[4]);
         if ((depth != 1 && depth != 2) || repeats < 1 || repeats > 3)
             throw std::runtime_error("Invalid depth/repeats");
@@ -76,14 +79,27 @@ int main(int argc, char** argv) {
             af::dist::EnqueueWriteMeshBuffer(queue, gd, packed_g, false);
 
             // 각 코어는 연속한 32행 묶음을 맡습니다. 빈 shard에는 커널을 만들지 않습니다.
-            const uint32_t active_cores = fused ? std::min(requested_cores, ht) : 1;
+            const uint32_t active_cores = fused ? std::min(requested_cores, column ? wt : ht) : 1;
             const auto grid = session.device->compute_with_storage_grid_size();
-            if (active_cores > grid.x * grid.y) throw std::runtime_error("Insufficient worker cores");
+            if (active_cores > grid.x * grid.y || (column && active_cores > grid.x)) throw std::runtime_error("Insufficient worker cores");
             nlohmann::json shards = nlohmann::json::array();
-            std::vector<uint32_t> coverage(ht, 0);
+            const uint32_t partition_units = column ? wt : ht;
+            std::vector<uint32_t> coverage(partition_units, 0);
             uint32_t group_start = 0;
             for (uint32_t index = 0; index < active_cores; ++index) {
-                const uint32_t groups = ht / active_cores + (index < ht % active_cores ? 1 : 0);
+                const uint32_t groups = partition_units / active_cores + (index < partition_units % active_cores ? 1 : 0);
+                if (column) {
+                    const uint32_t local_cb = (2*groups+6*depth+3)*4096;
+                    const auto physical = session.device->worker_core_from_logical_core({index,0});
+                    shards.push_back({{"core",{index,0}},{"physical_core",{physical.x,physical.y}},
+                        {"role", index == 0 ? "leader reduce + compute" : "partial sender + compute"},
+                        {"column_tile_start",group_start},{"column_tile_count",groups},
+                        {"valid_columns",std::min(w-group_start*32,groups*32)},
+                        {"row_group_count",ht},{"tile_count",ht*groups},{"cb_payload_bytes_model",local_cb}});
+                    for (uint32_t col=group_start; col<group_start+groups; ++col) ++coverage[col];
+                    group_start += groups;
+                    continue;
+                }
                 const uint32_t valid_rows = std::min(h - group_start * 32, groups * 32);
                 shards.push_back({{"core",{index % grid.x,index / grid.x}},
                     {"row_group_start",group_start},{"row_group_count",groups},
@@ -91,7 +107,7 @@ int main(int argc, char** argv) {
                 for (uint32_t group = group_start; group < group_start + groups; ++group) ++coverage[group];
                 group_start += groups;
             }
-            if (group_start != ht || std::any_of(coverage.begin(),coverage.end(),[](auto n){return n != 1;}))
+            if (group_start != partition_units || std::any_of(coverage.begin(),coverage.end(),[](auto n){return n != 1;}))
                 throw std::runtime_error("Row-group assignment has a gap or overlap");
 
             // 세 stage 사이의 데이터는 장치 DRAM에 남습니다. Host는 중간 계산을 하지 않습니다.
@@ -180,11 +196,15 @@ int main(int argc, char** argv) {
                 return workload;
             };
 
-            const uint32_t cb_bytes = (fused ? 2*wt+6*depth+1 : 6*depth+1) * 4096;
+            const uint32_t max_local_wt = (wt + active_cores - 1) / active_cores;
+            const uint32_t cb_bytes = (column ? 2*max_local_wt+6*depth+3 : fused ? 2*wt+6*depth+1 : 6*depth+1) * 4096;
+            const uint64_t cb_total = column ? uint64_t(2*wt + active_cores*(6*depth+3))*4096 : uint64_t(cb_bytes)*active_cores;
             if (fused && cb_bytes > 1200U * 1024)
                 throw std::runtime_error("Fused CB payload exceeds the conservative 1200 KiB budget");
             std::vector<af::dist::MeshWorkload> workloads;
-            if (fused) {
+            if (column) {
+                workloads.push_back(make_column_sharded(session,xd,gd,yd,ht,wt,w,epsilon,depth,active_cores));
+            } else if (fused) {
                 workloads.push_back(make_fused());
             } else {
                 for (uint32_t stage = 0; stage < 3; ++stage)
@@ -254,10 +274,15 @@ int main(int argc, char** argv) {
                 {"cb_peak_payload_bytes_model",cb_bytes},{"device_l1_bytes_per_core",session.device->l1_size_per_core()},
                 {"intermediate_dram_bytes",fused ? 0U : (tiles+ht)*4096},
                 {"dram_payload_bytes_model",uint64_t(fused ? 3*tiles : 7*tiles+2*ht)*4096},
-                {"row_cache_bytes_model",fused ? 2*wt*4096 : 0U},{"variant",variant},
+                {"row_cache_bytes_model",fused ? 2*(column ? max_local_wt : wt)*4096 : 0U},{"variant",variant},
                 {"requested_cores",requested_cores},{"active_cores",active_cores},
                 {"idle_requested_cores",requested_cores-active_cores},{"shards",shards},
-                {"cb_total_payload_bytes_model",uint64_t(cb_bytes)*active_cores},
+                {"cb_total_payload_bytes_model",cb_total},
+                {"partition_axis",column ? "columns" : "rows"},
+                {"peer_payload_bytes_model",column ? uint64_t(ht)*256*(active_cores-1) : 0},
+                {"peer_data_messages_model",column ? uint64_t(ht)*2*(active_cores-1) : 0},
+                {"peer_atomic_increments_model",column ? uint64_t(ht)*2*(active_cores-1) : 0},
+                {"partial_statistics_reduced_on_compute",column},
                 {"assignment_has_no_gaps_or_overlaps",true}});
             std::cout << "PASS RMSNorm " << path << " max_abs=" << max_error << std::endl;
         }

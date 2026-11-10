@@ -16,3 +16,5 @@ results/matmul/20261109T075137507595Z/** -text
 *.sqlite binary
 results/rmsnorm_fused/** -text
 results/rmsnorm_multicore/** -text
+results/rmsnorm_column/** -text
+results/portfolio/** -text

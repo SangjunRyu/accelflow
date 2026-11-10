@@ -145,3 +145,9 @@ compact vector보다 전송량이 큽니다. 이것은 정확성 기준 구현�
 nvprof trace는 성공했으며 legacy Event API는 CUPTI_ERROR_NOT_SUPPORTED(27)로 실패했습니다.
 같은 오류의 580 driver 호환성 보고를 찾았지만 Windows MX150에서 driver 변경 검증은 하지 않았습니다.
 driver 변경 없이 확보한 근거와 한계는 [23번](23-texture-matmul-and-profiler.md)에 정리했습니다.
+
+## Metalium 단계 정리 — 2026-11-10
+
+MatMul·Reduction·RMSNorm의 구현 범위, 대표 설계 결과, 측정 한계와 지원서용 설명은 [29번](29-metalium-results.md)에 정리했습니다. 열 분할 RMSNorm의 부분합 통신은 [28번](28-column-sharded-rmsnorm.md)을 참고하세요. TT-NN과 모델 실행은 후속 단계입니다.
+
+공개 README의 대표 수치와 설계 변경 이유, 재현 방법은 [30번](30-portfolio.md)에 모았습니다. 기존 단계별 노트는 당시의 조건과 결과로 보존합니다.

@@ -1,0 +1,29 @@
+2026-11-10 17:39:46.022 | info     |           Metal | Disabling multi-erisc mode with simulator/emule target device (rtoptions.cpp:392)
+2026-11-10 17:39:46.025 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:223)
+2026-11-10 17:39:46.026 | info     |             UMD | Cluster constructor started. (cluster.cpp:408)
+2026-11-10 17:39:46.028 | warning  |             UMD | Chip 0 has inconsistent Tensix harvesting information between harvest mask and number of harvested. Board n150 expects 1 units, but harvest mask indicates 0 units. (cluster_descriptor.cpp:1321)
+2026-11-10 17:39:46.030 | info     |             UMD | Creating Simulation device (cluster.cpp:285)
+2026-11-10 17:39:46.156 | info     | EmulationDriver | TTSimTTDevice chip_id=0 PCI vendor_id=0x1e52 device_id=0x401e (tt_sim_tt_device.cpp:135)
+2026-11-10 17:39:46.157 | info     |             UMD | Cluster constructor completed. (cluster.cpp:683)
+2026-11-10 17:39:46.159 | info     |             UMD | Starting devices in cluster (cluster.cpp:1292)
+2026-11-10 17:39:46.159 | info     |             UMD | Starting devices in cluster completed. (cluster.cpp:1300)
+2026-11-10 17:39:46.164 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_env.cpp:422)
+2026-11-10 17:39:46.164 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_env.cpp:484)
+2026-11-10 17:39:46.169 | info     |          Fabric | Logical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3190)
+2026-11-10 17:39:46.170 | info     |          Fabric | Physical multi-mesh adjacency: intermesh degree histogram {0:1}; intra-mesh degree histograms mesh0 {0:1} (topology_mapper_utils.cpp:3198)
+PASS RMSNorm /home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/scratch/idle_zero_1x1.bin max_abs=0
+PASS RMSNorm /home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/scratch/two_tiles_17x33.bin max_abs=1.72526e-07
+PASS RMSNorm /home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/scratch/uneven_33x129.bin max_abs=2.22545e-07
+PASS RMSNorm /home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/scratch/remote_spike_33x257.bin max_abs=1.42775e-08
+PASS RMSNorm /home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/scratch/mixed_65x65.bin max_abs=5.77735e-08
+PASS RMSNorm /home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/scratch/wide_1x1025.bin max_abs=7.52795e-08
+PASS RMSNorm /home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/scratch/epsilon_1x31.bin max_abs=1.02202e-10
+2026-11-10 17:41:00.400 | info     |    BuildKernels | JIT cache stats: 13/13 hits (100.0%) [13 cached, 18 build-once dedup, 0 merged artifacts, 0 merged genfiles] (build_cache_telemetry.cpp:268)
+2026-11-10 17:41:00.401 | info     |    BuildKernels | JIT telemetry: 26 registered TelemetryTokens (build_cache_telemetry.cpp:325)
+2026-11-10 17:41:00.414 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:519)
+2026-11-10 17:41:00.414 | info     |             UMD | Closing devices in cluster (cluster.cpp:1305)
+2026-11-10 17:41:00.414 | info     |             UMD | Closing devices in cluster completed. (cluster.cpp:1314)
+2026-11-10 17:41:00.415 | info     |             UMD | Cluster destructor started. (cluster.cpp:1020)
+2026-11-10 17:41:00.415 | info     |             UMD | Cluster destructor completed. (cluster.cpp:1023)
+2026-11-10 17:41:00.416 | info     | EmulationDriver | Sending exit signal to remote... (tt_sim_communicator.cpp:295)
+[4737260] 76.7 seconds (61.8 KHz)

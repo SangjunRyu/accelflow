@@ -1,0 +1,520 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "scope": "Audit of saved records; no kernel execution",
+  "design_models": [
+    {
+      "variant": "baseline",
+      "evidence_kind": "source_model",
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "active_cores": 1,
+      "dram_read_bytes": 262144,
+      "cb_bytes_per_core": 12288,
+      "total_cb_bytes": 12288,
+      "source": "results/matmul/20261109T075137507595Z/baseline_depth2.json"
+    },
+    {
+      "variant": "reuse_a",
+      "evidence_kind": "source_model",
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "active_cores": 1,
+      "dram_read_bytes": 163840,
+      "cb_bytes_per_core": 16384,
+      "total_cb_bytes": 16384,
+      "source": "results/matmul/20261109T075137507595Z/reuse_a_depth2.json"
+    },
+    {
+      "variant": "blocked",
+      "evidence_kind": "source_model",
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "active_cores": 1,
+      "dram_read_bytes": 131072,
+      "cb_bytes_per_core": 69632,
+      "total_cb_bytes": 69632,
+      "source": "results/matmul/20261109T075137507595Z/blocked_depth2.json"
+    },
+    {
+      "variant": "multicore",
+      "evidence_kind": "source_model",
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "active_cores": 4,
+      "dram_read_bytes": 262144,
+      "cb_bytes_per_core": 12288,
+      "total_cb_bytes": 49152,
+      "source": "results/matmul_mcast2d/20261019T111449423414Z/multicore_cores4_depth2.json"
+    },
+    {
+      "variant": "mcast",
+      "evidence_kind": "source_model",
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "active_cores": 4,
+      "dram_read_bytes": 163840,
+      "cb_bytes_per_core": 12288,
+      "total_cb_bytes": 49152,
+      "source": "results/matmul_mcast2d/20261019T111449423414Z/mcast_cores4_depth2.json"
+    },
+    {
+      "variant": "mcast2d",
+      "evidence_kind": "source_model",
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "active_cores": 4,
+      "dram_read_bytes": 131072,
+      "cb_bytes_per_core": 12288,
+      "total_cb_bytes": 49152,
+      "source": "results/matmul_mcast2d/20261019T111449423414Z/mcast2d_cores4_depth2.json"
+    },
+    {
+      "variant": "mcast2d_batch4",
+      "evidence_kind": "source_model",
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "active_cores": 4,
+      "dram_read_bytes": 131072,
+      "cb_bytes_per_core": 36864,
+      "total_cb_bytes": 147456,
+      "source": "results/matmul_batched_perf/20261019T113209749850Z/correctness_b4_d2_p4.json"
+    }
+  ],
+  "design_fingerprints": [
+    10505404799017070829,
+    7289593503068866336,
+    5195744401960344368
+  ],
+  "cuda_measurements": [
+    {
+      "evidence_kind": "cuda_gpu_measurement",
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "naive",
+      "event_batch_average_median_ms": 0.0836911946535,
+      "trial_medians_ms": [
+        0.0924880057573,
+        0.0771823972464,
+        0.0836911946535
+      ],
+      "source": "results/cuda_matmul/20261109T0747432221509Z/cuda-summary.json"
+    },
+    {
+      "evidence_kind": "cuda_gpu_measurement",
+      "shape_mkn": [
+        128,
+        128,
+        128
+      ],
+      "variant": "tiled",
+      "event_batch_average_median_ms": 0.0888959988952,
+      "trial_medians_ms": [
+        0.0888959988952,
+        0.0498015992343,
+        0.116232000291
+      ],
+      "source": "results/cuda_matmul/20261109T0747432221509Z/cuda-summary.json"
+    },
+    {
+      "evidence_kind": "cuda_gpu_measurement",
+      "shape_mkn": [
+        320,
+        320,
+        320
+      ],
+      "variant": "naive",
+      "event_batch_average_median_ms": 1.68744969368,
+      "trial_medians_ms": [
+        1.68744969368,
+        1.36647677422,
+        1.95537757874
+      ],
+      "source": "results/cuda_matmul/20261109T0747432221509Z/cuda-summary.json"
+    },
+    {
+      "evidence_kind": "cuda_gpu_measurement",
+      "shape_mkn": [
+        320,
+        320,
+        320
+      ],
+      "variant": "tiled",
+      "event_batch_average_median_ms": 0.741119980812,
+      "trial_medians_ms": [
+        0.741119980812,
+        0.618086397648,
+        2.36497926712
+      ],
+      "source": "results/cuda_matmul/20261109T0747432221509Z/cuda-summary.json"
+    },
+    {
+      "evidence_kind": "cuda_gpu_measurement",
+      "shape_mkn": [
+        640,
+        320,
+        640
+      ],
+      "variant": "naive",
+      "event_batch_average_median_ms": 7.62204122543,
+      "trial_medians_ms": [
+        6.8327422142,
+        8.12922859192,
+        7.62204122543
+      ],
+      "source": "results/cuda_matmul/20261109T0747432221509Z/cuda-summary.json"
+    },
+    {
+      "evidence_kind": "cuda_gpu_measurement",
+      "shape_mkn": [
+        640,
+        320,
+        640
+      ],
+      "variant": "tiled",
+      "event_batch_average_median_ms": 2.31802892685,
+      "trial_medians_ms": [
+        2.31802892685,
+        1.9683328867,
+        2.39897584915
+      ],
+      "source": "results/cuda_matmul/20261109T0747432221509Z/cuda-summary.json"
+    }
+  ],
+  "ttsim_observations": [
+    {
+      "evidence_kind": "ttsim_host_observation",
+      "shape_mkn": [
+        320,
+        320,
+        320
+      ],
+      "variant": "multicore",
+      "median_ms": 512.975702,
+      "trial_medians_ms": [
+        510.809399,
+        579.235737,
+        512.975702
+      ],
+      "dram_read_bytes_model": 4096000,
+      "cb_bytes_per_core_model": 12288,
+      "ready_atomics_model": null,
+      "payload_multicast_calls_model": 0,
+      "source": "results/matmul_batched_perf/20261019T113209749850Z/summary.json"
+    },
+    {
+      "evidence_kind": "ttsim_host_observation",
+      "shape_mkn": [
+        320,
+        320,
+        320
+      ],
+      "variant": "mcast",
+      "median_ms": 882.77891,
+      "trial_medians_ms": [
+        902.915528,
+        816.258254,
+        882.77891
+      ],
+      "dram_read_bytes_model": 2662400,
+      "cb_bytes_per_core_model": 12288,
+      "ready_atomics_model": null,
+      "payload_multicast_calls_model": 300,
+      "source": "results/matmul_batched_perf/20261019T113209749850Z/summary.json"
+    },
+    {
+      "evidence_kind": "ttsim_host_observation",
+      "shape_mkn": [
+        320,
+        320,
+        320
+      ],
+      "variant": "mcast2d",
+      "median_ms": 1162.35098,
+      "trial_medians_ms": [
+        1307.529323,
+        1067.286045,
+        1162.35098
+      ],
+      "dram_read_bytes_model": 2048000,
+      "cb_bytes_per_core_model": 12288,
+      "ready_atomics_model": 1000,
+      "payload_multicast_calls_model": 1000,
+      "source": "results/matmul_batched_perf/20261019T113209749850Z/summary.json"
+    },
+    {
+      "evidence_kind": "ttsim_host_observation",
+      "shape_mkn": [
+        320,
+        320,
+        320
+      ],
+      "variant": "mcast2d_batch1",
+      "median_ms": 1393.986577,
+      "trial_medians_ms": [
+        1583.93116,
+        1391.587259,
+        1393.986577
+      ],
+      "dram_read_bytes_model": 2048000,
+      "cb_bytes_per_core_model": 12288,
+      "ready_atomics_model": 1000,
+      "payload_multicast_calls_model": 1000,
+      "source": "results/matmul_batched_perf/20261019T113209749850Z/summary.json"
+    },
+    {
+      "evidence_kind": "ttsim_host_observation",
+      "shape_mkn": [
+        320,
+        320,
+        320
+      ],
+      "variant": "mcast2d_batch4",
+      "median_ms": 746.244374,
+      "trial_medians_ms": [
+        732.257137,
+        746.244374,
+        751.001622
+      ],
+      "dram_read_bytes_model": 2048000,
+      "cb_bytes_per_core_model": 36864,
+      "ready_atomics_model": 300,
+      "payload_multicast_calls_model": 300,
+      "source": "results/matmul_batched_perf/20261019T113209749850Z/summary.json"
+    },
+    {
+      "evidence_kind": "ttsim_host_observation",
+      "shape_mkn": [
+        320,
+        320,
+        320
+      ],
+      "variant": "mcast2d_batch8",
+      "median_ms": 780.124812,
+      "trial_medians_ms": [
+        780.124812,
+        729.910406,
+        903.521232
+      ],
+      "dram_read_bytes_model": 2048000,
+      "cb_bytes_per_core_model": 69632,
+      "ready_atomics_model": 200,
+      "payload_multicast_calls_model": 200,
+      "source": "results/matmul_batched_perf/20261019T113209749850Z/summary.json"
+    },
+    {
+      "evidence_kind": "ttsim_host_observation",
+      "shape_mkn": [
+        640,
+        320,
+        640
+      ],
+      "variant": "multicore",
+      "median_ms": 2329.653876,
+      "trial_medians_ms": [
+        2029.955974,
+        2429.699913,
+        2329.653876
+      ],
+      "dram_read_bytes_model": 16384000,
+      "cb_bytes_per_core_model": 12288,
+      "ready_atomics_model": null,
+      "payload_multicast_calls_model": 0,
+      "source": "results/matmul_batched_perf/20261019T113209749850Z/summary.json"
+    },
+    {
+      "evidence_kind": "ttsim_host_observation",
+      "shape_mkn": [
+        640,
+        320,
+        640
+      ],
+      "variant": "mcast",
+      "median_ms": 2806.734752,
+      "trial_medians_ms": [
+        2806.734752,
+        3199.800182,
+        2757.97844
+      ],
+      "dram_read_bytes_model": 10240000,
+      "cb_bytes_per_core_model": 12288,
+      "ready_atomics_model": null,
+      "payload_multicast_calls_model": 1000,
+      "source": "results/matmul_batched_perf/20261019T113209749850Z/summary.json"
+    },
+    {
+      "evidence_kind": "ttsim_host_observation",
+      "shape_mkn": [
+        640,
+        320,
+        640
+      ],
+      "variant": "mcast2d",
+      "median_ms": 4629.212351,
+      "trial_medians_ms": [
+        5223.903834,
+        4629.212351,
+        4410.138039
+      ],
+      "dram_read_bytes_model": 8192000,
+      "cb_bytes_per_core_model": 12288,
+      "ready_atomics_model": 4000,
+      "payload_multicast_calls_model": 4000,
+      "source": "results/matmul_batched_perf/20261019T113209749850Z/summary.json"
+    },
+    {
+      "evidence_kind": "ttsim_host_observation",
+      "shape_mkn": [
+        640,
+        320,
+        640
+      ],
+      "variant": "mcast2d_batch1",
+      "median_ms": 6026.674985,
+      "trial_medians_ms": [
+        6488.855623,
+        6026.674985,
+        5401.107326
+      ],
+      "dram_read_bytes_model": 8192000,
+      "cb_bytes_per_core_model": 12288,
+      "ready_atomics_model": 4000,
+      "payload_multicast_calls_model": 4000,
+      "source": "results/matmul_batched_perf/20261019T113209749850Z/summary.json"
+    },
+    {
+      "evidence_kind": "ttsim_host_observation",
+      "shape_mkn": [
+        640,
+        320,
+        640
+      ],
+      "variant": "mcast2d_batch4",
+      "median_ms": 3241.891663,
+      "trial_medians_ms": [
+        4157.122089,
+        3029.069086,
+        3241.891663
+      ],
+      "dram_read_bytes_model": 8192000,
+      "cb_bytes_per_core_model": 36864,
+      "ready_atomics_model": 1200,
+      "payload_multicast_calls_model": 1200,
+      "source": "results/matmul_batched_perf/20261019T113209749850Z/summary.json"
+    },
+    {
+      "evidence_kind": "ttsim_host_observation",
+      "shape_mkn": [
+        640,
+        320,
+        640
+      ],
+      "variant": "mcast2d_batch8",
+      "median_ms": 2975.693916,
+      "trial_medians_ms": [
+        2609.171242,
+        3178.755444,
+        2975.693916
+      ],
+      "dram_read_bytes_model": 8192000,
+      "cb_bytes_per_core_model": 69632,
+      "ready_atomics_model": 800,
+      "payload_multicast_calls_model": 800,
+      "source": "results/matmul_batched_perf/20261019T113209749850Z/summary.json"
+    }
+  ],
+  "source_sha256": {
+    "results/cuda_matmul/20261109T0747432221509Z/cuda-metadata.json": "a86e9e6fd9de8ad016b03fa5db17bf24a65577b313ad2a79304af6dfe4d8f129",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda-summary.json": "400daa3ac2f4e4ab89e0b98678b3bc1f02ce485945325cbc94a44ae5003f7e73",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_128x128x128_naive_trial1.json": "99ca656cbc3bdfc9f442d64d2fe0f5c1947668166362d25a5b86a49a320dcbb9",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_128x128x128_naive_trial2.json": "3c410bd9beb5ab226b3914efd8bf864bb38b5fac049605d1639bc94ddb3c3cec",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_128x128x128_naive_trial3.json": "94a795cee103fdabc60b013f8ed04ae89626e062585e91e138f4d15cb71f4864",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_128x128x128_tiled_trial1.json": "c3f07e4fbf10766d97e4fcdde2d703eb134292544cc8b4b8a2dafe1920082632",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_128x128x128_tiled_trial2.json": "763ffca42ead2f8ac5f9d06fd70a469af1c4e0ac50e9ddef7ab0956bbbc2bd3d",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_128x128x128_tiled_trial3.json": "cd26874911f684ed3fe2265217cc9a602abf56c386093b594a8fe5f305d99c63",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_320x320x320_naive_trial1.json": "b5b8c061156ef41b75c706b7847c26ac0b834ed177df71ae03a1384cdda8344c",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_320x320x320_naive_trial2.json": "799b2f50ad86480d8197d083ffa21a110eb43f0e6692eeda9f8b79fab12dc24e",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_320x320x320_naive_trial3.json": "9c3fe5f6a545e44f156cfe59f5d53ce48fbc5f78b67b1fef3e7917d33ae26304",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_320x320x320_tiled_trial1.json": "254dcdfc42d2ae15ad363a5b722fa5f4f0834bb177978704883a9d9c687ad538",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_320x320x320_tiled_trial2.json": "c793088fc47b84c06fc180e8875ca0528f91717e49e0dcc407efc63de0257ca5",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_320x320x320_tiled_trial3.json": "d9df5f761e435e962b1047af07747cb625c10e1c5eaa15f2ec84858a4562005b",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_640x320x640_naive_trial1.json": "e32ce190c9a94ac23c4e72a5110ad8c9e7f5265f29d06aece6405408d3f26118",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_640x320x640_naive_trial2.json": "a8bbe13ec8760eaed4a44127b243e485ad01faa00f11f147b1bff4723afdd013",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_640x320x640_naive_trial3.json": "8c43c4d5df8723dc9ff94d0010be265314c058a40ccb6dbde251138db17687ed",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_640x320x640_tiled_trial1.json": "583e6772e69d34eb54a5458898766e615b8243a2cfb0b26617c1b4b24fb42ba3",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_640x320x640_tiled_trial2.json": "0d2e58bf63271a34c77178a60b92eb51d79c28c8ad4d086c02bbd4dbafe7e170",
+    "results/cuda_matmul/20261109T0747432221509Z/cuda_signed_random_640x320x640_tiled_trial3.json": "0208988db94f82c3418616222fe94d39982aaca4c6af166e55bec802eccf64c1",
+    "results/cuda_matmul/20261109T0747432221509Z/npu_signed_random_128x128x128.json": "93ce1d55d5bcdb4cc94f0211c058ecde3ecd2025c64bbc687b5556b570e1750c",
+    "results/cuda_matmul/20261109T0747432221509Z/npu_signed_random_320x320x320.json": "f7c7f59daa47d489e6e24a141300af5232d67cd2d33ac99a95201f59519e5191",
+    "results/cuda_matmul/20261109T0747432221509Z/npu_signed_random_640x320x640.json": "ab8c0cc3835348d725ce93f92406a112603b2855f13cb373374b54285b1d8da5",
+    "results/matmul/20261109T075137507595Z/baseline_depth2.json": "971a698a7746eacee596e2071423f4112eb23e064ec8e198751f5e0b71195604",
+    "results/matmul/20261109T075137507595Z/blocked_depth2.json": "49152bb61d1d5aa3560fbbcdc8acb60b720b3c9949a248cda96b5692c179e707",
+    "results/matmul/20261109T075137507595Z/reuse_a_depth2.json": "a422db2f34961eb16a9d6295f8aca8a9cf32a6436f3b75760a4840e8fb38644f",
+    "results/matmul_batched_perf/20261019T113209749850Z/correctness_b4_d2_p4.json": "84c4ba20dd7d41ea89641652327957d7affb26cd1b8ebc1682b37868bb36447f",
+    "results/matmul_batched_perf/20261019T113209749850Z/metadata.json": "a678604ff7df9b115e4bfae399e983763b69cbbb59264a029ed430b6ab88b88d",
+    "results/matmul_batched_perf/20261019T113209749850Z/summary.json": "5bbfbd48f95ea2dae936c7f5db2c1615c6fe46fc7af008921638df3a0d161f76",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial1_320x320x320_mcast.json": "7bb5cf56164c3a5e894a54fab94ba35a99a962c6fa61fb4d8738d9814bc492e8",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial1_320x320x320_mcast2d.json": "2629b7c8f8fdd14708922280a53fa0a4ad7796a3a23d9808b3ffa0975e85cb2b",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial1_320x320x320_mcast2d_batch1.json": "2b21524fe34b4689c39ff6b557768f22f4ada1738ee03a435f2e1f2311d28e18",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial1_320x320x320_mcast2d_batch4.json": "5f321f3cc166fa019e507101cb3ca43981588fff9987ad8cd93a355537b32117",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial1_320x320x320_mcast2d_batch8.json": "898c2795d84623c13de541bd997909d37928e5fc416c5c63375481f34186d63c",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial1_320x320x320_multicore.json": "eb444636bb98ae7a940327481a5d5d92c5488902f1078cdf5deb6c45b1bee8db",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial1_640x320x640_mcast.json": "28b9a5dc35b6ec405425db02a03aeb088bb27e66e7ebc48082e1531478c4f97e",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial1_640x320x640_mcast2d.json": "685a5680b0be32663a929ab1180060d2c35a91ebbe03704a3697a1da97829875",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial1_640x320x640_mcast2d_batch1.json": "3a7a1bf0c56333bf73f5dbc40e4271a305973b0bc9e3035509dc7bd73f4103e4",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial1_640x320x640_mcast2d_batch4.json": "c01f7e5895d74717087f863c8ac397d6e3526afdf087a375219585227c1b66bd",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial1_640x320x640_mcast2d_batch8.json": "072f8956cff5b0e3a4b5dc1a775dede97b66339951409bd218f87c7c96c58dce",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial1_640x320x640_multicore.json": "47fe5321dc3ebd523fc9e421baaf2e96e4042a1f17062a71fff6df9b0aad8106",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial2_320x320x320_mcast.json": "887c255e372bccc4efaf41dbadb184f067dfa6b0d8823750dd0ba1961da9493c",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial2_320x320x320_mcast2d.json": "06e18d82f31ebf78122b98ff5c4d1668e04a6ea504478d8709c6155e0a34654f",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial2_320x320x320_mcast2d_batch1.json": "032e4c5028695f74a617dfd27a304e74b64a3b5923bb40baa38d88efaa914170",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial2_320x320x320_mcast2d_batch4.json": "9a0291fd3cd05858f9cd477266dc6a58a671757b977dbe616155016f41b7632f",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial2_320x320x320_mcast2d_batch8.json": "04d60534c1d0ec577c0252712341794b2a73d1eee06764b3000bf520b555573a",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial2_320x320x320_multicore.json": "84186190295394975fe0471300b1ac49ef82e091f0b7e4f9b43ed535c919738b",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial2_640x320x640_mcast.json": "08a2c27cee262bdc736f50a287dc542207cfc0ccc9e84932c644a7192744be33",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial2_640x320x640_mcast2d.json": "7bb3646b73fafd5bd7ef0ad0fc02c866d27722b7b5102c5f6e94e5f556235202",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial2_640x320x640_mcast2d_batch1.json": "3083ec90f2ab765cab7bccbbbcd8368f9b24aac6f7bb53c8f272bc3b20bff813",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial2_640x320x640_mcast2d_batch4.json": "5f845b752411e38b11169f689996a9b990e11a6f04826afbb1e019a3dddfff0d",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial2_640x320x640_mcast2d_batch8.json": "c9cbb17325d6c1e14b1f2a9a44c9e27f057a8c90f06be500ebf9a5e0a281353b",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial2_640x320x640_multicore.json": "64854d1f87be873febfce09321c70c5ec95e02f56c0abcd6e3f9a5352c2bba62",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial3_320x320x320_mcast.json": "dd20eda55a0660a56df1e945b0458139c843f58320b97e7d7518b71a99aadad9",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial3_320x320x320_mcast2d.json": "90e12840d01b4f891d25a543bc3273c5cba448abaac87d09986e255125ace675",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial3_320x320x320_mcast2d_batch1.json": "c83c8a2d1ff162a81fe9d40c6132a7f9935e56e3b36ec167623565294fbc5a42",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial3_320x320x320_mcast2d_batch4.json": "1c0933d2fa3d23d95891a31ceb5619e7c50d2abd1d910e323b9469e12b001b23",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial3_320x320x320_mcast2d_batch8.json": "38f74746eb5d393898f4800615db1901c2df6b2726f2c2c56e9cb1331856a496",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial3_320x320x320_multicore.json": "60b7fff6768de50b7eb968de4e102c694f1ec2a3e646f8ed4fa4cdec3d16163a",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial3_640x320x640_mcast.json": "3ac30791ed4d0064a8add2ea55b31cb70077762d3c78ed58b88ff8f71083a93a",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial3_640x320x640_mcast2d.json": "1cb88fa0eee2bb78d18752e73c21c79d238c8a2043f9a699bb103d233344e959",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial3_640x320x640_mcast2d_batch1.json": "0d9967703a7291f35d4d0c850a442b407240d21e6ce908911753cfe0ef2e1c4d",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial3_640x320x640_mcast2d_batch4.json": "b631d0f3ce1c0c3c62c0b9d2be0d053cae549966c58277fee58c2fb5086b41f9",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial3_640x320x640_mcast2d_batch8.json": "a7ce2c309784217932d15fd4ba4390c72d74ddb5da49a37fbacf306844ad2550",
+    "results/matmul_batched_perf/20261019T113209749850Z/trial3_640x320x640_multicore.json": "9cb6d9c0a929b592f67548cd8da651092e87f5c1c9e88cb0220c3358983ad629",
+    "results/matmul_mcast2d/20261019T111449423414Z/mcast2d_cores4_depth2.json": "2579e4a9e14c536560c0a5322838e158748bc3f94d2d396158e0c84cdbdb824e",
+    "results/matmul_mcast2d/20261019T111449423414Z/mcast_cores4_depth2.json": "8f07077aea6e9f91f0603c014a2c9d01d402b13490badfef049d7552803fec5c",
+    "results/matmul_mcast2d/20261019T111449423414Z/multicore_cores4_depth2.json": "090b1ebbbf44afbb949142878b07ecda3f9e7944a6866ba725c35975048a7d99"
+  }
+}

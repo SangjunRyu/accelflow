@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "fixtures": [
+    {
+      "key": "idle_zero_1x1",
+      "shape_hw": [
+        1,
+        1
+      ],
+      "binary": "scratch/idle_zero_1x1.bin",
+      "sha256": "79fae85d755efdffc179f4c8c8cdb99c63985254b4b6c97bedc6a4e669da1535"
+    },
+    {
+      "key": "two_tiles_17x33",
+      "shape_hw": [
+        17,
+        33
+      ],
+      "binary": "scratch/two_tiles_17x33.bin",
+      "sha256": "27d8fb5075d4c563bcb2da3fa2dfe96e95e845774621340c70f69c03651380f5"
+    },
+    {
+      "key": "uneven_33x129",
+      "shape_hw": [
+        33,
+        129
+      ],
+      "binary": "scratch/uneven_33x129.bin",
+      "sha256": "d56a1c893ebf5017a9437a5e1a296c97bab86a3311079126c09c6f4bfcba1162"
+    },
+    {
+      "key": "remote_spike_33x257",
+      "shape_hw": [
+        33,
+        257
+      ],
+      "binary": "scratch/remote_spike_33x257.bin",
+      "sha256": "6cab885d729bce473c1bdeecf347c5b749bcefec7ff95d73bc6ec29bda11472b"
+    },
+    {
+      "key": "mixed_65x65",
+      "shape_hw": [
+        65,
+        65
+      ],
+      "binary": "scratch/mixed_65x65.bin",
+      "sha256": "fbe831466b4329e248facbf2399887bb661fc7800978c9e5802ffcf6c370d655"
+    },
+    {
+      "key": "wide_1x1025",
+      "shape_hw": [
+        1,
+        1025
+      ],
+      "binary": "scratch/wide_1x1025.bin",
+      "sha256": "4f1d6244990c95309a0635edbf2d108814e112b73cff8a30cf008e93abd4ce72"
+    },
+    {
+      "key": "epsilon_1x31",
+      "shape_hw": [
+        1,
+        31
+      ],
+      "binary": "scratch/epsilon_1x31.bin",
+      "sha256": "d41d9d94f9c4f27739d68015994ff4dd23186f304e38399b5a21eceb9a55291c"
+    }
+  ]
+}

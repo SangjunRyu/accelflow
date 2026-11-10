@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "label": "column4-once",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/column4-once.json",
+        "2",
+        "1",
+        "column",
+        "4"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 33.40875929299909
+    },
+    {
+      "label": "legacy-unfused",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/legacy-fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/legacy-unfused.json",
+        "2",
+        "1",
+        "unfused",
+        "1"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 2.169403390000298
+    }
+  ],
+  "additional_operator_submissions": 9,
+  "main_suite_operator_submissions": 67,
+  "total_operator_submissions": 76,
+  "matched_timing_control": "column4-once matches other depth2 full-suite processes: seven cases, one submission each; one process each, JIT/order uncontrolled",
+  "legacy_scope": "Two fixtures, unfused three-stage output bitwise equal to row-fused baseline; not a rerun of all historical experiments",
+  "script_sha256": "8d32c3df6f4828b6c8ba8d433ad5507a06d9986c013dc5bff1d49d5483e4e1b4"
+}

@@ -135,3 +135,5 @@ bash scripts/run_rmsnorm_multicore.sh
 
 다음 후보는 TT-NN RMSNorm 기준 구현 대조다. 한 행을 여러 코어로 나누고 부분합을 교환하는
 열 분할·sender/receiver 방식은 이번 범위에 포함하지 않았다.
+
+후속 열 분할과 실제 코어 간 부분합 교환은 [28번](28-column-sharded-rmsnorm.md)에서 완료했다.

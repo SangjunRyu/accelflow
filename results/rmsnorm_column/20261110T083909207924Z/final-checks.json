@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "current_sources_match_tested_sha256": true,
+  "executable_matches_tested_sha256": true,
+  "source_snapshots_verified": true,
+  "local_report_links_valid": true,
+  "python_syntax_valid": true,
+  "bash_syntax_valid": true,
+  "git_diff_check_passed": true,
+  "runtime_suite_passed": true,
+  "pytorch_audit_passed": true,
+  "legacy_and_timing_control_passed": true,
+  "style_gate": "WARN with original-versus-original footnote false positives; finalizer accept"
+}

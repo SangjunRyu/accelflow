@@ -1,0 +1,68 @@
+[P0 문자율] 0.0% [전문] — OK (경고 30% / 중단 50%)
+[P1 목표달성] N/A — 구조 진단 (어휘 S1 앵커 없음)
+[P2 전멸] C-8 대구 0 → 0 — 스킵 (원문 대구 < 5)
+[P3 golden] FAIL — 4건:
+    FAIL [footnote_anchor] 각주 32)이 원위치를 벗어났습니다 (인접 수치 앵커 '32' → '1'): 인용 출처 변조 위험
+    FAIL [footnote_anchor] 각주 1)이 원위치를 벗어났습니다 (인접 수치 앵커 '6' → '128'): 인용 출처 변조 위험
+    FAIL [footnote_anchor] 각주 1)이 원위치를 벗어났습니다 (인접 수치 앵커 '256' → '128'): 인용 출처 변조 위험
+    FAIL [footnote_anchor] 각주 1)이 원위치를 벗어났습니다 (인접 수치 앵커 '2' → '128'): 인용 출처 변조 위험
+[P4 터치율] 0.8% (2/256 문장) — 보고 전용
+[P5 서법] 소실 0문장 (참고 총수: 당위 3→3 / 완곡 0→0) — OK
+gate: WARN — 경고. 사용자 고지 + finalize 승급
+{
+  "genre": "report",
+  "change_rate": {
+    "rate": 0.0003,
+    "scope": "전문",
+    "verdict": "OK"
+  },
+  "s1_targets": [],
+  "antithesis": {
+    "before": 0,
+    "after": 0,
+    "verdict": "스킵 (원문 대구 < 5)"
+  },
+  "golden": [
+    {
+      "code": "footnote_anchor",
+      "message": "각주 32)이 원위치를 벗어났습니다 (인접 수치 앵커 '32' → '1'): 인용 출처 변조 위험"
+    },
+    {
+      "code": "footnote_anchor",
+      "message": "각주 1)이 원위치를 벗어났습니다 (인접 수치 앵커 '6' → '128'): 인용 출처 변조 위험"
+    },
+    {
+      "code": "footnote_anchor",
+      "message": "각주 1)이 원위치를 벗어났습니다 (인접 수치 앵커 '256' → '128'): 인용 출처 변조 위험"
+    },
+    {
+      "code": "footnote_anchor",
+      "message": "각주 1)이 원위치를 벗어났습니다 (인접 수치 앵커 '2' → '128'): 인용 출처 변조 위험"
+    }
+  ],
+  "sentence_touch": {
+    "rate": 0.0078,
+    "touched": 2,
+    "total": 256
+  },
+  "numbers_dropped": [],
+  "modality": {
+    "lost_pairs": [],
+    "uncertain_pairs": [],
+    "counts": {
+      "deontic": {
+        "before": 3,
+        "after": 3
+      },
+      "hedge": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    "verdict": "OK"
+  },
+  "gate": {
+    "verdict": "WARN — 경고. 사용자 고지 + finalize 승급",
+    "exit_code": 1
+  }
+}

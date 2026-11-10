@@ -1,0 +1,2 @@
+/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/scratch/two_tiles_17x33.bin
+/home/ysjun5656/dev/accelflow/results/rmsnorm_column/20261110T083909207924Z/scratch/mixed_65x65.bin

@@ -1,0 +1,28 @@
+{
+  "decision": "accept",
+  "genre": "report",
+  "fidelity_violations": [],
+  "residual_findings": [],
+  "overediting_findings": [],
+  "body_corrections": 0,
+  "summary_updated": true,
+  "original_char_count": 11698,
+  "final_body_char_count": 11698,
+  "change_rate_from_gate": 0.0003,
+  "grade": "B",
+  "self_checks_passed": 6,
+  "gate_exit_code": 1,
+  "gate_warning_adjudication": {
+    "type": "footnote_anchor",
+    "count": 4,
+    "false_positive": true,
+    "evidence": "check_footnotes(original, original) reproduces the identical four warnings; all numeric tokens in order, fenced code blocks and table lines match",
+    "warnings": [
+      "[footnote_anchor] 각주 32)이 원위치를 벗어났습니다 (인접 수치 앵커 '32' → '1'): 인용 출처 변조 위험",
+      "[footnote_anchor] 각주 1)이 원위치를 벗어났습니다 (인접 수치 앵커 '6' → '128'): 인용 출처 변조 위험",
+      "[footnote_anchor] 각주 1)이 원위치를 벗어났습니다 (인접 수치 앵커 '256' → '128'): 인용 출처 변조 위험",
+      "[footnote_anchor] 각주 1)이 원위치를 벗어났습니다 (인접 수치 앵커 '2' → '128'): 인용 출처 변조 위험"
+    ]
+  },
+  "remaining_warnings": "Deterministic gate WARN remains; manually adjudicated false positives, not gate PASS"
+}
