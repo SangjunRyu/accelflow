@@ -14,3 +14,5 @@ results/profiling/** -text
 results/matmul/20261109T075137507595Z/** -text
 *.nsys-rep binary
 *.sqlite binary
+results/rmsnorm_fused/** -text
+results/rmsnorm_multicore/** -text

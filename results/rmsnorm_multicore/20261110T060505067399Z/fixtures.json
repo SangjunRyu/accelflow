@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "fixtures": [
+    {
+      "key": "balanced_narrow_256x33",
+      "shape_hw": [
+        256,
+        33
+      ],
+      "binary": "scratch/balanced_narrow_256x33.bin",
+      "sha256": "349e4a8d1ec63b24acf91d2e4b780ee9c08cce142bdfc4668f4151d202cb41c0"
+    },
+    {
+      "key": "balanced_256x257",
+      "shape_hw": [
+        256,
+        257
+      ],
+      "binary": "scratch/balanced_256x257.bin",
+      "sha256": "a52cbf046d72cfaa67bbe04aac3127e621a5e88272477e3447c1484d485e15b7"
+    },
+    {
+      "key": "wide_128x1025",
+      "shape_hw": [
+        128,
+        1025
+      ],
+      "binary": "scratch/wide_128x1025.bin",
+      "sha256": "2bfadd88882ad9c0fd0213960aa4e3b4b69682594da7fa9aee88f6b20f589453"
+    },
+    {
+      "key": "tail_mixed_65x65",
+      "shape_hw": [
+        65,
+        65
+      ],
+      "binary": "scratch/tail_mixed_65x65.bin",
+      "sha256": "fbe831466b4329e248facbf2399887bb661fc7800978c9e5802ffcf6c370d655"
+    },
+    {
+      "key": "idle_zero_1x33",
+      "shape_hw": [
+        1,
+        33
+      ],
+      "binary": "scratch/idle_zero_1x33.bin",
+      "sha256": "ea74abb511487dbbeaae41551b7b8f2f0991ed6731568611dd00b6997a668275"
+    }
+  ]
+}

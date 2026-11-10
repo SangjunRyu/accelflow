@@ -1,6 +1,6 @@
 # 00. 진행 순서와 문서 안내
 
-마지막 갱신: 2026-11-09. **Phase 4 RMSNorm 기준 구현·CUDA fusion 검증 완료**입니다.
+마지막 갱신: 2026-11-10. **Phase 4 RMSNorm·CUDA/NPU fusion·행 분할 multicore 검증 완료**입니다.
 가상 Wormhole에서 결과 21 / exit code 0을 확인했습니다.
 
 ## 읽는 순서
@@ -35,6 +35,8 @@
 | 23 | [cudaArray·nvprof 진단](23-texture-matmul-and-profiler.md) | 입력 경로 3종·45 process·trace/legacy counter 구분 완료 |
 | 24 | [CUDA Reduction 비교](24-cuda-reduction.md) | naive/tree/shuffle·129 process·2499회 출력 검증·변동 포함 측정 완료 |
 | 25 | [RMSNorm·Fusion 비교](25-rmsnorm.md) | NPU 40개 구성·CUDA 64 process/1184회 출력 검증·PyTorch 공통 입력 20종 대조 완료 |
+| 26 | [NPU RMSNorm Fusion](26-npu-rmsnorm-fusion.md) | 단일 프로그램·L1 보관·40개 구성/80회·bitwise/PyTorch·폭 제한 검증 완료 |
+| 27 | [행 분할 Multicore RMSNorm](27-multicore-rmsnorm.md) | 1/2/4코어·15개 구성/23회·균등/꼬리/유휴 코어·PyTorch 대조 완료 |
 
 ## 실제 진행 현황
 
@@ -70,6 +72,8 @@
 | 28 | cudaArray 입력 경로 비교·nvprof/CUPTI 진단 | **완료** |
 | 29 | CUDA Reduction naive/tree/shuffle·입력 대조·반복 측정 | 완료 |
 | 30 | RMSNorm CPU 기준값·CUDA 기본/fused·NPU 단일 코어·정밀도 전달 검증 | 완료 |
+| 31 | NPU RMSNorm fusion·중간 DRAM 제거·L1 비용·기준 출력/PyTorch 대조 | 완료 |
+| 32 | 행 분할 RMSNorm·1/2/4코어·분할/출력 구간·L1 합계·PyTorch 검증 | 완료 |
 
 ## TTSim 자체 설치 완료 결과
 
@@ -106,7 +110,7 @@ TT_Metal_kernel_smoke_test: PASS
 [22번](22-row-wise-reduction.md)에서 NPU row-wise sum을 검증했습니다.
 [24번](24-cuda-reduction.md)에서 CUDA Reduction 3개 구현과 큰 입력 재측정을 완료했습니다.
 [25번](25-rmsnorm.md)에서 NPU RMSNorm 기준 구현과 CUDA 기본/fused 비교를 완료했습니다.
-PyTorch CPU 기준 대조까지 완료했습니다. 다음 후보는 NPU fusion·multicore RMSNorm 또는 TT-NN 기준 구현과의 대조입니다. MatMul의 추가 최적화 후보는 출력 block 재사용과 multicast 결합입니다.
+PyTorch CPU 기준 대조까지 완료했습니다. [26번](26-npu-rmsnorm-fusion.md)에서 NPU fusion까지 검증했습니다. [27번](27-multicore-rmsnorm.md)에서 행 분할 multicore도 검증했습니다. 다음 후보는 TT-NN RMSNorm 기준 구현 대조입니다. MatMul의 추가 최적화 후보는 출력 block 재사용과 multicast 결합입니다.
 현재 재사용 효과는 소스 기반 payload 모델이며 실물 성능 측정은 아닙니다.
 
 준비·빌드·실행의 정확한 최종 설정과 로그는 [06번](06-tt-metal-build-validation.md)을 참고하세요.

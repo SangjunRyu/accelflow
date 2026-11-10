@@ -1,0 +1,694 @@
+{
+  "passed": true,
+  "torch_version": "2.15.0+cpu",
+  "device": "cpu",
+  "threads": 1,
+  "command": [
+    "/home/ysjun5656/dev/accelflow/.venv/bin/python",
+    "tools/report/audit_rmsnorm_fused.py",
+    "--results",
+    "results/rmsnorm_fused/20261110T051656706592Z"
+  ],
+  "cases": 20,
+  "backend_outputs_compared": 120,
+  "depths": [
+    1,
+    2
+  ],
+  "complete_suite": true,
+  "atol": 0.0001,
+  "rtol": 0.0001,
+  "bitwise_equal_to_unfused": true,
+  "fused_max_abs_error_vs_pytorch_fp32": 2.384185791015625e-07,
+  "fused_max_abs_error_vs_pytorch_fp64": 2.3306871588246736e-07,
+  "source_sha256": "e89dd862095514c54492809128681556abaa7199a91f0b997e3a3e922c0dc54e",
+  "source_report_sha256": {
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm_fused/20261110T051656706592Z/fused-depth1.json": "72a0cc5070ef34f4b2677a33c7d5cf4195921cc45ac83310a5bc5644868b510a",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm_fused/20261110T051656706592Z/fused-depth2.json": "fa06d6af53dce1995c06899c792be1c9269d5ed4b6dc7670fe60ffba4d902075",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/npu-depth1.json": "df3a24d19a6ef8febccd4bfcfaa9bd10eb7eebe3174942d529c046d56cc13874",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/npu-depth2.json": "3837fc28bbaf1bafc0087a388edeb1670da234111bcea2915d9683bb1c32f141",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/deterministic_2x3_eps1e-05_unfused_trial1.json": "046beaebe715705c75aacf41908d4fae67bef15a3bc8174fd6ca8c119f441b13",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/deterministic_2x3_eps1e-05_fused_trial1.json": "0fb4f676bff163ae3bc488a9fd5fa3d715be3e0c3afbdf4aa4b681d123c144cc",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/zero_33x35_eps1e-05_unfused_trial1.json": "84914253026cc191938eaac2cef71167e6aa6c6f5d1915f5216cdbb96642bc4b",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/zero_33x35_eps1e-05_fused_trial1.json": "995a067da26235b22fcf509d7260cc152f87d8f89e7648ca81bf4168f1f32667",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/ones_1x1_eps1e-05_unfused_trial1.json": "847887f2dca69dd5ee66f536e5622c110844866e8b84062376732e665317c27d",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/ones_1x1_eps1e-05_fused_trial1.json": "1d9e255d3faf4ca27c10ec1f8c2e7cd799acaf4fc2be8df9980cce94e24e377f",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/ones_2x31_eps1e-05_unfused_trial1.json": "3d7a2701f8222d2956577aa5f21058893eba04a40957c8d1498ef2cf63f85f7a",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/ones_2x31_eps1e-05_fused_trial1.json": "dfd06d1005309a023a2e6fde7f176a0c42b07db37b1feee60f99b90c8b52af69",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/ones_2x32_eps1e-05_unfused_trial1.json": "a20effb2645e573ec09884d9a22c4ac4c74dacd4bd1d3fe5b15d1fd067930827",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/ones_2x32_eps1e-05_fused_trial1.json": "cebcf1d5d574494dffe410ffb221cdb5497ba7cf5c3381cbdd44e949cc380f80",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/ones_2x33_eps1e-05_unfused_trial1.json": "eb59085f85b1bd7649d6802088d776afb870c81ad7380296e52d2b8e1f037993",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/ones_2x33_eps1e-05_fused_trial1.json": "5dfaa44340b2c21cc844ce7a5187ac9d4f3bfa0a89d961a8d49f7d847cb260e9",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/signed_31x65_eps1e-05_unfused_trial1.json": "be4a108826fe733ca566e5535dcbd7fdbaf7990e4803829010833bdc3aa74841",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/signed_31x65_eps1e-05_fused_trial1.json": "1907e27e3e15cf255517a7ad2da4cf646e2da8e9a923e06fa23c363c7bdbfdd2",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/signed_32x65_eps1e-05_unfused_trial1.json": "903e3b0c75cd44108d4de729c33704b76be0c404136dee58f131bcd83f6b97be",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/signed_32x65_eps1e-05_fused_trial1.json": "8883eff322503e8dcc2cfbc94d50ca67013c5179b7473e981d90f5b3ad529355",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/signed_33x65_eps1e-05_unfused_trial1.json": "6df1888d50d8a4b49c64c2c135cba662e7508e7e794f0263dbc761ab5c4b39d4",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/signed_33x65_eps1e-05_fused_trial1.json": "2cedfd1c2d6d77da143bfe8fd66d726a885efcf1a0c2cf8911ffbde948f76871",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/signed_65x129_eps1e-05_unfused_trial1.json": "abc6e069fdd21c57b889238fcfbedc9a3e8e053bc08a723431dbf6ee116040a9",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/signed_65x129_eps1e-05_fused_trial1.json": "5c686ff58d51ac9073bf80e52cbdafd215cdf7e205c6edc25eb90ae87bdfe286",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/signed_3x257_eps1e-05_unfused_trial1.json": "4a86ad3ae4474388127ca43e2f41a71d32ff36e504f636942044dcd3b258c437",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/signed_3x257_eps1e-05_fused_trial1.json": "947e6ebd0c433ea045df229743c09fa9993385a51da614ae7d8f5d92f5b99fc7",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/signed_2x1025_eps1e-05_unfused_trial1.json": "b2f13ba9e462246203eeed9b73e016535f7e9e89c827ec4ea1b7c54495a63d74",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/signed_2x1025_eps1e-05_fused_trial1.json": "868586b29d045bac49d48a36a4a4c3f533cc321d138eb353a6661a6bef19f158",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/signed_1x4097_eps1e-05_unfused_trial1.json": "e4eed8e873b160bfd6e063aadd553b5669c859e5f7f92ef7f26397aff57aeb81",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/signed_1x4097_eps1e-05_fused_trial1.json": "126a50de278ae64183b14bd3e1b9fe1e98174124326a0dd7ef342e38b403b29a",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/fractional_17x257_eps1e-05_unfused_trial1.json": "66ef90c91b21c4fbf8f16bb406e8d65ea01d267018555f2f70bdeccc64d95bf7",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/fractional_17x257_eps1e-05_fused_trial1.json": "017c017c99da5fc901f53d61025348d65efe37616e07c87f0361129f17fe8833",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/tiny_3x33_eps1e-05_unfused_trial1.json": "eb415ab168531a7bca70c4df556839ffdb4f5783dff3f62bf070fcd9df30dc0f",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/tiny_3x33_eps1e-05_fused_trial1.json": "9f6d3eb6b38063e98dfb36df3f70578f2912210e4cfbad4d8f392f76d79ded92",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/mixed_3x65_eps1e-05_unfused_trial1.json": "c56b1abb27dde957be46db72d0bb2374d3c0b216ef6fa739d050228d8906a49f",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/mixed_3x65_eps1e-05_fused_trial1.json": "4bcab5d5dbab00b05b0a301cbfe1454564ee584a89b9017a3f79f8a71aca5997",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/gamma_zero_3x35_eps1e-05_unfused_trial1.json": "041bddf58ea88ae64512d7c19e78dbe0cd8d535a45bb5bd307974df5da58cae6",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/gamma_zero_3x35_eps1e-05_fused_trial1.json": "81f0aeba8b51aab3c5c06e24e034a362a34b7866645c68708d8b5840ba4e0446",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/gamma_signed_33x65_eps1e-05_unfused_trial1.json": "b10178b2e31891fc62dc20b4ba790a2bbe35d39ed37d7e8e42cb96c79648d49a",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/gamma_signed_33x65_eps1e-05_fused_trial1.json": "f19e2d42000fe8e025878a1faba2993f976bf82907cae6f19c0f36a5ccd978a3",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/epsilon_3x33_eps0.001_unfused_trial1.json": "c23215172294279a4852104833f7c273f2e6f7020d2ce858d1cabafcaad5b992",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/epsilon_3x33_eps0.001_fused_trial1.json": "f7bf80287054c88b88de48baa9af0a8d995606ac2561663103135a3edd498fc5",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/epsilon_3x33_eps1e-06_unfused_trial1.json": "3f379d0fc184fcaea5e8441981aa3cf82a195ecd9201c884740da519c2308210",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm/epsilon_3x33_eps1e-06_fused_trial1.json": "bfec4c261f9407904041fd931e60e9246daeecc674a7bcf907cd3f7a6f727d5d"
+  },
+  "rows": [
+    {
+      "key": "deterministic_2x3_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 4.3114269487887213e-08
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 4.3114269487887213e-08
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 4.3114269487887213e-08
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 4.3114269487887213e-08
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 2.9753977059954195e-14,
+          "pytorch_fp64": 4.3114295689150595e-08
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 2.9753977059954195e-14,
+          "pytorch_fp64": 4.3114295689150595e-08
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "zero_33x35_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 0.0
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 0.0
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 0.0
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 0.0
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 0.0
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 0.0
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "ones_1x1_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 5.960464888321582e-08,
+          "pytorch_fp64": 6.643243610771066e-08
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 5.960464888321582e-08,
+          "pytorch_fp64": 6.643243610771066e-08
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "ones_2x31_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 5.960464888321582e-08,
+          "pytorch_fp64": 6.643243610771066e-08
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 5.960464888321582e-08,
+          "pytorch_fp64": 6.643243610771066e-08
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "ones_2x32_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 5.960464888321582e-08,
+          "pytorch_fp64": 6.643243610771066e-08
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 5.960464888321582e-08,
+          "pytorch_fp64": 6.643243610771066e-08
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "ones_2x33_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 6.827787224494841e-09
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 5.960464888321582e-08,
+          "pytorch_fp64": 6.643243610771066e-08
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 5.960464888321582e-08,
+          "pytorch_fp64": 6.643243610771066e-08
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "signed_31x65_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 1.192093190827137e-07,
+          "pytorch_fp64": 1.1835812596672213e-07
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 1.192093190827137e-07,
+          "pytorch_fp64": 1.1835812596672213e-07
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "signed_32x65_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 1.192093190827137e-07,
+          "pytorch_fp64": 1.1835812596672213e-07
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 1.192093190827137e-07,
+          "pytorch_fp64": 1.1835812596672213e-07
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "signed_33x65_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 1.192093190827137e-07,
+          "pytorch_fp64": 1.1835812596672213e-07
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 1.192093190827137e-07,
+          "pytorch_fp64": 1.1835812596672213e-07
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "signed_65x129_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.55041684379853e-07
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.55041684379853e-07
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.55041684379853e-07
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.55041684379853e-07
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 1.1920933817854973e-07,
+          "pytorch_fp64": 1.1146236267300935e-07
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 1.1920933817854973e-07,
+          "pytorch_fp64": 1.1146236267300935e-07
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "signed_3x257_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 8.926788708230049e-08
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 8.926788708230049e-08
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 8.926788708230049e-08
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 8.926788708230049e-08
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 1.1920933817854973e-07,
+          "pytorch_fp64": 8.926786554397381e-08
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 1.1920933817854973e-07,
+          "pytorch_fp64": 8.926786554397381e-08
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "signed_2x1025_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.0722603449586643e-07
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.0722603449586643e-07
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.0722603449586643e-07
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.0722603449586643e-07
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 1.1920933329356842e-07,
+          "pytorch_fp64": 1.094891108888163e-07
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 1.1920933329356842e-07,
+          "pytorch_fp64": 1.094891108888163e-07
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "signed_1x4097_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 8.046669774941506e-08
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 8.046669774941506e-08
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 8.046669774941506e-08
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 8.046669774941506e-08
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 1.1920932441178422e-07,
+          "pytorch_fp64": 7.095748832952609e-08
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 1.1920932441178422e-07,
+          "pytorch_fp64": 7.095748832952609e-08
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "fractional_17x257_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 2.384185791015625e-07,
+          "pytorch_fp64": 2.3306871588246736e-07
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 2.384185791015625e-07,
+          "pytorch_fp64": 2.3306871588246736e-07
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 2.384185791015625e-07,
+          "pytorch_fp64": 2.3306871588246736e-07
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 2.384185791015625e-07,
+          "pytorch_fp64": 2.3306871588246736e-07
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 1.1920933906672815e-07,
+          "pytorch_fp64": 1.5465025549055156e-07
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 1.1920933906672815e-07,
+          "pytorch_fp64": 1.5465025549055156e-07
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "tiny_3x33_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 2.7665807145194066e-11
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 2.7665807145194066e-11
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 2.7665807145194066e-11
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 2.7665807145194066e-11
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 2.914335439641036e-16,
+          "pytorch_fp64": 2.76655157116501e-11
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 2.914335439641036e-16,
+          "pytorch_fp64": 2.76655157116501e-11
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "mixed_3x65_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 5.805956670990042e-08
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 5.805956670990042e-08
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 5.805956670990042e-08
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 5.805956670990042e-08
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 4.707345624410664e-14,
+          "pytorch_fp64": 5.80595340693435e-08
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 4.707345624410664e-14,
+          "pytorch_fp64": 5.80595340693435e-08
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "gamma_zero_3x35_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 0.0
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 0.0
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 0.0
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 0.0
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 0.0
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 0.0
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "gamma_signed_33x65_eps1e-05",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 1.1920928955078125e-07,
+          "pytorch_fp64": 1.1835814861527183e-07
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 1.192093190827137e-07,
+          "pytorch_fp64": 1.1835812596672213e-07
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 1.192093190827137e-07,
+          "pytorch_fp64": 1.1835812596672213e-07
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "epsilon_3x33_eps0.001",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 1.0220190709356314e-10
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 1.0220190709356314e-10
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 1.0220190709356314e-10
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 0.0,
+          "pytorch_fp64": 1.0220190709356314e-10
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 4.119968255444917e-17,
+          "pytorch_fp64": 1.0220191533349965e-10
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 4.119968255444917e-17,
+          "pytorch_fp64": 1.0220191533349965e-10
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    },
+    {
+      "key": "epsilon_3x33_eps1e-06",
+      "passed": true,
+      "max_abs_errors": {
+        "fused_depth1": {
+          "pytorch_fp32": 7.450580596923828e-09,
+          "pytorch_fp64": 6.027179727530196e-10
+        },
+        "fused_depth2": {
+          "pytorch_fp32": 7.450580596923828e-09,
+          "pytorch_fp64": 6.027179727530196e-10
+        },
+        "unfused_depth1": {
+          "pytorch_fp32": 7.450580596923828e-09,
+          "pytorch_fp64": 6.027179727530196e-10
+        },
+        "unfused_depth2": {
+          "pytorch_fp32": 7.450580596923828e-09,
+          "pytorch_fp64": 6.027179727530196e-10
+        },
+        "cuda_unfused": {
+          "pytorch_fp32": 7.450580610801616e-09,
+          "pytorch_fp64": 6.027179866308074e-10
+        },
+        "cuda_fused": {
+          "pytorch_fp32": 7.450580610801616e-09,
+          "pytorch_fp64": 6.027179866308074e-10
+        }
+      },
+      "bitwise_equal_to_unfused": true
+    }
+  ],
+  "scope": "Finite frozen BF16 corpus, FP32 output, no GPU rerun or real NPU performance measurement"
+}

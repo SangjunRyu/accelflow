@@ -144,3 +144,24 @@ PyTorch CPU reference: install `requirements-pytorch-reference.txt` in the proje
 `.venv/bin/python tools/report/compare_rmsnorm_pytorch.py --results results/rmsnorm/<run>`.
 It compares the 20 saved shared correctness fixtures with official FP32/FP64 RMSNorm,
 checks four saved backends, and records `pytorch/comparison.json`. It does not benchmark PyTorch.
+
+## NPU RMSNorm fusion
+
+`bash scripts/run_rmsnorm_fused.sh` validates L1-retained, single-program RMSNorm against
+the frozen three-stage corpus. The default run covers 20 cases at depths 1/2, two repeats,
+two fused/two unfused pilot submissions and a width resource guard. It refuses to overwrite
+existing experiment metadata. Raw fixtures stay under ignored `scratch/`.
+
+Run `.venv/bin/python tools/report/audit_rmsnorm_fused.py --results <new-result-directory>`
+afterward for PyTorch FP32/FP64 and saved CUDA/NPU output comparison. `--depth 1` is an
+explicit partial audit while depth 2 is still running; the report marks that incomplete scope.
+Models are source-derived and process wall time is not real NPU latency. See [26](../docs/26-npu-rmsnorm-fusion.md).
+
+## Multicore RMSNorm
+
+`bash scripts/run_rmsnorm_multicore.sh` validates five shared fixtures at 1/2/4 requested
+cores, fixed CB depth 2, plus pilots and repeated tail submissions. It checks contiguous
+coverage, no overlaps, balanced group counts, skipped idle workers and bitwise outputs.
+Follow with `.venv/bin/python tools/report/audit_rmsnorm_multicore.py --results <new-output>`
+for PyTorch FP32/FP64 comparison. The existing host CLI adds an optional final core count;
+omission still uses one core. See [27](../docs/27-multicore-rmsnorm.md).

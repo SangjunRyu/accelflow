@@ -1,0 +1,32 @@
+{
+  "correction_count": 0,
+  "independent_checks": [
+    "Unified diff shows only one comma deletion",
+    "Numerical token sequence identical",
+    "URL sequence identical",
+    "Formula line identical",
+    "No causal, conditional, negative, or register change"
+  ],
+  "grade": "B",
+  "final_body_char_count": 5611,
+  "false_positive_warnings": [
+    {
+      "count": 1,
+      "reason": "Identical inline (H+31) and (W+31) mathematical expressions were parsed as footnote 31). Only one comma deletion differs between the bodies; no actual footnote exists.",
+      "code": "footnote_anchor"
+    }
+  ],
+  "residual_findings": [],
+  "self_checks_passed": 6,
+  "genre": "report",
+  "route": "light -> finalizer",
+  "gate_change_rate": 0.0001,
+  "original_char_count": 5612,
+  "status": "accept",
+  "fidelity_violations": [],
+  "overediting": false,
+  "gate_rerun_required": true,
+  "categories": [
+    "C-11"
+  ]
+}

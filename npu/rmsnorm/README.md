@@ -2,8 +2,9 @@
 
 The operator is `y[h,w] = x[h,w] * rsqrt(sum(x[h,:]^2)/W + epsilon) * gamma[w]`.
 Input and gamma are quantized BF16 values, widened exactly to FP32 for transport.
-The output and intermediate storage are FP32. This is a three-stage correctness baseline,
-not a fused NPU implementation or a measurement of real NPU performance.
+The output and intermediate storage are FP32. The default path is a three-stage correctness
+baseline. The optional `fused` path retains intermediate values in L1 in one program.
+Neither path measures real NPU performance.
 
 Read the code in this order:
 
@@ -40,3 +41,56 @@ gamma reads per input tile and one statistics read per row group. These are not 
 Run `bash scripts/run_rmsnorm.sh` in the WSL project. The runner checks the pinned TT-Metal
 v0.79.0/TTSim v1.11.1, builds only this host executable, and runs a pilot plus depth 1/2 suites.
 It does not clone/build TT-Metal or change drivers. See [25](../../docs/25-rmsnorm.md).
+
+## L1-retained fusion
+
+`rmsnorm fixture-list.txt report.json depth repeats [unfused|fused] [cores]` keeps the old CLI valid;
+omitting the final argument still selects unfused. `bash scripts/run_rmsnorm_fused.sh` builds
+the host, validates both short pilots, runs the fused depth 1/2 suites, compares bitwise
+outputs with the frozen 3-stage baseline, and tests the width resource guard.
+
+Read `kernels/fused_compute.cpp` in square_row -> sum_row -> normalize_row order.
+One 32-row group is processed at a time. The reader in `kernels/fused_reader.cpp` loads x once,
+retains it in CB24, consumes squared values from CB25, feeds two precision-preserving scans,
+and passes the CB26 prefix statistics to normalization. Gamma is streamed from DRAM.
+Only x, gamma and y have device DRAM buffers. Intermediate host readback is disabled for fused;
+the CPU FP64 reference, frozen bitwise outputs and independent PyTorch audit validate its result.
+
+| CB | Producer | Consumer that pops it | Lifetime |
+| --- | --- | --- | --- |
+| 24 | reader | compute UNPACK | original row group retained through normalization |
+| 25 | compute PACK | reader | full squared row group retained through both scans |
+| 26 | compute PACK | reader | final prefix retained through normalization input preparation |
+| 0,1,2,4,5 | reader | compute UNPACK | streamed scan/normalization operands |
+| 16 | compute PACK | writer | final output tiles |
+
+Each CB has one producer and one pointer-updating consumer. CB24/25 capacity equals the full
+row-group width; reserving/popping that width returns the pointer to its base on every group.
+No host synchronization separates arithmetic phases inside the fused program.
+
+Let Wt=ceil(W/32), Ht=ceil(H/32), T=Ht*Wt. Fused CB payload is
+`(2*Wt + 6*depth + 1)*4096` bytes. At W=4097 and depth 2 it is 1,110,016 bytes (1084 KiB),
+versus the unfused 53,248-byte peak. Code, stacks, runtime allocations and full L1 residency
+are not included in the payload model. Widths above 4097 are rejected before data-buffer allocation;
+a separate conservative payload cap of 1200 KiB is also checked. This is not a full-width streaming
+implementation and does not overlap two row groups.
+
+Source-derived DRAM payload changes from `(7*T+2*Ht)*4096` to `3*T*4096` bytes; squared and
+statistics DRAM capacities become zero. Local L1 copies, broadcasts, precision splitting and
+two cumsum passes remain. This reduction does not establish actual chip speedup, bandwidth,
+occupancy, or simulator timing gains. See [26](../../docs/26-npu-rmsnorm-fusion.md).
+
+## Independent multicore row partitioning
+
+The optional final `cores` argument accepts 1/2/4 for fused; default remains one.
+The host splits contiguous 32-row groups over min(requested cores, group count) workers.
+Empty workers receive no CB or kernel allocation. Reader receives a global row-group offset;
+compute receives only its local group count; fused_writer writes a disjoint global tile interval.
+The compute arithmetic is unchanged. No peer partial sums, multicast or intercore semaphore was added.
+Input/gamma/output DRAM buffers are shared, with immutable inputs and disjoint output ranges.
+All CBs and caches are private to each active core. Per-core payload remains unchanged while
+aggregate CB payload grows with active cores. Total DRAM request payload remains 3*T*4096 bytes.
+
+`bash scripts/run_rmsnorm_multicore.sh` validates balanced, uneven, and idle-worker cases.
+Then run `.venv/bin/python tools/report/audit_rmsnorm_multicore.py --results <new-output>`.
+See [27](../../docs/27-multicore-rmsnorm.md) for exact scope, assignments and simulator timing limits.

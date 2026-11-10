@@ -1,0 +1,5 @@
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ysjun5656/dev/accelflow/build/rmsnorm
+[1/2] Building CXX object CMakeFiles/rmsnorm.dir/rmsnorm.cpp.o
+[2/2] Linking CXX executable rmsnorm

@@ -1,0 +1,2 @@
+/home/ysjun5656/dev/accelflow/results/rmsnorm_multicore/20261110T060505067399Z/scratch/tail_mixed_65x65.bin
+/home/ysjun5656/dev/accelflow/results/rmsnorm_multicore/20261110T060505067399Z/scratch/idle_zero_1x33.bin

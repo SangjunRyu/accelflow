@@ -212,3 +212,5 @@ python3 -m venv .venv
 - [설치 패키지 고정 목록](../results/rmsnorm/20261109-rmsnorm/pytorch/requirements-lock.txt)
 - [대조 스크립트](../tools/report/compare_rmsnorm_pytorch.py)
 - [공식 PyTorch API](https://docs.pytorch.org/docs/2.15/generated/torch.nn.functional.rms_norm.html)
+
+후속 NPU 단일 코어 fusion과 L1/DRAM 비교는 [26번](26-npu-rmsnorm-fusion.md)에서 완료했습니다.

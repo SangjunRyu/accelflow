@@ -1,0 +1,11 @@
+{
+  "change_rate_percent": 0.09,
+  "finalize": "not required: standard route, gate passed",
+  "edits": "nine commas removed; numbers, formulas, paths and limitations retained",
+  "grade": "B",
+  "diagnosis": "C-11: nine commas after connective endings",
+  "self_checks_passed": 6,
+  "warnings": [],
+  "route": "standard",
+  "gate_exit_code": 0
+}

@@ -1,0 +1,375 @@
+{
+  "passed": true,
+  "configurations": 40,
+  "operator_submissions": 80,
+  "fused_pilot_submissions": 2,
+  "unfused_regression_pilot_submissions": 2,
+  "bitwise_equal_to_3_stage_reference": true,
+  "width_resource_guard_passed": true,
+  "intermediate_dram_bytes": 0,
+  "max_abs_error": 2.3306871588246736e-07,
+  "max_cb_payload_bytes": 1110016,
+  "comparisons": [
+    {
+      "key": "deterministic_2x3_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 36864,
+      "fused_dram_payload_bytes_model": 12288,
+      "intermediate_dram_bytes_removed": 8192,
+      "cb_payload_bytes": 36864
+    },
+    {
+      "key": "zero_33x35_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 131072,
+      "fused_dram_payload_bytes_model": 49152,
+      "intermediate_dram_bytes_removed": 24576,
+      "cb_payload_bytes": 45056
+    },
+    {
+      "key": "ones_1x1_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 36864,
+      "fused_dram_payload_bytes_model": 12288,
+      "intermediate_dram_bytes_removed": 8192,
+      "cb_payload_bytes": 36864
+    },
+    {
+      "key": "ones_2x31_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 36864,
+      "fused_dram_payload_bytes_model": 12288,
+      "intermediate_dram_bytes_removed": 8192,
+      "cb_payload_bytes": 36864
+    },
+    {
+      "key": "ones_2x32_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 36864,
+      "fused_dram_payload_bytes_model": 12288,
+      "intermediate_dram_bytes_removed": 8192,
+      "cb_payload_bytes": 36864
+    },
+    {
+      "key": "ones_2x33_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 65536,
+      "fused_dram_payload_bytes_model": 24576,
+      "intermediate_dram_bytes_removed": 12288,
+      "cb_payload_bytes": 45056
+    },
+    {
+      "key": "signed_31x65_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 94208,
+      "fused_dram_payload_bytes_model": 36864,
+      "intermediate_dram_bytes_removed": 16384,
+      "cb_payload_bytes": 53248
+    },
+    {
+      "key": "signed_32x65_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 94208,
+      "fused_dram_payload_bytes_model": 36864,
+      "intermediate_dram_bytes_removed": 16384,
+      "cb_payload_bytes": 53248
+    },
+    {
+      "key": "signed_33x65_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 188416,
+      "fused_dram_payload_bytes_model": 73728,
+      "intermediate_dram_bytes_removed": 32768,
+      "cb_payload_bytes": 53248
+    },
+    {
+      "key": "signed_65x129_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 454656,
+      "fused_dram_payload_bytes_model": 184320,
+      "intermediate_dram_bytes_removed": 73728,
+      "cb_payload_bytes": 69632
+    },
+    {
+      "key": "signed_3x257_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 266240,
+      "fused_dram_payload_bytes_model": 110592,
+      "intermediate_dram_bytes_removed": 40960,
+      "cb_payload_bytes": 102400
+    },
+    {
+      "key": "signed_2x1025_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 954368,
+      "fused_dram_payload_bytes_model": 405504,
+      "intermediate_dram_bytes_removed": 139264,
+      "cb_payload_bytes": 299008
+    },
+    {
+      "key": "signed_1x4097_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 3706880,
+      "fused_dram_payload_bytes_model": 1585152,
+      "intermediate_dram_bytes_removed": 532480,
+      "cb_payload_bytes": 1085440
+    },
+    {
+      "key": "fractional_17x257_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 266240,
+      "fused_dram_payload_bytes_model": 110592,
+      "intermediate_dram_bytes_removed": 40960,
+      "cb_payload_bytes": 102400
+    },
+    {
+      "key": "tiny_3x33_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 65536,
+      "fused_dram_payload_bytes_model": 24576,
+      "intermediate_dram_bytes_removed": 12288,
+      "cb_payload_bytes": 45056
+    },
+    {
+      "key": "mixed_3x65_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 94208,
+      "fused_dram_payload_bytes_model": 36864,
+      "intermediate_dram_bytes_removed": 16384,
+      "cb_payload_bytes": 53248
+    },
+    {
+      "key": "gamma_zero_3x35_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 65536,
+      "fused_dram_payload_bytes_model": 24576,
+      "intermediate_dram_bytes_removed": 12288,
+      "cb_payload_bytes": 45056
+    },
+    {
+      "key": "gamma_signed_33x65_eps1e-05",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 188416,
+      "fused_dram_payload_bytes_model": 73728,
+      "intermediate_dram_bytes_removed": 32768,
+      "cb_payload_bytes": 53248
+    },
+    {
+      "key": "epsilon_3x33_eps0.001",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 65536,
+      "fused_dram_payload_bytes_model": 24576,
+      "intermediate_dram_bytes_removed": 12288,
+      "cb_payload_bytes": 45056
+    },
+    {
+      "key": "epsilon_3x33_eps1e-06",
+      "depth": 1,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 65536,
+      "fused_dram_payload_bytes_model": 24576,
+      "intermediate_dram_bytes_removed": 12288,
+      "cb_payload_bytes": 45056
+    },
+    {
+      "key": "deterministic_2x3_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 36864,
+      "fused_dram_payload_bytes_model": 12288,
+      "intermediate_dram_bytes_removed": 8192,
+      "cb_payload_bytes": 61440
+    },
+    {
+      "key": "zero_33x35_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 131072,
+      "fused_dram_payload_bytes_model": 49152,
+      "intermediate_dram_bytes_removed": 24576,
+      "cb_payload_bytes": 69632
+    },
+    {
+      "key": "ones_1x1_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 36864,
+      "fused_dram_payload_bytes_model": 12288,
+      "intermediate_dram_bytes_removed": 8192,
+      "cb_payload_bytes": 61440
+    },
+    {
+      "key": "ones_2x31_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 36864,
+      "fused_dram_payload_bytes_model": 12288,
+      "intermediate_dram_bytes_removed": 8192,
+      "cb_payload_bytes": 61440
+    },
+    {
+      "key": "ones_2x32_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 36864,
+      "fused_dram_payload_bytes_model": 12288,
+      "intermediate_dram_bytes_removed": 8192,
+      "cb_payload_bytes": 61440
+    },
+    {
+      "key": "ones_2x33_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 65536,
+      "fused_dram_payload_bytes_model": 24576,
+      "intermediate_dram_bytes_removed": 12288,
+      "cb_payload_bytes": 69632
+    },
+    {
+      "key": "signed_31x65_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 94208,
+      "fused_dram_payload_bytes_model": 36864,
+      "intermediate_dram_bytes_removed": 16384,
+      "cb_payload_bytes": 77824
+    },
+    {
+      "key": "signed_32x65_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 94208,
+      "fused_dram_payload_bytes_model": 36864,
+      "intermediate_dram_bytes_removed": 16384,
+      "cb_payload_bytes": 77824
+    },
+    {
+      "key": "signed_33x65_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 188416,
+      "fused_dram_payload_bytes_model": 73728,
+      "intermediate_dram_bytes_removed": 32768,
+      "cb_payload_bytes": 77824
+    },
+    {
+      "key": "signed_65x129_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 454656,
+      "fused_dram_payload_bytes_model": 184320,
+      "intermediate_dram_bytes_removed": 73728,
+      "cb_payload_bytes": 94208
+    },
+    {
+      "key": "signed_3x257_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 266240,
+      "fused_dram_payload_bytes_model": 110592,
+      "intermediate_dram_bytes_removed": 40960,
+      "cb_payload_bytes": 126976
+    },
+    {
+      "key": "signed_2x1025_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 954368,
+      "fused_dram_payload_bytes_model": 405504,
+      "intermediate_dram_bytes_removed": 139264,
+      "cb_payload_bytes": 323584
+    },
+    {
+      "key": "signed_1x4097_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 3706880,
+      "fused_dram_payload_bytes_model": 1585152,
+      "intermediate_dram_bytes_removed": 532480,
+      "cb_payload_bytes": 1110016
+    },
+    {
+      "key": "fractional_17x257_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 266240,
+      "fused_dram_payload_bytes_model": 110592,
+      "intermediate_dram_bytes_removed": 40960,
+      "cb_payload_bytes": 126976
+    },
+    {
+      "key": "tiny_3x33_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 65536,
+      "fused_dram_payload_bytes_model": 24576,
+      "intermediate_dram_bytes_removed": 12288,
+      "cb_payload_bytes": 69632
+    },
+    {
+      "key": "mixed_3x65_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 94208,
+      "fused_dram_payload_bytes_model": 36864,
+      "intermediate_dram_bytes_removed": 16384,
+      "cb_payload_bytes": 77824
+    },
+    {
+      "key": "gamma_zero_3x35_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 65536,
+      "fused_dram_payload_bytes_model": 24576,
+      "intermediate_dram_bytes_removed": 12288,
+      "cb_payload_bytes": 69632
+    },
+    {
+      "key": "gamma_signed_33x65_eps1e-05",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 188416,
+      "fused_dram_payload_bytes_model": 73728,
+      "intermediate_dram_bytes_removed": 32768,
+      "cb_payload_bytes": 77824
+    },
+    {
+      "key": "epsilon_3x33_eps0.001",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 65536,
+      "fused_dram_payload_bytes_model": 24576,
+      "intermediate_dram_bytes_removed": 12288,
+      "cb_payload_bytes": 69632
+    },
+    {
+      "key": "epsilon_3x33_eps1e-06",
+      "depth": 2,
+      "bitwise_output_equal": true,
+      "unfused_dram_payload_bytes_model": 65536,
+      "fused_dram_payload_bytes_model": 24576,
+      "intermediate_dram_bytes_removed": 12288,
+      "cb_payload_bytes": 69632
+    }
+  ],
+  "performance_policy": "Source-derived DRAM/CB model. Process wall time includes simulator/JIT/validation; not real NPU performance."
+}

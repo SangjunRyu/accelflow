@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "cases": 5,
+  "backend_outputs_compared": 15,
+  "torch_version": "2.15.0+cpu",
+  "device": "cpu",
+  "command": [
+    "/home/ysjun5656/dev/accelflow/.venv/bin/python",
+    "tools/report/audit_rmsnorm_multicore.py",
+    "--results",
+    "results/rmsnorm_multicore/20261110T060505067399Z"
+  ],
+  "atol": 0.0001,
+  "rtol": 0.0001,
+  "max_abs_error_vs_pytorch_fp32": 2.384185791015625e-07,
+  "max_abs_error_vs_pytorch_fp64": 1.725262044338649e-07,
+  "bitwise_equal_across_core_counts": true,
+  "rows": [
+    {
+      "key": "balanced_narrow_256x33",
+      "passed": true,
+      "bitwise_equal_across_core_counts": true,
+      "max_abs_errors": {
+        "1": {
+          "fp32": 2.384185791015625e-07,
+          "fp64": 1.725262044338649e-07
+        },
+        "2": {
+          "fp32": 2.384185791015625e-07,
+          "fp64": 1.725262044338649e-07
+        },
+        "4": {
+          "fp32": 2.384185791015625e-07,
+          "fp64": 1.725262044338649e-07
+        }
+      }
+    },
+    {
+      "key": "balanced_256x257",
+      "passed": true,
+      "bitwise_equal_across_core_counts": true,
+      "max_abs_errors": {
+        "1": {
+          "fp32": 1.1920928955078125e-07,
+          "fp64": 1.438603147718709e-07
+        },
+        "2": {
+          "fp32": 1.1920928955078125e-07,
+          "fp64": 1.438603147718709e-07
+        },
+        "4": {
+          "fp32": 1.1920928955078125e-07,
+          "fp64": 1.438603147718709e-07
+        }
+      }
+    },
+    {
+      "key": "wide_128x1025",
+      "passed": true,
+      "bitwise_equal_across_core_counts": true,
+      "max_abs_errors": {
+        "1": {
+          "fp32": 1.1920928955078125e-07,
+          "fp64": 1.5315759149814312e-07
+        },
+        "2": {
+          "fp32": 1.1920928955078125e-07,
+          "fp64": 1.5315759149814312e-07
+        },
+        "4": {
+          "fp32": 1.1920928955078125e-07,
+          "fp64": 1.5315759149814312e-07
+        }
+      }
+    },
+    {
+      "key": "tail_mixed_65x65",
+      "passed": true,
+      "bitwise_equal_across_core_counts": true,
+      "max_abs_errors": {
+        "1": {
+          "fp32": 0.0,
+          "fp64": 5.777348199842436e-08
+        },
+        "2": {
+          "fp32": 0.0,
+          "fp64": 5.777348199842436e-08
+        },
+        "4": {
+          "fp32": 0.0,
+          "fp64": 5.777348199842436e-08
+        }
+      }
+    },
+    {
+      "key": "idle_zero_1x33",
+      "passed": true,
+      "bitwise_equal_across_core_counts": true,
+      "max_abs_errors": {
+        "1": {
+          "fp32": 0.0,
+          "fp64": 0.0
+        },
+        "2": {
+          "fp32": 0.0,
+          "fp64": 0.0
+        },
+        "4": {
+          "fp32": 0.0,
+          "fp64": 0.0
+        }
+      }
+    }
+  ],
+  "report_sha256": {
+    "cores1.json": "0753a7d3121c4ba8bdb74f88d233fb2f6236a5756fb9b98a8491f15961a81fa4",
+    "cores2.json": "edef67cf73ba4c987395399e9f10ffb6d1c3ba26481bf206bd53693c35e39ca2",
+    "cores4.json": "7facf6e0a2cc8ef948c630c438fd09973e686aafaf2c29d519c42163bbc8d54d"
+  },
+  "source_sha256": "52302a6180fbfdc9bdbe1f80b32f096af299559ab594eb36c192ca2ac2939171",
+  "scope": "Finite BF16 corpus, FP32 output; correctness only, not PyTorch or real-NPU performance benchmarking"
+}

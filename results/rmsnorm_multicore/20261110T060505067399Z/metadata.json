@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "tt_metal_revision": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "runs": [
+    {
+      "label": "pilot-1core",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_multicore/20261110T060505067399Z/pilot.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_multicore/20261110T060505067399Z/pilot-1core.json",
+        "2",
+        "1",
+        "fused",
+        "1"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 12.343691296000088
+    },
+    {
+      "label": "pilot-4core",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_multicore/20261110T060505067399Z/pilot.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_multicore/20261110T060505067399Z/pilot-4core.json",
+        "2",
+        "1",
+        "fused",
+        "4"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 6.431247448999784
+    },
+    {
+      "label": "cores1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_multicore/20261110T060505067399Z/fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_multicore/20261110T060505067399Z/cores1.json",
+        "2",
+        "1",
+        "fused",
+        "1"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 318.48819620999984
+    },
+    {
+      "label": "cores2",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_multicore/20261110T060505067399Z/fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_multicore/20261110T060505067399Z/cores2.json",
+        "2",
+        "1",
+        "fused",
+        "2"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 138.8017041070002
+    },
+    {
+      "label": "cores4",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_multicore/20261110T060505067399Z/fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_multicore/20261110T060505067399Z/cores4.json",
+        "2",
+        "1",
+        "fused",
+        "4"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 82.96474245099989
+    },
+    {
+      "label": "repeat-tail-4core",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_multicore/20261110T060505067399Z/pilot.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_multicore/20261110T060505067399Z/repeat-tail-4core.json",
+        "2",
+        "2",
+        "fused",
+        "4"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 12.606955012000071
+    }
+  ],
+  "meminfo_before": "MemTotal:        3962484 kB\nMemFree:         2672056 kB\nMemAvailable:    2918416 kB\nBuffers:           18812 kB\nCached:           355072 kB\nSwapCached:            0 kB\nActive:           129156 kB\nInactive:         712160 kB\nActive(anon):       3184 kB\nInactive(anon):   468504 kB\nActive(file):     125972 kB\nInactive(file):   243656 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1048576 kB\nDirty:               464 kB\nWriteback:             0 kB\nAnonPages:        467260 kB\nMapped:           179960 kB\nShmem:              4248 kB\nKReclaimable:     153084 kB\nSlab:             198348 kB\nSReclaimable:     153084 kB\nSUnreclaim:        45264 kB\nKernelStack:        4212 kB\nPageTables:         8872 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:    1359572 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        7192 kB\nVmallocChunk:          0 kB\nPercpu:             3712 kB\nAnonHugePages:    208896 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      123904 kB\nDirectMap2M:     4012032 kB\nDirectMap1G:     8388608 kB\n",
+  "source_sha256": {
+    "npu/rmsnorm/rmsnorm.cpp": "41f46a63f3fff4ec4a1923734357ea555071aa6db79cb14f40a5d7c343873cef",
+    "npu/rmsnorm/kernels/fused_reader.cpp": "9e4653d92b80055769c0f4729a927a3569a0f6ecddf4739cc8d6c48b2f73f1da",
+    "npu/rmsnorm/kernels/writer.cpp": "88dfe29fe4b8fdf6a0ea3ff44dbd7f757b0f5aea9a4e8cd1821cb6ea09972ec8",
+    "npu/rmsnorm/kernels/square.cpp": "c5fb23be76fa3af601326d8a28cf9507e8e2e466696617cf9cc828b1b7ff0e59",
+    "npu/rmsnorm/kernels/sum.cpp": "fa6a0d862118c1d949a79b63a48fec7428d0cfc5ef89617f851d7dd1537244a3",
+    "npu/rmsnorm/kernels/fused_compute.cpp": "9d7ad11c4c016eef4cdd6b42b6d476045873a1b7cc7100eb76be38e246c3d2ff",
+    "npu/rmsnorm/kernels/normalize.cpp": "aa1abb7b58581e9ef1f2312acb91b873887502194c9546bef9431cadf4729f4b",
+    "npu/rmsnorm/kernels/reader_normalize.cpp": "b990dc69297b35a869f7e835d115ac604033491264d711bc4347134acd1f7a40",
+    "npu/rmsnorm/kernels/reader_sum.cpp": "6c3bc354ef810fc26fc9b239783b64a16bfa5aab8583694bf776a7c08c40821a",
+    "npu/rmsnorm/kernels/reader.cpp": "bdc9258fe8afd4ed1d49f03dcc867195533a0fd185cd9049edc0e5a8d2b6e72b",
+    "npu/rmsnorm/kernels/fused_writer.cpp": "19e399e8d3d5335f12d731b90321968858edf1c9341166e342ee5015330c782a",
+    "npu/rmsnorm/CMakeLists.txt": "77fb1d1c19fb7f16551b4167a240505cbbbeaa50db8b4d535dacc448ee0abe2b",
+    "npu/vector_add/common.hpp": "695681e02c9fa7dd8441067460df4e4c566da3f11392402bb4ecf984fe9c2df2",
+    "tools/report/build_rmsnorm.py": "55f6bb2d7a3601421255ecbbdb65c318a50b9c892e7a372006bca8051403f060",
+    "tools/report/run_rmsnorm_multicore.py": "511e8b73aabb5c117f8932cf4240d92a18018f1f019880ae49d1b97bc1df8a0d"
+  },
+  "executable_sha256": "22b304d350795b16b6d1748662647875d68ec00a55d474e0b80bcc168476d2a1"
+}

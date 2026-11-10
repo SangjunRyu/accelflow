@@ -1,0 +1,12 @@
+{
+  "manual_review": "accept: unchanged (H+31)/(W+31) formula was parsed as a footnote; numeric/source fidelity verified",
+  "edits": "one comma removed",
+  "automatic_gate_exit_code": 1,
+  "self_checks_passed": 6,
+  "grade": "B",
+  "route": "light",
+  "change_rate_percent": 0.01,
+  "warnings": [
+    "automatic footnote-anchor false positive remains"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "tt_metal_revision": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "baseline": "/home/ysjun5656/dev/accelflow/results/rmsnorm/20261109-rmsnorm",
+  "runs": [
+    {
+      "label": "unfused-pilot",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fused/20261110T051656706592Z/pilot-fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fused/20261110T051656706592Z/unfused-pilot.json",
+        "1",
+        "1",
+        "unfused"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 7.405236094999964,
+      "expected_failure": false
+    },
+    {
+      "label": "fused-pilot",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fused/20261110T051656706592Z/pilot-fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fused/20261110T051656706592Z/fused-pilot.json",
+        "1",
+        "1",
+        "fused"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 15.103135148999968,
+      "expected_failure": false
+    },
+    {
+      "label": "fused-depth1",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fused/20261110T051656706592Z/npu-fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fused/20261110T051656706592Z/fused-depth1.json",
+        "1",
+        "2",
+        "fused"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 1021.9965372610001,
+      "expected_failure": false
+    },
+    {
+      "label": "fused-depth2",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fused/20261110T051656706592Z/npu-fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fused/20261110T051656706592Z/fused-depth2.json",
+        "2",
+        "2",
+        "fused"
+      ],
+      "exit_code": 0,
+      "process_wall_seconds": 873.0302043279999,
+      "expected_failure": false
+    },
+    {
+      "label": "width-resource-guard",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fused/20261110T051656706592Z/guard-fixtures.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fused/20261110T051656706592Z/width-resource-guard.json",
+        "2",
+        "1",
+        "fused"
+      ],
+      "exit_code": 1,
+      "process_wall_seconds": 0.9759195900001032,
+      "expected_failure": true
+    }
+  ],
+  "memory_before": "MemTotal:        3962484 kB\nMemFree:         2121868 kB\nMemAvailable:    2944468 kB\nBuffers:          140932 kB\nCached:           725984 kB\nSwapCached:            0 kB\nActive:           348052 kB\nInactive:         962624 kB\nActive(anon):       3580 kB\nInactive(anon):   444432 kB\nActive(file):     344472 kB\nInactive(file):   518192 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1048576 kB\nDirty:             20180 kB\nWriteback:             0 kB\nAnonPages:        440952 kB\nMapped:           187732 kB\nShmem:              4236 kB\nKReclaimable:     244220 kB\nSlab:             290384 kB\nSReclaimable:     244220 kB\nSUnreclaim:        46164 kB\nKernelStack:        4448 kB\nPageTables:         8752 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:    1392820 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        7320 kB\nVmallocChunk:          0 kB\nPercpu:             3520 kB\nAnonHugePages:     90112 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:       56320 kB\nDirectMap2M:     4079616 kB\nDirectMap1G:     8388608 kB\n",
+  "source_sha256": {
+    "npu/rmsnorm/rmsnorm.cpp": "b594bb6bda3b2ea8633d49ba3d1c3c3b2adc11d7723589a1880d7028fc58e384",
+    "npu/rmsnorm/kernels/fused_reader.cpp": "8f374149c0a1ea6e6312c42c78bc44eb9875f9a1d75eaa360dc4b2c81f8a1c40",
+    "npu/rmsnorm/kernels/writer.cpp": "88dfe29fe4b8fdf6a0ea3ff44dbd7f757b0f5aea9a4e8cd1821cb6ea09972ec8",
+    "npu/rmsnorm/kernels/square.cpp": "c5fb23be76fa3af601326d8a28cf9507e8e2e466696617cf9cc828b1b7ff0e59",
+    "npu/rmsnorm/kernels/sum.cpp": "fa6a0d862118c1d949a79b63a48fec7428d0cfc5ef89617f851d7dd1537244a3",
+    "npu/rmsnorm/kernels/fused_compute.cpp": "9d7ad11c4c016eef4cdd6b42b6d476045873a1b7cc7100eb76be38e246c3d2ff",
+    "npu/rmsnorm/kernels/normalize.cpp": "aa1abb7b58581e9ef1f2312acb91b873887502194c9546bef9431cadf4729f4b",
+    "npu/rmsnorm/kernels/reader_normalize.cpp": "b990dc69297b35a869f7e835d115ac604033491264d711bc4347134acd1f7a40",
+    "npu/rmsnorm/kernels/reader_sum.cpp": "6c3bc354ef810fc26fc9b239783b64a16bfa5aab8583694bf776a7c08c40821a",
+    "npu/rmsnorm/kernels/reader.cpp": "bdc9258fe8afd4ed1d49f03dcc867195533a0fd185cd9049edc0e5a8d2b6e72b",
+    "npu/rmsnorm/CMakeLists.txt": "77fb1d1c19fb7f16551b4167a240505cbbbeaa50db8b4d535dacc448ee0abe2b",
+    "npu/vector_add/common.hpp": "695681e02c9fa7dd8441067460df4e4c566da3f11392402bb4ecf984fe9c2df2",
+    "tools/report/build_rmsnorm.py": "55f6bb2d7a3601421255ecbbdb65c318a50b9c892e7a372006bca8051403f060",
+    "tools/report/rmsnorm_fixtures.py": "a245fad8502aef7d10d2ae786f380e24fa9bf583359def6a28b2f32d4baf9266",
+    "tools/report/run_rmsnorm_fused.py": "f8dd431ef9f1d2bb31ebe149e963ec8c0bad537425cb609c8317d60c2cb1e018"
+  },
+  "executable_sha256": "accbcee00fe6e5a417bd04cf66de20c282b8585e83bed994b3e008c8213a3e0a"
+}

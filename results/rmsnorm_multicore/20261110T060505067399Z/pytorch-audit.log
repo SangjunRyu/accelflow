@@ -1,0 +1,8 @@
+/home/ysjun5656/dev/accelflow/.venv/lib/python3.12/site-packages/torch/_subclasses/functional_tensor.py:377: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:82.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+MULTICORE_PYTORCH_PASS balanced_narrow_256x33
+MULTICORE_PYTORCH_PASS balanced_256x257
+MULTICORE_PYTORCH_PASS wide_128x1025
+MULTICORE_PYTORCH_PASS tail_mixed_65x65
+MULTICORE_PYTORCH_PASS idle_zero_1x33
+MULTICORE_PYTORCH_ALL_PASS cases=5 outputs=15

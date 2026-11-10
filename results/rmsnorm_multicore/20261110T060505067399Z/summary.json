@@ -1,0 +1,209 @@
+{
+  "passed": true,
+  "unique_configurations": 15,
+  "full_suite_submissions": 15,
+  "repeated_tail_submissions": 4,
+  "pilot_submissions": 4,
+  "total_operator_submissions": 23,
+  "depth": 2,
+  "bitwise_equal_across_core_counts": true,
+  "max_abs_error": 1.725262044338649e-07,
+  "comparisons": [
+    {
+      "key": "balanced_narrow_256x33",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "row_groups_per_core": [
+        8
+      ],
+      "per_core_cb_bytes": 69632,
+      "total_cb_bytes": 69632,
+      "dram_payload_bytes_model": 196608,
+      "bitwise_equal_to_single_core": true
+    },
+    {
+      "key": "balanced_256x257",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "row_groups_per_core": [
+        8
+      ],
+      "per_core_cb_bytes": 126976,
+      "total_cb_bytes": 126976,
+      "dram_payload_bytes_model": 884736,
+      "bitwise_equal_to_single_core": true
+    },
+    {
+      "key": "wide_128x1025",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "row_groups_per_core": [
+        4
+      ],
+      "per_core_cb_bytes": 323584,
+      "total_cb_bytes": 323584,
+      "dram_payload_bytes_model": 1622016,
+      "bitwise_equal_to_single_core": true
+    },
+    {
+      "key": "tail_mixed_65x65",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "row_groups_per_core": [
+        3
+      ],
+      "per_core_cb_bytes": 77824,
+      "total_cb_bytes": 77824,
+      "dram_payload_bytes_model": 110592,
+      "bitwise_equal_to_single_core": true
+    },
+    {
+      "key": "idle_zero_1x33",
+      "requested_cores": 1,
+      "active_cores": 1,
+      "row_groups_per_core": [
+        1
+      ],
+      "per_core_cb_bytes": 69632,
+      "total_cb_bytes": 69632,
+      "dram_payload_bytes_model": 24576,
+      "bitwise_equal_to_single_core": true
+    },
+    {
+      "key": "balanced_narrow_256x33",
+      "requested_cores": 2,
+      "active_cores": 2,
+      "row_groups_per_core": [
+        4,
+        4
+      ],
+      "per_core_cb_bytes": 69632,
+      "total_cb_bytes": 139264,
+      "dram_payload_bytes_model": 196608,
+      "bitwise_equal_to_single_core": true
+    },
+    {
+      "key": "balanced_256x257",
+      "requested_cores": 2,
+      "active_cores": 2,
+      "row_groups_per_core": [
+        4,
+        4
+      ],
+      "per_core_cb_bytes": 126976,
+      "total_cb_bytes": 253952,
+      "dram_payload_bytes_model": 884736,
+      "bitwise_equal_to_single_core": true
+    },
+    {
+      "key": "wide_128x1025",
+      "requested_cores": 2,
+      "active_cores": 2,
+      "row_groups_per_core": [
+        2,
+        2
+      ],
+      "per_core_cb_bytes": 323584,
+      "total_cb_bytes": 647168,
+      "dram_payload_bytes_model": 1622016,
+      "bitwise_equal_to_single_core": true
+    },
+    {
+      "key": "tail_mixed_65x65",
+      "requested_cores": 2,
+      "active_cores": 2,
+      "row_groups_per_core": [
+        2,
+        1
+      ],
+      "per_core_cb_bytes": 77824,
+      "total_cb_bytes": 155648,
+      "dram_payload_bytes_model": 110592,
+      "bitwise_equal_to_single_core": true
+    },
+    {
+      "key": "idle_zero_1x33",
+      "requested_cores": 2,
+      "active_cores": 1,
+      "row_groups_per_core": [
+        1
+      ],
+      "per_core_cb_bytes": 69632,
+      "total_cb_bytes": 69632,
+      "dram_payload_bytes_model": 24576,
+      "bitwise_equal_to_single_core": true
+    },
+    {
+      "key": "balanced_narrow_256x33",
+      "requested_cores": 4,
+      "active_cores": 4,
+      "row_groups_per_core": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "per_core_cb_bytes": 69632,
+      "total_cb_bytes": 278528,
+      "dram_payload_bytes_model": 196608,
+      "bitwise_equal_to_single_core": true
+    },
+    {
+      "key": "balanced_256x257",
+      "requested_cores": 4,
+      "active_cores": 4,
+      "row_groups_per_core": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "per_core_cb_bytes": 126976,
+      "total_cb_bytes": 507904,
+      "dram_payload_bytes_model": 884736,
+      "bitwise_equal_to_single_core": true
+    },
+    {
+      "key": "wide_128x1025",
+      "requested_cores": 4,
+      "active_cores": 4,
+      "row_groups_per_core": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "per_core_cb_bytes": 323584,
+      "total_cb_bytes": 1294336,
+      "dram_payload_bytes_model": 1622016,
+      "bitwise_equal_to_single_core": true
+    },
+    {
+      "key": "tail_mixed_65x65",
+      "requested_cores": 4,
+      "active_cores": 3,
+      "row_groups_per_core": [
+        1,
+        1,
+        1
+      ],
+      "per_core_cb_bytes": 77824,
+      "total_cb_bytes": 233472,
+      "dram_payload_bytes_model": 110592,
+      "bitwise_equal_to_single_core": true
+    },
+    {
+      "key": "idle_zero_1x33",
+      "requested_cores": 4,
+      "active_cores": 1,
+      "row_groups_per_core": [
+        1
+      ],
+      "per_core_cb_bytes": 69632,
+      "total_cb_bytes": 69632,
+      "dram_payload_bytes_model": 24576,
+      "bitwise_equal_to_single_core": true
+    }
+  ],
+  "performance_policy": "Process wall time is simulator/JIT/host cost, not real NPU speedup"
+}

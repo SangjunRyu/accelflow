@@ -17,7 +17,7 @@ TTSim으로 탐구하는 가속기 시스템 포트폴리오 프로젝트입니�
 Vector Add의 자체 host/장치 커널 구현은 `npu/vector_add/`에 있습니다.
 MatMul의 자체 host/장치 커널 구현은 `npu/matmul/`에 있습니다.
 CUDA MatMul의 naive/shared-memory tiled 구현은 `cuda/matmul/`에 있습니다.
-나머지 연산자와 모델 디렉터리는 후속 단계용 골격입니다.
+Reduction과 RMSNorm은 `npu/`, `cuda/` 아래에 구현했으며 모델 디렉터리는 후속 단계용 골격입니다.
 
 ## 시작하기
 
@@ -82,7 +82,7 @@ TTSim 실행 시간은 실제 NPU 성능이나 BOS Eagle-N 지연 시간을 나�
 CUDA 실측과 시뮬레이터 기능 검증을 구분합니다.
 
 환경 재현 → vector add → tiled MatMul → reduction → RMSNorm → 소형 모델 분석.
-PyTorch CPU 기준 대조까지 완료했습니다. TT-NN 기준 대조, NPU fusion·multicore RMSNorm, 모델 실행은 후속 단계입니다. CUDA는 MatMul·row-wise reduction·RMSNorm 구현 및 MX150 실측을 완료했습니다.
+PyTorch CPU 기준 대조까지 완료했습니다. NPU 단일 코어 fusion까지 검증했습니다. 행 분할 multicore RMSNorm도 검증했습니다. TT-NN 기준 대조와 모델 실행은 후속 단계입니다. CUDA는 MatMul·row-wise reduction·RMSNorm 구현 및 MX150 실측을 완료했습니다.
 
 컴파일 학습: [14. 관찰 환경과 TT-Explorer](docs/14-compiler-inspection-and-tt-explorer.md).
 `bash scripts/inspect_compilation.sh`로 host IR·장치 ELF/assembly를 확인합니다.
@@ -98,3 +98,7 @@ CUDA의 선형 입력과 cudaArray/texture 입력 비교, nvprof 카운터 진�
 CUDA Reduction의 naive/tree/shuffle 구현, NPU 입력 대조와 큰 입력 재측정은 [24번](docs/24-cuda-reduction.md)에 정리했습니다.
 
 RMSNorm 공통 입력 20종 대조, NPU 정밀도 전달과 CUDA fusion 비교는 [25번](docs/25-rmsnorm.md)을 참고하세요.
+
+NPU RMSNorm의 중간 DRAM 제거, L1 보관과 폭 제한은 [26번](docs/26-npu-rmsnorm-fusion.md)에 정리했습니다.
+
+RMSNorm의 1·2·4코어 행 분할, 꼬리/유휴 코어 처리와 TTSim 실행 기록은 [27번](docs/27-multicore-rmsnorm.md)에 정리했습니다.
