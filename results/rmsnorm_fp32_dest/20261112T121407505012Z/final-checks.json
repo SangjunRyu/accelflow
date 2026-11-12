@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "tested_source_and_executable_hashes_match": true,
+  "no_residual_bit_splitting_in_device_kernels": true,
+  "original_rmsnorm_preserved": true,
+  "upstream_checkout_clean": true,
+  "python_and_bash_syntax_passed": true,
+  "report_links_valid": true,
+  "native_transport_supported": false,
+  "local_compat_transport_exact": true,
+  "rmsnorm_configurations": 58,
+  "rmsnorm_successful_evaluations": 120,
+  "pytorch_outputs_compared": 58,
+  "fp32_negative_control_cases": 2,
+  "scope": "TTSim v1.11.1, pinned Wormhole LLK, local compatibility adaptation; not real hardware validation"
+}

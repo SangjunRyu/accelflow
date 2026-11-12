@@ -1,0 +1,6 @@
+{
+  "initial_c_free_bytes": 2736496640,
+  "measured_at": "2026-11-12T21:21:57.8855576+09:00",
+  "action": "Only project host/JIT kernels built; upstream checkout and original simulator preserved.",
+  "final_c_free_bytes": 2710691840
+}

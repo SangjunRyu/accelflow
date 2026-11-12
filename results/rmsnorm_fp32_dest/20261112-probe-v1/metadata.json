@@ -1,0 +1,59 @@
+{
+  "source_sha256": {
+    "npu/rmsnorm_fp32_dest/rmsnorm_fp32_dest.cpp": "a47a850af1b1423e9b4c96f27206691be06169684c3c35ace78e7412adab5717",
+    "npu/rmsnorm_fp32_dest/CMakeLists.txt": "05016b4fff74bebe229909d02f11ef5519341bb62a6838d0074d8348b9329a4d",
+    "npu/rmsnorm_fp32_dest/kernels/writer.cpp": "0c1faa629885ea450673277520baaa8111ab5d714bb612795b7e9273b420747a",
+    "npu/rmsnorm_fp32_dest/kernels/probe.cpp": "fec5db71b17e09928bb43d3d661b369a9806ecf1a97d24b9d2e8a39dae44ec3e",
+    "npu/rmsnorm_fp32_dest/kernels/reader.cpp": "d273f6ab4ac336b82b1f1ae265fe420919d974b045e3f41eefd38fdc4f4359b3"
+  },
+  "runs": [
+    {
+      "label": "default-copy",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112-probe-v1/default-copy.json",
+        "default",
+        "copy"
+      ],
+      "exit_code": 0,
+      "seconds": 2.0701566890000436
+    },
+    {
+      "label": "direct-copy",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112-probe-v1/direct-copy.json",
+        "direct",
+        "copy"
+      ],
+      "exit_code": 1,
+      "seconds": 1.0668844170000398
+    },
+    {
+      "label": "default-transpose",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112-probe-v1/default-transpose.json",
+        "default",
+        "transpose"
+      ],
+      "exit_code": 0,
+      "seconds": 0.11445351699995854
+    },
+    {
+      "label": "direct-transpose",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112-probe-v1/direct-transpose.json",
+        "direct",
+        "transpose"
+      ],
+      "exit_code": 1,
+      "seconds": 0.1149439940000434
+    }
+  ]
+}

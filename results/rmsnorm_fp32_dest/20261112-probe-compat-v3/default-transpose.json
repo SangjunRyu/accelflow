@@ -1,0 +1,36 @@
+{
+  "bit_mismatches": 1024,
+  "examples": [
+    {
+      "actual_bits": 3212836864,
+      "col": 0,
+      "expected_bits": 3212836865,
+      "row": 0
+    },
+    {
+      "actual_bits": 1065353216,
+      "col": 1,
+      "expected_bits": 1065354401,
+      "row": 0
+    },
+    {
+      "actual_bits": 1065353216,
+      "col": 2,
+      "expected_bits": 1065355585,
+      "row": 0
+    },
+    {
+      "actual_bits": 3212836864,
+      "col": 3,
+      "expected_bits": 3212840417,
+      "row": 0
+    }
+  ],
+  "max_abs_error": 0.0009759664535522461,
+  "mode": "default",
+  "negative_control": true,
+  "operation": "transpose",
+  "passed": true,
+  "test": "transport",
+  "values_checked": 1024
+}

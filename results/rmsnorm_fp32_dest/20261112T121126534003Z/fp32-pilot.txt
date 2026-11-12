@@ -1,0 +1,4 @@
+/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112T121126534003Z/scratch/deterministic_2x3_eps1e-05.bin
+/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112T121126534003Z/scratch/signed_65x129_eps1e-05.bin
+/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112T121126534003Z/scratch/fp32_lowbits_3x33_eps1e-05.bin
+/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112T121126534003Z/scratch/fp32_fractional_33x65_eps1e-05.bin

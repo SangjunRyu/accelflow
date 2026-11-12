@@ -189,3 +189,25 @@ bash scripts/reproduce_portfolio.sh --simulate
 기본값은 evidence다. Python 표준 라이브러리로 저장된 대표 기록 68개와 수치를 대조한다.
 simulate는 자체 host를 빌드하고 작은 MatMul 6개 mode를 총42회 실행한다.
 전체 upstream 빌드·의존성 설치·CUDA 실행은 하지 않는다. [30번](../docs/30-portfolio.md).
+
+## FP32-to-Dest 정밀도 실험
+
+```bash
+bash scripts/run_rmsnorm_fp32_dest.sh
+.venv/bin/python tools/report/audit_rmsnorm_fp32_dest.py --results <RESULTS>
+```
+
+기존 RMSNorm과 분리된 `npu/rmsnorm_fp32_dest/`를 자체 host만 빌드해 실행합니다.
+native transport 오류는 예상 실패로 확인하고 로컬 compat의 비트 보존·58개 RMSNorm 구성을 검사합니다.
+실물 성능 측정이나 upstream 전체 빌드는 하지 않습니다. [31번](../docs/31-fp32-to-dest-rmsnorm.md).
+
+## RMSNorm split/FP32-Dest 시간 비교
+
+```bash
+bash scripts/benchmark_rmsnorm_fp32_dest.sh
+python3 tools/report/audit_rmsnorm_fp32_dest_perf.py --results <RESULTS>
+```
+
+같은 BF16-origin FP32 입력에서 3-stage·1코어·depth2를 맞춰 process24개를 순차 실행합니다.
+초기화·전송·검증은 제외하고 pipeline/stage raw 시간을 저장합니다. 실제 NPU 성능 측정은 아닙니다.
+4097열 기존 split 측정으로 전체 실행이 오래 걸릴 수 있습니다. [32번](../docs/32-rmsnorm-fp32-dest-timing.md).

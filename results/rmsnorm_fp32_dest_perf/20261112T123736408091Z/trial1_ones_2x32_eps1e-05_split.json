@@ -1,0 +1,190 @@
+{
+  "atol": 0.0001,
+  "backend": "TTSim Wormhole",
+  "cases": [
+    {
+      "active_cores": 1,
+      "assignment_has_no_gaps_or_overlaps": true,
+      "benchmark_timing": {
+        "clock": "host steady_clock",
+        "enabled": true,
+        "excluded": "initialization, allocation, fixture packing, input/sentinel writes, readback and CPU validation",
+        "physical_npu_latency": false,
+        "sample_count": 5,
+        "samples_ms": [
+          347.459782,
+          359.390981,
+          340.231207,
+          351.154465,
+          334.841312
+        ],
+        "scope": "3-stage enqueue/Finish pipeline including runtime and simulator wait",
+        "stage_names": [
+          "square",
+          "sum",
+          "normalize"
+        ],
+        "stage_samples_ms": [
+          [
+            4.727022,
+            97.875648,
+            244.855512
+          ],
+          [
+            4.608329,
+            103.101241,
+            251.680411
+          ],
+          [
+            4.878314,
+            103.140539,
+            232.211354
+          ],
+          [
+            4.747021,
+            109.404471,
+            237.002173
+          ],
+          [
+            5.181595,
+            97.710658,
+            231.948072
+          ]
+        ],
+        "stage_warmup_ms": [
+          [
+            9.565338,
+            98.899388,
+            256.885304
+          ],
+          [
+            4.171255,
+            106.254056,
+            271.107269
+          ]
+        ],
+        "warmup_count": 2,
+        "warmup_ms": [
+          365.35083,
+          381.53338
+        ]
+      },
+      "cb_peak_payload_bytes_model": 53248,
+      "cb_total_payload_bytes_model": 53248,
+      "device_l1_bytes_per_core": 1499136,
+      "dram_payload_bytes_model": 36864,
+      "epsilon": 9.999999747378752e-06,
+      "gamma_fingerprint": 6137088655601615653,
+      "idle_requested_cores": 0,
+      "input_fingerprint": 17235450131008264485,
+      "intermediate_dram_bytes": 8192,
+      "intermediate_dram_checked": true,
+      "key": "ones_2x32_eps1e-05",
+      "logical_output": [
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389,
+        0.9999949932098389
+      ],
+      "max_abs_error": 6.827787224494841e-09,
+      "max_sum_square_error": 0.0,
+      "output_fingerprint": 17888351348028315173,
+      "padding_zero": true,
+      "partial_statistics_reduced_on_compute": false,
+      "partition_axis": "rows",
+      "passed": true,
+      "peer_atomic_increments_model": 0,
+      "peer_data_messages_model": 0,
+      "peer_payload_bytes_model": 0,
+      "repeats": 7,
+      "requested_cores": 1,
+      "row_cache_bytes_model": 0,
+      "shape_hw": [
+        2,
+        32
+      ],
+      "shards": [
+        {
+          "core": [
+            0,
+            0
+          ],
+          "row_group_count": 1,
+          "row_group_start": 0,
+          "tile_count": 1,
+          "tile_start": 0,
+          "valid_rows": 2
+        }
+      ],
+      "square_exact": true,
+      "variant": "unfused"
+    }
+  ],
+  "cb_depth": 2,
+  "core_count": 1,
+  "core_count_policy": "requested; per-case active_cores skips empty shards",
+  "passed": true,
+  "rtol": 0.0001,
+  "stages": 3,
+  "variant": "unfused"
+}

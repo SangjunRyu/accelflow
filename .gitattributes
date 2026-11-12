@@ -18,3 +18,5 @@ results/rmsnorm_fused/** -text
 results/rmsnorm_multicore/** -text
 results/rmsnorm_column/** -text
 results/portfolio/** -text
+results/rmsnorm_fp32_dest/** -text
+results/rmsnorm_fp32_dest_perf/** -text

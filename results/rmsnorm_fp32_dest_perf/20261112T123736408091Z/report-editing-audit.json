@@ -1,0 +1,81 @@
+{
+  "accepted_after_review": true,
+  "skill": "humanize-korean",
+  "route": "light",
+  "run_id": "2026-11-12-002-0faf",
+  "gate_exit": 1,
+  "gate": {
+    "genre": "report",
+    "change_rate": {
+      "rate": 0.0001,
+      "scope": "전문",
+      "verdict": "OK"
+    },
+    "s1_targets": [],
+    "antithesis": {
+      "before": 0,
+      "after": 0,
+      "verdict": "스킵 (원문 대구 < 5)"
+    },
+    "golden": [
+      {
+        "code": "footnote_anchor",
+        "message": "각주 32)이 원위치를 벗어났습니다 (인접 수치 앵커 '32' → 'None'): 인용 출처 변조 위험"
+      }
+    ],
+    "sentence_touch": {
+      "rate": 0.0079,
+      "touched": 1,
+      "total": 126
+    },
+    "numbers_dropped": [],
+    "modality": {
+      "lost_pairs": [],
+      "uncertain_pairs": [],
+      "counts": {
+        "deontic": {
+          "before": 1,
+          "after": 1
+        },
+        "hedge": {
+          "before": 1,
+          "after": 1
+        }
+      },
+      "verdict": "OK"
+    },
+    "gate": {
+      "verdict": "WARN — 경고. 사용자 고지 + finalize 승급",
+      "exit_code": 1
+    }
+  },
+  "finalizer": {
+    "decision": "accept",
+    "fidelity_violations": [],
+    "residual_findings": [],
+    "overediting": [],
+    "corrections": 0,
+    "genre": "report",
+    "gate_exit": 1,
+    "gate_status": "WARN",
+    "false_positive": {
+      "code": "footnote_anchor",
+      "reason": "Two formula denominator occurrences 32) misclassified as same footnote number; checker compares both against first output position.",
+      "unchanged_formula": "`Ht=ceil(H/32)`, `Wt=ceil(W/32)`",
+      "identical_input_baseline_reproduced": true,
+      "evidence": "gate-identical-baseline.log"
+    },
+    "change_rate_fraction": 0.0001,
+    "change_rate_percent": 0.01,
+    "grade": "B",
+    "self_checks_passed": 6,
+    "summary_count": 1,
+    "backup": "final_pre_finalize.md"
+  },
+  "grade": "B",
+  "self_checks_passed": 6,
+  "edits": [
+    "C-11: 두 번 읽고, compat는 → 두 번 읽고 compat는"
+  ],
+  "original_and_intermediates_preserved": true
+}

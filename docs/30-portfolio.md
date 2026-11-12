@@ -165,4 +165,8 @@ Windows native [21번 경로](21-cuda-matmul-comparison.md)를 사용하며 이 
 > 기준으로 결과를 대조했다. 느린 결과와 측정 한계도 원본 로그와 함께 보존했다.
 
 현재 완료 범위는 저수준 커널과 위의 실험이다. TT-NN 기준 연산·sharding·작은 연산 블록은
-다음 단계다. 후속 실행 문서는 31번부터 작성하면 된다. [29번 인계](29-metalium-results.md).
+다음 단계다. 후속 실행 문서는 33번부터 작성하면 된다. [29번 인계](29-metalium-results.md).
+
+FP32-to-Dest의 native 실패와 로컬 호환 경로의 비트 분할 없는 계산은 [31번](31-fp32-to-dest-rmsnorm.md)에 별도 기록했다. TT-NN 후속은 33번부터 이어간다.
+
+같은 3-stage 조건의 split/FP32-to-Dest 실행 비용 비교는 [32번](32-rmsnorm-fp32-dest-timing.md)에 기록했다.

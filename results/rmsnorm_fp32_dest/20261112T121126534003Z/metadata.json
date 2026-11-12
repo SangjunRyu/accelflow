@@ -1,0 +1,120 @@
+{
+  "passed": false,
+  "runs": [
+    {
+      "label": "probe-default-copy",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112T121126534003Z/probe-default-copy.json",
+        "default",
+        "copy"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "process_wall_seconds": 0.4164886700000352
+    },
+    {
+      "label": "probe-direct-copy",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112T121126534003Z/probe-direct-copy.json",
+        "direct",
+        "copy"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "process_wall_seconds": 0.21514495099995656
+    },
+    {
+      "label": "probe-compat-copy",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112T121126534003Z/probe-compat-copy.json",
+        "compat",
+        "copy"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "process_wall_seconds": 0.164969752999923
+    },
+    {
+      "label": "probe-default-transpose",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112T121126534003Z/probe-default-transpose.json",
+        "default",
+        "transpose"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "process_wall_seconds": 0.165665984999805
+    },
+    {
+      "label": "probe-direct-transpose",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112T121126534003Z/probe-direct-transpose.json",
+        "direct",
+        "transpose"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "process_wall_seconds": 0.1147986559999481
+    },
+    {
+      "label": "probe-compat-transpose",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112T121126534003Z/probe-compat-transpose.json",
+        "compat",
+        "transpose"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "process_wall_seconds": 0.11530215000016142
+    },
+    {
+      "label": "rms-pilot",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "run",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112T121126534003Z/fp32-pilot.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112T121126534003Z/rms-pilot.json",
+        "1",
+        "1",
+        "compat"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 0,
+      "process_wall_seconds": 5.483971996000037
+    }
+  ],
+  "tt_metal_revision": "de546d3b146758714d900f11b218c8f9c805f410",
+  "ttsim_sha256": "196fb781bfc0bc37af2ec15f7f57a27199ba24cf7440643db84796bcbce46b1a",
+  "meminfo_before": "MemTotal:        3962484 kB\nMemFree:         3289664 kB\nMemAvailable:    3407692 kB\nBuffers:           15092 kB\nCached:           294220 kB\nSwapCached:            0 kB\nActive:           123984 kB\nInactive:         263028 kB\nActive(anon):       3100 kB\nInactive(anon):    79044 kB\nActive(file):     120884 kB\nInactive(file):   183984 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1048576 kB\nDirty:               112 kB\nWriteback:             0 kB\nAnonPages:         77904 kB\nMapped:           120752 kB\nShmem:              4248 kB\nKReclaimable:      25940 kB\nSlab:              61808 kB\nSReclaimable:      25940 kB\nSUnreclaim:        35868 kB\nKernelStack:        3304 kB\nPageTables:         2772 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:     548352 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        6232 kB\nVmallocChunk:          0 kB\nPercpu:             3424 kB\nAnonHugePages:     20480 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:       95232 kB\nDirectMap2M:     2992128 kB\nDirectMap1G:     9437184 kB\n",
+  "source_sha256": {
+    "npu/rmsnorm_fp32_dest/rmsnorm_fp32_dest.cpp": "e0897c4fde156f914f79d5a209776ebd9aae23dffb76e663f412ef258672c2fc",
+    "npu/rmsnorm_fp32_dest/CMakeLists.txt": "05016b4fff74bebe229909d02f11ef5519341bb62a6838d0074d8348b9329a4d",
+    "npu/rmsnorm_fp32_dest/kernels/writer.cpp": "0c1faa629885ea450673277520baaa8111ab5d714bb612795b7e9273b420747a",
+    "npu/rmsnorm_fp32_dest/kernels/square.cpp": "4a124f61e28765237f6b18e4daaae7dfa9f663fcfd138f90aa92615f97ba0b0b",
+    "npu/rmsnorm_fp32_dest/kernels/sum.cpp": "5f5fdf9dcaf9b7efa70d62ae8c162ee53517ea324cc384dbb32cf98e9d5b40bd",
+    "npu/rmsnorm_fp32_dest/kernels/normalize.cpp": "1fdf028f64740cbae984b81d64aa929c909c3c19151fc32b5f0987490e11230f",
+    "npu/rmsnorm_fp32_dest/kernels/probe.cpp": "ed93b2c58ab51d0be866ebbb0e8383b7e5cee83ce0f365f447c5fcc16d0b99d0",
+    "npu/rmsnorm_fp32_dest/kernels/reader_normalize.cpp": "4166cd9a41f42d05083429d06405f8f17e5e1b0434b1b65003419aafb3dc143c",
+    "npu/rmsnorm_fp32_dest/kernels/fp32_unpack_compat.hpp": "eed36619e7fd2aa566ac2d3d80548ffef0183b054cd35a537f3e497b631278d5",
+    "npu/rmsnorm_fp32_dest/kernels/reader.cpp": "d273f6ab4ac336b82b1f1ae265fe420919d974b045e3f41eefd38fdc4f4359b3",
+    "npu/vector_add/common.hpp": "695681e02c9fa7dd8441067460df4e4c566da3f11392402bb4ecf984fe9c2df2",
+    "tools/report/run_rmsnorm_fp32_dest.py": "c500728ce633eb48e716b30400a93da2ed8863da5474601f749ddad363528f81",
+    "tools/report/build_rmsnorm_fp32_dest.py": "dd483827841cbf200c5779e75adf2a1e9c607f74c4aa5d14d4bbdf5adc4ec3b7",
+    "tools/report/rmsnorm_fixtures.py": "a245fad8502aef7d10d2ae786f380e24fa9bf583359def6a28b2f32d4baf9266",
+    "tools/report/audit_rmsnorm_fp32_dest.py": "d5dd4aa17da97080c4d855feb546c1523459ef37c72b2eaa4dbf837bbf3eca49",
+    "scripts/run_rmsnorm_fp32_dest.sh": "d6f1050f563bdbd1db688c91cc61e48c225c2eae3b442dcd0e58c84d8ab2f5c8"
+  },
+  "executable_sha256": "502978935a29b94b3195f6d5526bf22f3011cd24d7a91b2e8ab0a61116ba9c46"
+}

@@ -1,0 +1,263 @@
+{
+  "passed": true,
+  "native_direct_transport_passed": false,
+  "compat_transport_bitwise_exact": true,
+  "transport": [
+    {
+      "mode": "default",
+      "operation": "copy",
+      "native_rejected": false,
+      "bit_mismatches": 4096
+    },
+    {
+      "mode": "direct",
+      "operation": "copy",
+      "native_rejected": true,
+      "bit_mismatches": null
+    },
+    {
+      "mode": "compat",
+      "operation": "copy",
+      "native_rejected": false,
+      "bit_mismatches": 0
+    },
+    {
+      "mode": "default",
+      "operation": "transpose",
+      "native_rejected": false,
+      "bit_mismatches": 4096
+    },
+    {
+      "mode": "direct",
+      "operation": "transpose",
+      "native_rejected": true,
+      "bit_mismatches": null
+    },
+    {
+      "mode": "compat",
+      "operation": "transpose",
+      "native_rejected": false,
+      "bit_mismatches": 0
+    }
+  ],
+  "original_bf16_fixtures": 20,
+  "actual_fp32_fixtures": 9,
+  "configurations": 58,
+  "rmsnorm_evaluations": 120,
+  "program_submissions": 360,
+  "transport_submissions": 6,
+  "residual_bit_splitting": false,
+  "fp32_dest_acc_en": true,
+  "marked_input_cbs": [
+    0,
+    1,
+    2
+  ],
+  "max_abs_error": 9.832732348336037e-07,
+  "max_sum_square_error": 0.4793776869773865,
+  "square_bit_differences": 0,
+  "bf16_comparisons": [
+    {
+      "key": "deterministic_2x3_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "zero_33x35_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "ones_1x1_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "ones_2x31_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "ones_2x32_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "ones_2x33_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "signed_31x65_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "signed_32x65_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "signed_33x65_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "signed_65x129_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "signed_3x257_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "signed_2x1025_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "signed_1x4097_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "fractional_17x257_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 4.76837158203125e-07
+    },
+    {
+      "key": "tiny_3x33_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "mixed_3x65_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "gamma_zero_3x35_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "gamma_signed_33x65_eps1e-05",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "epsilon_3x33_eps0.001",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "epsilon_3x33_eps1e-06",
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "deterministic_2x3_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "zero_33x35_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "ones_1x1_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "ones_2x31_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "ones_2x32_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "ones_2x33_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "signed_31x65_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "signed_32x65_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "signed_33x65_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "signed_65x129_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "signed_3x257_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "signed_2x1025_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "signed_1x4097_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "fractional_17x257_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 4.76837158203125e-07
+    },
+    {
+      "key": "tiny_3x33_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "mixed_3x65_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "gamma_zero_3x35_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "gamma_signed_33x65_eps1e-05",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "epsilon_3x33_eps0.001",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "epsilon_3x33_eps1e-06",
+      "depth": 2,
+      "max_abs_difference": 0.0
+    }
+  ],
+  "depth_outputs_bitwise_equal": true,
+  "limitation": "Single core, 3-stage precision experiment with local TEN-3868 compatibility adaptation; not native API-only success or chip performance"
+}

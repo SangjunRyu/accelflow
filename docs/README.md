@@ -1,6 +1,6 @@
 # 00. 진행 순서와 문서 안내
 
-마지막 갱신: 2026-11-10. **Metalium 커널 학습 범위·RMSNorm 행/열 분할 검증 완료, TT-NN 후속**입니다.
+마지막 갱신: 2026-11-12. **Metalium 커널 학습 범위·RMSNorm 행/열 분할 검증 완료, TT-NN 후속**입니다.
 가상 Wormhole에서 결과 21 / exit code 0을 확인했습니다.
 
 ## 읽는 순서
@@ -40,6 +40,8 @@
 | 28 | [열 분할 RMSNorm](28-column-sharded-rmsnorm.md) | 부분합 교환·leader 집계·49개 구성·PyTorch 대조 완료 |
 | 29 | [Metalium 단계 최종 정리](29-metalium-results.md) | 대표 결과·측정 한계·TT-NN 인계 |
 | 30 | [공개 포트폴리오·대표 재현](30-portfolio.md) | 설계 변경표·측정값 구분·저장 근거 감사·6개 mode smoke 검증 |
+| 31 | [FP32-to-Dest RMSNorm](31-fp32-to-dest-rmsnorm.md) | native 실패 분리·로컬 compat·실제 FP32 포함 58개 구성 검증 |
+| 32 | [RMSNorm FP32-Dest 시간 비교](32-rmsnorm-fp32-dest-timing.md) | 동일 3-stage·24 process·120 sample·정확성/변동 검증 |
 
 ## 실제 진행 현황
 
@@ -80,6 +82,8 @@
 | 33 | 열 분할 RMSNorm·부분합 통신·행 분할 대조·PyTorch 검증 | 완료 |
 | 34 | Metalium 결과 정리·TT-NN 인계 범위 기록 | 완료 |
 | 35 | 공개 README·대표 표·evidence/simulator 단일 진입점 검증 | 완료 |
+| 36 | FP32-to-Dest 별도 실험·비트 분할 제거·native/compat 분리·PyTorch 검증 | 완료 |
+| 37 | split/FP32-Dest 3-stage 실행 비용·stage별 반복 비교 | 완료 |
 
 ## TTSim 자체 설치 완료 결과
 

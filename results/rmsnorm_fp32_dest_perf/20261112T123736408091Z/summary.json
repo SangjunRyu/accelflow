@@ -1,0 +1,190 @@
+{
+  "passed": true,
+  "depth": 2,
+  "trials": 3,
+  "warmups": 2,
+  "samples": 5,
+  "process_runs": 24,
+  "timed_rmsnorm_samples": 120,
+  "rmsnorm_evaluations": 168,
+  "program_submissions": 504,
+  "results": [
+    {
+      "key": "ones_2x32_eps1e-05",
+      "shape_hw": [
+        2,
+        32
+      ],
+      "max_abs_output_difference": 0.0,
+      "split": {
+        "median_ms": 337.496544,
+        "trial_medians_ms": [
+          347.459782,
+          337.496544,
+          318.161084
+        ],
+        "trial_min_ms": 318.161084,
+        "trial_max_ms": 347.459782,
+        "stage_medians_ms": [
+          4.834178,
+          96.448733,
+          232.567221
+        ],
+        "dram_read_bytes_model": 24576,
+        "cb_peak_bytes_model": 53248
+      },
+      "compat": {
+        "median_ms": 140.636337,
+        "trial_medians_ms": [
+          141.625619,
+          136.033464,
+          140.636337
+        ],
+        "trial_min_ms": 136.033464,
+        "trial_max_ms": 141.625619,
+        "stage_medians_ms": [
+          4.838058,
+          4.947926,
+          130.88754
+        ],
+        "dram_read_bytes_model": 20480,
+        "cb_peak_bytes_model": 36864
+      },
+      "split_over_compat_ratio": 2.399781956778354,
+      "compat_time_change_percent": -58.32954751678879
+    },
+    {
+      "key": "signed_65x129_eps1e-05",
+      "shape_hw": [
+        65,
+        129
+      ],
+      "max_abs_output_difference": 0.0,
+      "split": {
+        "median_ms": 8382.277226,
+        "trial_medians_ms": [
+          8563.647256,
+          8382.277226,
+          8285.972327
+        ],
+        "trial_min_ms": 8285.972327,
+        "trial_max_ms": 8563.647256,
+        "stage_medians_ms": [
+          6.180876,
+          1351.45355,
+          7053.298292
+        ],
+        "dram_read_bytes_model": 319488,
+        "cb_peak_bytes_model": 53248
+      },
+      "compat": {
+        "median_ms": 1721.148132,
+        "trial_medians_ms": [
+          1721.148132,
+          1728.80984,
+          1662.429605
+        ],
+        "trial_min_ms": 1662.429605,
+        "trial_max_ms": 1728.80984,
+        "stage_medians_ms": [
+          8.388321,
+          9.521864,
+          1699.1978
+        ],
+        "dram_read_bytes_model": 258048,
+        "cb_peak_bytes_model": 36864
+      },
+      "split_over_compat_ratio": 4.870166065404067,
+      "compat_time_change_percent": -79.46681927124322
+    },
+    {
+      "key": "fractional_17x257_eps1e-05",
+      "shape_hw": [
+        17,
+        257
+      ],
+      "max_abs_output_difference": 4.76837158203125e-07,
+      "split": {
+        "median_ms": 7044.687164,
+        "trial_medians_ms": [
+          6885.716364,
+          7537.963538,
+          7044.687164
+        ],
+        "trial_min_ms": 6885.716364,
+        "trial_max_ms": 7537.963538,
+        "stage_medians_ms": [
+          5.346853,
+          2256.203222,
+          4811.29225
+        ],
+        "dram_read_bytes_model": 188416,
+        "cb_peak_bytes_model": 53248
+      },
+      "compat": {
+        "median_ms": 1039.678504,
+        "trial_medians_ms": [
+          1037.426308,
+          1039.678504,
+          1049.391517
+        ],
+        "trial_min_ms": 1037.426308,
+        "trial_max_ms": 1049.391517,
+        "stage_medians_ms": [
+          6.824343,
+          7.505288,
+          1024.188694
+        ],
+        "dram_read_bytes_model": 151552,
+        "cb_peak_bytes_model": 36864
+      },
+      "split_over_compat_ratio": 6.775832275935946,
+      "compat_time_change_percent": -85.24166538845046
+    },
+    {
+      "key": "signed_1x4097_eps1e-05",
+      "shape_hw": [
+        1,
+        4097
+      ],
+      "max_abs_output_difference": 0.0,
+      "split": {
+        "median_ms": 42969.04354,
+        "trial_medians_ms": [
+          41408.970157,
+          42969.04354,
+          43598.023693
+        ],
+        "trial_min_ms": 41408.970157,
+        "trial_max_ms": 43598.023693,
+        "stage_medians_ms": [
+          15.529887,
+          12118.403748,
+          30352.332304
+        ],
+        "dram_read_bytes_model": 2646016,
+        "cb_peak_bytes_model": 53248
+      },
+      "compat": {
+        "median_ms": 14335.661309,
+        "trial_medians_ms": [
+          14322.205052,
+          14335.661309,
+          14598.165418
+        ],
+        "trial_min_ms": 14322.205052,
+        "trial_max_ms": 14598.165418,
+        "stage_medians_ms": [
+          37.19731,
+          44.143281,
+          14244.011119
+        ],
+        "dram_read_bytes_model": 2117632,
+        "cb_peak_bytes_model": 36864
+      },
+      "split_over_compat_ratio": 2.9973534261041603,
+      "compat_time_change_percent": -66.63723432509059
+    }
+  ],
+  "policy": "Host/TTSim execution cost, not physical NPU latency; combined implementation comparison, not isolated unpack-instruction benchmark"
+}

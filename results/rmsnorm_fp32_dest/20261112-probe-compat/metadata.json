@@ -1,0 +1,84 @@
+{
+  "source_sha256": {
+    "npu/rmsnorm_fp32_dest/rmsnorm_fp32_dest.cpp": "4e0df27f5e15b2662c3f9be3c79a20352e2a876fad80add70a8b561cf66e23ef",
+    "npu/rmsnorm_fp32_dest/CMakeLists.txt": "05016b4fff74bebe229909d02f11ef5519341bb62a6838d0074d8348b9329a4d",
+    "npu/rmsnorm_fp32_dest/kernels/writer.cpp": "0c1faa629885ea450673277520baaa8111ab5d714bb612795b7e9273b420747a",
+    "npu/rmsnorm_fp32_dest/kernels/probe.cpp": "ed93b2c58ab51d0be866ebbb0e8383b7e5cee83ce0f365f447c5fcc16d0b99d0",
+    "npu/rmsnorm_fp32_dest/kernels/fp32_unpack_compat.hpp": "46221ad7fadaf9afa01f6e9d39cee1d7c4e9bc2bcb6a894541e22724949f870f",
+    "npu/rmsnorm_fp32_dest/kernels/reader.cpp": "d273f6ab4ac336b82b1f1ae265fe420919d974b045e3f41eefd38fdc4f4359b3"
+  },
+  "runs": [
+    {
+      "label": "default-copy",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112-probe-compat/default-copy.json",
+        "default",
+        "copy"
+      ],
+      "exit_code": 0,
+      "seconds": 1.8190081220000138
+    },
+    {
+      "label": "direct-copy",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112-probe-compat/direct-copy.json",
+        "direct",
+        "copy"
+      ],
+      "exit_code": 1,
+      "seconds": 1.1691187119999995
+    },
+    {
+      "label": "compat-copy",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112-probe-compat/compat-copy.json",
+        "compat",
+        "copy"
+      ],
+      "exit_code": 1,
+      "seconds": 1.0669199509999316
+    },
+    {
+      "label": "default-transpose",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112-probe-compat/default-transpose.json",
+        "default",
+        "transpose"
+      ],
+      "exit_code": 0,
+      "seconds": 0.11457633600002737
+    },
+    {
+      "label": "direct-transpose",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112-probe-compat/direct-transpose.json",
+        "direct",
+        "transpose"
+      ],
+      "exit_code": 1,
+      "seconds": 0.1151184860000285
+    },
+    {
+      "label": "compat-transpose",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112-probe-compat/compat-transpose.json",
+        "compat",
+        "transpose"
+      ],
+      "exit_code": 1,
+      "seconds": 0.11473359900003288
+    }
+  ]
+}

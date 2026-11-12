@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "normal_cli_regression": [
+    {
+      "variant": "split",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm/rmsnorm",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest_perf/20261112T123736408091Z/ones_2x32_eps1e-05.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest_perf/20261112T123736408091Z/split-normal-cli.json",
+        "2",
+        "1",
+        "unfused",
+        "1"
+      ],
+      "passed": true
+    },
+    {
+      "variant": "compat",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "run",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest_perf/20261112T123736408091Z/ones_2x32_eps1e-05.txt",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest_perf/20261112T123736408091Z/compat-normal-cli.json",
+        "2",
+        "1",
+        "compat"
+      ],
+      "passed": true
+    }
+  ],
+  "current_source_and_executable_hashes_match": true,
+  "python_ast_and_shell_syntax": true,
+  "upstream_clean": true,
+  "git_diff_check": true,
+  "meminfo_after": "MemTotal:        3962484 kB\nMemFree:         3114920 kB\nMemAvailable:    3387720 kB\nBuffers:           57236 kB\nCached:           380824 kB\nSwapCached:            0 kB\nActive:           182252 kB\nInactive:         336024 kB\nActive(anon):       3680 kB\nInactive(anon):    81024 kB\nActive(file):     178572 kB\nInactive(file):   255000 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:        1048576 kB\nDirty:              6484 kB\nWriteback:             0 kB\nAnonPages:         80536 kB\nMapped:           127964 kB\nShmem:              4252 kB\nKReclaimable:      78080 kB\nSlab:             117028 kB\nSReclaimable:      78080 kB\nSUnreclaim:        38948 kB\nKernelStack:        3604 kB\nPageTables:         2928 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3029816 kB\nCommitted_AS:     611632 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        6744 kB\nVmallocChunk:          0 kB\nPercpu:             3712 kB\nAnonHugePages:     16384 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      115712 kB\nDirectMap2M:     4020224 kB\nDirectMap1G:     8388608 kB\n",
+  "local_document_links_valid": true,
+  "report_style_review_accepted": true,
+  "report_style_raw_gate_warning": "footnote_anchor false positive on unchanged ceil(H/32)/ceil(W/32) formulas"
+}

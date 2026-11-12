@@ -1,0 +1,48 @@
+{
+  "fixtures": [
+    {
+      "key": "ones_2x32_eps1e-05",
+      "shape_hw": [
+        2,
+        32
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "performance": false,
+      "binary": "scratch/ones_2x32_eps1e-05.bin",
+      "sha256": "a8eb76bf5f0e0ec075d257d22bd445549e1d3c82b6b731de912492fb58c092d4"
+    },
+    {
+      "key": "signed_65x129_eps1e-05",
+      "shape_hw": [
+        65,
+        129
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "performance": false,
+      "binary": "scratch/signed_65x129_eps1e-05.bin",
+      "sha256": "00066ce9f7c69caf7b9916aaf5be9b5f43eebe762493c0de3a4976a6fc534cea"
+    },
+    {
+      "key": "fractional_17x257_eps1e-05",
+      "shape_hw": [
+        17,
+        257
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "performance": false,
+      "binary": "scratch/fractional_17x257_eps1e-05.bin",
+      "sha256": "48cc1a05dd09deb6c79413b521b6b82ec364f17f8e4519080a25eb90d09a3f33"
+    },
+    {
+      "key": "signed_1x4097_eps1e-05",
+      "shape_hw": [
+        1,
+        4097
+      ],
+      "epsilon": 9.999999747378752e-06,
+      "performance": false,
+      "binary": "scratch/signed_1x4097_eps1e-05.bin",
+      "sha256": "ae63b3117990db3185c7aee28a1cc1b395b6ee4719c05d6b1c3d925e1f74ba1f"
+    }
+  ]
+}

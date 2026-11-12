@@ -1,0 +1,10 @@
+{
+  "route": "light",
+  "run_id": "2026-11-12-001-807e",
+  "change_rate_percent": 0.01,
+  "grade": "B",
+  "self_checks_passed": 6,
+  "gate_exit_code": 0,
+  "remaining_warnings": [],
+  "edit": "확인하고, compat가 -> 확인하고 compat가"
+}

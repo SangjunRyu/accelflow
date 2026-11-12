@@ -6,6 +6,8 @@
 #include <cmath>
 #include <filesystem>
 #include <string>
+#include <cstring>
+#include "../rmsnorm_fp32_dest/pipeline_benchmark.hpp"
 
 static size_t offset(uint32_t row, uint32_t col, uint32_t width) {
     const uint32_t r = row % 32, c = col % 32;
@@ -27,6 +29,7 @@ static float widen(uint16_t bits) { return std::bit_cast<float>(uint32_t(bits) <
 
 int main(int argc, char** argv) {
     try {
+        argc = af::rms_bench::configure(argc, argv);
         if (argc != 5 && argc != 6 && argc != 7)
             throw std::runtime_error("Usage: rmsnorm fixture-list.txt report.json depth repeats [unfused|fused|column] [cores:1|2|4]");
         const std::string variant = argc >= 6 ? argv[5] : "unfused";
@@ -38,8 +41,8 @@ int main(int argc, char** argv) {
         if ((requested_cores != 1 && requested_cores != 2 && requested_cores != 4) ||
             (!fused && requested_cores != 1))
             throw std::runtime_error("Fused and column support 1/2/4 cores; unfused requires one core");
-        const uint32_t depth = std::stoul(argv[3]), repeats = std::stoul(argv[4]);
-        if ((depth != 1 && depth != 2) || repeats < 1 || repeats > 3)
+        const uint32_t depth = std::stoul(argv[3]), repeats = af::rms_bench::options.iterations(std::stoul(argv[4]));
+        if ((depth != 1 && depth != 2) || repeats < 1 || (repeats > 3 && !af::rms_bench::options.enabled))
             throw std::runtime_error("Invalid depth/repeats");
         std::ifstream list(argv[1]);
         if (!list) throw std::runtime_error("Could not open fixture list");
@@ -224,16 +227,14 @@ int main(int argc, char** argv) {
             const std::vector<float> stat_sentinel(ht * 1024, std::numeric_limits<float>::quiet_NaN());
             double max_error = 0, max_sum_error = 0;
             std::vector<float> first;
+            af::rms_bench::PipelineTimer pipeline_timer;
             for (uint32_t repeat = 0; repeat < repeats; ++repeat) {
                 if (!fused) {
                     af::dist::EnqueueWriteMeshBuffer(queue, square, sentinel, false);
                     af::dist::EnqueueWriteMeshBuffer(queue, sums, stat_sentinel, false);
                 }
                 af::dist::EnqueueWriteMeshBuffer(queue, yd, sentinel, false);
-                for (auto& work : workloads) {
-                    af::dist::EnqueueMeshWorkload(queue, work, false);
-                    af::dist::Finish(queue);
-                }
+                pipeline_timer.submit(workloads, queue, repeat);
                 std::vector<float> actual, squared, statistics;
                 af::dist::EnqueueReadMeshBuffer(queue, actual, yd, true);
                 if (!fused) {
@@ -260,7 +261,9 @@ int main(int argc, char** argv) {
                     }
                 }
                 if (first.empty()) first = actual;
-                else if (first != actual) throw std::runtime_error("Repeated outputs differ");
+                else if (first != actual || (af::rms_bench::options.enabled &&
+                    std::memcmp(first.data(),actual.data(),first.size()*sizeof(float)) != 0))
+                    throw std::runtime_error("Repeated outputs differ");
             }
             std::vector<float> logical_output;
             for (uint32_t row=0;row<h;++row) for(uint32_t col=0;col<w;++col) logical_output.push_back(first[offset(row,col,wp)]);
@@ -283,7 +286,7 @@ int main(int argc, char** argv) {
                 {"peer_data_messages_model",column ? uint64_t(ht)*2*(active_cores-1) : 0},
                 {"peer_atomic_increments_model",column ? uint64_t(ht)*2*(active_cores-1) : 0},
                 {"partial_statistics_reduced_on_compute",column},
-                {"assignment_has_no_gaps_or_overlaps",true}});
+                {"assignment_has_no_gaps_or_overlaps",true},{"benchmark_timing",pipeline_timer.json()}});
             std::cout << "PASS RMSNorm " << path << " max_abs=" << max_error << std::endl;
         }
         if (cases.empty()) throw std::runtime_error("No fixtures");

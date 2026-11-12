@@ -1,0 +1,602 @@
+{
+  "passed": true,
+  "fixtures": 29,
+  "backend_outputs_compared": 58,
+  "torch_version": "2.15.0+cpu",
+  "atol": 0.0001,
+  "rtol": 0.0001,
+  "command": [
+    "/home/ysjun5656/dev/accelflow/.venv/bin/python",
+    "tools/report/audit_rmsnorm_fp32_dest.py",
+    "--results",
+    "results/rmsnorm_fp32_dest/20261112T121407505012Z"
+  ],
+  "rows": [
+    {
+      "key": "deterministic_2x3_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 4.3114269487887213e-08
+      }
+    },
+    {
+      "key": "deterministic_2x3_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 4.3114269487887213e-08
+      }
+    },
+    {
+      "key": "zero_33x35_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 0.0
+      }
+    },
+    {
+      "key": "zero_33x35_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 0.0
+      }
+    },
+    {
+      "key": "ones_1x1_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 6.827787224494841e-09
+      }
+    },
+    {
+      "key": "ones_1x1_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 6.827787224494841e-09
+      }
+    },
+    {
+      "key": "ones_2x31_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 6.827787224494841e-09
+      }
+    },
+    {
+      "key": "ones_2x31_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 6.827787224494841e-09
+      }
+    },
+    {
+      "key": "ones_2x32_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 6.827787224494841e-09
+      }
+    },
+    {
+      "key": "ones_2x32_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 6.827787224494841e-09
+      }
+    },
+    {
+      "key": "ones_2x33_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 6.827787224494841e-09
+      }
+    },
+    {
+      "key": "ones_2x33_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 6.827787224494841e-09
+      }
+    },
+    {
+      "key": "signed_31x65_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 1.1835814861527183e-07
+      }
+    },
+    {
+      "key": "signed_31x65_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 1.1835814861527183e-07
+      }
+    },
+    {
+      "key": "signed_32x65_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 1.1835814861527183e-07
+      }
+    },
+    {
+      "key": "signed_32x65_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 1.1835814861527183e-07
+      }
+    },
+    {
+      "key": "signed_33x65_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 1.1835814861527183e-07
+      }
+    },
+    {
+      "key": "signed_33x65_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 1.1835814861527183e-07
+      }
+    },
+    {
+      "key": "signed_65x129_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 1.55041684379853e-07
+      }
+    },
+    {
+      "key": "signed_65x129_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 1.55041684379853e-07
+      }
+    },
+    {
+      "key": "signed_3x257_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 8.926788708230049e-08
+      }
+    },
+    {
+      "key": "signed_3x257_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 8.926788708230049e-08
+      }
+    },
+    {
+      "key": "signed_2x1025_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 1.0722603449586643e-07
+      }
+    },
+    {
+      "key": "signed_2x1025_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 1.0722603449586643e-07
+      }
+    },
+    {
+      "key": "signed_1x4097_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 8.046669774941506e-08
+      }
+    },
+    {
+      "key": "signed_1x4097_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 8.046669774941506e-08
+      }
+    },
+    {
+      "key": "fractional_17x257_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 4.76837158203125e-07,
+        "fp64": 5.775613289848991e-07
+      }
+    },
+    {
+      "key": "fractional_17x257_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 4.76837158203125e-07,
+        "fp64": 5.775613289848991e-07
+      }
+    },
+    {
+      "key": "tiny_3x33_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 2.7665807145194066e-11
+      }
+    },
+    {
+      "key": "tiny_3x33_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 2.7665807145194066e-11
+      }
+    },
+    {
+      "key": "mixed_3x65_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 5.805956670990042e-08
+      }
+    },
+    {
+      "key": "mixed_3x65_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 5.805956670990042e-08
+      }
+    },
+    {
+      "key": "gamma_zero_3x35_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 0.0
+      }
+    },
+    {
+      "key": "gamma_zero_3x35_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 0.0
+      }
+    },
+    {
+      "key": "gamma_signed_33x65_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 1.1835814861527183e-07
+      }
+    },
+    {
+      "key": "gamma_signed_33x65_eps1e-05",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 1.1835814861527183e-07
+      }
+    },
+    {
+      "key": "epsilon_3x33_eps0.001",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 1.0220190709356314e-10
+      }
+    },
+    {
+      "key": "epsilon_3x33_eps0.001",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 1.0220190709356314e-10
+      }
+    },
+    {
+      "key": "epsilon_3x33_eps1e-06",
+      "fixture_dtype": "BF16",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 7.450580596923828e-09,
+        "fp64": 6.027179727530196e-10
+      }
+    },
+    {
+      "key": "epsilon_3x33_eps1e-06",
+      "fixture_dtype": "BF16",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 7.450580596923828e-09,
+        "fp64": 6.027179727530196e-10
+      }
+    },
+    {
+      "key": "fp32_lowbits_3x33_eps1e-05",
+      "fixture_dtype": "FP32",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 1.3383572294856094e-07
+      }
+    },
+    {
+      "key": "fp32_lowbits_3x33_eps1e-05",
+      "fixture_dtype": "FP32",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 1.1920928955078125e-07,
+        "fp64": 1.3383572294856094e-07
+      }
+    },
+    {
+      "key": "fp32_fractional_33x65_eps1e-05",
+      "fixture_dtype": "FP32",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 4.76837158203125e-07,
+        "fp64": 4.213370718986198e-07
+      }
+    },
+    {
+      "key": "fp32_fractional_33x65_eps1e-05",
+      "fixture_dtype": "FP32",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 4.76837158203125e-07,
+        "fp64": 4.213370718986198e-07
+      }
+    },
+    {
+      "key": "fp32_wide_1x1025_eps1e-05",
+      "fixture_dtype": "FP32",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 2.628449169428393e-07
+      }
+    },
+    {
+      "key": "fp32_wide_1x1025_eps1e-05",
+      "fixture_dtype": "FP32",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 2.628449169428393e-07
+      }
+    },
+    {
+      "key": "fp32_tail_65x129_eps1e-05",
+      "fixture_dtype": "FP32",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 7.152557373046875e-07,
+        "fp64": 6.100737386383059e-07
+      }
+    },
+    {
+      "key": "fp32_tail_65x129_eps1e-05",
+      "fixture_dtype": "FP32",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 7.152557373046875e-07,
+        "fp64": 6.100737386383059e-07
+      }
+    },
+    {
+      "key": "fp32_tiny_3x31_eps1e-05",
+      "fixture_dtype": "FP32",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 7.450580596923828e-09,
+        "fp64": 3.7207716491183263e-09
+      }
+    },
+    {
+      "key": "fp32_tiny_3x31_eps1e-05",
+      "fixture_dtype": "FP32",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 7.450580596923828e-09,
+        "fp64": 3.7207716491183263e-09
+      }
+    },
+    {
+      "key": "fp32_zero_1x1_eps1e-05",
+      "fixture_dtype": "FP32",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 0.0
+      }
+    },
+    {
+      "key": "fp32_zero_1x1_eps1e-05",
+      "fixture_dtype": "FP32",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 0.0,
+        "fp64": 0.0
+      }
+    },
+    {
+      "key": "fp32_gamma_17x257_eps1e-05",
+      "fixture_dtype": "FP32",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 9.5367431640625e-07,
+        "fp64": 9.832732366099606e-07
+      }
+    },
+    {
+      "key": "fp32_gamma_17x257_eps1e-05",
+      "fixture_dtype": "FP32",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 9.5367431640625e-07,
+        "fp64": 9.832732366099606e-07
+      }
+    },
+    {
+      "key": "fp32_epsilon_2x33_eps0.001",
+      "fixture_dtype": "FP32",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 4.656612873077393e-10,
+        "fp64": 3.647745699247862e-10
+      }
+    },
+    {
+      "key": "fp32_epsilon_2x33_eps0.001",
+      "fixture_dtype": "FP32",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 4.656612873077393e-10,
+        "fp64": 3.647745699247862e-10
+      }
+    },
+    {
+      "key": "fp32_offset_1x257_eps1e-06",
+      "fixture_dtype": "FP32",
+      "depth": 1,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 2.384185791015625e-07,
+        "fp64": 2.205856381998217e-07
+      }
+    },
+    {
+      "key": "fp32_offset_1x257_eps1e-06",
+      "fixture_dtype": "FP32",
+      "depth": 2,
+      "passed": true,
+      "max_abs_errors": {
+        "fp32": 2.384185791015625e-07,
+        "fp64": 2.205856381998217e-07
+      }
+    }
+  ],
+  "max_abs_error_vs_pytorch_fp32": 9.5367431640625e-07,
+  "max_abs_error_vs_pytorch_fp64": 9.832732366099606e-07,
+  "report_sha256": {
+    "compat-depth1.json": "61d33c15ce17186255f9d885c9e23018a1380bd772885db0df40dc53487e4186",
+    "compat-depth2.json": "daaa5542bff9f2c51cb50db7c80efd5b768aaf04a7b1e4caced7693e7b51b550"
+  }
+}

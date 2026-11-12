@@ -1,0 +1,59 @@
+{
+  "source_sha256": {
+    "npu/rmsnorm_fp32_dest/rmsnorm_fp32_dest.cpp": "b0e0065204b0d53b15f1055bd9eb6f092894753921be619a51cc2ab2c3b72c26",
+    "npu/rmsnorm_fp32_dest/CMakeLists.txt": "05016b4fff74bebe229909d02f11ef5519341bb62a6838d0074d8348b9329a4d",
+    "npu/rmsnorm_fp32_dest/kernels/writer.cpp": "0c1faa629885ea450673277520baaa8111ab5d714bb612795b7e9273b420747a",
+    "npu/rmsnorm_fp32_dest/kernels/probe.cpp": "d9e561c933a20f542fb6e19e3cce3d3e79743e8819a41d73d37fbe4ef290f3ff",
+    "npu/rmsnorm_fp32_dest/kernels/reader.cpp": "d273f6ab4ac336b82b1f1ae265fe420919d974b045e3f41eefd38fdc4f4359b3"
+  },
+  "runs": [
+    {
+      "label": "default-copy",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112-probe-sim116/default-copy.json",
+        "default",
+        "copy"
+      ],
+      "exit_code": 0,
+      "seconds": 0.21500044399999751
+    },
+    {
+      "label": "direct-copy",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112-probe-sim116/direct-copy.json",
+        "direct",
+        "copy"
+      ],
+      "exit_code": 1,
+      "seconds": 0.11645559499993396
+    },
+    {
+      "label": "default-transpose",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112-probe-sim116/default-transpose.json",
+        "default",
+        "transpose"
+      ],
+      "exit_code": 0,
+      "seconds": 0.11411216699991655
+    },
+    {
+      "label": "direct-transpose",
+      "command": [
+        "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+        "probe",
+        "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112-probe-sim116/direct-transpose.json",
+        "direct",
+        "transpose"
+      ],
+      "exit_code": 1,
+      "seconds": 0.11455454999997983
+    }
+  ]
+}

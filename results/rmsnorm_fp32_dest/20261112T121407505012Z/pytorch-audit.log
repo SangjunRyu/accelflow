@@ -1,0 +1,32 @@
+/home/ysjun5656/dev/accelflow/.venv/lib/python3.12/site-packages/torch/_subclasses/functional_tensor.py:377: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:82.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+FP32_DEST_PYTORCH_PASS deterministic_2x3_eps1e-05
+FP32_DEST_PYTORCH_PASS zero_33x35_eps1e-05
+FP32_DEST_PYTORCH_PASS ones_1x1_eps1e-05
+FP32_DEST_PYTORCH_PASS ones_2x31_eps1e-05
+FP32_DEST_PYTORCH_PASS ones_2x32_eps1e-05
+FP32_DEST_PYTORCH_PASS ones_2x33_eps1e-05
+FP32_DEST_PYTORCH_PASS signed_31x65_eps1e-05
+FP32_DEST_PYTORCH_PASS signed_32x65_eps1e-05
+FP32_DEST_PYTORCH_PASS signed_33x65_eps1e-05
+FP32_DEST_PYTORCH_PASS signed_65x129_eps1e-05
+FP32_DEST_PYTORCH_PASS signed_3x257_eps1e-05
+FP32_DEST_PYTORCH_PASS signed_2x1025_eps1e-05
+FP32_DEST_PYTORCH_PASS signed_1x4097_eps1e-05
+FP32_DEST_PYTORCH_PASS fractional_17x257_eps1e-05
+FP32_DEST_PYTORCH_PASS tiny_3x33_eps1e-05
+FP32_DEST_PYTORCH_PASS mixed_3x65_eps1e-05
+FP32_DEST_PYTORCH_PASS gamma_zero_3x35_eps1e-05
+FP32_DEST_PYTORCH_PASS gamma_signed_33x65_eps1e-05
+FP32_DEST_PYTORCH_PASS epsilon_3x33_eps0.001
+FP32_DEST_PYTORCH_PASS epsilon_3x33_eps1e-06
+FP32_DEST_PYTORCH_PASS fp32_lowbits_3x33_eps1e-05
+FP32_DEST_PYTORCH_PASS fp32_fractional_33x65_eps1e-05
+FP32_DEST_PYTORCH_PASS fp32_wide_1x1025_eps1e-05
+FP32_DEST_PYTORCH_PASS fp32_tail_65x129_eps1e-05
+FP32_DEST_PYTORCH_PASS fp32_tiny_3x31_eps1e-05
+FP32_DEST_PYTORCH_PASS fp32_zero_1x1_eps1e-05
+FP32_DEST_PYTORCH_PASS fp32_gamma_17x257_eps1e-05
+FP32_DEST_PYTORCH_PASS fp32_epsilon_2x33_eps0.001
+FP32_DEST_PYTORCH_PASS fp32_offset_1x257_eps1e-06
+FP32_DEST_PYTORCH_ALL_PASS

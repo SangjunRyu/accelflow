@@ -1,0 +1,427 @@
+{
+  "passed": true,
+  "default_rmsnorm_negative_control_rejected": true,
+  "default_control_command": [
+    "/home/ysjun5656/dev/accelflow/build/rmsnorm_fp32_dest/rmsnorm_fp32_dest",
+    "run",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112T121407505012Z/default-control-fixtures.txt",
+    "/home/ysjun5656/dev/accelflow/results/rmsnorm_fp32_dest/20261112T121407505012Z/default-rmsnorm-control.json",
+    "1",
+    "1",
+    "default"
+  ],
+  "default_control_exit_code": 1,
+  "default_control_max_abs_error": 0.0016191119713098168,
+  "default_control_bad_output_values": 793,
+  "max_relative_sum_error": 7.400968056981841e-07,
+  "max_sum_ulp_distance": 9,
+  "statistics": [
+    {
+      "key": "deterministic_2x3_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "zero_33x35_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "ones_1x1_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "ones_2x31_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "ones_2x32_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "ones_2x33_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "signed_31x65_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "signed_32x65_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "signed_33x65_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "signed_65x129_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "signed_3x257_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "signed_2x1025_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "signed_1x4097_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "fractional_17x257_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 5.917940621261313e-07,
+      "max_ulp_distance_from_rounded_fp64_sum": 7
+    },
+    {
+      "key": "tiny_3x33_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "mixed_3x65_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 9.750138291479465e-10,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "gamma_zero_3x35_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "gamma_signed_33x65_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "epsilon_3x33_eps0.001",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "epsilon_3x33_eps1e-06",
+      "depth": 1,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "fp32_lowbits_3x33_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 7.698173840093854e-08,
+      "max_ulp_distance_from_rounded_fp64_sum": 1
+    },
+    {
+      "key": "fp32_fractional_33x65_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 2.16641577980669e-07,
+      "max_ulp_distance_from_rounded_fp64_sum": 3
+    },
+    {
+      "key": "fp32_wide_1x1025_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 1.2549913233694413e-07,
+      "max_ulp_distance_from_rounded_fp64_sum": 1
+    },
+    {
+      "key": "fp32_tail_65x129_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 4.949005624063104e-07,
+      "max_ulp_distance_from_rounded_fp64_sum": 6
+    },
+    {
+      "key": "fp32_tiny_3x31_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 1.1994703976631173e-07,
+      "max_ulp_distance_from_rounded_fp64_sum": 2
+    },
+    {
+      "key": "fp32_zero_1x1_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "fp32_gamma_17x257_eps1e-05",
+      "depth": 1,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 7.400968056981841e-07,
+      "max_ulp_distance_from_rounded_fp64_sum": 9
+    },
+    {
+      "key": "fp32_epsilon_2x33_eps0.001",
+      "depth": 1,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 8.940080509572841e-08,
+      "max_ulp_distance_from_rounded_fp64_sum": 1
+    },
+    {
+      "key": "fp32_offset_1x257_eps1e-06",
+      "depth": 1,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 1.1363891264589003e-07,
+      "max_ulp_distance_from_rounded_fp64_sum": 1
+    },
+    {
+      "key": "deterministic_2x3_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "zero_33x35_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "ones_1x1_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "ones_2x31_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "ones_2x32_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "ones_2x33_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "signed_31x65_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "signed_32x65_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "signed_33x65_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "signed_65x129_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "signed_3x257_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "signed_2x1025_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "signed_1x4097_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "fractional_17x257_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 5.917940621261313e-07,
+      "max_ulp_distance_from_rounded_fp64_sum": 7
+    },
+    {
+      "key": "tiny_3x33_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "mixed_3x65_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 9.750138291479465e-10,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "gamma_zero_3x35_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "gamma_signed_33x65_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "epsilon_3x33_eps0.001",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "epsilon_3x33_eps1e-06",
+      "depth": 2,
+      "fixture_dtype": "BF16",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "fp32_lowbits_3x33_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 7.698173840093854e-08,
+      "max_ulp_distance_from_rounded_fp64_sum": 1
+    },
+    {
+      "key": "fp32_fractional_33x65_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 2.16641577980669e-07,
+      "max_ulp_distance_from_rounded_fp64_sum": 3
+    },
+    {
+      "key": "fp32_wide_1x1025_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 1.2549913233694413e-07,
+      "max_ulp_distance_from_rounded_fp64_sum": 1
+    },
+    {
+      "key": "fp32_tail_65x129_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 4.949005624063104e-07,
+      "max_ulp_distance_from_rounded_fp64_sum": 6
+    },
+    {
+      "key": "fp32_tiny_3x31_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 1.1994703976631173e-07,
+      "max_ulp_distance_from_rounded_fp64_sum": 2
+    },
+    {
+      "key": "fp32_zero_1x1_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 0.0,
+      "max_ulp_distance_from_rounded_fp64_sum": 0
+    },
+    {
+      "key": "fp32_gamma_17x257_eps1e-05",
+      "depth": 2,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 7.400968056981841e-07,
+      "max_ulp_distance_from_rounded_fp64_sum": 9
+    },
+    {
+      "key": "fp32_epsilon_2x33_eps0.001",
+      "depth": 2,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 8.940080509572841e-08,
+      "max_ulp_distance_from_rounded_fp64_sum": 1
+    },
+    {
+      "key": "fp32_offset_1x257_eps1e-06",
+      "depth": 2,
+      "fixture_dtype": "FP32",
+      "max_relative_sum_error": 1.1363891264589003e-07,
+      "max_ulp_distance_from_rounded_fp64_sum": 1
+    }
+  ],
+  "scope": "Corpus metrics, not an all-input error bound or correctly-rounded reduction guarantee"
+}

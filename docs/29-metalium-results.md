@@ -91,11 +91,15 @@ DRAM/L1, interleaved/sharded 배치와 선택되는 커널을 살펴보고 작�
 ```text
 프로젝트 /home/ysjun5656/dev/accelflow에서 TT-NN 단계를 진행해줘.
 AGENTS.md, docs/README.md, docs/28-column-sharded-rmsnorm.md,
-docs/29-metalium-results.md를 먼저 읽어줘. 후속 문서는 31번부터 작성해줘.
+docs/29-metalium-results.md를 먼저 읽어줘. 후속 문서는 33번부터 작성해줘.
 현재 TT-Metal v0.79.0 / TTSim v1.11.1을 보존하고 호환성·디스크·메모리부터 확인해줘.
 목표는 작은 TT-NN MatMul/RMSNorm 실행, 기존 입력을 이용한 정확성 대조,
 layout·메모리·sharding과 구현 경로 학습, 작은 연산 블록으로의 확장이야.
 TTSim 시간을 실제 NPU 성능으로 해석하지 말고 실행하지 않은 단계는 구분해줘.
 ```
 
-공개용 대표 실험표와 단일 재현 진입점은 [30번](30-portfolio.md)에 정리했다. TT-NN 후속 문서는 31번부터 이어간다.
+공개용 대표 실험표와 단일 재현 진입점은 [30번](30-portfolio.md)에 정리했다. TT-NN 후속 문서는 33번부터 이어간다.
+
+FP32-to-Dest의 native 실패와 로컬 호환 경로의 비트 분할 없는 계산은 [31번](31-fp32-to-dest-rmsnorm.md)에 별도 기록했다. TT-NN 후속은 33번부터 이어간다.
+
+같은 3-stage 조건의 split/FP32-to-Dest 실행 비용 비교는 [32번](32-rmsnorm-fp32-dest-timing.md)에 기록했다.

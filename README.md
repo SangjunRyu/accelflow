@@ -107,3 +107,7 @@ TTSim 시간은 실물 NPU latency·TOPS가 아닙니다. payload 모델은 cach
 자체 코드는 `npu/`, `cuda/`, 재현 도구는 `scripts/`, `tools/report/`, 실험 근거는 `results/`에 있습니다.
 외부 TT-Metal 소스·TTSim binary·빌드 산출물은 Git에서 제외했습니다.
 전체 계획은 [프로젝트 명세](AccelFlow_PROJECT.md), 라이선스 상태는 [LICENSE](LICENSE)를 참고하세요.
+
+별도 정밀도 실험은 [31. FP32-to-Dest RMSNorm](docs/31-fp32-to-dest-rmsnorm.md)에 정리했습니다. 순정 경로의 실패와 로컬 LLK 호환 처리 후 비트 분할 없는 FP32 계산을 구분합니다.
+
+RMSNorm split/FP32-to-Dest의 같은 3-stage 반복 시간 비교와 측정 한계는 [32번](docs/32-rmsnorm-fp32-dest-timing.md)에 기록했습니다.
