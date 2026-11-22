@@ -1,0 +1,13 @@
+{
+  "names": {
+    "naive": "_Z5naivePKfS0_Pfiii",
+    "tiled": "_Z5tiledILi16ELb0EEvPKfS1_Pfiiiyy"
+  },
+  "options": [
+    "--gpu-architecture=sm_89",
+    "--std=c++17",
+    "--generate-line-info"
+  ],
+  "source_sha256": "aee517f4935ea4acef38c74bbb17ae49e873d7cd8b9d9b09b8c9db57b2f17877",
+  "cubin_sha256": "dcadcd6655bc1c0768710bbd738ebc9ce66e73fd010e3ebedcd4ba0cd99c1b95"
+}

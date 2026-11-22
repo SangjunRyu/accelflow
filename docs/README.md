@@ -42,6 +42,7 @@
 | 30 | [공개 포트폴리오·대표 재현](30-portfolio.md) | 설계 변경표·측정값 구분·저장 근거 감사·6개 mode smoke 검증 |
 | 31 | [FP32-to-Dest RMSNorm](31-fp32-to-dest-rmsnorm.md) | native 실패 분리·로컬 compat·실제 FP32 포함 58개 구성 검증 |
 | 32 | [RMSNorm FP32-Dest 시간 비교](32-rmsnorm-fp32-dest-timing.md) | 동일 3-stage·24 process·120 sample·정확성/변동 검증 |
+| 33 | [RTX 4060 Ti CUDA MatMul Nsight 분석](33-rtx4060ti-matmul-nsight.md) | Naive·Tiled 커널 카운터·타임라인·GUI 캡처 정리 |
 
 ## 실제 진행 현황
 

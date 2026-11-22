@@ -3,6 +3,7 @@
 CUDA와 TT-Metalium으로 MatMul·Reduction·RMSNorm을 구현하고 데이터 이동, 재사용,
 코어 간 통신과 fusion의 비용을 비교한 가속기 커널 프로젝트입니다.
 CUDA는 **실제 NVIDIA MX150**, Metalium은 **TTSim의 가상 Wormhole**에서 실행했습니다.
+RTX 4060 Ti의 후속 CUDA MatMul 실측은 [Nsight 분석 보고서](docs/33-rtx4060ti-matmul-nsight.md)에서 확인할 수 있습니다.
 TT-NN과 모델 실행은 후속 단계이며 현재 완료 범위에 포함하지 않습니다.
 
 [포트폴리오 상세](docs/30-portfolio.md) · [전체 결과·TT-NN 인계](docs/29-metalium-results.md) · [실험 기록 목차](docs/README.md)

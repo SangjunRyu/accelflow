@@ -170,3 +170,5 @@ texture 경로에는 `cudaMemcpy2DToArrayAsync` 등의 호출도 기록됐다.
 이 보고서에는 shared-memory bank-conflict 카운터가 없다. kernel 시간이 길다는 사실만으로
 bank conflict가 원인이라고 판단할 수는 없다. CUDA Event completion tracing을 포함한
 프로파일링 오버헤드도 있으므로, 앞의 반복 측정 성능표를 이번 짧은 수집 결과로 대체하지 않는다.
+
+RTX 4060 Ti에서 Naive와 선형 입력 Tiled의 Nsight Compute 카운터를 수집한 후속 결과는 [33. RTX 4060 Ti CUDA MatMul Nsight 분석](33-rtx4060ti-matmul-nsight.md)에 정리했다.

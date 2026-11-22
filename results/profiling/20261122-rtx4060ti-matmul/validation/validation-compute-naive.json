@@ -1,0 +1,25 @@
+{
+  "device": "NVIDIA GeForce RTX 4060 Ti",
+  "variant": "naive",
+  "shape_mkn": [
+    640,
+    320,
+    640
+  ],
+  "input_seed": 20261122,
+  "block": [
+    16,
+    16
+  ],
+  "input_dtype": "FP32 integers [-8, 8]",
+  "warmup": 20,
+  "batch": 20,
+  "event_kernel_ms": [
+    35.643472290039064
+  ],
+  "host_pipeline_ms": [],
+  "max_abs_error": 0.0,
+  "event_kernel_median_ms": 35.643472290039064,
+  "host_pipeline_median_ms": null,
+  "output_sha256": "4a55bb88139abee51063d5cf4fee947c6bdefaa341319fdc7e9adcba381e94ae"
+}
